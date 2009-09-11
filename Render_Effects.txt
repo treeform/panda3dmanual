@@ -1,182 +1,21 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Render Effects</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Render_Effects" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Render_Effects" title="Render Effects">Render Effects</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Render_Effects" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-keepsake/keepsake01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-keepsake/keepsake01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Keepsake: a short interactive movie, themes of loss
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-spherical/spherical01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-spherical/spherical01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Some experiments done by a student with spherical harmonics.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<p>There are a number of special render effects that may be set on scene graph nodes to change the way they render.  This includes BillboardEffect, Compass Effect, DecalEffect, PolylightEffect, and ShowBoundsEffect.</p>
+<h2>List of All Render Effects:</h2>
+<br><br><li><b>[[Billboard Effects|BillboardEffect]]</b>: Dicates that geometry at this node should automatically rotate to face the camera, or any other arbitrary node.
+<br><br><li><b>CharacterJointEffect</b>: The effect binds the node back to the character, so that querying the relative transform of the affected node will automatically force the indicated character to be updated first.
+<br><br><li><b>PolylightEffect</b>: A PolylightEffect can be used on a node to define a LightGroup for that node. A LightGroup contains PolylightNodes which are essentially nodes that add color to the polygons of a model based on distance. PolylightNode is a cheap way to get lighting effects specially for night scenes
+<br><br><li><b>[[Compass Effects|CompassEffect]]</b>: In its purest form, a CompassEffect is used to keep the node's rotation fixed relative to the top of the scene graph, despite other transforms that may exist above the node. Hence the name: the node behaves like a magnetic compass, always pointing in the same direction.
+<br><br><li><b>ShowBoundsEffect</b>: Applied to a GeomNode to cause a visible bounding volume to be drawn for this node. This is generally used only during development to help identify bounding volume issues.
+<br><br><li><b>DecalEffect</b>: Applied to a GeomNode to indicate that the children of this GeomNode are coplanar and should be drawn as decals (eliminating Z-fighting).
+<br><br><li><b>TexProjectorEffect </b>: This effect automatically applies a computed texture matrix to the specified texture stage, according to the relative position of two specified nodes.
+
+
+<p>RenderEffect represents render properties that must be applied as soon as they are encountered in the scene graph, rather than propagating down to the leaves.  This is different from RenderAttrib, which represents properties like color and texture that don't do anything until they propagate down to a GeomNode.  </p>
+<p>You should not attempt to create or modify a RenderEffect directly; instead, use the make() method of the appropriate kind of effect you want.  This
+will allocate and return a new RenderEffect of the appropriate type, and it may share pointers if possible.  Do not modify the new RenderEffect if you wish to change its properties; instead, create a new one.</p>
+<p>Once you have created a render Effect, you need to decide what it should affect. If you have an effect that should affect evereything in the scene the nodepath in the next line of code is "render". If you only want it to affect specific objects, choose the appropriate place in the scene graph. </p>
+
+[python]<code python>
+nodePath.node().setEffect(<Render Effect>)
+</code>[/python][cxx]<code cxx>
+nodePath.node()->set_effect(<Render Effect>);
+</code>[/cxx]

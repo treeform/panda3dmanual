@@ -1,182 +1,59 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Previewing 3D Models in Pview</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Previewing_3D_Models_in_Pview" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Previewing_3D_Models_in_Pview" title="Previewing 3D Models in Pview">Previewing 3D Models in Pview</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Previewing_3D_Models_in_Pview" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus5"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus5-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Pview or Panda Viewer is a model and animation viewer for egg and bam files. This allows users to see if their files have converted correctly without having to create a Panda3D program. Pview is accessed through a command prompt.
+
+To view a model that has been converted to an egg or bam file, type the following:
+
+<table class="code"><tr><td>
+pview modelFile.egg
+</td></tr></table>
+
+To view a character model with animations, simply add the name of the file with the animation.
+
+<table class="code"><tr><td>
+pview modelFile.egg animationFile.egg
+</td></tr></table>
+
+Here's an example based on the panda model distributed with panda source.
+
+<table class="code"><tr><td>
+pview panda
+</td></tr></table>
+
+A new window should pop-up and here's what you should see -
+
+[[Image:pviewsample.jpg]]
+
+There are some controls and hotkeys available while using pview. To see the whole list press shift-question mark in the pview window. To turn this list off press shift-question mark again. For convenience here is the full list of as the time of writing:
+
+<table>
+<tr><td>Left-click and drag Mouse</td><td>Moves the model up, down, left, and right relative to the camera</td></tr>
+<tr><td>Middle-click and drag Mouse</td><td>Rotates the model around its pivot</td></tr>
+<tr><td>Right-click and drag Mouse</td><td>Moves the model away and towards the camera</td></tr>
+<tr><td>f</td><td>Report framerate. The current framerate is output on the console window.</td></tr>
+<tr><td>w</td><td>Toggle wireframe mode</td></tr>
+<tr><td>t</td><td>Toggle texturing</td></tr>
+<tr><td>b</td><td>Toggle back face (double-sided) rendering</td></tr>
+<tr><td>i</td><td>Invert (reverse) single-sided faces</td></tr>
+<tr><td>l</td><td>Toggle lighting</td></tr>
+<tr><td>p</td><td>Toggle per-pixel lighting</td></tr>
+<tr><td>c</td><td>Recenter view on object</td></tr>
+<tr><td>shift-c</td><td>Toggle collision surfaces</td></tr>
+<tr><td>shift-b</td><td>Report bounding volume</td></tr>
+<tr><td>shift-l</td><td>List hierarchy</td></tr>
+<tr><td>shift-a</td><td>Analyze hierarchy</td></tr>
+<tr><td>h</td><td>Highight node</td></tr>
+<tr><td>arrow-up</td><td>Move highlight to parent</td></tr>
+<tr><td>arrown-down</td><td>Move highlight to child</td></tr>
+<tr><td>arrow-left</td><td>Move highlight to sibling</td></tr>
+<tr><td>arrow-right</td><td>Move highlight to sibling</td></tr>
+<tr><td>shift-s</td><td>Activate PStats</td></tr>
+<tr><td>f9</td><td>Take screenshot</td></tr>
+<tr><td>,</td><td>Cycle through background colors</td></tr>
+<tr><td>shift-w</td><td>Open new window</td></tr>
+<tr><td>alt-enter</td><td>Toggle between full-screen and windowed mode</td></tr>
+<tr><td>2</td><td>Split the window</td></tr>
+<tr><td>W</td><td>Toggle wireframe</td></tr>
+<tr><td>escape</td><td>Close Window</td></tr>
+<tr><td>q</td><td>Close Window</td></tr>
+</table>
+
+As of this writing there is a small caveat in loading textures for models into pview. Textures are searched for relative to the directory that pview is called from, not the directory that the model is in. Either make sure that the texture path is set correctly in the Config.prc file or ensure the bam or egg file look for the textures correctly (relative to where you are calling pview). The easiest way to get around this is to call pview from the directory that the model is placed.

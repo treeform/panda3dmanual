@@ -1,182 +1,75 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Creating New Textures from Scratch</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Creating_New_Textures_from_Scratch" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Creating_New_Textures_from_Scratch" title="Creating New Textures from Scratch">Creating New Textures from Scratch</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Creating_New_Textures_from_Scratch" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus6"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus6-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<h2>The PNMImage Class</h2>
+This class is how Panda3D handles regular images (.gif, .jpg, and the like). This class allows you to manipulate individual pixels of the image. You can load existing images using the function <code>read(fileName)</code> where <code>filename</code> is the path to the image file (in [[Panda Filename Syntax]]) wrapped in a <code>Filename </code> object. Or, you can create a brand new image from scratch, by passing the x, y size to the constructor.
+
+<pre class="codeblock">
+myImage=PNMImage()
+myImage.read(Filename("testImg.gif"))
+myEmptyImage = PNMImage(256, 256)
+</pre>
+
+You can get the size of the image you have read using the <code>getXSize()</code> and <code>getYSize()</code> functions.  Although you cannot change the size of an image directly, you can rescale an image by filtering it into a larger or smaller PNMImage:
+
+<pre class="codeblock">
+fullSize=PNMImage(Filename("testImg.gif"))
+reduced=PNMImage(256, 256)
+reduced.gaussianFilterFrom(1.0, fullSize)
+</pre>
+
+You can get individual RGB values using the <code>getRed(x,y), getGreen(x,y), getBlue(x,y)</code> or <code>getRedVal(x,y), getGreenVal(x,y), getBlueVal(x,y)</code> where x and y tell what pixel to look at  (lower-left is 0,0 upper right is <code>getXSize()-1, getYSize()-1</code> The difference between these functions is that the <code>get*Val</code> functions return a number between 0 and 1 while the <code>get*</code> functions retrun their value as an integer. For example, if your image uses 8-bit color calling <code>getGreenVal</code> on a green pixel will return 255 and calling <code>getGreen</code> will return 1. You can also get all the RGB information at the sametime using <code>getXel(x,y)</code> and <code>getXelVal(x,y)</code> which return a 3 component vector with red in the x, green in the y, and blue in the z.
+
+<pre class="codeblock">
+ #the pixel at 0,0 is red and we're using 8-bit color
+myImage.getRedVal(0,0) #returns 255
+myImage.getRed(0,0)#returns 1
+
+colors=myImage.getXelVal(0,0) #returns (255,0,0)
+colorVal=myImage.getXel(0,0) #returns (1,0,0)
+</pre>
+
+The functions for setting pixel information  are <code>setRed(x,y,value), setGreen(x,y, value), setBlue(x,y, value)</code> or <code>setRedVal(x,y,value), setGreenVal(x,y, value), setBlueVal(x,y, value)</code>. Theres still the same dichotomy as above when it comes to regular sets and using setvals. You can also use <code>setXel(x,y,colorVec)</code> and <code>setXelVal(x,y, colorVec)</code>. You can also fill an image with a color by using <code>fill(r,g,b)</code> and <code>fillVal(r,g,b)</code>.
+
+<pre class="codeblock">
+myImage.setGreenVal(0,0, 255) # if pixel (0,0) was red before, now it is yellow (255,255,0)
+myImage.setBlue(0,0,1) #pixel (0,0) is now white
+
+gray=Vec3(0.5,0.5,0.5)
+
+#both of these set the origin to gray
+myImage.setXelVal(0,0,gray*255)
+myImage.setXel(0,0,gray)
+
+#makes every pixel red
+myImage.fillVal(255,0,0)
+#makes every pixel green
+myImage.fill(0,1,0)
+</pre>
+
+There are also gets and sets for the alpha channel using the same interface as above. However, if you use them on an image that doesn't have an alpha channel you will cause a crash. To see if an image has an alpha channel use <code>hasAlpha()</code> which returns True if there is an alpha channel and False otherwise. You can add an alpha channel using <code>addAlpha()</code>. You can also remove it using <code>removeAlpha()</code>.
+
+You can also make an image grayscale by using <code>makeGrayscale()</code>. You can now use sets and gets for Gray too. Using <code>getGray*</code> on a color image just returns the value in the blue channel. If you want to get the grayscale value of a pixel regardless of whether the image is a grayscale or a color image, you can use <code>getBright(x,y)</code>, which works equally well on color or on grayscale images. If you want to weight the colors use <code>getBright(x,y, r,g,b)</code> where r,g,b are the weights for their respective channels.
+
+There are several other useful functions in the class this the API Reference for more information.
+
+<h2>Getting the Image of a Texture</h2>
+The Panda <code>Texture</code> class does not allow for pixel manipulation. However the <code>PNMImage</code> class below does. Therefore, if you want to change the image in a <code>Texture</code> object you must call its <code>store(myImage)</code> which saves the image of the texture into <code>myImage</code>.
+
+<pre class="codeblock">
+myImage=PNMImage()
+myTexture=loader.loadTexture("myTex.jpg")
+
+#after this call, myImage now holds the same image as the texture
+myTexture.store(myImage)
+</pre>
+
+<h2>Loading a PNMImage Into a Texture</h2>
+Once you have changed all the data in the image you can now load it into a texture using the <code>Texture</code> objects <code>load(myImage)</code> function, where <code>myImage</code> is the PNMImage to make the texture from.
+<pre class="codeblock">
+ #assume we already have myImage which is our modified PNMImage
+myTexture=Texture()
+
+#This texture now represents myImage
+myTexture.load(myImage)
+
+</pre>
+
+Remember however, that most graphics cards require that the dimensions of  texture have to be a power of two. <code>PNMImage</code> does not have this restriction and Panda will not automatically scale the image when you put it into a texture.

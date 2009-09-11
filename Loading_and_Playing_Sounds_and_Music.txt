@@ -1,181 +1,133 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Loading and Playing Sounds and Music</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Loading_and_Playing_Sounds_and_Music" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Loading_and_Playing_Sounds_and_Music" title="Loading and Playing Sounds and Music">Loading and Playing Sounds and Music</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Loading_and_Playing_Sounds_and_Music" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean7"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean7-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-keepsake/keepsake03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-keepsake/keepsake03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Keepsake: a short interactive movie, themes of loss
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<h2>Architecture</h2>
+
+The implementation of the sound system in Panda3d allows for a division of audio into two categories - Sound Effects and Music. This division is only a convenience for programmers as Panda3d allows these two audio groups to be treated individually. These differences are explained on the next page.
+
+<h2>Basics</h2>
+
+<b><i>Loading a Sound</i></b>
+
+Loading sound is done through the <code>Loader</code> class. (Loading sounds through the <code>base</code> builtin is deprecated and is only present for backwards compatibility.)
+
+
+[python]
+In a normal Panda3D environment, <code>loader</code> is a builtin when you import <code>DirectStart</code> like this:
+
+<code>
+import direct.directbase.DirectStart
+</code>
+[/python]
+
+Load the sound, by supplying the path to the sound. Here's an example:
+
+[python]
+<code python>
+mySound = loader.loadSfx("SoundFile.wav")
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+PT(AudioManager) AM = AudioManager::create_AudioManager();
+PT(AudioSound) mySound = AM->get_sound("hello.mp3") ;
+</code>
+[/cxx]
+
+These will return an object of the type <code>AudioSound</code>. It is necessary to put the extension in the sound filename. 
+
+
+<b><i>Playing/Stopping a Sound</i></b>
+
+To play sounds you can do the following:
+
+[python]
+<code python>
+mySound.play()
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+mySound->play();
+</code>
+[/cxx]
+
+To stop a sound:
+
+[python]
+<code python>
+mySound.stop()
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+mySound->stop();
+</code>
+[/cxx]
+
+
+<b><i>Querying Sound Status</i></b>
+
+To check the status of a sound:
+[python]
+<code python>
+mySound.status()
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+mySound->status();
+</code>
+[/cxx]
+
+<code>status()</code> returns 1 if it isn't currently playing and 2 if it is playing.
+
+
+<b><i>Setting Volume</i></b>
+
+The volume can be set between 0 and 1 and will linearly scale between these.
+
+[python]
+<code python>
+mySound.setVolume(0.5)
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+mySound->set_volume(0.5);
+</code>
+[/cxx]
+
+
+<b><i>Panning a Sound</i></b>
+
+You can change the balance of a sound. The range is between -1.0 to 1.0. Hard left is -1.0 and hard right is 1.0.
+
+[python]
+<code python>
+mySound.setBalance(-0.5)
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+mySound->set_balance(-0.5);
+</code>
+[/cxx]
+
+[python]
+<h2>NOTE !!!</h2>
+
+If running Panda from interactive prompt you must call <code>update()</code> after you play a sound.
+
+
+<code python>
+base.sfxManagerList[n].update()
+</code>
+
+This is because the <code>update()</code> command is called every frame to reset a sound's channel. 
+[/python]
+
+In interactive mode Panda's frame update is suspended, and does not run automatically.

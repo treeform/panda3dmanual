@@ -1,181 +1,19 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Sound</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Sound" title="Special:Userlogin">log in</a> to edit pages.
+<p>To play audio in your game, Panda3D can offer you the following three choices of audio libraries:</p>
+<ul><li><b>FMOD:</b> this is a very capable multi-platform sound engine. FMOD supports various types of sound files - MP3, WAV, AIFF, MIDI, MOD, WMA, OGG Vorbis.
+There is only one drawback: the license restricts you from using it for commercial purposes, unless you actually buy yourself an FMOD license. But if your program is not intended to make any money, and is not charged for in any way, then you may use FMOD in it for free.</li>
+<li><b>OpenAL:</b> this is a well-known and popular open-source audio library, also supported by Panda3D. Although it runs on windows without problems, panda's support for OpenAL is not yet stable on linux. If you are experiencing crashes you might want to consider switching to fmod, or using a different library like pyOpenAL.</li>
+<li><b>Miles:</b> this sound system is not included in the downloadable binaries of Panda3D, in order to use this you will need to purchase Miles and compile Panda3D from scratch using the ppremake system.</li></ul>
+
+<p>If these choices are not enough for you, you can always try other non-builtin sound libraries such as [http://www.pygame.org/wiki/about Pygame], or [http://home.gna.org/oomadness/en/pyopenal/ PyOpenAL].</p>
+
+<p>To configure Panda3D to use a specific sound system, you will need to change your [[Configuring Panda|Config.prc]] configuration. You should look up the variable <code>audio-library-name</code> and change the value to one of <code>p3openal_audio</code>, <code>p3fmod_audio</code>, or <code>miles_audio</code>. (The names of the libraries may differ with the way Panda3D was built.)
+<br>
+If you don't want to use FMOD (due to the license) in your program, remove the fmod.dll and libp3fmod_audio.dll files from the panda \bin folder.
 </p>
-<p>Return to <a href="/wiki/index.php/Sound" title="Sound">Sound</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Sound" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean2"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean2-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy06"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy06-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-spherical/spherical01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-spherical/spherical01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Some experiments done by a student with spherical harmonics.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+
+<p><b>Note:</b> If you are using FMOD and are using 64-bits, you might run into a strange assertion error or even a crash if the memory address of the sound exceeds the 4 billion. This is because of a bug in FMOD, until that bug is fixed you'll just need to make sure your memory usage doesn't exceed the 4GB (which is not likely, and even impossible on 32-bits systems).
+This bug has been fixed in Panda3D versions 1.6.0 and later.</p>
+
+<p>For a full tutorial on getting started with audio functions in Panda3D, go here:
+<br /><br />
+http://aamesxdavid.p3dp.com/PandaAudioTut.zip</p>

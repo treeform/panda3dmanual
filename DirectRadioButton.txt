@@ -1,182 +1,59 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: DirectRadioButton</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=DirectRadioButton" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/DirectRadioButton" title="DirectRadioButton">DirectRadioButton</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=DirectRadioButton" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus5"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus5-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<span class="suppress-screenshots"></span> 
+<b>This feature is only available in Panda3D versions 1.5.3 and higher</b>
+
+DirectRadioButtons are similar to check buttons, except only one button is selected when it is clicked.  Their usage is almost identical to regular buttons, except that the text area and box area can be modified separately.
+
+<center><table>
+<tr><td><b>Keyword</b></td><td><b>Definition</b></td><td><b>Value</b></td></tr>
+<tr><td>text_scale</td><td>Scale of the displayed text</td><td>(sx,sz)</td></tr>
+<tr><td>indicatorValue</td><td>The initial boolean state of the radiobutton</td><td>0 or 1</td></tr>
+<tr><td>variable</td><td>The variable whose value will be set by radiobutton. Since we can not use call by reference for int or string variables in python, I used a list insteads.</td><td>define a list and pass it</td></tr>
+<tr><td>value</td><td>The value to be set to the variable. Since we are using a list, we can define multiple values. But the length of value list must be same as length of variable list.</td><td>a list of values</td></tr>
+<tr><td>others</td><td>The list of radio button instances sharing same variable. This must be set by using setOthers() after all radiobutton is created.</td><td>a list of radioButton instances</td></tr>
+<tr><td>boxImage</td><td>BG Image of the radio button</td><td>Image Path</td></tr>
+<tr><td>boxImageColor</td><td>Color of the BG image</td><td>(R,G,B,A)</td></tr>
+<tr><td>boxImageScale</td><td>Scale of the BG image</td><td>Number</td></tr>
+<tr><td>boxGeom</td><td>FG Image on the radio button</td><td>Image Path</td></tr>
+<tr><td>boxGeomColor</td><td>Color of the FG image</td><td>(R,G,B,A)</td></tr>
+<tr><td>boxGeomScale</td><td>Scale of the FG image</td><td>Number</td></tr>
+<tr><td>boxPlacement</td><td>Position of the box relative to the text area</td><td>'left','right', 'above', 'below', 'center'</td></tr>
+<tr><td>boxBorder</td><td>Size of the border around the box</td><td>Number</td></tr>
+<tr><td>command</td><td>Command the button performs when clicked (In version 1.6 and higher, no parameter is passed unless extraArgs are defined. Before, a single argument was passed by default.)</td><td>Function</td></tr>
+<tr><td>extraArgs</td><td>Extra arguments to the function specified in command</td><td>[Extra Arguments]</td></tr>
+<tr><td>commandButtons</td><td>Which mouse button must be clicked to do the command</td><td>LMB, MMB, or RMB</td></tr>
+<tr><td>rolloverSound</td><td>The sound made when the cursor rolls over the button</td><td>Sound File Path</td></tr>
+<tr><td>clickSound</td><td>The sound made when the cursor clicks on the button</td><td>Sound File Path</td></tr>
+<tr><td>pressEffect</td><td>Whether or not the button sinks in when clicked</td><td><0 or 1></td></tr>
+</table></center>
+
+<h2>Example</h2>
+<code python>
+import direct.directbase.DirectStart
+from direct.gui.OnscreenText import OnscreenText 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+
+v = [0]
+# Add some text
+bk_text = "This is my Demo"
+textObject = OnscreenText(text = bk_text, pos = (0.95,-0.95), 
+scale = 0.07,fg=(1,0.5,0.5,1),align=TextNode.ACenter,mayChange=1)
+
+# Callback function to set  text 
+def setText(status=None):
+    bk_text = "CurrentValue : %s"%v
+    textObject.setText(bk_text)
+
+# Add button
+buttons = [
+    DirectRadioButton(text = 'RadioButton0', variable=v, value=[0], scale=0.05, pos=(-0.4,0,0), command=setText),
+    DirectRadioButton(text = 'RadioButton1', variable=v, value=[1], scale=0.05, pos=(0,0,0), command=setText),
+    DirectRadioButton(text = 'RadioButton2', variable=v, value=[2], scale=0.05, pos=(0.4,0,0), command=setText)
+]
+
+for button in buttons:
+    button.setOthers(buttons)
+
+# Run the tutorial
+run()
+</code>

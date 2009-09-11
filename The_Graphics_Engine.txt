@@ -1,182 +1,80 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: The Graphics Engine</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=The_Graphics_Engine" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/The_Graphics_Engine" title="The Graphics Engine">The Graphics Engine</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=The_Graphics_Engine" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus7"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus7-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama05"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama05-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-tetris/tetris02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-tetris/tetris02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">VR Tetris: grasp the pieces with two VR-gloves
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+The graphics engine is the heart of the rendering process.  The <code>GraphicsEngine</code> class is ultimately responsible for all of the drawing and culling operations per frame. 
+
+Normally, there is no need to create a GraphicsEngine, as Panda3D will create one for you at startup.  This default GraphicsEngine is stored in <code>base.graphicsEngine</code>.
+
+Note also that the following interfaces are strictly for the advanced user.  Normally, if you want to create a new window or an offscreen buffer for rendering, you would just use the <code>base.openWindow()</code> or <code>window.makeTextureBuffer()</code> interfaces, which handle all of the details for you automatically.
+
+However, please continue reading if you want to understand in detail how Panda manages windows and buffers, or if you have special needs that are not addressed by the above convenience methods.
+
+<h2>Rendering a frame</h2>
+
+There is one key interface to rendering each frame of the graphics simulation:
+
+<pre class="codeblock">
+base.graphicsEngine.renderFrame()
+</pre>
+
+This method causes all open GraphicsWindows and GraphicsBuffers to render their contents for the current frame.
+
+In order for Panda3D to render anything, this method must be called once per frame.  Normally, this is done automatically by the task "igloop", which is created when you start Panda.
+
+<h2>Using a GraphicsEngine to create windows and buffers</h2>
+
+In order to render in Panda3D, you need a <b>GraphicsStateGuardian</b>, and either a <b>GraphicsWindow</b> (for rendering into a window) or a <b>GraphicsBuffer</b> (for rendering offscreen).  You cannot create or destroy these objects directly; instead, you must use interfaces on the GraphicsEngine to create them.
+
+Before you can create either of the above, you need to have a [[The Graphics Pipe|GraphicsPipe]], which specifies the particular graphics API you want to use (e.g. OpenGL or DirectX).  The default GraphicsPipe specified in your Config.prc file has already been created at startup, and can be accessed by <code>base.pipe</code>.
+
+Now that you have a GraphicsPipe and a GraphicsEngine, you can create a GraphicsStateGuardian object.  This object corresponds to a single graphics context on the graphics API, e.g. a single OpenGL context.  (The context owns all of the OpenGL or DirectX objects like display lists, vertex buffers, and texture objects.)  You need to have at least one GraphicsStateGuardian before you can create a GraphicsWindow:
+
+<pre class="codeblock">
+myGsg=base.graphicsEngine.makeGsg(base.pipe)
+</pre>
+
+Now that you have a GraphicsStateGuardian, you can use it to create an onscreen GraphicsWindow or an offscreen GraphicsBuffer:
+
+<pre class="codeblock">
+base.graphicsEngine.makeWindow(gsg, name, sort)
+base.graphicsEngine.makeBuffer(gsg, name, sort, xSize, ySize, wantTexture)
+</pre> 
+
+<code>gsg</code> is the GraphicsStateGuardian, <code>name</code> is an arbitrary name you want to assign to the window/buffer, and <code>sort</code> is an integer that determines the order in which the windows/buffers will be rendered. 
+
+The buffer specific arguments <code>xSize</code> and <code>ySize</code> decide the dimensions of the buffer, and <code>wantTexture</code> should be set to <code>True</code> if you want to retrieve a texture from this buffer later on. 
+
+You can also use <code>graphicsEngine.makeParasite(host,name,sort,xSize,ySize)</code>, where host is a [[The GraphicsOutput class|GraphicsOutput]] object. It creates a buffer but it does not allocate room for itself. Instead it renders to the framebuffer of <code>host</code>. It effectively has <code>wantTexture</code> set to <code>True</code> so you can retrieve a texture from it later on.
+
+See [[The GraphicsOutput class]] and [[Graphics Buffers and Windows]] for more information.
+
+<pre class="codeblock">
+myWindow=base.graphicsEngine.makeWindow(myGsg, "Hello World", 0)
+myBuffer=base.graphicsEngine.makeBuffer(myGsg, "Hi World", 0, 800,600, True)
+myParasite=base.graphicsEngine.makeBuffer(myBuffer,"Im a leech", 0, 800, 600)
+</pre>
+
+Note: if you want the buffers to be visible add <code>show-buffers true</code> to your [[The Configuration File|configuration file]].  This causes the buffers to be opened as windows instead, which is useful while debugging.
+
+<h2>Sharing graphics contexts</h2>
+
+It is possible to share the same GraphicsStateGuardian among multiple different GraphicsWindows and/or GraphicsBuffers; if you do this, then the graphics context will be used to render into each window one at a time.  This is particularly useful if the different windows will be rendering many of the same objects, since then the same texture objects and vertex buffers can be shared between different windows.
+
+It is also possible to use a different GraphicsStateGuardian for each different window.  This means that if a particular texture is to be rendered in each window, it will have to be loaded into graphics memory twice, once in each context, which may be wasteful.  However, there are times when this may be what you want to do, for instance if you have multiple graphics cards and you want to to render to both of them simultaneously.  (Note that the actual support for simultaneously rendering to multiple graphics cards is currently unfinished in Panda at the time of this writing, but the API has been designed with this future path in mind.)
+
+<h2>Closing windows</h2>
+
+To close a specific window or buffer you use <code>removeWindow(window)</code>. To close all windows <code>removeAllWindows()</code>
+
+<pre class="codeblock">
+base.graphicsEngine.removeWindow(myWindow)
+base.graphicsEngine.removeAllWindows()
+</pre>
+
+<h2>More about GraphicsEngine</h2>
+
+Here is some other useful functionality of the <code>GraphicsEngine</code> class.
+
+<center><table>
+<tr><td><code>getNumWindows()</code></td><td>Returns the number of windows and buffers that this <code>GraphicsEngine</code> object is managing.</td></tr>
+<tr><td><code>isEmpty()</code></td><td>Returns <code>True</code> if this <code>GraphicsEngine</code> is not managing any windows or buffers.</td></tr>
+</table></center>
+
+See API for advanced functionality of <code>GraphicsEngine</code> and <code>GraphicsStateGuardian</code> class.

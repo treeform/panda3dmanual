@@ -1,182 +1,93 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: DirectGUI</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=DirectGUI" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/DirectGUI" title="DirectGUI">DirectGUI</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=DirectGUI" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus6"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus6-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-mario/mario06"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-mario/mario06-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Super Duper Mario Bros: a cool variant of an old classic
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-spider/spider03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-spider/spider03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Spiderman game from Building Virtual Worlds class
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+[cxx]<b>Note:</b>&nbsp;Sorry, as DirectGUI is implemented in Python, the next section will be useless to C++ users. However, there is another GUI system, PGui, that forms the foundation of DirectGUI and is in fact implemented in C++. Sadly, it is however undocumented as of today. Look around in the API reference and forums for classes that start with 'PG'.
+
+<b>The DirectGUI Python modules</b>[/cxx]
+
+Panda3D comes with a set of tools for the creation of a graphical interface for any program. The DirectGui system is used to create buttons, labels, text entries, and frames within the program. All of these items can be decorated with text, images, and 3D graphics. Commands may be associated with these items as well. Since these objects inherit from the NodePath class, anything done to a NodePath may be done to them, such as show()/hide(), setPos(), posInterval(), and so on. Also, since DirectGui objects are by default parented to the node aspect2d, they will stay on the screen no matter how the user navigates through the world.
+
+The direct-gui-edit option in the Config.prc file allows the user to use the middle mouse button to move around widgets, and resize them while holding the control key; this is very useful to lay a screen out during development.  If you need to turn this ability off for an individual object, set its <code>enableEdit</code> keyword parameter to False.
+
+All of the DirectGui objects are constructed in a similar way:
+
+<code python>
+from direct.gui.DirectGui import *
+myObject = Directxxxxxx(keyword=value, keyword=value, ...)
+</code>
+
+Each DirectGui object may contain any of four fundamental pieces that determine its appearance.  There may be an optional <b>text</b>, an optional <b>geom</b>, an optional <b>image</b>, and an optional <b>frame</b>.
+
+A DirectGui's <b>text</b> label may be any arbitrary text string, and whatever text string you supply is automatically created using the [[OnscreenText]] interface and centered on the object.  You can specify the text string using the <code>text</code> keyword.  You can also specify further parameters to control the appearance or placement of the text using the form <code>text_parameter</code>, where <code>parameter</code> is any valid keyword to the [[OnscreenText]] constructor.
+
+A DirectGui's <b>geom</b> can be any NodePath that you design, to represent the appearance of the gui object.  Typically, this will be a model that you created via the program <code>egg-texture-cards</code>. This little program takes a png or other picture and turns it into an egg. See [[Automatic_Texture_Animation]], for more details. Using this interface, you can completely customize the look of the DirectGui object to suit your needs.  You can specify the geom object using the <code>geom</code> keyword, and like the text parameter, you can also control the geom's placement using keywords like <code>geom_parameter</code>.
+
+The <b>image</b> is less often used.  It is the filename of a texture image (or an already-loaded Texture object).  It is intended for displaying a simple texture image for which you don't already have a model created via <code>egg-texture-cards</code>.  A default card will be created to display this texture, with a bounding box of (-1, 0, -1) to (1, 0, 1); that is, a square with sides of length 2 units, centered on the origin.  You can position and scale this card with the keywords <code>image_pos</code> and <code>image_scale</code>. See also [[OnscreenImage]]
+
+Finally, the DirectGui may have a <b>frame</b> created for it.  This is typically a gray rectangular background with an optional bevel.  There are a handful of different frame styles; you can use the <code>relief</code> keyword to select from one of the available styles; your choices are SUNKEN, RAISED, GROOVE, or RIDGE.  You can also specify <code>relief = None</code> to avoid creating a frame polygon altogether (this is commonly done when you have specified your own geom object with the <code>geom</code> keyword).
+
+The overall size of the DirectGui object is controlled with the <code>frameSize</code> keyword.  This is a four-tuple of floating-point numbers of the form (left, right, bottom, top), which specifies the bounding box region of the DirectGui object.  That is, the lower-left corner will be at position (left, 0, bottom), and the upper-right will be at (right, 0, top).  Note that these values represent coordinates from the origin of the frame.  Setting the frameSize to (-0.1, 0.1, -0.1, 0.1), for instance, will create a box, 0.2 units wide and 0.2 units in height, with 0,0 being the center of the frame located at <code>pos</code> on the screen.
+
+The <code>frameSize</code> keyword is optional.  If you omit it, the default frameSize is computed based on the bounding box of the <b>text</b>, <b>geom</b>, and/or <b>image</b> that you have specified.
+
+The following is a list of keywords that are typically available to DirectGui objects of all kinds.  Individual kinds of DirectGui objects may add more options to this list, but these keywords are not repeated on each of the following pages, for brevity:
+
+<center><table>
+<tr><td><b>Keyword</b></td><td><b>Definition</b></td><td><b>Value</b></td></tr>
+<tr><td>text</td><td>Text to be displayed on the object</td><td>String</td></tr>
+<tr><td>text_bg</td><td>Background color of the text on the object</td><td>(R,G,B,A)</td></tr>
+<tr><td>text_fg</td><td>Color of the text</td><td>(R,G,B,A)</td></tr>
+<tr><td>text_pos</td><td>Position of the displayed text</td><td>(x,z)</td></tr>
+<tr><td>text_roll</td><td>Rotation of the displayed text</td><td>Number</td></tr>
+<tr><td>text_scale</td><td>Scale of the displayed text</td><td>(sx,sz)</td></tr>
+<tr><td>text_*</td><td>Parameters to control the appearance of the text</td><td>Any keyword parameter appropriate to [[OnscreenText]].</td></tr>
+<tr><td>frameSize</td><td>Size of the object</td><td>(Left,Right,Bottom,Top)</td></tr>
+<tr><td>frameVisibleScale</td><td>Relative scale of the visible frame to its clickable bounds. Useful for creating things like the paging region of a slider, which is visibly smaller than the acceptable click region (the height of the thumb).</td><td>(hscale, vscale)</td></tr>
+<tr><td>frameColor</td><td>Color of the object's <b>frame</b></td><td>(R,G,B,A)</td></tr>
+<tr><td>relief</td><td>Relief appearance of the <b>frame</b></td><td>SUNKEN, RAISED, GROOVE, RIDGE, FLAT, or None</td></tr>
+<tr><td>invertedFrames</td><td>If true, switches the meaning of SUNKEN and RAISED</td><td>0 or 1</td></tr>
+<tr><td>borderWidth</td><td>If relief is SUNKEN, RAISED, GROOVE, or RIDGE, changes the size of the bevel</td><td>(Width,Height)</td></tr>
+<tr><td>image</td><td>An <b>image</b> to be displayed on the object</td><td>image filename or Texture object</td></tr>
+<tr><td>image_pos</td><td>Position of the displayed image</td><td>(x,y,z)</td></tr>
+<tr><td>image_hpr</td><td>Rotation of the displayed image</td><td>(h,p,r)</td></tr>
+<tr><td>image_scale</td><td>Scale of the displayed image</td><td>(sx,sy,sz)</td></tr>
+<tr><td>geom</td><td>A <b>geom</b> to represent the object's appearance</td><td>NodePath</td></tr>
+<tr><td>geom_pos</td><td>Position of the displayed geom</td><td>(x,y,z)</td></tr>
+<tr><td>geom_hpr</td><td>Rotation of the displayed geom</td><td>(h,p,r)</td></tr>
+<tr><td>geom_scale</td><td>Scale of the displayed geom</td><td>(sx,sy,sz)</td></tr>
+<tr><td>pos</td><td>Position of the object</td><td>(X,Y,Z)</td></tr>
+<tr><td>hpr</td><td>Orientation of the object</td><td>(H,P,R)</td></tr>
+<tr><td>scale</td><td>Scale of the object</td><td>Number</td></tr>
+<tr><td>pad</td><td>When frameSize is omitted, this determines the extra space around the <b>geom</b> or <b>text</b>'s bounding box by which to expand the default <b>frame</b></td><td>(Width,Height)</td></tr>
+<tr><td>state</td><td>The initial state of the object</td><td>NORMAL or DISABLED</td></tr>
+<tr><td>frameTexture</td><td>Texture applied directly to the <b>frame</b> generated when relief is FLAT</td><td>image filename or Texture object</td></tr>
+<tr><td>enableEdit</td><td>Affects direct-gui-edit functionality</td><td>0 or 1</td></tr>
+<tr><td>suppressKeys</td><td>If 1, suppresses triggers of global keyboard-related Panda events (not part of the GUI system)</td><td>0 or 1</td></tr>
+<tr><td>suppressMouse</td><td>If 1, suppresses triggers of global mouse-related Panda events (e.g. camera controls)</td><td>0 or 1</td></tr>
+<tr><td>sortOrder</td><td>Specifies render order for overlapping objects. Higher numbers are drawn in front of lower numbers.</td><td>Number</td></tr>
+<tr><td>textMayChange</td><td>Whether the text of an object can be changed after creation</td><td>0 or 1</td></tr>
+
+</table></center>
+
+Remember that the axes for Panda3D use x for left and right, y for in and out of the screen, and z for up and down.  An object's <b>frame</b> is always in the background of the object.  The <b>geom</b>, if any, is shown in front of the frame, and <b>text</b> is shown in front of the geom.
+
+It is possible to change most of these values after object creation, using:
+
+<code python>
+myDirectObject['keyword'] = value
+</code>
+
+Most properties can be updated in this way, although position and other transform-related values cannot be updated via the keyword parameters--attempts to update them will silently fail.  Instead, use the NodePath methods to change the object's transform.
+
+Some types of updates, such as changing the text or the geom, may also change the size of the object.  If you change any of these properties after the object has been created, it is necessary to tell the object to re-determine its size:
+
+<code python>
+myDirectObject.resetFrameSize()
+</code>
+
+If you don't do this, you may find, for example, that a button isn't clickable because it believes it has a zero-width frame.
+
+To permanently remove a DirectGUI object, you should use the method:
+
+<code python>
+myDirectObject.destroy()
+</code>
+
+It is not sufficient to simply call removeNode(), since the DirectGUI system adds a number of messenger hooks that need to be cleaned up.  However, if you have a hierarchy of DirectGUI objects, for instance a number of buttons parented to a frame, it is sufficient to call destroy() only on the topmost object; it will propagate downwards.

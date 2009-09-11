@@ -1,182 +1,72 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Pipeline Tips</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Pipeline_Tips" title="Special:Userlogin">log in</a> to edit pages.
+<p>
+This section isn't totally related to Panda3D. However, these are a few good pointers on how to keep the 'art to programmer' pipeline running smoothly.
 </p>
-<p>Return to <a href="/wiki/index.php/Pipeline_Tips" title="Pipeline Tips">Pipeline Tips</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Pipeline_Tips" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D05"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D05-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-projectimprov/projectimprov02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-projectimprov/projectimprov02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Improvisational acting techniques are used to improve character behavior
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+
+<h2>How artists can help programmers with the pipeline:</h2>
+
+<p>
+<b>"Keep renaming to a minimum, preferably with good names to start with, and especially for parts or joints that the programmer will have to manipulate."</b><br>
+
+Programmers generally deal with objects by their names, not with a graphical tool like artists. Every time a name changes, a programmer has to make the change in his or her code, and often has to hunt through the egg to try and figure out what the name has changed to. In a large model, this can be very time-consuming. If you do have to change a name, make sure to let the programmer know when you give him or her the new model.
+</p>
+
+<p>
+<b>"Check your model in pview before handing it off."</b><br>
+
+The biggest delays in the pipeline come from the back and forth iterations between artist and programmer. A quick check with pview will often find missing textures, backward facing polygons, incorrect normals, mis-tagged collision solids, and a host of other problems.
+</p>
+
+<p>
+<b>"Build models with good hierarchy, and don't change the hierarchy unnecessarily."</b><br>
+
+A well organized hierarchy can make a model much easier for a programmer to work with, and can also have a significant effect on rendering performance. For rendering purposes, good hierarchies group objects that are close to each other together, and don't have more than a few hundred to a few thousand triangles (depending on the target hardware) in each node.  (Low-end hardware performs better with only a few hundred triangles per node; high-end hardware performs better with several thousand triangles per node.)
+</p>
+
+<p>
+<b>"Put groups of objects that the programmer will have to deal with in a special way under a single node."</b><br>
+
+For instance, if there's a section of an environment that will be hidden during some point in the game, put that entire section under a single node. The programmer might also like certain classes of collision solids to be under a single node.
+</p>
+
+<p>
+<b>"Don't use lossy compression (i.e. jpeg) for textures."</b><br>
+
+Although jpegs save space on disk, they also degrade your beautiful textures! If textures have to be manipulated later (i.e. downgraded), this degradation will only be compounded. Every time you edit and resave a jpeg, the image quality gets worse. Jpegs may need to be used in the finished product, but it's always best to make this conversion the last step in the process, not the first one. I recommend using the png format, which provides lossless compression and full support for all color depths as well as alpha.
+</p>
+
+<p>
+<b>"If there's any chance that an object will be broken apart and used as separate pieces, give each piece a separate texture map."</b><br>
+
+Nothing hurts worse than having to remap an object after its been painted, or wasting huge swaths of texture space.
+</p>
+
+<p>
+<b>"If parts of an object are semi-transparent, make sure those pieces are separate parts in the hierarchy."</b><br>
+
+Rendering semi-transparent objects is a little tricky. Each object with transparency needs to be sorted back-to-front each frame by the rendering engine. If things aren't going quite as planned, a programmer might need to get a handle on a transparent part in order to manipulate its render order.
+</p>
+
+<p>
+<b>"If a semi-transparent object is very large, or you can see through multiple layers (like a glass sphere), break it up into separate pieces."</b><br>
+
+Objects with multiple layers of transparency won't render correctly depending on which angle they're being view from, because some of the polygons will be drawn before others, and if it's all one object, the rendering engine can't sort them back-to-front.
+</p>
+
+<p>
+<b>"Use quads, and higher-order polygons, for collision solids when possible, rather than triangles.  But make sure your quads are planar."</b><br>
+
+In general, dividing a quad into two triangles doubles the time it takes to test a collision with it, so it is better to model collision polygons with quads when possible.  The same goes for five-sided and higher-order polygons as well.  However, there are two important requirements: (1) the collision polygons must be convex, not concave, and (2) they must be perfectly flat (all of the vertices must lie <em>exactly</em> in the same plane).  If either of these is not met, Panda will triangulate the polygon anyway.
+</p>
+
+<p>
+<h3>Things that don't matter as much, but will give programmers warm-fuzzies:</h3>
+</p>
+
+<p>
+<b>"Use a consistent naming scheme."</b><br>
+
+Programmers live in a world where names and naming conventions are incredibly important. Nothing makes them happier than when the names of art assets fit in well with their code. Common naming conventions are: mixedCaseNames, CapitalizedMixedCaseNames, names_with_underscores, names-with-hyphens. Pick one and stick with it.
+</p>
+<p>
+<b>"Don't misspell things."</b>
+</p>

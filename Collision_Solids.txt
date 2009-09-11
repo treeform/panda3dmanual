@@ -1,182 +1,166 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Collision Solids</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Collision_Solids" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Collision_Solids" title="Collision Solids">Collision Solids</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Collision_Solids" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-projectimprov/projectimprov04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-projectimprov/projectimprov04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Improvisational acting techniques are used to improve character behavior
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-keepsake/keepsake01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-keepsake/keepsake01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Keepsake: a short interactive movie, themes of loss
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+The CollisionSolid is the fundamental object of the collision system.  CollisionSolids represent special invisible geometry that is created solely for the purpose of performing collision tests; these CollisionSolids are stored in the scene graph alongside the normal visible geometry.
+
+The CollisionSolids are specifically optimized for performing collision tests quickly.  Collisions can be performed against visible geometry as well, but this is more expensive since visible geometry is not optimized for this sort of thing.
+
+You can create CollisionSolids interactively in program code, or you can construct them in your modeling package and load them up from an egg or bam file along with the rest of your scene.
+
+When you create a CollisionSolid interactively, you must also create a CollisionNode to hold the solid.  (When you load your CollisionSolids in from an egg file, the CollisionNodes are created for you.)  Often, a CollisionNode will be used to hold only one solid, but in fact a CollisionNode can contain any number of solids, and this is sometimes a useful optimization, especially if you have several solids that always move together as a unit.
+
+[python]<code python>
+cs = CollisionSphere(0, 0, 0, 1)
+cnodePath = avatar.attachNewNode(CollisionNode('cnode'))
+cnodePath.node().addSolid(cs)
+</code>[/python]
+
+[cxx]
+<code cxx>
+PT(CollisionSphere) cs = new CollisionSphere();
+cSphere_node= new CollisionNode("Sphere");
+cSphere_node->add_solid(cs);
+</code>
+[/cxx]
+
+CollisionNodes are hidden by default, but they may be shown for debugging purposes:
+
+[python]<code python>
+cnodePath.show()
+</code>[/python]
+
+[cxx]
+<code cxx>
+cSphere_node->show();
+</code>
+[/cxx]
+
+<b>Note</b>: Be aware that the collision algorithm has only limited awareness of scaling transforms applied to CollisionSolids. If unequal scaling is applied between a "from" collider and an "into" collider, unexpected results may occur. In general, strive to have as few scaling transforms applied to your collision solids as possible.
+
+There are several kinds of CollisionSolids available.
+
+<h2>CollisionSphere</h2>
+
+The sphere is the workhorse of the collision system.  Spheres are the fastest primitives for any collision calculation; and the sphere calculation is particularly robust.  If your object is even vaguely spherical, consider wrapping a sphere around it.
+
+Also, a sphere is a particularly good choice for use as a "from" object, because a sphere can reliably be tested for collision with most of the other solid types.  The "from" objects are the objects that are considered the active objects in the world; see [[Collision Traversers]].  A sphere is usually the best choice to put around the player's avatar, for instance.  The sphere also makes a good "into" object; it is the only object type that is a good choice for both "from" and "into" objects.
+
+A sphere is defined in terms of a center and a radius.  Note that, like any object, the sphere's coordinates are defined in the sphere's own coordinate space, so that often the center is (0, 0, 0).
+
+<pre class="codeblock">
+sphere = CollisionSphere(cx, cy, cz, radius)
+</pre>
+
+<h2>CollisionTube</h2>
+
+A "tube" is a cylinder with hemispherical endcaps.  This shape is sometimes called a capsule in other collision systems.
+
+The tube is good as an "into" object, for objects that are largely cylindrical.  It is not a very good choice for a "from" object, because not many intersection tests have been written from tubes into other shapes.
+
+[[Image:Tube.jpg|A CollisionTube]]
+
+A tube is defined with its two endpoints, and the cylindrical radius.
+
+<pre class="codeblock">
+tube = CollisionTube(ax, ay, az, bx, by, bz, radius)
+</pre>
+
+<h2>CollisionInvSphere</h2>
+The inverse sphere is a special-purpose solid that is rarely used, but occasionally it is very useful.  It is an inside-out sphere: the solid part of the sphere is on the outside.  Any object that is on the outside of the sphere is considered to be colliding with it; any object on the inside is not colliding.
+
+Think of the inverse sphere as a solid mass that fills the whole universe in all directions, except for a bubble of space in the middle.  It's useful for constraining an object within a particular space, since nothing can get out of an inverse sphere.
+
+<pre class="codeblock">
+inv = CollisionInvSphere(cx, cy, cz, radius)
+</pre>
+
+<h2>CollisionPlane</h2>
+
+The CollisionPlane is an infinite plane extending in all directions.  It is not often used, but it can be useful in certain cases, for instance as a trigger placed below the ground to detect when an avatar has accidentally slipped through a crack in the world.  You can also build a box out of six planes to keep objects perfectly constrained within a rectangular region, similar to an inverse sphere; such a box is much more reliable than one constructed of six polygons.
+
+The plane actually divides the universe into two spaces: the space behind the plane, which is all considered solid, and the space in front of the plane, which is all empty.  Thus, if an object is anywhere behind a plane, no matter how far, it is considered to be intersecting the plane.
+
+A CollisionPlane is constructed using a Panda3D Plane object, which itself has a number of constructors, including the A, B, C, D plane equation, or a list of three points, or a point and a normal.
+
+<pre class="codeblock">
+plane = CollisionPlane(Plane(Vec3(0, 0, 1), Point3(0, 0, 0)))
+</pre>
+
+<h2>CollisionPolygon</h2>
+
+A CollisionPolygon is the most general of the collision solids, since it is easy to model any shape with polygons (especially using a modeling package).  However, it is also the most expensive solid, and the least robust--there may be numerical inaccuracies with polygons that allow collisions to slip through where they shouldn't.
+
+Like a plane and a tube, a CollisionPolygon is only a good choice as an "into" object.  It doesn't support collision tests as a "from" object.
+
+In general, if you must use CollisionPolygons to model your shape, you should use as few polygons as possible.  Use quads instead of triangles if possible, since two triangles take twice as much time to compute as a single quad.  This does mean that you need to ensure that your quads are perfectly coplanar.
+
+You can also make higher-order polygons like five-sided and six-sided polygons or more, but you cannot make concave polygons.  If you create a concave or non-coplanar CollisionPolygon in your modeling package, Panda will automatically triangulate it for you (but this might result in a suboptimal representation, so it is usually better to subdivide a concave polygon by hand).
+
+Unlike a plane, a CollisionPolygon is infinitely thin; an object is only considered to be colliding with the polygon while it is overlapping it.
+
+When you create a CollisionPolygon interactively, you can only create triangles or quads (the higher-order polygons can only be loaded from an egg file).  Simply specify the three or four points to the constructor, in counter-clockwise order.
+
+<pre class="codeblock">
+quad = CollisionPolygon(Point3(0, 0, 0), Point3(0, 0, 1),
+  Point3(0, 1, 1), Point3(0, 1, 0))
+</pre>
+
+<h2>CollisionRay</h2>
+
+The ray is a special collision solid that is useful only as a "from" object; since the object has no volume, nothing will collide "into" a ray.  The same is true for line, parabola, and segment listed below.
+
+The CollisionRay represents an infinite ray that begins at a specific point, and stretches in one direction to infinity.
+
+It is particularly useful for picking objects from the screen, since you can create a ray that starts at the camera's point of view and extends into the screen, and then determine which objects that ray is intersecting.  (In fact, there is a method on CollisionRay called <code>setFromLens()</code> that automatically sets up the ray based on a 2-d onscreen coordinate; this is used by the "picker".  See [[Clicking on 3D Objects]].)
+
+The CollisionRay is also useful in conjunction with the CollisionHandlerFloor; see [[Collision Handlers]].
+
+A CollisionRay is created by specifing an origin point, and a direction vector.  The direction vector need not be normalized.
+
+<pre class="codeblock">
+ray = CollisionRay(ox, oy, oz, dx, dy, dz)
+</pre>
+
+<h2>CollisionLine</h2>
+
+This is essentially the same as a CollisionRay, except it extends to infinity in both directions.  It is constructed with the same parameters, an origin point and a direction vector.
+
+<pre class="codeblock">
+line = CollisionLine(ox, oy, oz, dx, dy, dz)
+</pre>
+
+<h2>CollisionSegment</h2>
+
+A segment is another variant on the CollisionRay that does not extend to infinity, but only goes to a certain point and stops.  It is useful when you want to put a limit on how far the CollisionRay would otherwise reach.
+
+A CollisionSegment is constructed by specifying the two end points.
+
+<pre class="codeblock">
+segment = CollisionSegment(ax, ay, az, bx, by, bz)
+</pre>
+
+<h2>CollisionParabola</h2>
+
+Finally, a parabola is another variant on the CollisionRay that bends.  It is useful when you want to test with arcs, such as a cannonball shot.
+
+<h2>Collision System Chart </h2>
+Here is a table of the Collision Solids that can be used as "from" and "into" objects in a Collision.
+
+At noted above, with no volume CollisionRay, CollisionLine, CollisionParabola, CollisionSegment are only "from", never "into" and hence not listed as columns in the table below.
+
+At present, CollisionFloorMesh, CollisionInvSphere, CollisionPlane, CollisionPolygon, and CollisionTube are only "into" and never "from" and hence are not listed as rows in the table below. 
+
+In the table below, the solid is listed without its "Collision" preface, e.g., "Sphere" instead of "CollisionSphere", to save on space. 
+
+{| border=1 cellpadding=2
+| '''FROM/INTO''' || '''DSSolid''' || '''FloorMesh''' || '''InvSphere''' || '''Plane''' || '''Polygon''' || '''Sphere''' || '''Tube'''
+|-
+|| DSSolid || ''' ''' || ''' ''' || ''' ''' || ''' ''' || ''' ''' || '''Yes''' || ''' '''
+|-
+|| Line || ''' ''' || ''' ''' || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes'''
+|-
+|| Parabola || ''' ''' || ''' ''' || ''' ''' || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes'''
+|-
+|| Ray || ''' ''' || '''Yes*''' || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes'''
+|-
+|| Segment || ''' ''' || ''' ''' || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes'''
+|-
+|| Sphere || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes''' || '''Yes'''
+|}

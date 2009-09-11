@@ -1,182 +1,118 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Lerp Intervals</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Lerp_Intervals" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Lerp_Intervals" title="Lerp Intervals">Lerp Intervals</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Lerp_Intervals" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus2"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus2-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<span class="suppress-screenshots"></span>
+
+The LerpIntervals are the main workhorse of the Interval system.  The word "lerp" is short for "linearly interpolate", and means to smoothly adjust properties, such as position, from one value to another over a period of time.  You can use LerpIntervals to move and rotate objects around in your world.
+
+The LerpIntervals are also the most complex of all of the intervals, since there are many different parameters that you might want to specify to control the lerp.
+
+<h2>An overview of the NodePath-based LerpIntervals</h2>
+
+Most LerpIntervals adjust the various transform properties of a NodePath, such as pos, hpr, and scale, and they all have a similar form.  Consider the LerpPosInterval, which will smoothly move a model from one point in space to another:
+
+<pre class="codeblock">
+i = LerpPosInterval(model, duration, pos, startPos = None,
+                    other = None, blendType = 'noBlend',
+                    bakeInStart = 1, fluid = 0, name = None)
+</pre>
+
+The only required parameters are the model whose position is being changed, the length of time to apply the move, and the model's new position.  The remaining parameters are all optional, and are often omitted.
+
+Here is a breakdown of what each parameter means:
+
+<table>
+<tr><td valign="top">model</td>
+<td>The model whose position is being changed.  This should be a NodePath.</td></tr>
+
+<tr><td valign="top">duration</td>
+<td>The duration of the lerp, in seconds.</td></tr>
+
+<tr><td valign="top">pos</td>
+
+<td>The model's target position (the new position it will move to).  Usually, this is a Point3(x, y, z), but as a special advanced feature, it might be a Python function that, when called, returns a Point3.  If it is a function, it will be called at the time the lerp actually begins to play.</td></tr>
+
+<tr><td valign="top">startPos</td>
+
+<td>The starting position of the model at the beginning of the lerp.  If this is omitted, the model will start from its current position.  As with pos, above, this might be a Python function, which will be called at the time the lerp actually begins.
+
+Note that if you intend to move an object from its current position, it is better to omit this parameter altogether rather than try to specify it explicitly with something like <code>startPos=object.getPos()</code>, since the latter will be evaluated at the time the interval is created, not when it is played.  This is especially true if you plan to embed a series of consecutive LerpIntervals within a [[Sequences and Parallels|Sequence]].</td></tr>
+
+<tr><td valign="top">other</td>
+
+<td>Normally, this is set to None, to indicate a normal lerp.  If a NodePath is passed in, however, it indicates that this is a relative lerp, and the pos and startPos will be computed as a relative transform from that NodePath.  The relative transform is recomputed each frame, so if the other NodePath is animating during the lerp, the animation will be reflected here.  For this reason, you should not attempt to lerp a model relative to itself.</td></tr>
+
+<tr><td valign="top">blendType</td>
+
+<td>This specifies how smoothly the lerp starts and stops.  It may be
+any of the following values:</td>
+<tr><td valign="top"></td>
+<td><table>
+
+<tr><td valign="top">'easeIn'</td>
+   <td>The lerp begins slowly, ramps up to full speed, and stops abruptly.</td></tr>
+<tr><td valign="top">'easeOut'</td>
+   <td>The lerp begins at full speed, and then slows to a gentle stop at the end.</td></tr>
+<tr><td valign="top">'easeInOut'</td>
+   <td>The lerp begins slowly, ramps up to full speed, and then slows to a gentle stop.</td></tr>
+<tr><td valign="top">'noBlend'</td>
+   <td>The lerp begins and ends abruptly.</td></tr>
+
+</table></td>
+</tr>
+
+<tr><td valign="top">bakeInStart</td>
+
+<td>This is an advanced feature.  Normally, this is 1, which means the original, starting position of the model is determined when the interval starts to play, and saved for the duration of the interval.  You almost always want to keep it that way.  If you pass this as 0, however, the starting position is cleverly re-inferred at each frame, based on the model's current position and the elapsed time in the lerp; this allows your application to move the model even while it is being lerped, and the lerp will adapt.  This has nothing to do with controlling when the startPos parameter is evaluated.</td></tr>
+
+<tr><td valign="top">fluid</td>
+
+<td>If this is 1, then the lerp uses <code>setFluidPos()</code> rather than <code>setPos()</code> to animate the model.  See [[Rapidly-Moving Objects]].  This is meaningful only when the collision system is currently active on the model.  Since usually there is no reason to have the collision system active while a model is under direct application control, this parameter is rarely used.</td>
+
+<tr><td valign="top">name</td>
+
+<td>This specifies the name of the lerp, and may be useful for debugging.  Also, by convention, there may only be one lerp with a given name playing at any given time, so if you put a name here, any other interval with the same name will automatically stop when this one is started.  The default is to assign a unique name for each interval.</td>
+
+</table>
+
+<h2>The rest of the NodePath-based LerpIntervals</h2>
+
+Many NodePath properties other than position may be controlled via a lerp.  Here is the list of the various LerpIntervals that control NodePath properties:
+
+<pre class="codeblock">
+LerpPosInterval(model, duration, pos, startPos)
+LerpHprInterval(model, duration, hpr, startHpr)
+LerpQuatInterval(model, duration, quat, startHpr, startQuat)
+LerpScaleInterval(model, duration, scale, startScale)
+LerpShearInterval(model, duration, shear, startShear)
+LerpColorInterval(model, duration, color, startColor)
+LerpColorScaleInterval(model, duration, colorScale, startColorScale)
+</pre>
+
+Each of the above has a similar set of parameters as those of LerpPosInterval; they also have a similar shortcut (e.g. <code>model.hprInterval()</code>, etc.)
+
+Finally, there are also a handful of combination LerpIntervals, that perform multiple lerps at the same time.  (You can also achieve the same effect by combining several LerpIntervals within a Parallel, but these combination intervals are often simpler to use, and they execute just a bit faster.)
+
+<pre class="codeblock">
+LerpPosHprInterval(model, duration, pos, hpr, startPos, startHpr)
+LerpPosQuatInterval(model, duration, pos, quat, startPos, startQuat)
+LerpHprScaleInterval(model, duration, hpr, scale, startHpr, startScale)
+LerpQuatScaleInterval(model, duration, quat, scale, startQuat, startScale)
+LerpPosHprScaleInterval(model, duration, pos, hpr, scale, startPos, startHpr, startScale)
+LerpPosQuatScaleInterval(model, duration, pos, quat, scale, startPos, startQuat, startScale)
+LerpPosHprScaleShearInterval(model, duration, pos, hpr, scale, shear, startPos, startHpr, startScale, startShear)
+LerpPosQuatScaleShearInterval(model, duration, pos, quat, scale, shear, startPos, startQuat, startScale, startShear)
+</pre>
+
+<h2>Other types of LerpInterval</h2>
+
+Beyond animating NodePaths, you can create a LerpInterval that blends any parameter of any object over time.  This can be done with a LerpFunctionInterval:
+
+<pre class="codeblock">
+def myFunction(t):
+  ... do something based on t ...
+
+i = LerpFunc(myFunction, fromData = 0, toData = 1, duration = 0.0,
+             blendType = 'noBlend', extraArgs = [], name = None)
+</pre>
+
+This advanced interval has many things in common with all of the above LerpIntervals, but instead of directly animating a value, it instead calls the function you specify, passing a single floating-point parameter, t, that ranges from fromData to toData over the duration of the interval.
+
+It is then up to your function to set whatever property of whatever object you like according to the current value of t.

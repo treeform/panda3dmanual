@@ -1,1 +1,0 @@
-#REDIRECT [[Performance Issue: Too Many Shader Instructions]]

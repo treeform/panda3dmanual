@@ -1,182 +1,232 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: List of Possible Shader Inputs</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=List_of_Possible_Shader_Inputs" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/List_of_Possible_Shader_Inputs" title="List of Possible Shader Inputs">List of Possible Shader Inputs</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=List_of_Possible_Shader_Inputs" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus4"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus4-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-epoch/epoch2"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-epoch/epoch2-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Epoch: a space combat game
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Shader parameters must have names that are recognized by panda.  Here is a list of the allowable parameter names: (Note that it might not be complete)
+
+<table class="code" border=1>
+<tr>
+<td>uniform sampler2D tex_0</td>
+<td>The model's first texture.  This requires that the model be textured in the normal manner.  You may also use tex_1, tex_2, and so forth, if the model is multitextured.</td>
+</tr>
+<tr>
+<td>sampler3D or samplerCUBE</td>
+<td>If the model uses a 3D texture or a cubemap, use tex3D and texCUBE to access the color.</td>
+</tr>
+<tr>
+<td>uniform sampler2D tex_0_suffix</td>
+<td>Obtain a texture by concatenating a hyphen and the suffix to the filename of the model's first texture.  For example, if tex_0 is "woman.jpg", then tex_0_normalmap is "woman-normalmap.jpg", and tex_0_specular is "woman-specular.jpg".  You may also use tex_1_suffix, tex_2_suffix, and so forth.</td>
+</tr>
+<tr><td width="40%">float3 vtx_position: POSITION</td>
+<td>Vertex Position. Vertex shader only.  You may also use float4, in which case (w==1).</td>
+</tr>
+<tr>
+<td>float3 vtx_normal: NORMAL</td>
+<td>Vertex Normal. Vertex shader only.</td>
+</tr>
+<tr>
+<td>float4 vtx_color : COLOR</td>
+<td>Vertex color. Vertex shader only.</td>
+</tr>
+<tr>
+<td>float2 vtx_texcoord0: TEXCOORD0</td>
+<td>Texture coordinate associated with the model's first texture.  This requires that the model be textured in the normal manner.  You may also use vtx_texcoord1, vtx_texcoord2, and so forth if the model is multitextured.  Vertex shader only.</td>
+</tr>
+<tr>
+<td>float3 vtx_tangent0</td>
+<td>Tangent vector associated with the model's first texture.  This can only be used if the model has been textured in the normal manner, and if binormals have been precomputed.  You may also use vtx_tangent1, vtx_tangent2, and so forth if the model is multitextured.  Vertex shader only.</td>
+</tr>
+<tr>
+<td>float3 vtx_binormal0</td>
+<td>Binormal vector associated with vtx_texcoord0.  This can only be used if the model has been textured in the normal manner, and if binormals have been precomputed.  You can also use vtx_binormal1, vtx_binormal2, and so forth if the model has been multitextured.  Vertex shader only.</td>
+</tr>
+<tr>
+<td>floatX vtx_anything</td>
+<td>Panda makes it possible to store arbitrary columns of user-defined data in the vertex table; see [[GeomVertexData]].  You can access this data using this syntax.  For example, vtx_chicken will look for a column named "chicken" in the vertex array.  Vertex shader only.</td>
+</tr>
+<tr>
+<td>uniform float4x4 trans_x_to_y</td>
+<td>A matrix that transforms from coordinate system X to coordinate system Y.  See the section on [[Shaders and Coordinate Spaces]] for more information.
+</td>
+</tr>
+<tr>
+<td>uniform float4x4 tpose_x_to_y</td>
+<td>Transpose of trans_x_to_y</td>
+</tr>
+<tr>
+<td>uniform float4 row0_x_to_y</td>
+<td>Row 0 of trans_x_to_y.</td>
+</tr>
+<tr>
+<td>uniform float4 row1_x_to_y</td>
+<td>Row 1 of trans_x_to_y.</td>
+</tr>
+<tr>
+<td>uniform float4 row2_x_to_y</td>
+<td>Row 2 of trans_x_to_y.</td>
+</tr>
+<tr>
+<td>uniform float4 row3_x_to_y</td>
+<td>Row 3 of trans_x_to_y.</td>
+</tr>
+<tr>
+<td>uniform float4 col0_x_to_y</td>
+<td>Col 0 of trans_x_to_y.</td>
+</tr>
+<tr>
+<td>uniform float4 col1_x_to_y</td>
+<td>Col 1 of trans_x_to_y.</td>
+</tr>
+<tr>
+<td>uniform float4 col2_x_to_y</td>
+<td>Col 2 of trans_x_to_y.</td>
+</tr>
+<tr>
+<td>uniform float4 col3_x_to_y</td>
+<td>Col 3 of trans_x_to_y.</td>
+</tr>
+<tr>
+<td>uniform float4x4 mstrans_x</td>
+<td>Model-Space Transform of X, aka trans_x_to_model</td>
+</tr>
+<tr>
+<td>uniform float4x4 cstrans_x</td>
+<td>Clip-Space Transform of X, aka trans_x_to_clip</td>
+</tr>
+<tr>
+<td>uniform float4x4 wstrans_x</td>
+<td>World-Space Transform of X, aka trans_x_to_world</td>
+</tr>
+<tr>
+<td>uniform float4x4 vstrans_x</td>
+<td>View-Space Transform of X, aka trans_x_to_view</td>
+</tr>
+<tr>
+<td>uniform float4 mspos_x</td>
+<td>Model-Space Position of X, aka row3_x_to_model</td>
+</tr>
+<tr>
+<td>uniform float4 cspos_x</td>
+<td>Clip-Space Position of X, aka row3_x_to_clip</td>
+</tr>
+<tr>
+<td>uniform float4 wspos_x</td>
+<td>World-Space Position of X, aka row3_x_to_world</td>
+</tr>
+<tr>
+<td>uniform float4 vspos_x</td>
+<td>View-Space Position of X, aka row3_x_to_view</td>
+</tr>
+<tr>
+<td>uniform float4x4 mat_modelview</td>
+<td>Modelview Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 inv_modelview</td>
+<td>Inverse Modelview Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 tps_modelview</td>
+<td>Transposed Modelview Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 itp_modelview</td>
+<td>Inverse Transposed Modelview Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 mat_projection</td>
+<td>Projection Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 inv_projection</td>
+<td>Inverse Projection Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 tps_projection</td>
+<td>Transposed Projection Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 itp_projection</td>
+<td>Inverse Transposed Projection Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 mat_modelproj</td>
+<td>Composed Modelview/Projection Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 inv_modelproj</td>
+<td>Inverse ModelProj Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 tps_modelproj</td>
+<td>Transposed ModelProj Matrix</td>
+</tr>
+<tr>
+<td>uniform float4x4 itp_modelproj</td>
+<td>Inverse Transposed ModelProj Matrix</td>
+</tr>
+<tr>
+<td>uniform float4 k_anything</td>
+<td>A constant vector that was stored using <code>setShaderInput</code>.  Parameter <i>k_anything</i> would match data supplied by the call <i>setShaderInput("anything", Vec4(x,y,z,w))</i></td>
+</tr>
+<tr>
+<td>uniform sampler2D k_anything</td>
+<td>A constant texture that was stored using <code>setShaderInput</code>.  Parameter <i>k_anything</i> would match data supplied by the call <i>setShaderInput("anything", myTex)</i></td>
+</tr>
+<tr>
+<td>uniform float4x4 k_anything</td>
+<td>A constant matrix that was stored using <code>setShaderInput</code>.  Parameter <i>k_anything</i> would match data supplied by the call <i>setShaderInput("anything", myNodePath)</i>.  The matrix supplied is the nodepath's <i>local</i> transform.</td>
+</tr>
+<tr>
+<td>uniform float4 texpad_x</td>
+<td>X must be the name of a texture specified via shaderInput. Contains the U,V coordinates of the center of the texture.  This will be (0.5,0.5) if the texture is not padded, but it will be less if the texture is padded.</td>
+</tr>
+<tr>
+<td>uniform float4 texpix_x</td>
+<td>X must be the name of a texture specified via shaderInput. Contains the U,V offset of a single pixel in the texture (ie, the reciprocal of the texture size).</td>
+</tr>
+<tr>
+<td>uniform float4x4 attr_material</td>
+<td>The contents of the material attribute.  Row 0 is ambient, Row 1 is diffuse, Row 2 is emission, Row 3 is specular, with shininess in W.</td>
+</tr>
+<tr>
+<td>uniform float4 attr_color</td>
+<td>The contents of the color attribute.  This is white unless the model has a flat color applied.</td>
+</tr>
+<tr>
+<td>uniform float4 attr_colorscale</td>
+<td>The contents of the color scale attribute.  This is white unless the model has a color scale applied using nodePath.setColorScale.<br>This variable is only available in 1.6.2 and above.</td>
+</tr>
+<tr>
+<td>uniform float4 alight_x</td>
+<td>X must be an AmbientLight specified via a shaderInput.  Contains the color of the light.</td>
+</tr>
+<tr>
+<td>uniform float4x4 dlight_x</td>
+<td>X must be an DirectionalLight specified via a shaderInput.  Row 0 is color, row 1 is specular, row 2 is model-space direction, row 3 is model-space pseudo half-angle.</td>
+</tr>
+<tr>
+<td>uniform float4 plane_x</td>
+<td>X must be an PlaneNode specified via a shaderInput.  Contains the four terms of the plane equation.<br>This variable is only available in 1.6.2 and above.</td>
+</tr>
+<tr>
+<td>uniform float4 clipplane_0</td>
+<td>Contains the parameters of the first clipplane (also: clipplane_1, clipplane_2, etc. for subsequent clip planes) in world-space coordinates.<br>This variable is only available in 1.6.2 and above.</td>
+</tr>
+<tr>
+<td>floatX l_position: POSITION</td>
+<td>Linearly interpolated Position, as supplied by the vertex shader to the fragment shader. Declare "out" in the vertex shader, "in" in the fragment shader.</td>
+</tr>
+<tr>
+<td>floatX l_color0: COLOR0</td>
+<td>Linearly interpolated Primary color, as supplied by the vertex shader to the fragment shader. Declare "out" in the vertex shader, "in" in the fragment shader.</td>
+</tr>
+<tr>
+<td>floatX l_color1: COLOR1</td>
+<td>Linearly interpolated Secondary color, as supplied by the vertex shader to the fragment shader. Declare "out" in the vertex shader, "in" in the fragment shader.</td>
+</tr>
+<tr>
+<td>floatX l_texcoord0: TEXCOORD0</td>
+<td>Linearly interpolated Texture Coordinate 0, as supplied by the vertex shader to the fragment shader. You may also use l_texcoord1, l_texcoord2, and so forth. Declare "out" in the vertex shader, "in" in the fragment shader.</td>
+</tr>
+<tr>
+<td>out floatX o_color: COLOR</td>
+<td>Output Color, as supplied by the fragment shader to the blending units. Fragment shader only.</td>
+</tr>
+</table>

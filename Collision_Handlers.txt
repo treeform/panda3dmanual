@@ -1,181 +1,227 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Collision Handlers</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Collision_Handlers" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Collision_Handlers" title="Collision Handlers">Collision Handlers</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Collision_Handlers" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean2"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean2-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama05"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama05-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+You will need to create a CollisionHandler that specifies what to do when a collision event is detected. Each object can only have one collision handler associated with it. There are several possible kinds of CollisionHandler available.
+
+<h2>CollisionHandlerQueue</h2>
+
+The simplest kind of CollisionHandler, this object simply records the collisions that were detected during the most recent traversal.  You can then iterate through the list using <code>queue.getNumEntries()</code> and <code>queue.getEntry()</code>:
+
+[python]
+<code python>
+queue = CollisionHandlerQueue()
+traverser.addCollider(fromObject, queue)
+traverser.traverse(render)
+for i in range(queue.getNumEntries()):
+  entry = queue.getEntry(i)
+  print entry
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+queue = new CollisionHandlerQueue();
+CollisionTraverser traverser.add_collider(fromObject,queue);
+traverser.traver(get_render());
+for(i = 1; i<=queue.get_num_entries();i++)
+{
+            entry = queue.get_entry(i);
+            cout<<entry;
+}
+</code>
+[/cxx]
+
+By default, the [[Collision Entries]] appear in the queue in no particular order.  You can arrange them in order from nearest to furthest by calling <code>queue.sortEntries()</code> after the traversal.
+
+<h2>CollisionHandlerEvent</h2>
+
+This is another simple kind of CollisionHandler.  Rather than saving up the collisions, it generates a [[Event Handling|Panda event]] when collision events are detected.
+
+There are three kinds of events that may be generated: the "in" event, when a particular object collides with another object that it didn't in the previous pass, the "out" event, when an object is no longer colliding with an object it collided with in the previous pass, and the "again" event, when an object is still colliding with the same object that it did in the previous pass.
+
+For each kind of event, the CollisionHandlerEvent will construct an event name out of the names of the from and into objects that were involved in the collision.  The exact event name is controlled by a pattern string that you specify.  For instance:
+
+[python]
+<code python>
+handler.addInPattern('%fn-into-%in')
+handler.addAgainPattern('%fn-again-%in')
+handler.addOutPattern('%fn-out-%in')
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+C_handler.add_in_pattern("%fn-into-%in");
+C_handler.add_again_pattern("%fn-into-%in");
+C_handler.add_out_pattern("%fn-into-%in");
+</code>
+[/cxx]
+
+In the pattern string, the following sequences have special meaning:
+
+<table>
+<tr><td valign="top">%fn</td>
+<td>the name of the "from" object's node</td></tr>
+
+<tr><td valign="top">%in</td>
+<td>the name of the "into" object's node</td></tr>
+
+<tr><td valign="top">%fs</td>
+<td>'t' if "from" is declared to be tangible, 'i' if intangible</td></tr>
+
+<tr><td valign="top">%is</td>
+<td>'t' if "into" is declared to be tangible, 'i' if intangible</td></tr>
+
+<tr><td valign="top">%ig</td>
+<td>'c' if the collision is into a CollisionNode, 'g' if it is an ordinary visible GeomNode</td></tr>
+
+<tr><td valign="top">%(tag)fh</td>
+<td>generate event only if "from" node has the indicated tag</td></tr>
+
+<tr><td valign="top">%(tag)fx</td>
+<td>generate event only if "from" node does not have the indicated tag</td></tr>
+
+<tr><td valign="top">%(tag)ih</td>
+<td>generate event only if "into" node has the indicated tag</td></tr>
+
+<tr><td valign="top">%(tag)ix</td>
+<td>generate event only if "into" node does not have the indicated tag</td></tr>
+
+<tr><td valign="top">%(tag)ft</td>
+<td>the indicated tag value of the "from" node.</td></tr>
+
+<tr><td valign="top">%(tag)it</td>
+<td>the indicated tag value of the "into" node.</td></tr>
+</table>
+
+You may use as many of the above sequences as you like, or none, in the pattern string.  In the tag-based sequences, the parentheses around (tag) are literal; the idea is to write the name of the tag you want to look up, surrounded by parentheses.  The tag is consulted using the <code>nodePath.getNetTag()</code> interface.
+
+In any case, the event handler function that you write to service the event should receive one parameter (in addition to self, if it is a method): the [[Collision Entries|CollisionEntry]].  For example:
+
+[python]<code python>
+  class MyObject(DirectObject.DirectObject):
+    def __init__(self):
+      self.accept('car-into-rail', handleRailCollision)
+
+    def handleRailCollision(self, entry):
+      print entry
+</code>
+[/python]
+
+Note that all of the following versions of CollisionHandler also inherit from CollisionHandlerEvent, so any of them can be set up to throw events in the same way.
+
+<h2>CollisionHandlerPusher</h2>
+
+This is the first of the more sophisticated handlers.  The CollisionHandlerPusher, in addition to inheriting all of the event logic from CollisionHandlerEvent, will automatically push back on its from object to keep it out of walls.  The visual effect is that your object will simply stop moving when it reaches a wall if it hits the wall head-on, or it will slide along the wall smoothly if it strikes the wall at an angle.
+
+The CollisionHandlerPusher needs to have a handle to the NodePath that it will push back on, for each from object; you pass this information to <code>pusher.addCollider</code>.  This should be the node that is actually moving.  This is often, but not always, the same NodePath as the CollisionNode itself, but it might be different if the CollisionNode is set up as a child of the node that is actually moving.
+
+[python]<code python>
+smiley = loader.loadModel('smiley.egg')
+fromObject = smiley.attachNewNode(CollisionNode('colNode'))
+fromObject.node().addSolid(CollisionSphere(0, 0, 0, 1))
+
+pusher = CollisionHandlerPusher()
+pusher.addCollider(fromObject, smiley)
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+smiley = window->load_model(framework.get_models(),"smiley.egg");
+fromObject = smiley.attach_new_node(CollisionNode("colNode"));
+fromObject->add_solid(CollisionSphere(0,0,0,1));
+
+pusher = new CollisionHandlerPusher();
+pusher.add_collider(fromObject,smiley);
+</code>
+[/cxx]
+
+
+Don't be confused by the call to <code>pusher.addCollider</code>; it looks a lot like the call to <code>traverser.addCollider</code>, but it's not the same thing, and you still need to add the collider and its handler to the traverser:
+
+[python]<code python>
+traverser.addCollider(fromObject, pusher)
+smiley.setPos(x, y, 0)
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+CollisionTraverser traverser.add_collider(fromObject,pusher);
+smiley->set_pos(x,y,0);
+</code>
+[/cxx]
+
+If you are using Panda's drive mode to move the camera around (or some other node), then you also need to tell the pusher about the drive node, by adding it into the <code>pusher.addCollider</code> call:
+
+[python]<code python>
+fromObject = base.camera.attachNewNode(CollisionNode('colNode'))
+fromObject.node().addSolid(CollisionSphere(0, 0, 0, 1))
+pusher = CollisionHandlerPusher()
+pusher.addCollider(fromObject, base.camera, base.drive.node())
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+fromObject = cam.attach_new_node(CollisionNode("colNode"))
+fromObject->node().add_solid(CollisionSphere(0,0,0,1);
+pusher = new CollisionHandlerPusher();
+pusher.add_collider(fromObject,cam);
+</code>
+[/cxx]
+
+<h2>PhysicsCollisionHandler</h2>
+
+This kind of handler further specializes CollisionHandlerPusher to integrate with Panda's [[Physics Engine]].  It requires that the NodePath you pass as the second parameter to <code>pusher.addCollider</code> actually contains an ActorNode, the type of node that is moved by forces in the physics system.
+
+[python]<code python>
+anp = render.attachNewNode(ActorNode('actor'))
+fromObject = anp.attachNewNode(CollisionNode('colNode'))
+fromObject.node().addSolid(CollisionSphere(0, 0, 0, 1))
+
+pusher = PhysicsCollisionHandler()
+pusher.addCollider(fromObject, anp)
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+anp = window->get_render().attach_new_node(ActorNode("actor"));
+fromObject = anp.attach_new_node(CollisionNode("codeNode");
+fromObject->node().add_solid(CollisionSphere(0,0,0,1))
+
+pusher = new PhysicsCollisionHandler();
+pusher.add_collider(fromObject , anp);
+</code>
+[/cxx]
+
+Whenever you have an ActorNode that you want to respond to collisions, we recommend that you use a PhysicsCollisionHandler rather than an ordinary CollisionHandlerPusher.  The PhysicsCollisionHandler will keep the object out of walls, just like the CollisionHandlerPusher does, but it will also update the object's velocity within the physics engine, which helps to prevent the physics system from becoming unstable due to large accumulated velocities.
+
+<h2>CollisionHandlerFloor</h2>
+
+This collision handler is designed to serve one very specialized purpose: it keeps an object on the ground, or falling gently onto the ground, even if the floor is not level, without involving physics.
+
+It is intended to be used with a <code>CollisionRay</code> or <code>CollisionSegment</code>.  The idea is that you attach a ray to your object, pointing downward, such that the topmost intersection the ray detects will be the floor your object should be resting on.  Each frame, the CollisionHandlerFloor simply sets your object's z value to the detected intersection point (or, if it is so configured, it slowly drops the object towards this point until it reaches it).
+
+Using the CollisionHandlerFloor can be an easy way to simulate an avatar walking over uneven terrain, without having to set up a complicated physics simulation (or involve physics in any way).  Of course, it does have its limitations.
+
+[python]<code python>
+smiley = loader.loadModel('smiley.egg')
+fromObject = smiley.attachNewNode(CollisionNode('colNode'))
+fromObject.node().addSolid(CollisionRay(0, 0, 0, 0, 0, -1))
+
+lifter = CollisionHandlerFloor()
+lifter.addCollider(fromObject, smiley)
+</code>
+[/python]
+
+[cxx] 
+<code cxx>
+smiley = window->load_model(framework.get_models(), "smiley.egg");
+fromObject = smiley.attach_new_node(CollisionNode("colNode"));
+fromObject->node().add_solid(CollisionRay(0,0,0,0,0,-1));
+
+lifter = new CollisionHandlerFloor();
+lifter.add_collider(fromObject , smiley);
+
+</code>
+[/cxx]

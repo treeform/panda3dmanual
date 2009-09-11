@@ -1,182 +1,96 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: The Scene Graph</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=The_Scene_Graph" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/The_Scene_Graph" title="The Scene Graph">The Scene Graph</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=The_Scene_Graph" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus3"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus3-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-blackout/blackout7"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-blackout/blackout7-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Blackout: a game using high-end lighting for ambiance.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-epoch/epoch1"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-epoch/epoch1-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Epoch: a space combat game
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<b>The Scene Graph: a Tree of Nodes</b>
+
+Many simple 3D engines maintain a list of 3D models to render every frame.  In these simple engines, one must allocate a 3D model (or load it from disk), and then insert it into the list of models to render.  The model is not "visible" to the renderer until it is inserted into the list.
+
+Panda3D is slightly more sophisticated.  Instead of maintaining a list of objects to render, it maintains a tree of objects to render.  An object is not visible to the renderer until it is inserted into the tree.
+
+The tree consists of objects of class <code>PandaNode</code>.  This is actually
+a superclass for a number of other classes: <code>ModelNode</code>, <code>GeomNode</code>, <code>LightNode</code>, and so forth.  Throughout this manual, it is common for us to refer to objects of these classes as simply <i>nodes</i>.  The root of the tree is a node called <code>render</code>.  (Note: there may be additional roots for specialized purposes, like <code>render2d</code> for 2D objects)
+
+Panda3D's "tree of things to render" is named the <i>scene graph.</i>
+
+<b>What you Need to Know about the Hierarchical Scene Graph</b>
+
+Here are the most important things you need to know about the
+hierarchical arrangement of the scene graph:
+
+<ol>
+<li>You control where objects go in the tree.  When you insert an object into
+the tree, you specify where to insert it.  You can move branches
+of the tree around.  You can make the tree as deep or as shallow as you like.
+<br><br></li>
+<li>Positions of objects are specified relative to their parent in the tree.  For example, if you have a 3D model of a hat, you might want to specify that it always stays five units above a 3D model of a certain person's head.  Insert the hat as a child of the head, and set the position of the hat to (0,0,5).
+<br><br></li>
+<li>When models are arranged in a tree, any <i>rendering attributes</i> you assign to a node will propagate to its children.  For example, if you specify that a given node should be rendered with depth fog, then its children will also be rendered with depth fog, unless you explicitly override at the child level.
+<br><br></li>
+<li>Panda3D generates bounding boxes for each node in the tree.  A good
+organizational hierarchy can speed frustum and occlusion culling.  If the
+bounding box of an entire branch is outside the frustum, there is no need to examine the children.</li>
+</ol>
+
+Beginners usually choose to make their tree completely flat--everything
+is inserted immediately beneath the root.  This is actually a very good
+initial design.  Eventually, you will find a reason to want to add a little
+more depth to the hierarchy.  But it is wise not to get complicated until
+you have a clear, specific reason to do so.
+
+<b>NodePaths</b>
+
+There is a helper class called <code>NodePath</code> which is a very
+small object containing a pointer to a node, plus some 
+administrative information.  For now, you can ignore the administrative information; it will be explained in a [[Instancing|later section]]
+of the manual. It is the intent of the panda designers that you
+should think of a NodePath as a handle to a node.  Any function that
+creates a node returns a <code>NodePath</code> that refers
+to the newly-created node.
+
+A NodePath isn't exactly a pointer to a node; it's a "handle" to a node.
+Conceptually, this is almost a distinction without a difference.  However,
+there are certain API functions that expect you to pass in a NodePath,
+and there are other API functions that expect you to pass in a node
+pointer.  Because of this, although there is little conceptual difference between them, you still need to know that both exist.
+
+You can convert a NodePath into a "regular" pointer at any time by calling <code>nodePath.node()</code>.  However, there is no unambiguous way to convert back.
+That's important: sometimes you <i>need</i> a NodePath, sometimes you
+<i>need</i> a node pointer.  Because of this, it is recommended that you
+store NodePaths, not node pointers.  When you pass parameters, you should
+probably pass NodePaths, not node pointers.  The callee can always convert
+the NodePath to a node pointer if it needs to.
+
+<b>NodePath-Methods and Node-Methods</b>
+
+There are many methods that you can invoke on nodepaths, which are appropriate for nodes of any type.  Specialized node types, like LODNodes and Cameras (for instance), provide additional methods that are available only for nodes of that type, which you must invoke on the node itself.  Here are some assorted examples:
+
+[python]<code python>
+# NODEPATH METHODS:
+myNodePath.setPos(x, y, z)
+myNodePath.setColor(banana)
+
+# LODNODE METHODS:
+myNodePath.node().addSwitch(1000, 100)
+myNodePath.node().setCenter(Point3(0, 5, 0))
+
+# CAMERA NODE METHODS:
+myNodePath.node().setLens(PerspectiveLens())
+myNodePath.node().getCameraMask()
+</code>[/python]
+[cxx]<code cxx>
+// NODEPATH METHODS:
+myNodePath.set_pos(x, y, z);
+myNodePath.set_color(banana);
+
+// LODNODE METHODS:
+myNodePath.node()->add_switch(1000, 100);
+myNodePath.node()->set_center(LPoint3f(0, 5, 0));
+
+// CAMERA NODE METHODS:
+myNodePath.node()->set_lens(new PerspectiveLens());
+myNodePath.node()->get_camera_mask();
+</code>[/cxx]
+
+Always remember: when you invoke a method of <code>NodePath</code>, you
+are actually performing an operation on the node to which it points.
+
+In the example above, we call node-methods by first converting the
+nodepath into a node, and then immediately calling the node-method.
+This is the recommended style.

@@ -1,182 +1,147 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Automatic Texture Coordinates</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Automatic_Texture_Coordinates" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Automatic_Texture_Coordinates" title="Automatic Texture Coordinates">Automatic Texture Coordinates</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Automatic_Texture_Coordinates" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin07"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin07-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<span class="suppress-screenshots"></span>
+
+In addition to using texture coordinates that are built into the
+model, it is also possible to generate texture coordinates at runtime.
+Usually you would use this technique to achieve some particular
+effect, such as projective texturing or environment mapping, but
+sometimes you may simply want to apply a texture to a model that does
+not already have texture coordinates, and this is the only way to do
+that.
+
+The texture coordinates generated by this technique are generated
+on-the-fly, and are not stored within the model.  When you turn off
+the generation mode, the texture coordinates cease to exist.
+
+Use the following NodePath method to enable automatic generation of
+texture coordinates:
+
+<pre class="codeblock">
+nodePath.setTexGen(TextureStage, texGenMode)
+</pre> 
+
+The texGenMode parameter specifies how the texture coordinates are to
+be computed, and may be any of the following options.  In the list
+below, "eye" means the coordinate space of the observing camera, and
+"world" means world coordinates, e.g. the coordinate space of render,
+the root of the scene graph.
+<table style="border-collapse: collapse">
+
+<tr><td valign="top" style="border-top: 1px solid black; padding: 5pt"><code>TexGenAttrib.MWorldPosition</code></td>
+
+<td style="border-top: 1px solid black; padding: 5pt">Copies the (x, y, z) position of each vertex, in world space, to the (u, v, w) texture coordinates.</td></tr>
+
+<tr><td valign="top" style="border-top: 1px solid black; padding: 5pt"><code>TexGenAttrib.MEyePosition</code></td>
+
+<td style="border-top: 1px solid black; padding: 5pt">Copies the (x, y, z) position of each vertex, in camera space, to the (u, v, w) texture coordinates.</td></tr>
+
+<tr><td valign="top" style="border-top: 1px solid black; padding: 5pt"><code>TexGenAttrib.MWorldNormal</code></td>
+
+<td style="border-top: 1px solid black; padding: 5pt">Copies the (x, y, z) lighting normal of each vertex, in world space, to the (u, v, w) texture coordinates.</td></tr>
+
+<tr><td valign="top" style="border-top: 1px solid black; padding: 5pt"><code>TexGenAttrib.MEyeNormal</code></td>
+
+<td style="border-top: 1px solid black; padding: 5pt">Copies the (x, y, z) lighting normal of each vertex, in camera space, to the (u, v, w) texture coordinates.</td></tr>
+
+<tr><td valign="top" style="border-top: 1px solid black; padding: 5pt"><code>TexGenAttrib.MEyeSphereMap</code></td>
+
+<td style="border-top: 1px solid black; padding: 5pt">Generates (u, v) texture coordinates based on the lighting normal and the view vector to apply a standard reflection sphere map.</td></tr>
+
+<tr><td valign="top" style="border-top: 1px solid black; padding: 5pt"><code>TexGenAttrib.MEyeCubeMap</code></td>
+
+<td style="border-top: 1px solid black; padding: 5pt">Generates (u, v, w) texture coordinates based on the lighting normal and the view vector to apply a standard reflection cube map.</td></tr>
+
+<tr><td valign="top" style="border-top: 1px solid black; padding: 5pt"><code>TexGenAttrib.MWorldCubeMap</code></td>
+
+<td style="border-top: 1px solid black; padding: 5pt">Generates (u, v, w) texture coordinates based on the lighting normal and the view vector to apply a standard reflection cube map.</td></tr>
+
+<tr><td valign="top" style="border-top: 1px solid black; padding: 5pt"><code>TexGenAttrib.MPointSprite</code></td>
+
+<td style="border-top: 1px solid black; padding: 5pt">Generates (u, v) texture coordinates in the range (0, 0) to (1, 1) for large points so that the full texture covers the square.  This is a special mode that should only be applied when you are rendering <em>sprites,</em> special point geometry that are rendered as squares.  It doesn't make sense to apply this mode to any other kind of geometry.  Normally you wouldn't set this mode directly; let the [[Particle Renderers|SpriteParticleRenderer]] do it for you.</td></tr>
+
+<tr><td valign="top" style="border-top: 1px solid black; border-bottom: 1px solid black; padding: 5pt"><code>TexGenAttrib.MLightVector</code></td>
+
+<td style="border-top: 1px solid black; border-bottom: 1px solid black; padding: 5pt">Generates special (u, v, w) texture coordinates that represent the vector from each vertex to a particular Light in the scene graph, in each vertex's tangent space.  This is used to implement normal maps.  This mode requires that each vertex have a <em>tangent</em> and a <em>binormal</em> computed for it ahead of time; you also must specify the NodePath that represents the direction of the light.  Normally, you wouldn't set this mode directly either; use NodePath.setNormalMap(), or implement normal maps using programmable shaders.</td></tr>
+
+</table>
+Note that several of the above options generate 3-D texture
+coordinates: (u, v, w) instead of just (u, v).  The third coordinate
+may be important if you have a 3-D texture or a cube map (described
+later), but if you just have an ordinary 2-D texture the extra
+coordinate is ignored.  (However, even with a 2-D texture, you might
+apply a 3-D transform to the texture coordinates, which would bring
+the third coordinate back into the equation.)
+
+Also, note that almost all of these options have a very narrow purpose;
+you would generally use most of these only to perform the particular
+effect that they were designed for.  This manual will discuss these
+special-purpose TexGen modes in later sections, as each effect is
+discussed; for now, you only need to understand that they exist, and
+not worry about exactly what they do.
+
+The mode that is most likely to have general utility is the first one:
+<code>MWorldPosition</code>.  This mode converts each vertex's (x, y, z) position
+into world space, and then copies those three numeric values to the
+(u, v, w) texture coordinates.  This means, for instance, that if you
+apply a normal 2-D texture to the object, the object's (x, y) position
+will be used to look up colors in the texture.
+
+For instance, the teapot.egg sample model that ships with Panda has no
+texture coordinates built in the model, so you cannot normally apply a
+texture to it.  But you can enable automatic generation of texture
+coordinates and then apply a texture:
+
+<pre class="codeblock">
+teapot = loader.loadModel('teapot.egg')
+tex = loader.loadTexture('maps/color-grid.rgb')
+teapot.setTexGen(TextureStage.getDefault(), TexGenAttrib.MWorldPosition)
+teapot.setTexture(tex)
+</pre> 
+
+And you end up with something like this:
+
+[[Image:Tex gen teapot xy.png|Teapot with a grid applied]]
+
+You can use this in conjunction with a texture transform to further
+manipulate the texture coordinates.  For instance, to rotate the
+texture 90 degrees, you could do something like this:
+
+<pre class="codeblock">
+teapot.setTexTransform(TextureStage.getDefault(), TransformState.makeHpr(VBase3(0, 90, 0)))
+</pre> 
+
+[[Image:Tex gen teapot xz.png|Teapot with a grid applied, rotated]]
+
+Finally, consider that the only two choices for the coordinate frame
+of the texture coordinate generation are "world" and "eye", for the
+root NodePath and the camera NodePath, respectively.  But what if you
+want to generate the texture coordinates relative to some other node,
+say the teapot itself?  The above images are all well and good for a
+teapot that happens to be situated at the origin, but suppose we want
+the teapot to remain the same when we move it somewhere else in the
+world?
+
+If you use only <code>MWorldPosition</code>, then when you change the teapot's
+position, for instance by parenting it to a moving node, the teapot
+will seem to move while its texture pattern stays in place--maybe not
+the effect you had in mind.  What you probably intended was for the
+teapot to take its texture pattern along with it as it moves around.
+To do this, you will need to compute the texture coordinates in the
+space of the teapot node, rather than in world space.
+
+Panda3D provides the capability to generate texture coordinates in the
+coordinate space of any arbitrary node you like.  To do this, use
+<code>MWorldPosition</code> in conjunction with Panda's "texture projector", which
+applies the relative transform between any two arbitrary NodePaths to
+the texture transform; you can use it to compute the relative
+transform from world space to teapot space, like this:
+
+<pre class="codeblock">
+teapot.setTexGen(TextureStage.getDefault(), TexGenAttrib.MWorldPosition)
+teapot.setTexProjector(TextureStage.getDefault(), render, teapot);
+</pre>
+
+It may seem a little circuitous to convert the teapot vertices to world space to generate the texture coordinates, and then convert the texture coordinates back to teapot space again--after all, didn't they start out in teapot space?  It would have saved a lot of effort just to keep them there!  Why doesn't Panda just provide an <code>MObjectPosition</code> mode that would convert texture coordinates from the object's native position?
+
+That's a fair question, and <code>MObjectPosition</code> would be a fine idea for a model as simple as the teapot, which is after all just one node.  But for more sophisticated models, which can contain multiple sub-nodes each with their own coordinate space, the idea of <code>MObjectPosition</code> is less useful, unless you truly wanted each sub-node to be re-textured within its own coordinate space.  Rather than provide this feature of questionable value, Panda3D prefers to give you the ability to specify the particular coordinate space you had in mind, unambiguously.
+
+Note that you <i>only</i> want to call <code>setTexProjector()</code> when you are using mode <code>MWorldPosition</code>.  The other modes are generally computed from vectors (for instance, normals), not positions, and it usually doesn't makes sense to apply a relative transform to a vector.

@@ -1,182 +1,73 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Geometrical MipMapping</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Geometrical_MipMapping" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Geometrical_MipMapping" title="Geometrical MipMapping">Geometrical MipMapping</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Geometrical_MipMapping" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus3"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus3-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pacattack/pacattack03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pacattack/pacattack03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Whack Back that Pac Attack!
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+The GeoMipTerrain generates terrain geometry from a heightfield image, but it does more than any bruteforce terrain generator: the GeoMipTerrain divides the terrain into multiple chunks, where each of them can have a different level of detail.
+The advantage of this approach is that, when the focal point (the place where the terrain has the highest quality, probably the camera) moves, not the entire terrain has to be regenerated to match the correct detail level, like the [[HeightfieldTesselator]], but only the chunks that have a different LOD can be regenerated. Also, it improves culling and collision detection.
+
+<h3>Basic Usage</h3>
+Using the GeoMipTerrain is quite easy, it does not require to write much complicated calculations:
+<pre class="codeblock">from pandac.PandaModules import GeoMipTerrain
+
+terrain = GeoMipTerrain("mySimpleTerrain")
+terrain.setHeightfield(Filename("yourHeightField.png"))
+#terrain.setBruteforce(True)
+terrain.getRoot().reparentTo(render)
+terrain.generate()</pre>
+First, the code creates a GeoMipTerrain instance. The <code>setHeightfield</code> call loads in a heightfield image. Preferrably this is a size of a power of two plus one (like 129, 257, 513, 1025, etc.), but if it is not, the GeoMipTerrain will automatically scale it up to the nearest correct size (which is quite slow). <code>setHeightfield</code> can take a [[PNMImage]], Texture or [[Filename]] instance.
+The <code>setBruteforce(True)</code> call sets the terrain to bruteforce rendering -- this means that the terrain is created at the highest quality (the lowest detail level), and LOD is not applied. In the next section we will explain how to set a LOD level and a Focal Point.
+The <code>getRoot()</code> call returns the NodePath of the terrain. It is then reparented to <code>render</code> to be a part of the scene graph. You can apply [[Common State Changes]] to this NodePath.
+Finally, the <code>generate()</code> call generates the terrain geometry. Note that if the terrain is still quite flat, you will have to scale the terrain NodePath in the Z direction, because by default, the Z positions are between 0 and 1. To fix this, scale the terrain up in the Z direction: (before generating it, otherwise it might require you to regenerate it.)
+<pre class="codeblock">terrain.getRoot().setSz(100)</pre>
+
+<h3>Dynamic Terrains</h3>
+This code shows a dynamically updated terrain with LOD:
+<pre class="codeblock"># Set up the GeoMipTerrain
+terrain = GeoMipTerrain("myDynamicTerrain")
+terrain.setHeightfield(Filename("yourHeightField.png"))
+
+# Set terrain properties
+terrain.setBlockSize(32)
+terrain.setNear(40)
+terrain.setFar(100)
+terrain.setFocalPoint(base.camera)
+
+# Store the root NodePath for convenience
+root = terrain.getRoot()
+root.reparentTo(render)
+root.setSz(100)
+
+# Generate it.
+terrain.generate()
+# Add a task to keep updating the terrain
+def updateTask(task):
+  terrain.update()
+  return task.cont
+taskMgr.add(updateTask, "update")</pre>
+This code shows a dynamically updated terrain, which is updated every frame with the camera as focal point.
+You see that a few functions are called: The blocksize is set to 32. This means that GeoMipTerrain has to divide the terrain in chunks of 32x32 quads. Then, the near and far distances are set. The Near distance is the distance from the focal point to where the terrain starts to decrease in quality. The far clip is the distance where the terrain is lowest quality.
+Also, the focal point is set to the Camera's NodePath; you can specify any NodePath you want, but also a Point2 or Point3. If you specify the latter, please note that only the X and Y positions are used to calculate the distance; the Z position is disregarded.
+Note that you need to experiment with those values to get a good quality terrain while still maintaining a good performance.
+
+Next, for convenience, the terrain root is stored in a separate variable, which is scaled and placed in the scene graph. The terrain is then initially generated, and a task is created which calls <code>terrain.update()</code> every frame. This function calculates the new LOD levels based on the movement of the focal point and updates the chunks which have got a new LOD level.
+
+<h3>Advanced Control</h3>
+The GeoMipTerrain provides some advanced features over the terrain:
+
+<b>Minimum Level</b><br>
+You can specify a minimum LOD level to GeoMipTerrain. You can do this if you find the terrain a bit too high quality near the focal point, and this could waste your performance. If you set a minimum LOD level, you can prevent this and force the chunks to have a minimum level of detail:
+<pre class="codeblock">terrain.setMinLevel(2)</pre>
+If you make the value higher, it will decrease the quality level near the focal point.
+
+<b>Automatic Flattening</b><br>
+Since flattening the terrain root might interfere with the updating system, GeoMipTerrain provides an auto-flattening function, which can be really useful if you have [http://panda3d.org/wiki/index.php/Performance_Issue:_Too_Many_Meshes too many meshes] in your scene. This function calls one of NodePath's flattening functions every time the terrain is regenerated, and each time before the chunks are modified the terrain is restored from a backup node.
+<pre class="codeblock">terrain.setAutoFlatten(GeoMipTerrain.AFMStrong)</pre>
+There are multiple options: AFMStrong, for flattenStrong(), AFMMedium, for flattenMedium(), AFMLight, for flattenLight(), and AFMOff, for no flattening at all. After setting the AutoFlattenMode, GeoMipTerrain will automatically take care of it at the next update() call.
+
+<h3>Notes</h3>
+* For a full function overview, see the [http://panda3d.org/apiref.php?page=GeoMipTerrain API page].
+* The near and far settings are only available in Panda3D versions 1.6.0 and higher. For older versions, use setFactor. This function is still available, for backward compatibility.
+* The GeoMipTerrain generates texture coordinates between 0 and 1, making the texture stretched over the entire terrain. If you are using a shader, please do <b>not</b> directly base the coordinates on the <code>vtx_position</code>, because since the terrain can have multiple chunks the vertex position is relative to the chunk. Instead, base your shader calculations on the <code>vtx_texcoord0</code> generated by the GeoMipTerrain.
+* The GeoMipTerrain class implements part of the GeoMipMapping algorithm, described in [http://www.flipcode.com/archives/article_geomipmaps.pdf this paper] by Willem H. de Boer.
+* In Panda3D versions 1.5.1 and 1.5.2 there is a bug in the bruteforce generator, which might cause your application to crash. It has been fixed in 1.5.3, please upgrade your Panda3D version if you are experiencing this crash.
+* PGMM / GeoMipTerrain is a community-contributed algorithm that is included in Panda3D from version 1.5.1. If you are using an older version of Panda3D, you can download a limited version at [http://panda3d.org/phpbb2/viewtopic.php?t=3028 the original forum topic].
+
+<h2>Incomplete Section</h2>
+
+Note: this section is incomplete.  It will be updated soon.

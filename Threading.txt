@@ -1,182 +1,78 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Threading</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Threading" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Threading" title="Threading">Threading</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Threading" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates05"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates05-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-spider/spider03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-spider/spider03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Spiderman game from Building Virtual Worlds class
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+'''Note:''' In versions 1.6.0 and above, Panda3D provides a safe threading interface you can use, which works very similar to Python's threading modules. It is not recommended to use threading before version 1.6 or to use Python's threading modules, since your application will then become highly unstable.
+
+If you want to test whether threading is enabled in your build of panda, use:
+<code python>from pandac.PandaModules import Thread
+print Thread.isThreadingSupported()</code>
+If threading is enabled, it's also possible to turn it off, for example if you want to test if a certain problem is related to threading.
+Put this in your [[Config.prc]]:
+<code prc>support-threads #f</code>
+
+<h1>Asynchronous Operations</h1>
+Panda3D provides several useful functions for loading models and doing other expensive operations in a thread, so the user of your application will not notice chugs in the frame rate.
+
+<h3>Model loading</h3>
+For example, <code>loader.loadModel</code> call also accepts an optional 'callback' argument.
+If callback is not None, then the model load will be performed asynchronously. In this case, <code>loadModel()</code> will initiate a background load and return immediately. The return value will be an object that may later be passed to <code>loader.cancelRequest()</code> to cancel the asynchronous request. At some later point, when the requested model(s) have finished loading, the callback function will be invoked with the n loaded models passed as its parameter list. It is possible that the callback will be invoked immediately, even before <code>loadModel()</code> returns. If you use callback, you may also specify a priority, which specifies the relative importance over this model over all of the other asynchronous load requests (higher numbers are loaded first).
+
+True asynchronous model loading requires Panda to have been compiled with threading support enabled. In the absence of threading support, the asynchronous interface still exists and still behaves exactly as described, except that <code>loadModel()</code> might not return immediately.
+
+<h3>Model flattening</h3>
+Similarly, there is <code>loader.asyncFlattenStrong</code>. This performs a <code>model.[func]flattenStrong[/func]()</code> operation in a sub-thread (if threading is compiled into Panda). The model may be a single NodePath, or it may be a list of NodePaths.<br>
+Each model is duplicated and flattened in the sub-thread.
+If the optional <code>inPlace</code> parameter is True, then when the flatten operation completes, the newly flattened copies are automatically dropped into the scene graph, in place the original models.<br>
+If a callback is specified, then it is called after the operation is finished, receiving the flattened model (or a list of flattened models).<br>
+The <code>loader.cancelRequest()</code> method works for asyncFlattenStrong as well.
+
+<h3>Texture uploading</h3>
+In addition, you can further ask textures to be loaded to the graphics card asynchronously. This means that the first time you look at a particular model, the texture might not be available; but instead of holding up the frame while we wait for it to be loaded, Panda can render the model immediately, with a flat color instead of the texture; and start the texture loading in the background. When the texture is eventually loaded, it will be applied. This results in fewer frame-rate chugs, but it means that the model looks a little weird at first. It has the greatest advantage when you are using lazy-load textures as well as texture compression, because it means these things will happen in the background.
+You will need these configuration options to enable this behavior:
+<code prc>preload-textures 0
+preload-simple-textures 1
+texture-compression 1
+allow-incomplete-render 1</code>
+
+<h3>Animation loading</h3>
+A similar behavior can be enabled for Actors, so that when you have an Actor with a large number of animations (too many to preload them all at once), you can have the Actor load them on-demand, so that when you play an animation, the animation may not start playing immediately, but will instead be loaded in the background. Until it is ready, the actor will hold its last pose, and then when the animation is fully loaded, the actor will start playing where it would have been had the animation been loaded from the beginning. To make this work, you have to run all of the animations through <code>egg-optchar</code> with the <code>-preload</code> option, and you might also want to set:
+<code prc>allow-async-bind 1
+restore-initial-pose 0</code>
+
+<h1>Threading</h1>
+If you want to use threading with Panda3D, it's not recommended to use Python's built-in threading modules, since you will most likely run into issues (for Panda3D is written in C++ and thus does not use the Python threading modules).
+However, Panda3D offers a threading implementation that is safe to use, by reimplementing Python's "thread" and "threading" modules, these work the same as the Python built-in threading modules but are actually safe to use with Panda3D.
+
+You can get access to Panda3D's implementation of Python's "thread" module by importing the "thread" module from direct.stdpy:
+<code python># WRONG:
+import thread
+# RIGHT:
+from direct.stdpy import thread</code>
+
+For the Python module "threading", Panda3D offers two equivalents, "threading" and "threading2", which you can find both in direct.stdpy also.
+The "threading" module implements the threading module with a thin layer over Panda's threading constructs.  As such, the semantics are close to, but not precisely, the semantics documented for Python's standard threading module.  If you really do require strict adherence to Python's semantics, see the threading2 module instead.
+
+In fact, the threading2 module is a bald-face copy of Python's threading module from Python 2.5, with a few lines at the top to import Panda's thread reimplementation instead of the system thread module, and so it is therefore layered on top of Panda's thread implementation.
+
+However, if you don't need such strict adherence to Python's original semantics, the "threading" module is probably a better choice.  It is likely to be slightly faster than the threading2 module (and even slightly faster than Python's own threading module).  It is also better integrated with Panda's threads, so that Panda's thread debug mechanisms will be easier to use and understand.
+
+<code python># WRONG:
+import threading
+# RIGHT:
+from direct.stdpy import threading
+# ALSO RIGHT:
+from direct.stdpy import threading2 as threading</code>
+
+It is permissible to mix-and-match both threading and threading2
+within the same application.
+
+<h1>File I/O</h1>
+In versions 1.6.0 and above, Panda3D also offers a thread-safe replacement for the Python file module. You can find it in direct.stdpy.file. The interface is exactly the same as Python's, so it's safe to put this import above all the files where you want to use the "file" or "open" functions:
+<code python>from direct.stdpy.file import *</code>
+This module reimplements Python's file I/O mechanisms using Panda constructs.  This enables Python to interface more easily with Panda's virtual file system, and it also better-supports Panda's SIMPLE_THREADS model, by avoiding blocking all threads while waiting for I/O to complete.
+
+<h1>Compiling Panda3D with threading support</h1>
+There are two different interfaces for threading which you can enable using the definitions HAVE_THREADS and SIMPLE_THREADS. The former is a full and heavy implementation of threading and compiling with that option will slow down the Panda3D build, unless you fully make use of the benefits that threading gives. The latter, however, is a more simple threading interface (introduced in Panda3D 1.6.0) that doesn't give you the runtime overhead HAVE_THREADS gives you. In Panda3D 1.6.1 and higher, SIMPLE_THREADS is enabled in the default build.
+
+Note that you will have to define both HAVE_THREADS and SIMPLE_THREADS at the same time to enable the simple interface, or you will not have threading.
+
+In the makepanda system, SIMPLE_THREADS is automatically defined for you. If you don't want it, or want to use the more heavy HAVE_THREADS instead, you will need to edit the makepanda.py script and change the definitions.
+
+If you use ppremake, you will just need to define either in your Config.pp file.

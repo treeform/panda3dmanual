@@ -1,1 +1,0 @@
-#REDIRECT [[How to build a CXX Panda3D game on Linux]]

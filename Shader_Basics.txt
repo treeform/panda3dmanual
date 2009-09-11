@@ -1,182 +1,112 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Shader Basics</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Shader_Basics" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Shader_Basics" title="Shader Basics">Shader Basics</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Shader_Basics" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates06"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates06-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<h2>Writing Panda3D Shaders</h2>
+
+Currently, Panda3D only supports the <code>Cg</code> shading language, and as of version 1.7.0, also the OpenGL shading language, <code>GLSL</code>.  This section assumes that you have a working knowledge of a shader language.  If not, it would be wise to read about Cg or GLSL before trying to understand how they fit into Panda3D.
+
+== Cg shaders ==
+
+To write a Cg shader, you must create a shader program that looks much like the one shown below. This example preserves position but switches the red and green channels of everything it is applied to:
+
+<code cg>//Cg
+
+void vshader(float4 vtx_position : POSITION,
+  float4 vtx_color: COLOR,
+  out float4 l_position : POSITION,
+  out float4 l_color0 : COLOR0,
+  uniform float4x4 mat_modelproj)
+{
+  l_position=mul(mat_modelproj, vtx_position);
+  l_color0=vtx_color;
+}
+
+void fshader(
+  float4 l_color0 : COLOR0,
+  out float4 o_color : COLOR)
+{
+  o_color=float4(l_color0[1],l_color0[0], l_color0[2],l_color0[3]);
+}
+</code>
+
+The first line of a Cg shader needs to be <i>//Cg</i>. Do not put a space between the two slashes and the word "Cg".
+
+== GLSL shaders ==
+
+To write a GLSL shader, you must write your vertex, pixel (and geometry) shader separately. This example preserves position but switches the red and green channels of everything it is applied to.
+
+This is the vertex shader. Since this does the default operation, you can omit it.
+<code glsl>void main() {
+  gl_Position = ftransform();
+}
+</code>
+
+This is the fragment shader:
+<code glsl>void main() {
+  gl_FragColor = vec4(gl_Color.g, gl_Color.r, gl_Color.b, 1.0);
+}
+</code>
+
+== Applying the shader ==
+
+The shader must contain the two subroutines named <code>vshader</code> and <code>fshader</code>, the vertex shader and fragment shader.  In addition, in the case of Cg, it may contain additional routines named <code>vshader1</code>, <code>fshader1</code>, <code>vshader2</code>, <code>fshader2</code>, and so forth.  These latter pairs of subroutines represent fallback codepaths, to be used when the video card doesn't support the first pair.  If none of the pairs is supported, the shader is disabled and has no effect (ie, rendering proceeds normally using the standard pipeline).
+
+In the following code sample, a shader is loaded and applied to a model:
+
+[python]<code python>
+myShader = Shader.load("myshader.sha")
+myModel.setShader(myShader)
+</code>[/python]
+[cxx]<code cxx>
+PT(Shader) myShader = Shader::load("myshader.sha");
+myModel.set_shader(myShader);
+</code>[/cxx]
+
+In the first line, the shader is loaded.  The object returned is of class <code>Shader</code>.  The call to <code>[func]setShader[/func]</code> causes myModel to be rendered with that shader.  Shaders propagate down the scene graph: the node and everything beneath it will use the shader.
+
+<h2>The Shader can Fetch Data from the Panda Runtime</h2>
+
+<b>Note:</b> This information, and many other information in the manual, only applies to Cg.
+
+Each shader program contains a parameter list.  Panda3D scans the parameter list and interprets each parameter name as a request to extract data from the panda runtime.  For example, if the shader contains a parameter declaration <code>float3 vtx_position : POSITION</code>, Panda3D will interpret that as a request for the vertex position, and it will satisfy the request.  Panda3D will only allow parameter declarations that it recognizes and understands.
+
+Panda3D will generate an error if the parameter qualifiers do not match what Panda3D is expecting.  For example, if you declare the parameter <code>float3 vtx_position</code>, then Panda3D will be happy. If, on the other hand, you were to declare <code>uniform shader2d vtx_position</code>, then Panda3D would generate two separate errors: Panda3D knows that vtx_position is supposed to be a float-vector, not a texture, that it is supposed to be varying, not uniform.
+
+Again, all parameter names must be recognized.  There is a [[List of Possible Shader Inputs|list of possible shader inputs]] that shows all the valid parameter names, and the data that Panda3D will supply.
+
+<h2>Supplying data to the Shader Manually</h2>
+
+Most of the data that the shader could want can be fetched from the panda runtime system by using the appropriate parameter names.  However, it is sometimes necessary to supply some user-provided data to the shader.  For this, you need <code>[func]setShaderInput[/func]</code>. Here is an example:
+
+[python]<code python>
+myModel.setShaderInput("tint", Vec4(1.0, 0.5, 0.5, 1.0))
+</code>[/python]
+[cxx]<code cxx>
+myModel.set_shader_input("tint", LVector4f(1.0, 0.5, 0.5, 1.0));
+</code>[/cxx]
+
+The method <code>[func]setShaderInput[/func]</code> stores data that can be accessed by the shader.  It is possible to store data of type Texture, NodePath, and Vec4.  The <code>[func]setShaderInput[/func]</code> method also accepts separate floating point numbers, which it combines into a Vec4.
+
+The data that you store using <code>[func]setShaderInput[/func]</code> isn't necessarily used by the shader.  Instead, the values are stored in the node, but unless the shader explicitly asks for them, they will sit unused.  So the <code>[python]setShaderInput("tint", Vec4(1.0, 0.5, 0.5, 1.0))[/python][cxx]set_shader_input("tint", LVector4f(1.0, 0.5, 0.5, 1.0))[/cxx]</code> above simply stores the vector, it is up to the shader whether or not it is interested in a data item labeled "tint."
+
+To fetch data that was supplied using <code>[func]setShaderInput[/func]</code>, the shader must use the appropriate parameter name.  See the [[List of Possible Shader Inputs|list of possible shader inputs]], many of which refer to the data that was stored using <code>[func]setShaderInput[/func]</code>.
+
+Shader Inputs propagate down the scene graph, and accumulate as they go. For example, if you store <code>[func]setShaderInput[/func]("x",1)</code> on a node, and <code>[func]setShaderInput[/func]("y",2)</code> on its child, then the child will contain both values.  If you store <code>[func]setShaderInput[/func]("z",1)</code> on a node, and <code>[func]setShaderInput[/func]("z",2)</code> on its child, then the latter will override the former.  The method <code>[func]setShaderInput[/func]</code> accepts a third parameter, priority, which defaults to zero.  If you store <code>[func]setShaderInput[/func]("w",1,1000)</code> on a node, and <code>[func]setShaderInput[/func]("w",2,500)</code> on the child, then the child will contain ("w"==1), because the priority 1000 overrides the priority 500.
+
+<h2>Shader Render Attributes</h2>
+
+The functions <code>nodePath.[func]setShader[/func]</code> and <code>nodePath.[func]setShaderInput[/func]</code> are used to apply a shader to a node in the scene graph.  Internally, these functions manipulate a render attribute of class <code>ShaderAttrib</code> on the node.
+
+In rare occasions, it is necessary to manipulate ShaderAttrib objects explicitly.  The code below shows how to create a ShaderAttrib and apply it to a camera, as an example.
+
+<code python>
+myShaderAttrib = ShaderAttrib.make()
+myShaderAttrib = myShaderAttrib.setShader(Shader.load("myshader.sha"))
+myShaderAttrib = myShaderAttrib.setShaderInput("tint", Vec4(1.0,0.5,0.5,1.0))
+base.cam.node().setInitialState(render.getState().addAttrib(myShaderAttrib))
+</code>
+
+Be careful: attribs are immutable objects.  So when you apply a function like <code>[func]setShader[/func]</code> or <code>[func]setShaderInput[/func]</code> to a ShaderAttrib, you aren't modifying the attrib.  Instead, these functions work by returning a new attrib (which contains the modified data).
+
+<h2>Deferred Shader Compilation</h2>
+
+When you create an object of class shader, it compiles the shader, checking for syntax errors.  But it does not check whether or not your video card is powerful enough to handle the shader.  Panda3D only does that later on, when you try to render something with the shader.
+
+In the unusual event that your computer contains multiple video cards, the shader may be compiled more than once.  It is possible that the compilation could succeed for one video card, and fail for the other.

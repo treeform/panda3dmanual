@@ -1,182 +1,128 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Controlling the Camera</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Controlling_the_Camera" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Controlling_the_Camera" title="Controlling the Camera">Controlling the Camera</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Controlling_the_Camera" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-spider/spider01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-spider/spider01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Spiderman game from Building Virtual Worlds class
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+By default, Panda3D runs a task that enables you to move
+the camera using the mouse. [cxx]To enable it, use the following command:
+<code cxx>window->setup_trackball();</code>[/cxx]
+
+The keys to navigate are:
+
+<ul>
+<li>Left Button: pan left and right
+<li>Right Button: move forwards and backwards
+<li>Middle Button: rotate around the origin of the application
+<li>Right and Middle Buttons: roll the point of view around the view axis
+</ul>
+
+Go ahead and try this camera control system.  The
+problem with this camera control system is that it is sometimes
+awkward, it is not always easy to get the camera pointed in the
+direction we want.
+
+Instead, we are going to write a <i>task</i> that
+controls the camera's position explicitly.  A <i>task</i> is nothing
+but a subroutine that gets called every frame.  Update your code
+as follows:
+
+[python]<code python>
+import direct.directbase.DirectStart
+from direct.task import Task
+from direct.actor import Actor
+import math
+
+#Load the first environment model
+environ = loader.loadModel("models/environment")
+environ.reparentTo(render)
+environ.setScale(0.25,0.25,0.25)
+environ.setPos(-8,42,0)
+
+#Task to move the camera
+def SpinCameraTask(task):
+  angledegrees = task.time * 6.0
+  angleradians = angledegrees * (math.pi / 180.0)
+  base.camera.setPos(20*math.sin(angleradians),-20.0*math.cos(angleradians),3)
+  base.camera.setHpr(angledegrees, 0, 0)
+  return Task.cont
+
+taskMgr.add(SpinCameraTask, "SpinCameraTask")
+
+run()
+</code>[/python]
+[cxx]<code cxx>#include "pandaFramework.h"
+#include "pandaSystem.h"
+
+#include "genericAsyncTask.h"
+#include "asyncTaskManager.h"
+
+PandaFramework framework;
+// The global task manager
+PT(AsyncTaskManager) taskMgr = AsyncTaskManager::get_global_ptr(); 
+// The global clock
+PT(ClockObject) globalClock = ClockObject::get_global_clock();
+// Here's what we'll store the camera in.
+NodePath camera;
+
+// This is our task - a global or static function that has to return DoneStatus.
+// The task object is passed as argument, plus a void* pointer, cointaining custom data.
+// For more advanced usage, we can subclass AsyncTask and override the do_task method.
+AsyncTask::DoneStatus SpinCameraTask(GenericAsyncTask* task, void* data) {
+  // Calculate the new position and orientation (inefficient - change me!)
+  double time = globalClock->get_real_time();
+  double angledegrees = time * 6.0;
+  double angleradians = angledegrees * (3.14 / 180.0);
+  camera.set_pos(20*sin(angleradians),-20.0*cos(angleradians),3);
+  camera.set_hpr(angledegrees, 0, 0);
+
+  // Tell the task manager to continue this task the next frame.
+  return AsyncTask::DS_cont;
+}
+
+int main(int argc, char *argv[]) {
+  // Open a new window framework and set the title
+  framework.open_framework(argc, argv);
+  framework.set_window_title("My Panda3D Window");
+
+  // Open the window
+  WindowFramework *window = framework.open_window();
+  camera = window->get_camera_group(); // Get the camera and store it
+
+  // Load the environment model
+  NodePath environ = window->load_model(framework.get_models(),"models/environment");
+  environ.reparent_to(window->get_render());
+  environ.set_scale(0.25,0.25,0.25);
+  environ.set_pos(-8,42,0);
+
+  // Add our task.
+  // If we specify custom data instead of NULL, it will be passed as second argument
+  // to the task function.
+  taskMgr->add(new GenericAsyncTask("Spins the camera", &SpinCameraTask, (void*) NULL));
+  
+  // Do the main loop - then close up.
+  framework.main_loop();
+  framework.close_framework();
+  return (0);
+}</code>[/cxx]
+
+The function <code>taskMgr[->]add</code> tells panda's <i>task manager</i> to call the subroutine <code>SpinCameraTask</code> every frame.  This is a subroutine that we have written to control the camera.  As long as the subroutine <code>SpinCameraTask</code> returns the constant <code>[cxx]Async[/cxx]Task[::][cxx]DS_[/cxx]cont</code>, the task manager will continue to call it every frame.
+
+[cxx]The object passed to <code>taskMgr->add</code> is an <code>AsyncTask</code> object. We can use <code>GenericAsyncTask</code> to wrap a global function or static method around a task. We can also pass an additional <code>void*</code> parameter that we can cast into a pointer of any data type we like, which is passed as argument to the task function. A GenericAsyncTask function must look like the following:
+
+<code cxx>AsyncTask::DoneStatus your_task(GenericAsyncTask* task, void* data) {
+  // Do your stuff here.
+
+  // Tell the task manager to continue this task the next frame.
+  // You can also pass DS_done if this task should not be run again.
+  return AsyncTask::DS_cont;
+}</code>
+
+For more advanced usage, you can subclass AsyncTask and override the <code>do_task</code> method to make it do what you want.[/cxx]
+
+In our code, the subroutine <code>SpinCameraTask()</code> calculates the desired position of
+the camera based on how much time has elapsed.  The camera rotates 6
+degrees every second.  The first two lines compute the desired
+orientation of the camera, first in degrees, then in radians.  The <code>[func]setPos[/func]</code> call actually sets the position of the camera.
+(Remember that Y is horizontal and Z is vertical, so the position is changed by animating X and Y while Z is left fixed at 3 units above ground level.) The <code>[func]setHpr[/func]</code> call actually sets the orientation.
+
+The camera should no longer be underground, and
+furthermore, the camera should now be rotating about the clearing:
+
+[[Image:Tutorial2.jpg]]
+
+For more information about tasks, visit [[Tasks|this]] page.

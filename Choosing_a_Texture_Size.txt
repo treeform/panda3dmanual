@@ -1,182 +1,104 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Choosing a Texture Size</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Choosing_a_Texture_Size" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Choosing_a_Texture_Size" title="Choosing a Texture Size">Choosing a Texture Size</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Choosing_a_Texture_Size" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<b>Standard Texture Sizes</b>
+
+Most graphics hardware requires that your texture images always
+be a size that is a power of two in each dimension.  That means you
+can use any of the following choices for a texture size: 1, 2, 4, 8,
+16, 32, 64, 128, 256, 512, 1024, 2048, or so on (but unless you have a
+<i>really</i> high-end card, you'll probably need to stop there).
+
+The textures don't usually have to be <i>square:</i> they don't have
+to have the same size in both dimensions.  But each dimension does
+usually have to be a power of two.  So 64 &times; 128 is all
+right, for instance, or 512 &times; 32, or
+256 &times; 256.  But you can't make a texture image that is
+200 &times; 200 pixels, since 200 isn't a power of two.
+
+By default, Panda3D will automatically rescale any texture image
+down to the nearest smaller power of two when you read it from disk,
+so you usually don't have to think about this--but your application
+will load faster if you scale your textures properly in the first
+place.
+
+If you would like Panda3D to rescale your images up to the next larger power of two instead of down to the next smaller power of two, use:
+
+<pre class="codeblock">
+textures-power-2 up
+</pre>
+
+In your config file.  The default is:
+
+<pre class="codeblock">
+textures-power-2 down
+</pre>
+
+Note that the size you choose for the texture image has
+nothing to do with the size or shape of the texture image
+onscreen--that's controlled by the size and shape of the polygon you
+apply it to.  Making a texture image larger won't make it make it
+appear larger onscreen, but it will tend to make it crisper and more
+detailed.  Similarly, making a texture smaller will tend to make it
+fuzzier.
+
+<b>Padded Textures</b>
+
+Sometimes, you need to load data into a texture every frame.
+The most common example is when you're playing a movie.  Let's say,
+for example, that the movie is encoded at 640x480 at 30fps.  Neither
+of those dimensions is a power-of-two. It would theoretically be
+possible for Panda3D to rescale the image to 512x512, but it would
+have to do it 30 times per second, which is too expensive to be
+practical.
+
+Instead, panda <i>pads</i> the data.  Panda creates a 1024x512
+texture, which is the smallest power-of-two size that can
+hold a 640x480 movie.  It sticks the 640x480 movie
+into the lower-left corner of the texture.  Then, it adds a black
+border to the right edge and top edge of the movie, padding it
+out to 1024x512.
+
+From that point forward, it's just a texture with a movie in the
+lower-left corner, and black bars on the upper and right sides.
+However, if you use UV coordinates carefully, you can cause just
+the movie to be displayed.  To do this, you need to know how big those
+black bars are:
+
+<pre class="codeblock">
+padx = texture.getPadXSize()
+pady = texture.getPadYSize()
+</pre>
+
+Panda3D only uses padded textures in a few very special cases:
+1. When playing a non-power-of-two movie.
+2. When using render-to-texture, and a non-power-of-two buffer.
+
+<b>Nonstandard Texture Sizes</b>
+
+Some newer graphics cards can render textures that are not a power of
+two.  This is generally not very useful for loading art from disk: after
+all, game art is usually created in power-of-two sizes no matter what.
+However, it is useful to avoid wasteful movie padding of the kind described
+above.  If you have one of these cards and you want to enable the use
+of non-power-of-two textures, you can put the following line in
+your Config.prc:
+
+<pre class="codeblock">
+textures-power-2 none
+</pre>
+
+You can also attempt to have panda detect your video card's capabilities automatically, using this command:
+
+<pre class="codeblock">
+textures-auto-power-2 #t
+</pre>
+
+If this variable is true, then panda will wait until you open a window, and
+then ask the window's driver if the driver supports non-power-of-two
+textures.  If so, then the config variable <code>textures_power_2</code> will automatically be adjusted.  In this way, you can configure Panda3D to use non-power-of-two textures if they are available.
+
+Caution: there is a potential pitfall when using <code>textures-auto-power-2</code>.  If you open a window that supports non-power-of-two textures, panda will switch into <code>textures-power-2 none</code> mode.  If you then open a <i>second</i> window using a different video card which doesn't support non-power-of-two textures, then panda will have no choice but to print an error message.
+
+Note that some cards <i>appear</i> to be able to render
+non-power-of-two textures, but the driver is really just scaling the
+textures at load time.  With cards like these, you're better off
+letting Panda do the scaling, or dynamic textures may render
+<i>very</i> slowly.

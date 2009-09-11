@@ -1,1 +1,0 @@
-#REDIRECT [[Building an installer using packpanda]]

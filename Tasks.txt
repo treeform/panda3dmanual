@@ -1,182 +1,209 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Tasks</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Tasks" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Tasks" title="Tasks">Tasks</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Tasks" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus8"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus8-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-keepsake/keepsake01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-keepsake/keepsake01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Keepsake: a short interactive movie, themes of loss
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Tasks are special functions that are called once, each frame, while your application executes.  They are similar in concept to threads, but in Panda, tasks are not generally separate threads; instead, all tasks are run cooperatively, one at a time, within the main thread.  This design simplifies game programming considerably by removing the requirement to protect critical sections of code from mutual access.  (But see Task Chains in the next section if you really want to use threading.)
+
+When you start Panda3D by importing DirectStart, a handful of tasks are created by default, but you are free to add as many additional tasks as you like.
+
+<h2>The Task Function</h2>
+
+A task is defined with a function or class method; this function is the main entry point for the task and will be called once per frame while the task is running.  By default, the function receives one parameter, which is the task object; the task object carries information about the task itself, such as the amount of time that the task has been running.
+
+Your task function should return when it has finished processing for the frame.  Because all tasks are run in the same thread, you must not spend too much time processing any one task function; the entire application will be locked up until the function returns.
+
+The task function may return either <code>Task.cont</code> to indicate that the task should be called again next frame, or <code>Task.done</code> to indicate that it should not be called again.  If it returns None (which is to say, it does not return anything), then the default behavior is to stop.
+
+You can check how long your task has been running by checking <code>task.time</code> in your task function. You can also check how many times the task function has been run by using <code>task.frame</code>.
+
+The below example imports the Task module and shows a function used as a task.
+
+<pre class="codeblock">
+from direct.task import Task
+
+#This task runs for two seconds, then prints done
+def exampleTask(task):
+  if task.time < 2.0:
+    return Task.cont
+  print 'Done'
+  return Task.done
+</pre>
+
+<h2>Task Return Values</h2>
+
+The value returned from a task affects how the task manager handles that task going forward.
+
+<center>
+<table border=1 cellpadding=1 cellspacing=0>
+<tr>
+<th>Variable</th>
+<th align="left">Purpose</th>
+</tr>
+<tr>
+<td><code>Task.done</code>
+<td>Specifies that a task is finished and removes it from the task manager.</td>
+</tr>
+<tr>
+<td><code>Task.cont</code></td>
+<td>Perform the task again next frame.</td>
+</tr>
+<tr>
+<td><code>Task.again</code></td>
+<td>Perform the task again, using the same delay as initially specified.</td>
+</tr>
+<tr>
+<td><code>None</code></td>
+<td>Same as done.</td>
+</tr>
+</table></center>
+
+<h2>The Do-Later Task</h2>
+
+A useful special kind of task is the do-later: this is similar to a task, but rather than being called every frame it will be called only once, after a certain amount of time (in seconds) has elapsed.  You can, of course, implement a do-later task with a regular task that simply does nothing until a certain amount of time has elapsed (as in the above example), but using a do-later is a much more efficient way to achieve the same thing, especially if you will have many such tasks waiting around.
+
+<pre class="codeblock">
+taskMgr.doMethodLater(delayTime, myFunction, 'Task Name')
+</pre>
+
+In this example myFunction must accept a task variable.  If you wish to use a function that does not accept a task variable:
+
+<pre class="codeblock">
+taskMgr.doMethodLater(delayTime, myFunction, 'Task Name', extraArgs = [variables])
+</pre>
+
+Note: if you wish to call a function which takes no variables simply pass <code>extraArgs = []</code>
+
+Do-Later task's can be repeated from the task function by returning <code>task.again</code>. You can also change the delay of the Do-Later task by changing <code>task.delayTime</code>, but changing this will not have any affect on the task's actual delay time until the <i>next</i> time it gets added to the do-later list, for instance by returning Task.again.
+
+<pre class="codeblock">
+# This task increments itself so that the delay between task executions 
+# gradually increases over time. If you do not change task.delayTime
+# the task will simply repeat itself every 2 seconds
+def myFunction(task):
+    print "Delay:",task.delayTime
+    print "Frame:",task.frame
+    task.delayTime += 1
+    return task.again
+
+myTask = taskMgr.doMethodLater(2, myFunction, 'tickTask')
+</pre>
+
+If you wish to change the delayTime outside of the task function itself, and have it make an immediate affect, you can remove and re-add the task by hand, for instance:
+<pre class="codeblock">
+taskMgr.remove(task)
+task.delayTime += 1
+taskMgr.add(task)
+</pre>
+
+Although there is a public member <code>task.wakeTime</code> which stores the time at which the task should wake up, you should not attempt to modify this.  Doing so may appear to work in some simple cases, but will actually invalidate the Task Manager's internal priority queue, potentially causing other tasks to wake up later or sooner than they are supposed to.  (In Panda version 1.6 and later, changing this value is specifically disallowed.)
+
+<h2>The Task Object</h2>
+
+The <code>task</code> object is passed into all Task Functions. There are several variables accessible in the func object, these are:
+
+<center>
+<table border=1 cellpadding=1 cellspacing=0>
+<tr>
+<th>Variable</th>
+<th align="left">Returns</th>
+</tr>
+<tr>
+<td><code>task.time</code>
+<td>A float that indicates how long this task function has been running since the first execution of the function. The timer is running even when the task function is not being executed.</td>
+</tr>
+<tr>
+<td><code>task.frame</code></td>
+<td>An integer that counts the number of elapsed frames since this function was added. Count may start from 0 or 1.</td>
+</tr>
+<tr>
+<td><code>task.id</code></td>
+<td>An integer that gives the unique id assigned to this task by the Task Manager.</td>
+</tr>
+<tr>
+<td><code>task.name</code></td>
+<td>The task name assigned to the task function.</td>
+</tr>
+</table></center>
+
+To remove the task and stop it from executing, call <code>task.remove()</code>.
+
+<h2>The Task Manager</h2>
+
+All tasks are handled through the global Task Manager object, called <code>taskMgr</code> in Panda3D.  The Task Manager keeps a list of all currently-running tasks.  To add your task function to the task list, call <code>taskMgr.add()</code> with your function and an arbitrary name for the task. <code>taskMgr.add()</code> returns a Task which can be used to remove the task later on.
+
+<pre class="codeblock">
+taskMgr.add(exampleTask, 'MyTaskName')
+</pre>
+
+You can add extra arguments to the call through the extraArgs parameter. When you add extraArgs, the task parameter is no longer sent to your function by default. If you still want it, make sure to set appendTask to true. <code>appendTask=True</code> makes the task the last argument sent to the function.
+
+<pre class="codeblock">
+taskMgr.add(exampleTask, 'MyTaskName', extraArgs=[a,b,c], appendTask=True)
+</pre>
+
+Although normally each task is given a unique name, you may also create multiple different tasks with the same name.  This can be conventient for removing many task functions at the same time.  Each task remains independent of the others, even if they have the same name; this means that a task function returning <code>Task.done</code> will not affect any other task functions.
+
+<pre class="codeblock">
+taskMgr.add(taskFunc, 'Existing TaskName')
+</pre>
+
+To remove the task and stop it from executing, call <code>taskMgr.remove()</code>.  You can pass in either the name of the task, or the task object (which was returned by <code>taskMgr.add()</code>, above).
+
+<pre class="codeblock">
+taskMgr.remove('MyTaskName')
+</pre>
+
+You may add a cleanup function to the task function with the uponDeath parameter. Similar to task functions, the uponDeath function has a task object as a parameter.  The cleanup function is called whenever the task finishes, for instance by <code>return Task.done</code>, or when it is explicitly removed via <code>taskMgr.remove()</code>.
+
+<pre class="codeblock">
+taskMgr.add(exampleTask, 'TaskName', uponDeath=cleanupFunc)
+</pre>
+
+To print the list of tasks currently running, simply print out <code>taskMgr</code>.  Among your own tasks, you may see the following system tasks listed:
+
+<center><table border=1 cellpadding=1 cellspacing=0>
+<tr><td>dataloop</td><td>      Processes the keyboard and mouse inputs</td></tr>
+<tr><td>tkloop</td><td>      Processes Tk GUI events</td></tr>
+<tr><td>eventManager</td><td>      Processes events generated by C++ code, such as collision events</td></tr>
+<tr><td>igloop</td><td>      Draws the scene</td></tr>
+</table></center>
+
+There also is graphical interface for managing tasks. This is very useful for having a look at the tasks while your application is running. 
+<pre class="codeblock">
+taskMgr.popupControls()
+</pre>
+
+
+<h2> Task timing </h2>
+
+To see the specific timing information for each task when you print taskMgr, add the following line to your Config.prc file
+
+<pre class="codeblock">
+task-timer-verbose #t
+</pre>
+
+(see [[The Configuration File]] for config syntax)
+
+<h2>Examples</h2>
+
+<b>uponDeath</b>
+
+<pre class="codeblock">
+taskAccumulator = 0
+
+def cleanUp(task):
+  global taskAccumulator
+  print "Task func has accumulated",taskAccumulator
+  #Reset the accumulator
+  taskAccumulator = 0
+
+#A task that runs forever
+def taskFunc(task):
+  global taskAccumulator
+  taskAccumulator += 1
+  return Task.cont
+
+def taskStop(task):
+  taskMgr.remove('Accumulator')
+
+#Add the taskFunc function with an uponDeath argument
+taskMgr.add(taskFunc, 'Accumulator', uponDeath=cleanUp)
+#Stops the task 2 seconds later
+taskMgr.doMethodLater(2, taskStop, 'Task Stop')
+</pre>

@@ -1,181 +1,163 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: FAQ</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=FAQ" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/FAQ" title="FAQ">FAQ</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=FAQ" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus6"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus6-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-guidinglights/guidinglights01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-guidinglights/guidinglights01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">In Guiding Lights, the audience steers a moth to safety</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-jamomix/jamomix8"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-jamomix/jamomix8-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Jam-o-Drum: four players around a circular table.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+__TOC__
+
+== Q: What is the .pz files I am seeing the samples? ==
+=== A: Those are zipped files that are zipped with panda pzip/punzip command line tools tools that panda3d knows how to read  ===
+Usage:
+   pzip file [file2 file3 ...]
+   pzip -o dest_file file
+Usage:
+   punzip file.pz [file2.pz file3.pz ...]
+   punzip -o dest_file file.pz
+
+== Q: What is the .pyc files i that are created every where? ==
+=== A: .pyc and .pyo are python compiled and python optimized compiled files ===
+As an important speed-up of the start-up time for short programs that use a lot of standard modules, if a file called "spam.pyc" exists in the directory where "spam.py" is found, this is assumed to contain an already-``byte-compiled'' version of the module spam. The modification time of the version of "spam.py" used to create "spam.pyc" is recorded in "spam.pyc", and the file is ignored if   these don't match.
+http://www.python.org/doc/1.5.1p1/tut/node43.html
+
+== Q: I have a bunch of Maya Animations of one model in different mb files. I used maya2egg to port them into panda, but only one of the animations work. ==
+=== A: The key is to use the -cn <character's name> flag in maya2egg for every file. This ensures that the files work together. ===
+
+Let's say you are making an animated dog.
+You have the following animations:
+    dog-walk.mb
+    dog-sit.mb
+    dog-run.mb
+
+To convert these into panda, you would call
+    maya2egg6 dog-walk.mb -a model -cn dog -o dog-model.egg
+
+Note, we can grab the model from any of the animations, as long as they are all using the exact same rig:
+
+    maya2egg6 dog-walk.mb -a chan -cn dog -o dog-walk.egg
+    maya2egg6 dog-sit.mb -a chan -cn dog -o dog-sit.egg
+    maya2egg6 dog-run.mb -a chan -cn dog -o dog-run.egg
+
+
+== Q: I'm using the lookAt function on a nodepath to point it at another object. It works fine until I point upwards, and then it starts to spin my object around randomly ==
+=== A: lookAt works as long as you aren't telling it to look in the direction of its up vector. Luckily, you can specify the up vector as the second argument. ===
+
+    lookAt(object,Vec3(0,0,1))
+
+
+== Q: I'm building a 3d game, and I have a huge world. When my world starts up, the program hangs for a few seconds the first time I look around. Is there any way to avoid this? ==
+
+=== A: It can take a while to prepare objects to be rendered. ===
+
+Ideally, you don't want this to happen the first time you see an object. You can offload the wait time to the beginning by calling:
+
+    # self.myWorld is a nodepath that contains a ton of objects
+    self.myWorld.prepareScene(base.win.getGsg())
+
+This will walk through the scene graph, starting at self.myWorld, and prepare each object for rendering.
+
+
+== Q: Is there a way to hide the mouse pointer so that it doesn't show up on my screen? ==
+
+=== A: You can change to properties of the panda window so that it doesn't show the cursor: ===
+    props = WindowProperties()
+    props.setCursorHidden(True)
+    base.win.requestProperties(props)
+
+
+== Q: If a model has an animation, is that animation necessarily represented by an additional .egg file? ==
+=== A: No.  An .egg file can either be just geometry, just an animation, or a combination of the two. ===
+
+It's often easiest, however, to create a separate egg for every animation and an egg that contains just the model/skeleton information.
+
+
+== Q: I have a model with an animation. When i try to play the animation I get this error: ==
+
+    KeyError: lodRoot
+    display: Closing wglGraphicsWindow
+
+=== A: This often happens when you are trying to load animations onto a model that wasn't exported to have animations. ===
+There are two pieces to objects that have animations; their geometry and their skeleton. The geometry is what you see when you load a model, the skeleton is what controls the geometry in an animation. If only the geometry was used to make the egg file, you will have problems when you try to play animations. Look at the manual for more details about exporting models as eggs.
+
+
+== Q: I called setTexture('tex.jpg') and it didn't change or send an error. ==
+=== A: To override an existing texture, you need to specify a priority: setTexture('tex.jpg', 1). ===
+The setTexture() call includes an optional priority parameter, and if the priority is less than 1 the texture will not change.
+
+
+== Q: I get this error: ==
+    assert(self.validateComponents(self.ivals))
+    AssertionError
+
+It happens at this line of code:
+
+    move = Sequence(obj.setX(5))
+
+=== A: Sequences and Parallels are a way to combine intervals. You can't put anything inside them that isn't an interval. If you want this code to work you want something like: ===
+
+    self.move = Sequence(Func(obj.setX, 5))
+
+This will start the execution of the function, but not wait for it to finish.
+
+
+== Q: Does panda use degrees or radians? ==
+=== A: Degrees. But see also the deg2Rad() and rad2Deg() functions. ===
+
+    But note that the <code>math.sin</code>, <code>math.cos</code>, <code>math.tan</code>, etc. functions are calculated in radians.
+    Don't forget to convert the values!
+
+
+== Q: Why do all my flat objects look weird when lit? ==
+=== A: Flats don't often have a lot of vertices. ===
+
+Lighting is only calculated at the vertices, and then linearly interpolated between the vertices.  If your vertices are very far apart, lighting can look very strange--for instance, a point light in the center of a large polygon might not show up at all (the light is far from all four vertices, even though it's very near the polygon's center).
+
+One solution is to create a model with a lot of polygons to pick up the lighting.  It also helps to make a flat surface slightly curved to improve its appearance.
+Another approach might be to create an ambient light that only affects this object. See the manual for more detail about attaching lights to objects in your scene.
+
+
+== Q: To smooth my animations, I used "interpolate-frames 1" option but it doesn't work somehow. Why? ==
+=== A: Interpolate-frames flag gets set in the PartBundle at the time it is first created, and then baked into the bam cache. ===
+
+Thenceforth, later changes to the interpolate-frames variable mean nothing. If you changed interpolate-frames flag, you will also need to empty your modelcache folder.
+
+Actually, it is not recommended to use interpolate-frames; it is a global setting. It's better to achieve the same effect via actor.setBlend(frameBlend = True), which is a per-actor setting (and doesn't get baked into the model cache).
+
+
+== Q: I'm trying to redirect the output of some commands like "myNode.ls()" to a file but the usual method "python >>file, myNode.ls()" doesn't work. What's the alternative?  ==
+=== A: You can try: ===
+
+    strm = StringStream()
+    render.ls(strm)
+    open('out.txt', 'w').write(strm.getData())
+
+In alternative:
+
+    strm = StringStream()
+    cvMgr.write(strm)
+    open('out.txt', 'w').write(strm.getData())
+
+If you don't want to use a StringStream you can do this:
+
+    strm = MultiplexStream()
+    strm.addFile(Filename('out.txt'))
+    render.ls(strm)
+
+There is also a way to specify the file to write to in the config file.
+
+    notify-output out.txt
+
+
+== Q: How do we create a node from a string containing .egg source? ==
+=== A: Use the EggData class: ===
+
+    egg = EggData()
+    egg.read(StringStream(eggText))
+    model = NodePath(loadEggData(egg))
+
+
+== Q: How can we know which letter was bellow the pointer when we click on a TextNode? ==
+
+=== A: Use the TextAssembler class like this: ===
+
+    tn = TextNode('tn')
+    tn.setText('abcdef\nghi')
+    ta = TextAssembler(tn)
+    ta.setWtext(tn.getWtext())
+    for ri in range(ta.getNumRows()):
+        for ci in range(ta.getNumCols(ri)):
+            print "ri = %s, ci = %s, char = %s, pos = %s, %s" % (ri, ci, chr(ta.getCharacter(ri, ci)), ta.getXpos(ri, ci), ta.getYpos(ri, ci))

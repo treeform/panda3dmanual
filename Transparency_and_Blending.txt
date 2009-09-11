@@ -1,181 +1,177 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Transparency and Blending</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Transparency_and_Blending" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Transparency_and_Blending" title="Transparency and Blending">Transparency and Blending</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Transparency_and_Blending" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight07"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight07-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-guidinglights/guidinglights01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-guidinglights/guidinglights01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">In Guiding Lights, the audience steers a moth to safety</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<b>Don't use Image Files with Alpha Channels</b>
+
+There are several image file formats that can store an alpha channel.
+Among these are PNG, TIF, TGA, and others.  However, the
+programs that create these image files (such as Photoshop) have such
+unpredictable and unreliable behavior that it's more trouble than
+its worth.  
+
+The following section summarizes the difficulties associated with
+creating alpha channels in Photoshop.  The section after that
+describes an easier method: storing opacity maps in a separate
+file.
+
+<b>Creating Alpha Channels in Photoshop</b>
+
+Photoshop has three separate, unrelated ways to store transparency:
+
+<i>Using an alpha channel</i>: using the Photoshop "Layers and Channels" dialog, select the channels tab, and then click the "Create new Channel" button.
+
+<i>Using a layer mask</i>: using the Photoshop "Layers and Channels" dialog, select a layer, then using the "Layer" menu, select "Layer Mask/Reveal All."
+
+<i>Using cutout transparency</i>: use the eraser tool to create transparency.  Or, select an area of the image, and then click "delete." 
+
+Unfortunately, when trying to export an image from Photoshop and import it into Panda, data is often lost in the process.  The following table shows which export/import procedures work, and which ones fail:
+
+<table>
+<tr><td>Image Format</td><td>Transparency Type</td><td>Results</td></tr>
+<tr><td>PNG</td><td>Alpha</td><td>Photoshop export loses data</td></tr>
+<tr><td>PNG</td><td>Layer Mask</td><td>Success!</td></tr>
+<tr><td>PNG</td><td>Cutout</td><td>Photoshop export loses data</td></tr>
+<tr><td>TGA</td><td>Alpha</td><td>Panda import loses data</td></tr>
+<tr><td>TGA</td><td>Layer Mask</td><td>Photoshop export loses data</td></tr>
+<tr><td>TGA</td><td>Cutout</td><td>Photoshop export loses data</td></tr>
+<tr><td>TIF</td><td>Alpha</td><td>Success!</td></tr>
+<tr><td>TIF</td><td>Layer Mask</td><td>Panda import loses data</td></tr>
+<tr><td>TIF</td><td>Cutout</td><td>Panda import loses data</td></tr>
+</table>
+
+Even the ones that yielded "success" were not necessarily 100% straightforward.
+These image files that load correctly into Panda3D do not always load back
+into Photoshop.
+
+<b>Storing Opacity Maps Separately</b>
+
+A better way, that avoids the difficulties associated with Photoshop and alpha
+channels, is to store your opacity maps in a separate file.
+
+When loading a texture, Panda3D can load a pair of files together, like this:
+
+<pre class="codeblock">
+tex = loader.loadTexture("mytexture-color.jpg", "mytexture-opacity.jpg")
+</pre>
+
+The idea here is that mytexture-color is an ordinary RGB (not RGBA) color
+map, and mytexture-opacity is a black-and-white image representing opacity.
+The two images must both be the same size.  When loading, Panda3D will
+combine the two images together into a single RGBA texture.
+
+Panda has model exporters for a number of different 3D modeling programs.
+Some of those exporters are better than others.  The best among them will
+make this process automatic.  For example, if you apply a color map and
+an opacity map to your model in Maya, then the maya exporter will automatically
+put annotations into the EGG file indicating that those textures should
+be merged at load time.
+
+<b>Dealing with Depth-Sorting</b>
+
+Note: this page is cut-and-pasted from a howto we found.  We'll polish it later.
+
+Usually transparency works as expected in Panda automatically, but
+sometimes it just seems to go awry, where a semitransparent object in
+the background seems to partially obscure a semitransparent object in
+front of it.  This is especially likely to happen with large flat
+polygon cutouts, or when a transparent object is contained within
+another transparent object, or when parts of a transparent object can
+be seen behind other parts of the same object.
+
+The fundamental problem is that correct transparency, in the absence
+of special hardware support involving extra framebuffer bits, requires
+drawing everything in order from farthest away to nearest.  This means
+sorting each polygon--actually, each pixel, for true correctness--into
+back-to-front order before drawing the scene.
+
+It is, of course, impossible to split up every transparent object into
+individual pixels or polygons for sorting individually, so Panda sorts
+objects at the Geom level, according to the center of the bounding
+volume.  This works well 95% of the time.
+
+You run into problems with large flat polygons, though, since these
+tend to have parts that are far away from the center of their bounding
+volume.  The bounding-volume sorting is especially likely to go awry
+when you have two or more large flats close behind the other, and you
+view them from slightly off-axis.  (Try drawing a picture, of the two
+flats as seen from the top, and imagine yourself viewing them from
+different directions.  Also imagine where the center of the bounding
+volumes is.)
+
+Now, there are a number of solutions to this sort of problem.  No one
+solution is right for every situation.
+
+First, the easiest thing to do is to use M_dual transparency.  This is
+a special transparency mode in which the completely invisible parts of
+the object aren't drawn into the Z-buffer at all, so that they don't
+have any chance of obscuring things behind them.  This only works well
+if the flats are typical cutouts, where there is a big solid part
+(alpha == 1.0) and a big transparent part (alpha == 0.0), and not a
+lot of semitransparent parts (0.0 < alpha < 1.0).  It is also a
+slightly more expensive rendering mode than the default of M_alpha, so
+it's not enabled by default in Panda.  But egg-palettize will turn it
+on automatically for a particular model if it detects textures that
+appear to be cutouts of the appropriate nature, which is another
+reason to use egg-palettize if you are not using it already.
+
+If you don't use egg-palettize (you really should, you know), you can
+just hand-edit the egg files to put the line:
+
+  <Scalar> alpha { dual }
+
+within the <Texture> reference for the textures in question.
+
+A second easy option is to use M_multisample transparency, which
+doesn't have any ordering issues at all, but it only looks good on
+very high-end cards that have special multisample bits to support
+full-screen antialiasing.  Also, at the present it only looks good on
+these high-end cards in OpenGL mode (since our pandadx drivers don't
+support M_multisample explicitly right now).  But if M_multisample is
+not supported by a particular hardware or panda driver, it
+automatically falls back to M_binary, which also doesn't have any
+ordering issues, but it always has jaggy edges along the cutout edge.
+This only works well on texture images that represent cutouts, like
+M_dual, above.
+
+If you use egg-palettize, you can engage M_multisample mode by putting
+the keyword "ms" on the line with the texture(s).  Without
+egg-palettize, hand-edit the egg files to put the line:
+
+  <Scalar> alpha { ms }
+
+within the <Texture> reference for the textures in question.
+
+A third easy option is to chop up one or both competing models into
+smaller pieces, each of which can be sorted independently by Panda.
+For instance, you can split one big polygon into a grid of little
+polygons, and the sorting is more likely to be accurate for each piece
+(because the center of the bounding volume is closer to the pixels).
+You can draw a picture to see how this works.  In order to do this
+properly, you can't just make it one big mesh of small polygons, since
+Panda will make a mesh into a single Geom of tristrips; instead, it
+needs to be separate meshes, so that each one will become its own
+Geom.  Obviously, this is slightly more expensive too, since you are
+introducing additional vertices and adding more objects to the sort
+list; so you don't want to go too crazy with the smallness of your
+polygons.
+
+A fourth option is simply to disable the depth write on your
+transparent objects.  This is most effective when you are trying to
+represent something that is barely visible, like glass or a soap
+bubble.  Doing this doesn't improve the likelihood of correct sorting,
+but it will tend to make the artifacts of an incorrect sorting less
+obvious.  You can achieve this by using the transparency option
+"blend_no_occlude" in an egg file, or by explicitly disabling the
+depth write on a loaded model with node_path.set_depth_write(false).
+You should be careful only to disable depth write on the transparent
+pieces, and not on the opaque parts.
+
+A final option is to make explicit sorting requests to Panda.  This is
+often the last resort because it is more difficult, and doesn't
+generalize well, but it does have the advantage of not adding
+additional performance penalties to your scene.  It only works well
+when the transparent objects can be sorted reliably with respect to
+everything else behind them.  For instance, clouds in the sky can
+reliably be drawn before almost everything else in the scene, except
+the sky itself.  Similarly, a big flat that is up against an opaque
+wall can reliably be drawn after all of the opaque objects, but before
+any other transparent object, regardless of where the camera happens
+to be placed in the scene.  See howto.control_render_order.txt for
+more information about explicitly controlling the rendering order.

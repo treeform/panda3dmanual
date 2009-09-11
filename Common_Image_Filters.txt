@@ -1,182 +1,140 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Common Image Filters</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Common_Image_Filters" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Common_Image_Filters" title="Common Image Filters">Common Image Filters</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Common_Image_Filters" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+[cxx]<b>Note:</b> Sorry, but the CommonFilters and FilterManager classes are implemented in Python and will not be of much use to C++ users.
+
+[/cxx]<h2>Common Image Filters</h2>
+
+Note: the following information applies to Panda version 1.5.0 and beyond.
+It does not apply to older versions of Panda3D.
+
+The purpose of class CommonFilters is to make it easy to set up a number of
+common image postprocessing operations.  Currently, the image postprocessing
+operations supported by class CommonFilters is:
+
+# Bloom Filter - creates a glowing halo around bright objects.
+# Cartoon Inker - draws black lines around 3D objects.
+# Volumetric Lighting - screen-space method for casting god-rays (new in 1.6.0)
+# Inverted Filter - inverts all colors (new in 1.6.0)
+# Blur/Sharpen Filter - applies a generic blur or sharpen filter (new in 1.7.0)
+
+We expect this list to grow rather substantially over the next year or so.
+
+
+<h2>Basic Setup</h2>
+
+The first step is to create an object of class CommonFilters.  Pass in
+a pointer to your window, and your 3D camera:
+
+<code python>
+filters = CommonFilters(base.win, base.cam)
+</code>
+
+This will have no effect until you enable a filter (instructions below.)  Once
+a filter is enabled, class CommonFilters will reconfigure the Panda3D rendering
+as follows:
+
+* It will render the scene into an offscreen buffer, using the camera you provided.
+* It will remove the scene from the specified window, and replace it with a fullscreen quad.  
+* The quad will be textured with the scene, plus a shader that implements whatever filter you have selected.
+
+If all goes well, the net effect is that your scene will continue to appear
+in your window, but it will be filtered as you specify.
+
+
+<h2>What if the Video Card can't handle it?</h2>
+
+If the video card is not capable of implementing your filters, then all
+filters will be removed and the filter-enabling function will return False.
+Otherwise, filter-enabling functions will return True.
+
+
+<h2>The Bloom Filter</h2>
+
+The bloom filter causes bright objects to have a glowing halo around them.  To enable a bloom filter, use <code>setBloom</code>.  To disable, use <code>delBloom</code>:
+
+<code python>
+filters.setBloom( ... options ...)
+filters.delBloom()
+</code>
+
+The bloom filter works as follows.  First, it renders the scene into a texture.  It also asks the renderer to render any glow-maps into the alpha channel of the texture.  After rendering the scene, it generates a second copy of the scene which has been darkened until only the brightest pixels are visible, and all the others go to black.  It then blurs that texture, yielding soft halos where the bright pixels used to be, and black everywhere else.  It then adds the soft halos back onto the scene in the window.
+
+<b>Note:</b> If you want to use glow maps to indicate which parts of the image should receive bloom, you should assign a nonzero value to the alpha value of the blend-weight parameter, and you should enable the [[shader generator]] for the models that have glow maps applied.
+
+The bloom filter has many keyword parameters:
+
+* blend - The bloom filter needs to measure the brightness of each pixel.  It does this by weighting the R,G,B, and A components.  Default weights: (0.3,0.4,0.3,0.0).  You should assign a nonzero weight to the alpha channel if you want the glow map to have an effect, or a value like (0, 0, 0, 1) if you only want your glow map to indicate which models should glow.
+
+* mintrigger - Minimum brightness at which a halo is generated.  Default: 0.6
+
+* maxtrigger - Maximum brightness at which the halo reaches peak intensity.  Default: 1.0
+
+* desat - Degree to which the halo is desaturated.  Setting this to zero means the halo is the same color as the bright pixel.  Setting it to one means the halo is white.  Default: 0.6
+
+* intensity - An adjustment parameter for the brightness of the halos.  Default: 1.0
+
+* size - Adjusts the size of the halos.  Takes a string value: "small", "medium", or "large".  The reason that this is a discrete value and not a continuous one is that the blur operation involves downsampling the original texture by a power of two.  Default: "medium"
+
+
+<h2>The Cartoon Inking Filter</h2>
+
+The cartoon inking filter causes objects to have black lines around them.  To enable a cartoon inking filter, use <code>setCartoonInk</code>.  To disable, use <code>delCartoonInk</code>:
+
+<code python>
+filters.setCartoonInk( ... options ...)
+filters.delCartoonInk()
+</code>
+
+The cartoon inking filter works by rendering a camera-space normal into an
+texture.  Then, a postprocessing filter does an edge-detect
+algorithm on the camera-space normal texture.
+
+The filter has the following keyword parameters:
+
+* separation - distance in pixels, controls the width of the ink line.  Default: 1 pixel.
+
+
+<h2>The Volumetric Lighting Filter</h2>
+
+The Volumetric Lighting filter makes objects cast visible light rays (also known as crepuscular rays, god rays or sunbeams) that can be occluded by visible geometry.  This is an easy way to easily create nice-looking light/sun effects.
+
+<code python>
+filters.setVolumetricLighting( ... options ...)
+filters.delVolumetricLighting()
+</code>
+
+The filter has the following keyword parameters:
+
+* caster - NodePath that indicates the origin of the rays. Usually, you would pass your light, and create a sun billboard which is reparented to the light's NodePath.
+
+* numsamples - Number of samples. The more samples you use, the slower the effect will be, but you will have smoother light rays. Note that using a fuzzy billboarded dot instead of a hard-edged sphere as light caster can help with smoothing the end result, too.  This value does <b>not</b> need to be a power-of-two, it can be any positive number.  Default: 32
+
+* density - This defines the length of the rays.  The default value of 5.0 is probably too high for many purposes, usually a value between 0.5 and 1.0 works best.  This also depends on the number of samples and exposure you've chosen, though.  Default: 5.0
+
+* decay - Decay makes rays gradually decrease in brightness.  The default value of 0.1 is not well chosen and makes the rays very short!  Usually, this a value close to 1.0, like 0.98.  Default: 0.1
+
+* exposure - Defines the brightness of the rays.  Default: 0.1
+
+
+<h2>The Inverted Filter</h2>
+
+This filter simply inverts the colors of the image.
+
+<code python>
+filters.setInverted()
+filters.delInverted()
+</code>
+
+This filter has no parameters.
+
+
+<h2>The Blur / Sharpen Filter</h2>
+
+This filter can apply a blur or sharpen effect to the image.
+
+<code python>
+filters.setBlurSharpen( ... options ...)
+filters.delBlurSharpen()
+</code>
+
+The filter has the following keyword parameters:
+
+* amount - The amount of blurring, this is usually a value between 0.0 and 2.0.  You can take values smaller than 0.0 or larger than 2.0, but this usually gives ugly artifacts.  A value of 0.0 means maximum blur. A value of 1.0 does nothing, and if you go past 1.0, the image will be sharpened instead of blurred.  Default: 0.0

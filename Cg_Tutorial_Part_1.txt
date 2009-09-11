@@ -1,181 +1,153 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Cg Tutorial Part 1</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Cg_Tutorial_Part_1" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Cg_Tutorial_Part_1" title="Cg Tutorial Part 1">Cg Tutorial Part 1</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Cg_Tutorial_Part_1" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean5"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean5-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-spherical/spherical01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-spherical/spherical01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Some experiments done by a student with spherical harmonics.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<h2>Cg Tutorial Part 1: The Baseline Panda App</h2>
+
+We'll start by setting up the tutorial project folder. Create a new folder for the tutorial and download the [http://p3dst.googlecode.com/svn/trunk/cg_tutorial_media.zip tutorial media archive] then unzip the files in the new folder. The zip file contains all the models and textures you will need to follow this tutorial series.
+
+For this first lesson we'll just create a basic Panda python script. We will be modifying this python script as we continue the other lessons. Copy the script below and save it to the folder.
+
+<code python>
+# Lesson1.py
+import sys
+
+import direct.directbase.DirectStart
+from direct.interval.LerpInterval import LerpFunc
+from pandac.PandaModules import Texture, TextureStage
+
+base.setBackgroundColor(0.0, 0.0, 0.0)
+base.disableMouse()
+
+base.camLens.setNearFar(1.0, 50.0)
+base.camLens.setFov(45.0)
+
+camera.setPos(0.0, -20.0, 10.0)
+camera.lookAt(0.0, 0.0, 0.0)
+
+root = render.attachNewNode("Root")
+root.setPos(0.0, 0.0, 0.0)
+
+textureArrow = loader.loadTexture("arrow.png")
+textureArrow.setWrapU(Texture.WMClamp)
+textureArrow.setWrapV(Texture.WMClamp)
+
+stageArrow = TextureStage("Arrow")
+stageArrow.setSort(1)
+
+textureCircle = loader.loadTexture("circle.png")
+textureCircle.setWrapU(Texture.WMClamp)
+textureCircle.setWrapV(Texture.WMClamp)
+
+stageCircle = TextureStage("Circle")
+stageCircle.setSort(2)
+
+modelCube = loader.loadModel("cube.egg")
+
+cubes = []
+for x in [-3.0, 0.0, 3.0]:
+    cube = modelCube.copyTo(root)
+    cube.setPos(x, 0.0, 0.0)
+    cubes += [ cube ]
+
+base.accept("escape", sys.exit)
+
+base.accept("o", base.oobe)
+
+def animate(t):
+    for i in range(len(cubes)):
+        cubes[i].setH(t * (2.0 ** i))
+
+interval = LerpFunc(animate, 5.0, 0.0, 360.0)
+
+base.accept("i", interval.start)
+
+def move(x, y, z):
+    root.setX(root.getX() + x)
+    root.setY(root.getY() + y)
+    root.setZ(root.getZ() + z)
+
+base.accept("d", move, [1.0, 0.0, 0.0])
+base.accept("a", move, [-1.0, 0.0, 0.0])
+base.accept("w", move, [0.0, 1.0, 0.0])
+base.accept("s", move, [0.0, -1.0, 0.0])
+base.accept("e", move, [0.0, 0.0, 1.0])
+base.accept("q", move, [0.0, 0.0, -1.0])
+
+run()
+</code>
+
+If you run that script, you'll get the following output below. The controls are q, w, e, a, s, d for moving the camera; 'o' for moving the camera via the mouse, 'i' to start the cubes rotating and 'esc' to quit. You will be modifying this script as you follow this tutorial series.
+
+[[Image:Cg_lesson1_screen.png]]
+
+<h2>3D Models, Shaders and Hardware</h2>
+
+Now that we have the basic script, lets take a look at how 3d models, shaders and the 3d hardware interact with each other. Please open the file cube.egg with a text editor. Egg files are human readable. We will need this information later on to understand how the vertex shader and the fragment shader works. You can also see how the model looks like in panda by using the pview model viewer.
+
+[[Image:Cg_tut_cube1.png]]
+
+<code egg>
+// A vertex entry in an egg file
+<Group> {
+  <VertexPool> Cube {
+    <Vertex> 0 {
+      1.0 1.0 -1.0
+      <UV> { 1.0 1.0 }
+      <RGBA> { 1.0 0.0 0.0 1.0 }
+    }
+    ...
+</code>
+
+The cube has six faces. Each face has four different vertices. Therefore this cube has 24 vertices. Theoretically a cube only needs eight vertices with each vertex being shared by three faces. The problem with this is that each vertex can only have one color, but what happens if we want each of the six faces to be a different color? This is impossible if the cube is only defined with eight vertices. There are more disadvantages if we only define the cube with eight vertices, which we will talk about later on. The only advantage of having less vertices is that we have to send less vertices to the graphic card but in almost all applications vertices are not a limiting factor. The memory consumption of vertices in comparison to the memory consumption of textures is negligible. Besides the color entry for a vertex, a vertex also has one UV entry associated with it.
+
+Next look at the colors defined in the egg file. If you compare all the color entries, you will only find eight unique colors in the egg file. Why does the model have thousands of colors when viewed in the model viewer then? This is because of linear interpolation, where a value is generated between two different values based on a "distance". Today graphic cards are very good at linear interpolation with the ability to do billions of linear interpolations per second. The downside is that sometimes the graphic card can ONLY do linear interpolation and you can't change that, even with a shader.
+
+Back to the colors. If you have a red color (1.0, 0.0, 0.0) on one vertex and a dark blue color (0.0, 0.0, 0.5) on the other vertex the graphic card simply interpolates the color for every pixel between this two vertices, even without shaders (only if requested, but Panda3D ask the graphic card to do this). The graphic card doesn't know that a color comes in three parts: Red, Green and Blue. It only knows that it is manipulating values, in this case adjusting the constituent values for Red Green and Blue. Here is an example of how the graphic card interpolates:
+
+<table border='1' cellpadding='4' align='center'>
+<tr>
+<th>Red Vertex</th><th>Blue Vertex</th><th>Color value</th>
+</tr>
+<tr>
+<td>100%</td><td>0%</td><td>(1.0, 0.0, 0.0)</td>
+</tr>
+<tr>
+<td>75%</td><td>25%</td><td>(0.75, 0.0, 0.125)</td>
+</tr>
+<tr>
+<td>50%</td><td>50%</td><td>(0.5, 0.0, 0.25)</td>
+</tr>
+<tr>
+<td>25%</td><td>75%</td><td>(0.25, 0.0, 0.375)</td>
+</tr>
+<tr>
+<td>0%</td><td>100%</td><td>(0.0, 0.0, 0.5)</td>
+</tr>
+</table>
+
+A simplified version of how the graphic card draws the model (in reality it does not work exactly like this but the result is the same): If the graphic card needs to draw a pixel on a screen it first looks if this pixel is on a vertex. If it is, it can take the color of the vertex and draw a pixel with this color. If not, the graphic card looks at which triangle this pixel belongs. Then it looks at where the vertices of this triangle are and calculates the distance to each of the vertices. Based on this distance and the color of the vertices, it interpolates all color components and draws a pixel with this color.
+
+We've already seen that the graphic card does not care about the fact that a color consists of the three parts R, G and B. The good thing about this is that the graphic card can do the calculations for R independent of the other parts, as is the case for G and B. You may ask, "why should I care"? The advantage is that the graphic card can do calculations for each part in parallel. A graphic card is in general extremely specialized in parallel computing. This is also true for vertex shaders and pixel shaders. Each calculation for a vertex or pixel is done individually. A vertex never knows how what his neighbor looks like and a pixel never knows what his neighbor's color is. This is a reason why graphic card vendors can improve the performance of GPUs faster then CPUs. Vertex and pixel shaders are inherently parallel. The disadvantage of this is that if you need to do some calculations with respect to the neighboring pixel or vertex, you have to create a complex setup that often (but not always) is not fast enough for 60+ FPS games.
+
+A blur filter (like in the glow example) is an example of such a setup. You need at least two passes to create such an effect.
+
+<h2>Modifying the Script</h2>
+
+We will now modify the script to see how the normal 3D pipeline blends the vertex colors with textures. In the tutorial media, there are two textures, 'arrow.png' and 'circle.png'. We will apply these to the cubes using only Panda.
+
+Place one of the following lines in the script after the cubes are placed in the scenegraph:
+
+<pre class="codeblock">
+root.setTexture(stageArrow, textureArrow)
+root.setTexture(stageCircle, textureCircle)
+</pre>
+
+You will notice that the textures get applied to all of the cubes. Now try placing the textures on individual cubes:
+
+<pre class='codeblock'>
+cubes[0].setTexture(stageArrow, textureArrow)
+cubes[1].setTexture(stageCircle, textureCircle)
+cubes[2].setTexture(stageArrow, textureArrow)
+cubes[2].setTexture(stageCircle, textureCircle)
+</pre>
+
+Now that we have a general idea of how 3D hardware and models work, lets move on to using shaders.
+
+[[Cg_Tutorial_Part_2 | Part 2: The simplest possible shader]]

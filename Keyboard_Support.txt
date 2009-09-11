@@ -1,182 +1,105 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Keyboard Support</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Keyboard_Support" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Keyboard_Support" title="Keyboard Support">Keyboard Support</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Keyboard_Support" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus8"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus8-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-projectimprov/projectimprov03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-projectimprov/projectimprov03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Improvisational acting techniques are used to improve character behavior
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Panda3D has keyboard support built in. Keyboard presses send [[Event Handling|Events]].  Each keyboard key will send an event when it is first pressed down, when it is released, and one repeatedly while its pressed.
+
+The events can be accepted with the following code:
+
+<pre class="codeblock">
+self.accept( <event name> , <Function> )
+self.accept( <event name> , <Function> , <parameters list> )
+self.acceptOnce( <event name> , <Function> )
+self.acceptOnce( <event name> , <Function> , <parameters list> )
+</pre>
+
+<event name> is a string that labels the event.
+<Function> is a python function to be called when the event is sent.
+<parameters list> is a python list of parameters to use to call <Function>. 
+
+The <event name> that a key sends is fairly predictable base on these rules:
+
+You can see these results for yourself using <code>messenger.toggleVerbose()</code>
+
+1. Keys that type a character are named that character. It is always lowercase even with shift or caps lock (Shift and other modifiers are explained below.)
+
+e.g.
+<pre class="codeblock">
+ "a", "b", "3", "[", etc.
+</pre>
+not 
+<pre class="codeblock">
+ "A", "B", "#", "{"
+</pre> 
+
+2. The key down event is named for the key.
+
+3. As of 1.3.0 The keyboard autorepeat is named for the key + "-repeat" e.g.
+
+<pre class="codeblock">
+ "a-repeat", "2-repeat", "[-repeat"
+</pre>
+
+4. The key up event is named for the key + "-up" e.g.
+
+<pre class="codeblock">
+ "a-up", "2-up", "[-up"
+</pre>
+
+5. All key events (including "-up") have a corresponding time event labeled
+
+<pre class="codeblock">  
+"time-" + <key name>
+</pre>
+
+Here is an example of time reading in code:
+
+<pre class="codeblock">  
+class ReadKeys(DirectObject.DirectObject):
+  def __init__(self):
+    self.accept('time-a-repeat', self.printRepeat)
+
+  def printRepeat(self,a):
+        print "repeat a",a
+</pre>
+
+that send a time argument corresponding to the time that event was fired
+
+6. Keys that don't type a character are labeled as follows:
+
+<pre class="codeblock">
+"escape", "f"+"1-12" (e.g. "f1","f2",..."f12"), "print_screen" "scroll_lock"
+"backspace", "insert", "home", "page_up", "num_lock"
+"tab",  "delete", "end", "page_down"
+"caps_lock", "enter", "arrow_left", "arrow_up", "arrow_down", "arrow_right"
+"shift", "lshift", "rshift",
+"control", "alt", "lcontrol", "lalt", "space", "ralt", "rcontrol"
+</pre>
+
+Note that "print_screen" is not available on Windows, (and some other OS'es) because it is used by the system. If you want to be able to catch this key, you need to find some way to prevent the system from catching the key first. (however, "print_screen-up" is still available in most cases)
+
+7. Some physical keys are distinguishable from the events that they fire, and some are not. The modifier keys distinguish between left and right, but send a neutral event as well. (e.g. the left shift key sends both "lshift" and "shift" events when pressed) Save for "num_lock", "*", and "+" the numpad keys are indistinguishable from the main keyboard counterparts. (e.g. when Num Lock is on the both the numpad and keyboard 1 keys send "1")
+
+8. Keys pressed in combination with modifiers send an additional event. The name is the modifier appended before the key and separated with a dash in the order shift control alt e.g.:
+
+<pre class="codeblock">  
+"shift-a" "shift-control-alt-a" "shift-alt-a"
+</pre>
+
+These compound events don't send a "time-" event. If you need one, use the "time-" event sent by one of the keys in the combination.
+
+The modifier compound events can be turned off to allow regular events to occur by calling:
+
+<pre class="codeblock">  
+base.mouseWatcherNode.setModifierButtons(ModifierButtons())
+base.buttonThrowers[0].node().setModifierButtons(ModifierButtons())
+</pre>
+
+Here are some examples in code:
+
+<pre class="codeblock">
+self.accept('k', self.__spam )#calls the function __spam() on the k key event.
+self.accept('k-up', self.__spam, [eggs, sausage, bacon,] )#calls __spam(eggs,sausage,bacon)
+self.accept('escape', sys.exit )#exit on esc
+self.accept('arrow_up', self.spamAndEggs )#call spamAndEggs when up is pressed
+self.accept('arrow_up-repeat', self.spamAndEggs )#and at autorepeat if held
+self.accept('arrow_up-up', self.spamAndEggs )#calls when the up arrow key is released
+</pre>
+
+Please, note then when the Panda window is minimized or Panda3D loses focus somehow else, "-up" event is sent for all keys. Read this forum thread to learn more: http://panda3d.net/phpbb2/viewtopic.php?t=4630

@@ -1,182 +1,51 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: List of Panda Executables</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=List_of_Panda_Executables" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/List_of_Panda_Executables" title="List of Panda Executables">List of Panda Executables</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=List_of_Panda_Executables" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-thermr/thermr01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-thermr/thermr01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">FireSlayer Challenge: Thermal Response
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+This is meant to be a list of the executables in the /bin/ folder of Panda 3D. You can get a detailed synopsis of what the executables do by running them with -h as the arguement.
+
+<center><table>
+<tr><td><b>Filename</b></td><td><b>Description</b></td></tr>
+<tr><td>bam-info.exe</td><td>Scans one or more .bam files and outputs their contents. See executable for more information.</td></tr>
+<tr><td>bam2egg.exe</td><td>Converts models in the .bam format to the .egg format.  For more information see [[Converting Egg to Bam]].</td></tr>
+<tr><td>bin2c.exe</td><td>Reads a file from disk and produces a table that when compiled by C compiler reproduces the same data. See executable for more informatiion.</td></tr>
+<tr><td>cgc.exe</td><td>A compiler for NVidia's Cg language. For more information see [[Using Cg Shaders]].</td></tr>
+<tr><td>check_md5.exe</td><td>Outputs the MD5 hash for one or more files. See Executable for more information.</td></tr>
+<tr><td>dxf-points.exe</td><td>Reads in an AutoCad .dxf file and prints out the points contained in it. See executable for more information.</td></tr>
+<tr><td>dxf2egg.exe</td><td>Converts models from the Autocad format to the .egg format. For more information see [[Converting from other Formats]]</td></tr>
+<tr><td>egg-crop.exe</td><td>Strips an .egg file of all parts that fall outside the given bounding volume. See executable for more information.</td></tr>
+<tr><td>egg-make-tube.exe</td><td>Creates an .egg file representing a "tube" model. See executable for more information.</td></tr>
+<tr><td>egg-mkfont.exe</td><td>Makes a .egg file from a FreeType (.ttf) font. For more information see [[Text Fonts]].</td></tr> 
+<tr><td>egg-optchar.exe</td><td>Optimizes models by removing unused joints. Also allow you to label parts of the model. For more information see [[Manipulating a Piece of a Model]].</td></tr>
+<tr><td>egg-palettize.exe</td><td>Tries to combine textures in an egg file. Also performs some texture manipulation. See executable for more information.</td></tr>
+<tr><td>egg-qtess.exe</td><td>Performs a tesselation on all of the NURBS surfaces in a .egg file. See executable for more information.</td></tr>
+<tr><td>egg-texture-cards.exe</td><td>Creates an egg that automatically rotates through multiple textures. For more information see [[Automatic Texture Animation]].</td></tr>
+<tr><td>egg-topstrip.exe</td><td>Unnaplies the animations from one of the top joints in a model. Useful for character models that stack on top of each other. See executable for more information</td></tr>
+<tr><td>egg-trans.exe</td><td>Produces out essentially the same .egg file. Useful for applying rotational and positional tronsformations. See executable for more information.</td></tr>
+<tr><td>egg2bam.exe</td><td>Converts files in the .egg format to the .bam format. For more information see [[Converting Egg to Bam]].</td></tr>
+<tr><td>egg2c.exe</td><td> Reads a .egg file and produce C/C++ code that will almost compile. See executable for more information.</td></tr>
+<tr><td>egg2dxf.exe</td><td>Converts files in the .egg format to the AutoCad format.For more information see [[Converting from other Formats]].</td></tr>
+<tr><td>egg2flt.exe</td><td>Converts files in the .egg format to the Open Flight format.For more information see [[Converting from other Formats]].</td></tr>
+<tr><td>egg2x.exe</td><td>Converts files in the .egg format to the DirectX format. Especially useful because it holds bone, joint and animation data. For more information see [[Converting from other Formats]].</td></tr>
+<tr><td>flt-info.exe</td><td>Reads an OpenFlight file and prints out information about its contents. See executable for more information.</td></tr>
+<tr><td>flt-trans.exe</td><td>Produces esentially the same .flt file. Useful for postional and rotational transformations. See executable for more information.</td></tr>
+<tr><td>flt2egg.exe</td><td>Converts files in the OpenFlight format to the .egg format. For more information see [[Converting from other Formats]].</td></tr>
+<tr><td>genpycode.exe</td><td>Genreates the Python wrappings necessary to inteface with the C++ libraries that are the backbone of Panda. Also generates the API Reference Manual in <code><Panda Directory>/pandac/docs</code>. For more information see [[API Reference Materials]]</td></tr>
+<tr><td>httpbackup.exe</td><td>Used to retreive a document from an HTTP server and save it on disk. See executable for more information.</td></tr>
+<tr><td>image-info.exe</td><td>Reports the sizes of one or more images. See executable for more information. </td></tr>
+<tr><td>image-resize.exe</td><td>Resizes an image. See executable for more information.</td></tr>
+<tr><td>image-trans.exe</td><td>Produces an identical picture. Can also be used for file format conversion. See executable for more information.</td></tr>
+<tr><td>indexify.exe</td><td>Takes image directories and creates HTML pages with thumbnails of these pictures. See executable for more information.</td></tr>
+<tr><td>interrogate.exe</td><td>Parses C++ code and creates wrappers so that it can be called in a Scrtipting language. For more information see [[Interrogate]]</td></tr>
+<tr><td>lwo-scan.exe</td><td>Prints the contents of a .lwo file. See executable for more information.</td></tr>
+<tr><td>lwo2egg.exe</td><td>Converts files in the LightWave 3D format to the .egg format. For more information see [[Converting from other Formats]].</td></tr>
+<tr><td>make-prc-key.exe</td><td>Generates one or more new key to be used for signing a prc file. See executable for more information.</td></tr>
+<tr><td>maya2egg5.exe</td><td>Converts files in the Maya 5 format to the .egg format. For more information see [[Converting from Maya]].</td></tr>
+<tr><td>maya2egg6.exe</td><td>Converts files in the Maya 6 format to the .egg format. For more information see [[Converting from Maya]].</td></tr>
+<tr><td>maya2egg65.exe</td><td>Converts files in the Maya 6.5 format to the .egg format. For more information see [[Converting from Maya]].</td></tr>
+<tr><td>multify.exe</td><td>Stores and extracts files from a Panda MultiFile. Can also extract file in program using the <code>VitrualFileSystem</code> (see API for usage). For more information see executable.</td></tr>
+<tr><td>pdecrypt.exe</td><td>Decompress a file compressed by pencrypt. See executable for more inforamtion.</td></tr>
+<tr><td>pencrypt.exe</td><td>Runs an encryption algorithm on the specified file. The original file can only be recovered by using pdecrypt. See executable for more information.</td></tr>
+<tr><td>python.exe</td><td>Used to start Panda 3D. For more information see [[Starting Panda3D]]</td></tr>
+<tr><td>pstats.exe</td><td>Panda's built in performance tool. For more information see [[Measuring Performance with PStats]]</td></tr>
+<tr><td>pview.exe</td><td>Used to view models in the .egg or .bam format without having to create a Panda program. For more information see [[Previewing 3D Models in Pview]].</td></tr>
+<tr><td>stitch-command.exe</td><td>Checks the synatx and preproecees and sticth command file. See executable for more information. </td></tr>
+<tr><td>vrml2egg.exe</td><td>Converts files in the Virtual Reality Modeling Language format to the .egg format. For more information see [[Converting from other Formats]].</td></tr>
+<tr><td>x2egg.exe</td><td>Converts files in the Direct X format to the .egg format. Especially useful because it holds bone, joint and animation data. For more information see [[Converting from other Formats]].</td></tr>
+</table></center>

@@ -1,182 +1,152 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: License Info</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=License_Info" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/License_Info" title="License Info">License Info</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=License_Info" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+This is licence breakdown of panda3d.
+
+This is written from the point of view of creating a commercial (read closed source) game with panda3d.
+
+WARNING: This is not legal advice, it can be completely wrong, consult your lawyer.
+
+==== Before you Ship ====
+
+=== Your license must comply with these stuff ===
+* cannot forbid reverse engineering (LGPL)
+* cannot use any libs as advertisement (BSD/MIT)
+* must provide source if/when requested for GPL components (LGPL)
+* must include directory full of license, see bellow
+
+=== Your program should not include ===
+* MP3 
+* MPEG 
+* 3D Studio Max, Maya, SoftImage, Milkshape 3D, GMax files (just convert everything to egg and ship eggs, unless you paid for proper SDK)
+* SSL if you are distributing to countries with odd cryptographic laws.  (most people ignore this, http://rechten.uvt.nl/koops/cryptolaw/ )
+
+
+==== License stuff ====
+
+== Panda3d ==
+* BSD
+* use how ever you like.
+* MUST put the license some place
+* http://www.panda3d.org/license.php
+
+== Python ==
+* PSF
+* Use freely
+* http://www.python.org/download/releases/2.6.2/license/
+
+== OpenAL ==  
+* LGPL
+* MUST link dynamically
+* http://www.gnu.org/licenses/lgpl-3.0.txt
+
+== ZLib ==
+* ZLIP
+* Use freely
+* http://www.zlib.net/zlib_license.html
+
+== lippng ==
+* ZLIP
+* Use freely
+* http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
+
+== Netpbm (all panda3d image stuff) ==
+* Artistic License, GNU General Public License, MIT License
+* Use freely
+* http://sourceforge.net/projects/netpbm/
+
+== libjpeg ==
+* BSD-like
+* MUST inlcude README file
+* http://www.ijg.org/files/jpegsrc.v6b.tar.gz README
+
+== libtiff ==
+* MIT-like
+* use freely MUST include license
+* http://www.epsiia.com/licenses/libtiff.html
+
+== FreeType (text rendering) ==
+* BSD and GPL
+* MUST include BSD license
+* MUST not use GPL license
+* http://freetype.sourceforge.net/FTL.TXT
+
+== Nvidia Cg Toolki ==
+* proprietary
+* Use freely
+* http://developer.download.nvidia.com/cg/Cg_2.2/license.pdf
+
+== FFMpeg ==
+* LGPL 
+* MUST link dynamically
+* MUST remove libpostproc (GPL) and libswscale (GPL)
+* MUST not use MPEG-4 (mp3, mpeg... - patent issues)
+* http://www.ffmpeg.org/legal.html
+* http://www.gnu.org/licenses/lgpl-3.0.txt
+
+== Direct X ==
+* proprietary 
+* use freely
+* http://www.microsoft.com/downloads/details.aspx?familyid=8b5cd64e-b4be-4135-95f8-ecfcf9182431&displaylang=en
+
+== MFC (windows libs) ==
+* proprietary 
+* use freely
+
+== ODE (Physics) ==
+* BSD or GPL
+* MUST not use GPL
+* MUST include LICENSE-BSD.TXT
+* http://www.ode.org/ode-license.html
+
+== squish ==
+* MIT-like
+* use freely
+
+== openssl ==
+* MIT-like
+* MUST not include SSL if you are distributing to countries with odd cryptographic laws. (most people ignore this)
+* MUST include an acknowledgement: "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
+* http://www.openssl.org/source/license.html
+
+== fcollada ==
+* MIT
+* use freely
+* http://www.opensource.org/licenses/mit-license.php
+
+== libvrpn (Virtual Reality Peripheral Network) ==
+* public domain
+* Use freely
+* http://www.cs.unc.edu/Research/vrpn/obtaining_vrpn.html
+
+== OpenCV (Web Cams capture ) ==
+* BSD 
+* MUST include license
+* http://www.debian.org/misc/bsd.license
+
+=== Must buy or not include ===
+
+== FMOD ==  
+* proprietary
+* need to pay between $100 to $6000
+* MUST be removed or payed for commercial distribution.
+* http://www.fmod.org/index.php/sales
+
+== MP3 ==
+* US patent
+* must pay minimum $15000
+* http://mp3licensing.com/royalty/software.html
+
+== MPEG ==
+* US patent
+* Must pay some high number
+* http://www.mpegla.com/index1.cfm
+
+== ARToolKit (augmented reality) ==
+* GPL
+* MUST be removed for commercial distribution.
+* Unless you negotiate/buy it under a different license:
+* http://www.hitl.washington.edu/artoolkit/license.html
+
+== FFTW (discrete Fourier transform) ==
+* GPL
+* MUST be removed for commercial distribution.
+* Unless you negotiate/buy it under a different license:
+* http://www.fftw.org/fftw3_doc/License-and-Copyright.html

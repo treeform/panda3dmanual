@@ -1,2 +1,0 @@
-#REDIRECT [[Using Pixel Shaders in Cg]]
-

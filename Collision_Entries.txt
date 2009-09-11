@@ -1,181 +1,57 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Collision Entries</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Collision_Entries" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Collision_Entries" title="Collision Entries">Collision Entries</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Collision_Entries" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean2"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean2-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus4"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus4-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-spider/spider01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-spider/spider01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Spiderman game from Building Virtual Worlds class
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+For each collision detected, a new <code>CollisionEntry</code> object is created.  This CollisionEntry stores all the information about the collision, including the two objects (nodes) involved in the collision, and the point of impact and the surface normal of the into object at that point.
+
+The CollisionEntry object is passed to the event handler method by the <code>CollisionHandlerEvent</code> and its derivatives; it is also the object stored in the queue of collisions maintained by the <code>CollisionHandlerQueue</code>.
+
+However you get a handle to CollisionEntry object, you can query it for information using the following methods:
+
+[python]
+<center><table>
+<tr><td><code>entry.getFromNodePath()</code></td><td>Returns the NodePath of the "from" object.  This NodePath will contain a CollisionNode.</td></tr>
+<tr><td><code>entry.getIntoNodePath()</code></td><td>Returns the NodePath of the "into" object.  This NodePath will contain a CollisionNode, or if the collision was made with visible geometry, a GeomNode.</td></tr>
+<tr><td><code>entry.getFrom()</code></td><td>Returns the actual CollisionSolid of the "from" object.  This is useful if there were more than one CollisionSolid in the "from" CollisionNode.</td></tr>
+<tr><td><code>entry.getInto()</code></td><td>Returns the actual CollisionSolid of the "into" object.  However, if the collision was made with visible geometry, there is no CollisionSolid, and this will be an invalid call.</td></tr>
+<tr><td><code>entry.hasInto()</code></td><td>Returns true if the collision was made into a CollisionSolid as opposed to visible geometry, and thus the above call will be valid.</td></tr>
+<tr><td><code>entry.getSurfacePoint(nodePath)</code></td><td>Returns the 3-D point of the collision, in the coordinate space of the supplied NodePath.  This point will usually be on the surface of the "into" object.</td></tr>
+<tr><td><code>entry.getSurfaceNormal(nodePath)</code></td><td>Returns the 3-D surface normal of the "into" object at the point of the collision, in the coordinate space of the supplied NodePath.</td></tr>
+<tr><td><code>entry.getInteriorPoint(nodePath)</code></td><td>Returns the 3-D point, within the interior of the "into" object, that represents the depth to which the "from" object has penetrated.</td></tr>
+</table></center>
+[/python]
+
+
+[cxx]
+<center><table>
+<tr><td><code>entry->get_from_nodePath()</code></td><td>Returns the NodePath of the "from" object.  This NodePath will contain a CollisionNode.</td></tr>
+<tr><td><code>entry->get_into_nodePath()</code></td><td>Returns the NodePath of the "into" object.  This NodePath will contain a CollisionNode, or if the collision was made with visible geometry, a GeomNode.</td></tr>
+<tr><td><code>entry->get_from()</code></td><td>Returns the actual CollisionSolid of the "from" object.  This is useful if there were more than one CollisionSolid in the "from" CollisionNode.</td></tr>
+<tr><td><code>entry->get_into()</code></td><td>Returns the actual CollisionSolid of the "into" object.  However, if the collision was made with visible geometry, there is no CollisionSolid, and this will be an invalid call.</td></tr>
+<tr><td><code>entry->has_into()</code></td><td>Returns true if the collision was made into a CollisionSolid as opposed to visible geometry, and thus the above call will be valid.</td></tr>
+<tr><td><code>entry->get_surface_point(nodePath)</code></td><td>Returns the 3-D point of the collision, in the coordinate space of the supplied NodePath.  This point will usually be on the surface of the "into" object.</td></tr>
+<tr><td><code>entry->get_surface_normal(nodePath)</code></td><td>Returns the 3-D surface normal of the "into" object at the point of the collision, in the coordinate space of the supplied NodePath.</td></tr>
+<tr><td><code>entry->get_interior_point(nodePath)</code></td><td>Returns the 3-D point, within the interior of the "into" object, that represents the depth to which the "from" object has penetrated.</td></tr>
+</table></center>
+[/cxx]
+
+The three methods that return points or vectors all accept a NodePath as a parameter.  This can be any NodePath in the scene graph; it represents the coordinate space in which you expect to receive the answer.  For instance, to receive the point of intersection in the coordinate space of the "into" object, use:
+
+[python]<code python>
+point = collisionEntry.getSurfacePoint(collisionEntry.getIntoNodePath())
+</code>
+[/python]
+
+[cxx]
+<code cxx>
+point = collisionEntry->get_surface_point(collisionEntry->get_into_node_path());
+</code>
+[/cxx]
+
+If you wanted to put an axis at the point of the collision to visualize it, you might do something like this:
+
+[python] <code python>
+axis = loader.loadModel('zup-axis.egg')
+axis.reparentTo(render)
+point = collisionEntry.getSurfacePoint(render)
+normal = collisionEntry.getSurfaceNormal(render)
+axis.setPos(point)
+axis.lookAt(point + normal)
+</code>
+[/python]

@@ -1,181 +1,103 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Fog</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Fog" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Fog" title="Fog">Fog</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Fog" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-guidinglights/guidinglights01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-guidinglights/guidinglights01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">In Guiding Lights, the audience steers a moth to safety</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-keepsake/keepsake03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-keepsake/keepsake03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Keepsake: a short interactive movie, themes of loss
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+==Basic Fog==
+
+To turn on fog, create an object of class <code>Fog</code>, and then apply it using the <code>setFog</code> operator:
+
+<pre class="codeblock">
+myFog = Fog("Fog Name")
+myFog.setColor(R,G,B)
+myFog.setExpDensity(Float 0 to 1)
+render.setFog(myFog)
+</pre>
+
+However, there is more here than meets the eye.  We have created a <i>fog node</i>, which goes into the scene graph.  Therefore, the fog has a position,
+a place where the fog is (conceptually) thickest.  
+
+If the fog object is not parented into the scene graph (in the example above, for instance), then the fog's position is ignored, and the fog is
+camera-relative.  Likewise, if the fog is exponential, the fog's position
+is ignored, and the fog is camera-relative.
+
+The <code>setFog</code> directive creates a fog attribute object.  Like any [[Render Attributes|Render Attribute]], the fog attribute affects the node that it is attached to, and any nodes below it in the scene graph.  So you can easily cause only a subset of the objects (or just a single model) to be affected by the fog, by calling <code>setFog</code> on the root of the subgraph you want to be affected.  To remove the fog attribute later, use the <code>clearFog</code> directive:
+
+<pre class="codeblock">
+render.clearFog()
+</pre>
+
+While you have fog in effect, it is often desirable to set the background color to match the fog:
+
+<pre class="codeblock">
+base.setBackgroundColor( myFogColor )
+</pre>
+
+==Fog Modes==
+There are two fog modes in Panda: <code>Fog.MExponential</code> and <code>Fog.MLinear</code>. You can switch the mode of a <code>Fog</code> object using <code>fog.getMode()</code> and <code>fog.setMode(Fog.Mode)</code>. This explicit mode switching isn't normally necessary, as <code>Fog</code> methods implicitly switch the mode for you.
+
+A <code>Fog</code> object in Panda3D is a <em>node</em> that can be parented into the scene graph with a position, colour and orientation like any other node (importantly, <code>Fog</code> is a subclass of <code>PandaNode</code>, not of <code>NodePath</code>) <em>(do <code>Fog</code> nodes have a scale?)</em>.
+
+The position of a <code>Fog</code> node in the scene graph <em>does not determine which objects the fog affects</em>, it determines the origin and direction of the fog <em>when it is in linear mode</em>. When a fog node is in exponential mode its position and orientation in the scene graph are irrelevant. Either way, a <code>Fog</code> node must be activated by calling <code>nodePath.setFog(fogNode)</code> on some <code>NodePath</code> in the scene graph. Which <code>NodePath</code> you call the <code>setFog</code> method on determines which parts of the scene will be fogged: that <code>NodePath</code> and all its children.
+
+===Linear Fog===
+
+This is the default mode. In this mode the <i>position</i> and <i>orientation</i> of a <code>Fog</code> node are important. A linear-mode <code>Fog</code> node must first be parented into the scene graph, then activated by calling <code>setFog(fogNode)</code> on some <code>NodePath</code> in the scene graph.
+
+Setup a linear fog node at the origin:
+<pre class="codeblock">
+colour = (0.5,0.8,0.8)
+linfog = Fog(&quot;A linear-mode Fog node&quot;)
+linfog.setColor(*colour)
+linfog.setLinearRange(0,320)
+linfog.setLinearFallback(45,160,320)
+render.attachNewNode(linfog)
+render.setFog(linfog)
+</pre>
+
+In linear mode, the <em>onset</em> and <em>opaque</em> distances of the fog are defined as offsets <em>along the local forward (+Y) axis</em> of the fog node. The onset distance is the distance from the fog node at which the fog will begin to have effect, and the opaque distance is the distance from the fog node at which the fog will be completely opaque. From reading the API page for the <code>Fog</code> class, it sounds as if beyond this opaque point there is no fog (rather than continuing opaque fog up to the location of the fog node as you might expect): "the fog will be rendered as if it extended along the vector from the onset point to the opaque point."
+
+These settings can be modified using the methods <code>getLinearOnsetPoint()</code>, <code>getLinearOpaquePoint()</code>, <code>setLinearOnsetPoint(float x,y,z)</code>, <code>setLinearOpaquePoint(Point3D pos)</code> and <code>setLinearRange(float onset, float opaque)</code> of <code>Fog</code>.
+
+There is a hardware issue with rendering fog which means that linear fog can breakdown and vanish depending on the angle from which it is viewed:
+
+<blockquote>
+"the underlying fog effect supported by hardware is generally only one-dimensional, and must be rendered based on linear distance from the camera plane. Thus, this in-the-world effect is most effective when the fog vector from onset point to opaque point is most nearly parallel to the cameras eye vector. As the angle between the fog vector and the eye vector increases, the accuracy of the effect diminishes, up to a complete breakdown of the effect at a 90 degree angle."
+</blockquote>
+
+The <code>Fog</code> method <code>setLinearFallback(float angle, float onset, float opaque)</code> defines how the fog should be rendered when the fog effect is diminished in this way. <code>angle</code> is the minimum viewing angle (angle between the camera direction and fog direction) at which the fallback effect will be employed. <code>onset</code> and <code>opaque</code> specify <em>camera-relative</em> onset and opaque distances that will be fallen back on, overriding the <code>Fog</code> nodes own onset and opaque distances.
+
+The <code>setLinearFallback(float angle, float onset, float opaque)</code> workaround will only look good in certain situations, for example when the fog is deep inside a dark cave. So in general, exponential mode fog is more useful than the default linear mode fog.
+
+===Exponential Fog===
+
+In exponential fog mode the position and orientation of your fog node in the scene graph and the onset and opaque points are ignored (in fact you dont even have to put your fog node in the scene graph). Instead, fog is rendered camera relative according to a density factor: the fog begins at the camera and continues to infinity, with an exponentially increasing density determined by the density factor. The fog moves with the camera as the cameras position and orientation changes:
+
+<blockquote>
+"the onset point and opaque point are not used, and the fog effect is based on the value specified to <code>set_exp_density()</code>, and it doesnt matter to which node the fog object is parented, or if it is parented anywhere at all."
+</blockquote>
+
+The <code>fog.setExpDensity(float)</code> method determines the density value used for exponential fog calculations.
+
+You activate an exponential fog effect by calling the <code>setFog(Fog)</code> method of <code>NodePath</code>, for example: <code>render.setFog(myFog)</code>:
+
+Setup some scene-wide exponential fog:
+
+<pre class="codeblock">
+colour = (0.5,0.8,0.8)
+expfog = Fog(&quot;Scene-wide exponential Fog object&quot;)
+expfog.setColor(*colour)
+expfog.setExpDensity(0.005)
+render.setFog(expfog)
+base.setBackgroundColor(*colour)
+</pre>
+
+The last line in the sample above doesn't actually affect the fog,
+however, it generally looks better if the scene background color
+matches the color of the fog.
+
+Since <code>setFog</code> is called on <code>render</code> it effects
+the entire scene. <code>setFog</code> can just as easily be called on
+some other <code>NodePath</code> and will effect only that
+<code>NodePath</code> and its children.
+
+The expontential fog effect can be turned off again using <code>clearFog</code>:
+
+<pre class="codeblock">
+render.clearFog()
+</pre>

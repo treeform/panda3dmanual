@@ -1,181 +1,89 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: How to use a Python Editor</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=How_to_use_a_Python_Editor" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/How_to_use_a_Python_Editor" title="How to use a Python Editor">How to use a Python Editor</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=How_to_use_a_Python_Editor" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean8"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean8-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus8"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus8-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+[cxx]This page is for Python users only - please toggle the Python version of this page or use the "next" button to navigate to the next page.[/cxx]
+[python]<h2>Creating a Program: General Outline</h2>
+
+Panda3D is a library of subroutines; not an application. This means that
+unlike all the other programs on your computer, you wonâ€™t find any program
+icons or shortcuts to start it.  Instead, you must use a
+programmer's editor to create your program.  The basic steps are:
+
+* Create an empty directory for your program.
+* Obtain a programmer's editor.
+* Start the programmer's editor.
+* Type in a program into the editor.
+* Save the program in your program's directory.
+* Start a command prompt.
+* Change directory to your program's directory.
+* Run the program using 'python.exe'
+
+These steps will be explained in more detail below.  The detailed descriptions are for windows users and cover only the PyPE editor.  Linux users, you're on your own.
+
+Possible programmer's editors are:
+
+Windows:
+* [http://pype.sf.net/ PyPE]
+* [http://www.pspad.com/ PSPad]
+* [http://geany.uvena.de/ Geany]
+* [http://www.crimsoneditor.com/ Crimson Editor]
+* [http://notepad-plus.sf.net/ Notepad++]
+* [http://pythonide.blogspot.com/ Stani's Python Editor]
+* [http://www.eclipse.org Eclipse] in combination with [http://pydev.sourceforge.net/ PyDev]
+
+Linux:
+* [http://geany.uvena.de/ Geany]
+* [http://pythonide.blogspot.com/ Stani's Python Editor]
+* [http://www.eclipse.org Eclipse] in combination with [http://pydev.sourceforge.net/ PyDev]
+* [http://www.die-offenbachs.de/eric/index.html Eric Python IDE]
+* [http://kate-editor.org/ Kate] (KDE only)
+* [http://scribes.sourceforge.net/ Scribes] or [http://www.gnome.org/projects/gedit/ gedit] in combination with [http://ipython.scipy.org/moin/ IPython]
+
+The next part of this page will only explain usage with PyPE.
+
+<h2>Creating a Directory for your Program</h2>
+
+So, you now need to create a place where you can save all your scripts. Panda3D  can run a script from anywhere on your computer, but it looks for models and other assets in the folder that it is run from. If those assets arenâ€™t present, then youâ€™ll get an error message when you try to run it. So, I believe that the easiest thing for the beginner to do, is to make a new folder in the main Panda3D directory itself (which already contains all the models and other assets that youâ€™ll need).
+
+To do this, click your computers â€˜Startâ€™ button, then â€˜My Computerâ€™. 
+
+[[Image:pic018kw.jpg]]
+
+Then double-click â€˜Local Disk (C)â€™ (if the contents of this drive are hidden, just click â€˜Show the contents of this folderâ€™). Now find the Panda3D folder and double-click on it to open it.
+
+On the top menu bar click â€˜File > New > Folderâ€™. This will create a new folder in the Panda3D directory, backspace out the name and type a new name for it (I called mine mystuff).
+
+<h2>Obtaining a Programmer's Editor</h2>
+
+One of pythonâ€™s strong points, is that you donâ€™t need a compiler to write your scripts, however, you do need a good editor.  Do not try to use Windows Notepad or Wordpad: they are not designed for this.  Instead, you will need a programmer's editor. A well-known python editor is PyPE (which is completely free and makes writing python scripts a whole lot easier). You can download it from this location:
+
+http://sourceforge.net/projects/pype/
+
+If you're using Windows, download the PyPE-2.8-win-ansi.zip (as of writing this was the latest version). You don't need to install this program, you just download and unzip it somewhere, then open the unzipped folder and double-click on the PyPE icon to run it (or right-click on the icon and send it to the desktop as a shortcut, then simply run it by double-clicking the icon on your desktop).
+
+[[Image:pic036qj.jpg]]
+
+<h2>Typing your Program into the Editor</h2>
+
+Open PyPE, then click â€˜File > Newâ€™ on the top menu bar to open a new work environment.  Now type the following code (or just copy and paste it):
+
+<table class="code"><tr><td>
+import direct.directbase.DirectStart
+<br>run()
+</td></tr></table>
+
+Notice that PyPE automatically highlights certain words and numbers the lines for you. This is a very nice feature which makes finding errors much easier. 
+
+[[Image:pic048lg.jpg]]
+
+Youâ€™ve just written your first Panda3D script. Itâ€™s not much, but those few lines of code tell Panda3D to start. But before you can run this script, you must save it. So click â€˜File > Save Asâ€™ on the top menu bar and a new window should open.
+
+[[Image:pic053gq.jpg]]
+
+At the top of this new window there is a â€˜Save in:â€™ text box, which is pointing to â€˜PyPE-2.8-win-ansiâ€™, you DONâ€™T want to save your script there, so click the little down arrow beside the text box, then scroll down the list and click â€˜Local Disk (C)â€™, then double-click on the Panda3D folder to open it.  Find the â€˜mystuffâ€™ folder that we created earlier and double-click on it to open it. 
+
+[[Image:pic069he.jpg]]
+
+Next, type a name for your script in the â€˜File name:â€™ text box. I called mine myscript.py (make sure you put .py on the end of the name). Then click the â€˜Saveâ€™ button. 
+
+[[Image:pic073oi.jpg]]
+
+You can now close PyPE.
+[/python]

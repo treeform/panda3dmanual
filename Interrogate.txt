@@ -1,182 +1,62 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Interrogate</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Interrogate" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Interrogate" title="Interrogate">Interrogate</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Interrogate" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D07"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D07-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight07"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight07-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<h2>Interrogate</h2>
+Interrogate is a program to parse a body of C++ code and build up a table
+of classes, methods, functions, and symbols found, for the purposes of
+calling into the codebase via a non-C++ scripting language like Python (Scheme and Smalltalk were also tried at some point) The design of interrogate is such that it should be able to produce wrappers for any other language without too much trouble. You'll have to be responsible for writing and maintaining the interface layer to produce the wrappers, though. 
+
+In addition to identifying all the classes and their relationships,
+interrogate will generate a wrapper function for each callable function.
+The wrapper functions will be callable directly from the scripting language,
+with no understanding of C++ necessary; these wrapper functions will in turn
+call the actual C++ functions or methods.
+
+Most exportable features of C++ are supported, including templates, default
+parameters, and function overloading.
+
+<h2>How to use it</h2>
+There are a few steps involved in generating python wrappers using interrogate.
+Steps for Interrogate:
+* In this example it is assumed you have a header file called test.h and a source file called test.cxx.
+* Run Interrogate on your .h file which will generate a test_igate.cxx and a test.in file, for example:
+<pre class="codeblock">interrogate -oc test_igate.cxx -od test.in -python-native test.h</pre>
+* Most likely, you want to specify more flags to the interrogate command, like -string, -fnames, -refcount, or -assert. Consult the interrogate help file for more information about that (run interrogate with -h option)
+* Now, you will need to call interrogate_module and generate an interrogate_module.cxx file based on your two files from the previous step:
+<pre class="codeblock">interrogate_module -oc test_module.cxx -python-native test.in</pre>
+* Note that you can also run interrogate with the -do-module option which will automatically make sure interrogate_module gets called too.
+* Now you can compile all your source files, and, the test_module.cxx and test_igate.cxx files.
+* When you want to link your C++ files together to form a library, also include the _igate and _module object files. This will make sure it will include the python wrappers.
+* You can now put it on your python path (or make sure it's in the same directory) and import it directly by the name of your library.
+<pre class="codeblock">from libtest import TestClass</pre>
+* Note: In python versions 2.5 and higher, you can not directly load .dll files on windows this way. You will either need to rename your dll into a pyd extension (which will load without problems, hopefully) or you need to preload your library using the imp module.
+
+<h2>Calling Interrogate</h2>
+This section will explain how to call interrogate and will briefly address the most important options. For the full documentation, however, refer to the interrogate help file (accessible by calling interrogate with the -h option).
+
+When calling interrogate, you will need to include the -oc and -od options, which specify where the generated code and function tables, respectively, will be written.
+
+The -module and -library options are used to specify the name of your module and library. These options are mainly code-organizational. You can omit both options.
+
+With -D you can ignore or make interrogate interpret symbols differently. For example, if your code uses a non-standard C macro like __inline, you would need to call interrogate with -D__inline. Or, if you would like certain defines to be defined differently, you can use -Ddefvar=value.
+
+Furthermore, there are a few special flags that you most likely want to include. There is the -string option, which treats the C++ char* and STL strings as special cases, and maps them to the scripting language's string equivalent, instead of a wrapper to basic_string<char>. The option -refcount makes the wrappers compatible with Panda3D's smart reference counting system, if your library depends on Panda3D you will want to include it too. The -assert option is just used for Python wrappers and specifies that when the C++ code throws an assert, this will be translated to an AssertionError exception in python.
+
+<h3>Wrapper functions</h3>
+There are three/four options that specify how to generate the wrapper functions:
+* The -c option will generate function wrappers using the C calling convention. Any scripting language that can call a C function should be able to make advantage of the interrogate database.
+* The -python option will generate function wrappers using the Python calling convention. In this case, the shared library will directly be loadable as python module (after interrogate_module is called), although C++ objects and methods will be converted into an object handle and a list of independent Python functions.
+* The -python-native option generates true python objects for C++ objects, and translates all C++ methods to true Python methods. This is the option you will most likely want to use.
+* There is also the -python-obj option, but I think it does the same as -python-native.
+
+You can also specify a combination of any of those. If all are omitted, the default is -c.
+
+Here's a small example:
+<pre class="codeblock">interrogate -D__inline -DCPPPARSER -D__cplusplus -S/usr/include/panda3d/parser-inc -S/usr/include/ -I/usr/include/panda3d/
+-oc myModule_igate.cxx -od myModule.in -fnames -string -refcount -assert -python-native
+-module libMyModule -library libMyModule myModule.h
+
+interrogate_module -oc myModule_module.cxx -module libMyModule
+-library libMyModule -python-native myModule.in</pre>
+
+<h2>More Information</h2>
+* You can run the interrogate commands with the -h option to get a more detailed explanation of the options available.
+* There is a sample C++ extension in the skel/ directory in the Panda3D source to use as reference and sandbox.
+* David Rose, from Walt Disney VR Studio, has held a lecture about interrogate. You can watch a video recording of it [http://video.google.com/videoplay?docid=8716922590223131644&hl=en here]. (Recorded June 4, 2008)

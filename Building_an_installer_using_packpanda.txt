@@ -1,182 +1,112 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Building an installer using packpanda</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Building_an_installer_using_packpanda" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Building_an_installer_using_packpanda" title="Building an installer using packpanda">Building an installer using packpanda</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Building_an_installer_using_packpanda" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates06"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates06-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-projectimprov/projectimprov04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-projectimprov/projectimprov04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Improvisational acting techniques are used to improve character behavior
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Note: In version 1.6.0, support was added for Linux. Before this version, you will only be able to use packpanda on a windows system.
+
+Packpanda is a utility that lets you create an automatic self-extracting installer for a Panda3D game. On linux, it is capable of creating an .rpm or .deb package. On Windows, it creates an installation wizard, that will look like this:
+
+<p align="center"> [[Image:packpanda1.jpg]] </p>
+
+When the installation is done, the end-user will find your game in his start menu:
+
+<p align="center"> [[Image:packpanda2.jpg]] </p>
+
+The end-user doesn't need to have a copy of panda.  He doesn't even need to know that he is using panda.  He just installs the game and plays it.
+
+<b>Files that your Game should Contain</b>
+
+Before you pack up your game, you need to put all of your game files into a single directory (which may have as many subdirectories as you desire).  This directory will be packed up and shipped to the user, along with the panda runtime system.  Your game directory needs to contain several files:
+
+
+<i>main.py</i>.  This is your main program.  When the user clicks on the start-menu entry for the game, this is the file that will get executed.
+
+<i>installer.bmp</i>.  Windows only. This image will appear on the installer screen.   If present, it must be a 164x314 windows BMP file.  This file is not required.
+
+<i>license.txt</i>.  This is your game's software license.  The file, if present, must be plain ascii.  The game's license will appear inside the installer, and will also be copied to the game's installation directory.  Of course, your license only covers the code that you wrote, not panda itself, which is covered by the panda license.  The license file is not required.
+
+<i>icon.ico</i>.  Windows only. This is your game's icon, which will appear in the start menu.  If you don't supply an icon, the panda icon will be used instead.  This file is not required.  
+
+<b>Packing up your Game</b>
+
+The command to pack up your game is "packpanda", and you must specify the "--dir" command line option to tell it the name of the directory containing your game.  Packpanda will immediately analyze your game and print out a status report:
+
+<p align="center"> [[Image:packpanda3.jpg]] </p>
+
+In this example, packpanda has inferred that the name of the game is "Airblade," based on the directory name.  On Windows, it will install the game into "C:\Airblade", and to add the start menu folder "Airblade".  It plans to call the installer "Airblade.exe" (append .rpm or .deb for linux). Later, we will tell you how to override some of these defaults.
+
+As you can see, packpanda is looking inside the game directory for the files mentioned above: main.py, installer.bmp, icon.ico, and license.txt.  It notes that some of those files are "missing", which is not a problem.  The only file that is required is main.py.
+
+Packpanda can clean up your source tree before shipping it.  When doing so, packpanda never modifies your original copy of the game.  Instead, it copies the game to a temporary directory, as seen above.
+
+<b>Automatically generating BAM and PYC files while Packing</b>
+
+Packpanda can optionally create BAM and PYC files and ship them to the end-user. To ask it to do so, use the following command-line options;
+
+<table class="code"><tr><td>
+packpanda --bam   # Generate and ship BAM files
+<br>packpanda --pyc   # Generate and ship PYC files
+</td></tr></table>
+
+These command line options do <i>not</i> remove the corresponding EGG and PY files from the distribution.  If you wish to remove EGG and PY files, you need to use the --rmext option, documented below.
+
+When packpanda generates a BAM or PYC file, it puts it in the same directory as the corresponding EGG or PY file.  If an EGG file contains a texture path, then the generated BAM will contain a <i>relative</i> texture path that is relative to the game's root directory.  Packpanda makes sure that your game's root directory ends up on the model path.
+
+<b>EGG Verification and PY Verification</b>
+
+Packpanda will check all of your EGG and PY files to make sure that they compile correctly.  It checks EGG files by running them through egg2bam.  It checks PY files by running the python compiler on them.  If any file fails, the game will not be packed.
+
+In fact, this is related to the --bam and --pyc options mentioned earlier.  In fact, packpanda always generates bam and pyc files.  However, if you do not specify the --bam and --pyc options, then these files will be generated, verified, and then discarded.  The effect of the --bam and --pyc options is to cause these files to be shipped to the end-user.
+
+<b>Preloading the Model Cache</b>
+
+If your distribution includes EGG files, and if you choose not to remove those using --rmext egg, then panda will convert them to BAM files at install time.  This is a somewhat time consuming process, it makes the install take longer.  If you want to avoid this, do not distribute EGG files --- instead, distribute BAM files, as explained above.
+
+<b>Stripping Files from the Distribution</b>
+
+Often, your master copy of a game contains files that should not be shipped to the end-user.  For situations like this, packpanda contains command-line options to strip out unnecessary files:
+
+<table class="code"><tr><td>
+packpanda --rmdir dir  # Strip all directories with given name
+<br>packpanda --rmext ext  # Strip all files with given extension
+</td></tr></table>
+
+These options are particularly useful in several common situations:
+
+<i>To remove CVS directories</i>: packpanda --rmdir CVS
+
+<i>To ship BAM instead of EGG</i>: packpanda --bam --rmext egg
+
+<i>To ship PYC instead of PY</i>: packpanda --pyc --rmext py
+
+<b>Changing the Game's Name</b>
+
+Normally, packpanda infers the game's name to be the same as the directory name.  That isn't always convenient, especially when the game has a long name.  The following command line option allows you to tell packpanda the name of the game:
+
+<table class="code"><tr><td>
+packpanda --name "Evil Space Monkeys of The Planet Zort"
+</td></tr></table>
+
+This string will show up in a number of places: in particular, throughout the installation dialogs, and in the start menu.
+
+<b>Version Numbers</b>
+
+If you wish, you can assign your game a version number using this command line option:
+
+<table class="code"><tr><td>
+packpanda --version X.Y.Z  # Assign a version number
+</td></tr></table>
+
+The only thing this does is to add "X.Y.Z" to the install directory and to the start menu item.  That, in turn, makes it possible for two versions of the same game to coexist on a machine without conflict.
+
+<b>Compression Speed</b>
+
+On Windows, packpanda uses a very good compression algorithm, but it's excruciatingly slow to compress.  You can specify this command line option to make it go faster, at the cost of compression effectiveness: (not available on Linux)
+
+<table class="code"><tr><td>
+packpanda --fast  # Quick but not so great compression
+</td></tr></table>
+
+<b>Moving Beyond Packpanda</b>
+
+Packpanda has a lot of limitations.  However, packpanda is actually a front end to more powerful systems. On Linux, it uses the system tools dpkg-deb and rpmbuild. On Windows, it uses NSIS, the "Nullsoft Scriptable Install System."  NSIS is incredibly powerful, and very flexible, but unfortunately rather complicated to use.  Packpanda hides all that complexity from you, but unfortunately, in so doing, it limits your options.
+
+If you find yourself outgrowing packpanda, one sensible thing to do would be to learn how to use those systems directly.  This is an easy transition to make.  The first step is to simply watch packpanda in action.  It will show you all of the commands it is executing.  You can then copy those commands into a batch file.  If you run that batch file, you're executing those base tools directly.
+
+Once you have direct control over NSIS, you can begin editing the NSIS command-line options and the NSIS configuration file (packpanda.nsi).  Of course, to do so, you'll need to first read the NSIS manual (available on the web).  From that point forward, you have unlimited flexibility.

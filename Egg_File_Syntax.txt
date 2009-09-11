@@ -1,2 +1,0 @@
-#REDIRECT [[Parsing and Generating Egg Files]]
-

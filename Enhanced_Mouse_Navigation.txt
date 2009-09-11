@@ -1,181 +1,53 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Enhanced Mouse Navigation</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Enhanced_Mouse_Navigation" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Enhanced_Mouse_Navigation" title="Enhanced Mouse Navigation">Enhanced Mouse Navigation</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Enhanced_Mouse_Navigation" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates05"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates05-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean3"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean3-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-projectimprov/projectimprov03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-projectimprov/projectimprov03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Improvisational acting techniques are used to improve character behavior
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Enhanced mouse navigation is only available when 'Direct Tools' are enabled.  Information on enabling 'Direct Tools' is available in the [[Panda Tools]] section.
+
+Direct Tools gives more functionality to the middle mouse button. First, clicking the middle mouse button changes the pivot point it uses to rotate around the environment. The middle mouse button will also move the camera depending on where the cursor is on the screen.
+
+<center>[[Image:directtools2.jpg]]</center>
+
+<center><table>
+<tr><td>Middle Mouse Click</td><td>Sets pivot point for rotating around the world</td></tr>
+<tr><td>Middle Mouse + Middle Region</td><td>Move camera parallel to ground</td></tr>
+<tr><td>Shift + Middle Mouse + Middle Region</td><td>Move camera vertically</td></tr>
+<tr><td>Middle Mouse + Edge Region</td><td>Rotate camera around pivot point</td></tr>
+<tr><td>Middle Mouse + Corner Region</td><td>Roll camera around pivot point</td></tr>
+<tr><td>Shift + Middle Mouse + Edge Region</td><td>Changes pitch of the camera</td></tr>
+</table></center>
+
+The left mouse button is now used to select and manipulate objects in the environment. Once an object is selected, it may be moved and rotated.
+
+<center><table>
+<tr><td>Left Mouse Click</td><td>Select an object</td></tr>
+<tr><td>Left Mouse + Middle Region</td><td>Move object vertically</td></tr>
+<tr><td>Shift + Left Mouse + Middle Region</td><td>Move object parallel to ground</td></tr>
+<tr><td>Left Mouse + Edge Region</td><td>Rotate object around its pivot point</td></tr>
+<tr><td>Left Mouse + Corner Region</td><td>Roll object around its pivot point</td></tr>
+<tr><td>Control + Left Mouse</td><td>Rescale the model</td></tr>
+</table></center>
+<p>Direct Tools uses a large number of hot keys for camera control, rendering styles, and object control. The full list is in the table below.</p>
+<center><table>
+<tr><td><b>Camera Control</b></td><td> </td><td><b>Render Style</b></td><td> </td></tr>
+<tr><td>+</td><td>Zoom in</td><td>Shift + A</td><td>Show all</td></tr>
+<tr><td>-</td><td>Zoom out</td><td>Control + F</td><td>Flash selected</td></tr>
+<tr><td>1</td><td>Front view (relative to render)</td><td>B</td><td>Toggle backface</td></tr>
+<tr><td>2</td><td>Back view (relative to render)</td><td>L</td><td>Toggle lights</td></tr>
+<tr><td>3</td><td>Right view (relative to render)</td><td>T</td><td>Toggle texture</td></tr>
+<tr><td>4</td><td>Left view (relative to render)</td><td>W</td><td>Toggle wireframe</td></tr>
+<tr><td>5</td><td>Top view (relative to render)</td><td> </td><td> </td></tr>
+<tr><td>6</td><td>Bottom view (relative to render)</td><td><b>Direct Controls</b></td><td> </td></tr>
+<tr><td>7</td><td>Â¾ view (relative to render)</td><td>Delete</td><td>Delete selected object</td></tr>
+<tr><td>8</td><td>Roll view about axis relative to cameraâ€™s axis</td><td>Escape</td><td>Delete all</td></tr>
+<tr><td>9</td><td>Rotate around hot point</td><td>Page Down</td><td>Move down selected objectâ€™s hierarchy</td></tr>
+<tr><td>0</td><td>Rotate around hot point</td><td>Page Up</td><td>Move up selected objectâ€™s hierarchy</td></tr>
+<tr><td>C</td><td>Center on hot point</td><td>Tab</td><td>Toggle widget mode</td></tr>
+<tr><td>F</td><td>Fit on hot point</td><td>Shift + F</td><td>Grow widget to fit current window</td></tr>
+<tr><td>H</td><td>Move to (0,0,0)</td><td>I</td><td>Plant selected object at cursor intersection point</td></tr>
+<tr><td>Shift + L</td><td>Toggle camera pivot point lock</td><td>M</td><td>Move widget in front of camera</td></tr>
+<tr><td>N</td><td>Select next possible camera COA (along last intersection ray)</td><td>P</td><td>Set active parent to selected object</td></tr>
+<tr><td>U</td><td>Orbit upright camera about hot point</td><td>R</td><td>WRT reparent selected to active parent</td></tr>
+<tr><td>Shift + U</td><td>Upright camera</td><td>Shift + R</td><td>Reparent selected to active parent</td></tr>
+<tr><td>`</td><td>Kill camera move task</td><td>S</td><td>Reselect last selected object</td></tr>
+<tr><td> </td><td> </td><td>V</td><td>Toggle widget visibility</td></tr>
+<tr><td><b>Undo/Redo</b></td><td> </td><td>Shift + V</td><td>Toggle COA marker visibility</td></tr>
+<tr><td>[</td><td>Undo</td><td><</td><td>Shrink widget</td></tr>
+<tr><td>]</td><td>Redo</td><td>></td><td>Expand widget</td></tr>
+</table>

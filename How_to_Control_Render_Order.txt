@@ -1,182 +1,133 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: How to Control Render Order</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=How_to_Control_Render_Order" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/How_to_Control_Render_Order" title="How to Control Render Order">How to Control Render Order</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=How_to_Control_Render_Order" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D07"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D07-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<b>How to Control Render Order</b>
+
+In most simple scenes, you can naively attach geometry to the scene
+graph and let Panda decide the order in which objects should be
+rendered.  Generally, it will do a good enough job, but there are
+occasions in which it is necessary to step in and take control of the
+process.
+
+To do this well, you need to understand the implications of render
+order.  In a typical OpenGL- or DirectX-style Z-buffered system, the
+order in which primitives are sent to the graphics hardware is
+theoretically unimportant, but in practice there are many important
+reasons for rendering one object before another.
+
+Firstly, state sorting is one important optimization.  This means
+choosing to render things that have similar state (texture, color,
+etc.) all at the same time, to minimize the number of times the
+graphics hardware has to be told to change state in a particular
+frame.  This sort of optimization is particularly important for very
+high-end graphics hardware, which achieves its advertised theoretical
+polygon throughput only in the absence of any state changes; for many
+such advanced cards, each state change request will completely flush
+the register cache and force a restart of the pipeline.
+
+Secondly, some hardware has a different optimization requirement, and
+may benefit from drawing nearer things before farther things, so that
+the Z-buffer algorithm can effectively short-circuit some of the
+advanced shading features in the graphics card for pixels that would
+be obscured anyway.  This sort of hardware will draw things fastest
+when the scene is sorted in order from the nearest object to the
+farthest object, or "front-to-back" ordering.
+
+Finally, regardless of the rendering optimizations described above, a
+particular sorting order is required to render transparency properly
+(in the absence of the specialized transparency support that only a
+few graphics cards provide).  Transparent and semitransparent objects
+are normally rendered by blending their semitransparent parts with
+what has already been drawn to the framebuffer, which means that it is
+important that everything that will appear behind a semitransparent
+object must have already been drawn before the semitransparent parts
+of the occluding object is drawn.  This implies that all
+semitransparent objects must be drawn in order from farthest away to
+nearest, or in "back-to-front" ordering, and furthermore that the
+opaque objects should all be drawn before any of the semitransparent
+objects.
+
+Panda achieves these sometimes conflicting sorting requirements
+through the use of bins.
+
+<B>Cull Bins</B>
+
+The CullBinManager is a global object that maintains a list of all of
+the cull bins in the world, and their properties.  Initially, there
+are five default bins, and they will be rendered in the following
+order:
+
+    Bin Name        Sort  Type
+    --------------  ----  ----------------
+    "background"     10   BT_fixed
+    "opaque"         20   BT_state_sorted
+    "transparent"    30   BT_back_to_front
+    "fixed"          40   BT_fixed
+    "unsorted"       50   BT_unsorted
+
+When Panda traverses the scene graph each frame for rendering, it
+assigns each Geom it encounters into one of the bins defined in the
+CullBinManager.  (The above lists only the default bins.  Additional
+bins may be created as needed, using either the
+CullBinManager::add_bin() method, or the Config.prc "cull-bin"
+variable.)
+
+You may assign a node or nodes to an explicit bin using the
+NodePath::set_bin() interface.  set_bin() requires two parameters, the
+bin name and an integer sort parameter; the sort parameter is only
+meaningful if the bin type is BT_fixed (more on this below), but it
+must always be specified regardless.
+
+If a node is not explicitly assigned to a particular bin, then Panda
+will assign it into either the "opaque" or the "transparent" bin,
+according to whether it has transparency enabled or not.  (Note that
+the reverse is not true: explicitly assigning an object into the
+"transparent" bin does not automatically enable transparency for the
+object.)
+
+When the entire scene has been traversed and all objects have been
+assigned to bins, then the bins are rendered in order according to
+their sort parameter.  Within each bin, the contents are sorted
+according to the bin type.
+
+If you want simple geometry that's in back of something to render in front
+of something that it logically shouldn't, add the following code to the model that you want in front:
+
+<pre class="codeblock">
+model.setBin("fixed", 40)
+model.setDepthTest(False)
+model.setDepthWrite(False)
+</pre>
+
+The above code will only work for simple models. If your model self occludes (parts of the model covers other parts of the model), the code will not work as expected. An alternative method is to use a [[Display_Regions|display region]] with <code>displayRegion.clearDepthActive(True)</code>.
+
+The following bin types may be specified:
+
+  BT_fixed
+
+    Render all of the objects in the bin in a fixed order specified by
+    the user.  This is according to the second parameter of the
+    NodePath::set_bin() method; objects with a lower value are drawn
+    first.
+
+  BT_state_sorted
+
+    Collects together objects that share similar state and renders
+    them together, in an attempt to minimize state transitions in the
+    scene.
+
+  BT_back_to_front
+
+    Sorts each Geom according to the center of its bounding volume, in
+    linear distance from the camera plane, so that farther objects are
+    drawn first.  That is, in Panda's default right-handed Z-up
+    coordinate system, objects with large positive Y are drawn before
+    objects with smaller positive Y.
+
+  BT_front_to_back
+
+    The reverse of back_to_front, this sorts so that nearer objects
+    are drawn first.
+
+  BT_unsorted
+
+    Objects are drawn in the order in which they appear in the scene
+    graph, in a depth-first traversal from top to bottom and then from
+    left to right.

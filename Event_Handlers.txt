@@ -1,181 +1,129 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Event Handlers</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Event_Handlers" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Event_Handlers" title="Event Handlers">Event Handlers</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Event_Handlers" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean7"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean7-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin07"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin07-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Events occur either when the user does something (such as clicking a [[Mouse Support|mouse]] or pressing a [[Keyboard Support|key]]) or when sent by the script using <code>messenger.send()</code>.  When an event occurs, Panda's "messenger" will check to see if you have written an "event handler" routine.  If so, your event handler will be called.  The messenger system is object-oriented, to create an event handler, you have to first create a class that inherits from DirectObject.  Your event handler will be a method of your class.
+
+<h2>Defining a class that can Handle Events</h2>
+
+The first step is to import class DirectObject:
+
+<pre class="codeblock">
+from direct.showbase import DirectObject
+</pre>
+
+With DirectObject loaded, it is possible to create a subclass of DirectObject. This allows the class to inherit the messaging API and thus listen for events.
+
+<pre class="codeblock">
+class myClassName(DirectObject.DirectObject):
+</pre>
+
+The sample below creates a class that can listen for events. The "accept" function notifies panda that the printHello method is an event handler for the mouse1 event.  The "accept" function and the various event names will be explained in detail later.
+
+<pre class="codeblock">
+class Hello(DirectObject.DirectObject):
+  def __init__(self):
+    self.accept('mouse1',self.printHello)
+  def printHello(self):
+    print 'Hello!'
+h = Hello()
+</pre>
+
+<h2>Event Handling Functions</h2>
+
+Events first go to a mechanism built into panda called the "Messenger." The messenger may accept or ignore events that it receives. If it accepts an event, then an event handler will be called. If ignored, then no handler will be called. 
+
+An object may accept an event an infinite number of times or accept it only once. If checking for an accept within the object listening to it, it should be prefixed with self. If the accept command occurs outside the class, then the variable the class is associated with should be used.
+
+<pre class="codeblock">
+myDirectObject.accept('Event Name',myDirectObjectMethod)
+myDirectObject.acceptOnce('Event Name',myDirectObjectMethod)
+</pre>
+
+Specific events may be ignored, so that no message is sent. Also, all events coming from an object may be ignored.
+
+<pre class="codeblock">
+myDirectObject.ignore('Event Name')
+myDirectObject.ignoreAll()
+</pre>
+
+Finally, there are some useful utility functions for debugging. The messenger typically does not print out when every event occurs. Toggling verbose mode will make the messenger print every event it receives. Toggling it again will revert it to the default. A number of methods exist for checking to see what object is checking for what event, but the print method will show who is accepting each event. Also, if accepts keep changing to the point where it is too confusing, the clear method will start the messenger over with a clear dictionary.
+
+<pre class="codeblock">
+messenger.toggleVerbose()
+print messenger
+messenger.clear()
+</pre>
+<h2>Sending Custom Events</h2>
+Custom events can be sent by the script using the code
+
+<pre class="codeblock">
+messenger.send('Event Name')
+</pre>
+
+A list of parameters can optionally be sent to the event handler. Parameters defined in <code>accept()</code> are passed first, and then the parameters defined in <code>send()</code>.
+for example this would print out "eggs sausage foo bar":
+
+<pre class="codeblock">
+class Test(DirectObject):
+    def __init__(self):
+        self.accept('spam',self.OnSpam,['eggs','sausage'])
+    def OnSpam(self,a,b,c,d):
+        print a,b,c,d
+Test()
+messenger.send('spam',['foo','bar'])
+run()
+</pre>
+
+<h2>A Note on Object Management</h2>
+
+When a DirectObject accepts an event, the messenger retains a reference to that DirectObject. To ensure that objects that are no longer needed are properly disposed of, they must ignore any messages they are accepting.
+
+For example, the following code may not do what you expect:
+
+<pre class="codeblock">
+import direct.directbase.DirectStart
+from direct.showbase import DirectObject
+from pandac.PandaModules import *
+
+class Test(DirectObject.DirectObject):
+    def __init__(self):
+        self.accept("FireZeMissiles",self._fireMissiles)
+
+    def _fireMissiles(self):
+        print "Missiles fired! Oh noes!"
+
+
+foo=Test() # create our test object
+
+del foo    # get rid of our test object
+
+messenger.send("FireZeMissiles") # oops! Why did those missiles fire?
+run()
+</pre> 
+
+Try the example above, and you'll find that the missiles fire even though the object that would handle the event had been deleted.
+
+One solution (patterned after other parts of the Panda3d architecture) is to define a "destroy" method for any custom classes you create, which calls "ignoreAll" to unregister from the event-handler system.
+
+<pre class="codeblock">
+import direct.directbase.DirectStart
+from direct.showbase import DirectObject
+from pandac.PandaModules import *
+
+class Test(DirectObject.DirectObject):
+    def __init__(self):
+        self.accept("FireZeMissiles",self._fireMissiles)
+
+    def _fireMissiles(self):
+        print "Missiles fired! Oh noes!"
+    
+    # function to get rid of me
+    def destroy(self):
+        self.ignoreAll() 
+
+
+foo=Test() # create our test object
+
+foo.destroy()    # get rid of our test object
+del foo
+
+messenger.send("FireZeMissiles") # No missiles fire
+run()
+</pre>

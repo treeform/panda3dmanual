@@ -1,181 +1,123 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Client-Server Connection</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Client-Server_Connection" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Client-Server_Connection" title="Client-Server Connection">Client-Server Connection</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Client-Server_Connection" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean1"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean1-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-projectimprov/projectimprov02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-projectimprov/projectimprov02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Improvisational acting techniques are used to improve character behavior
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+The first step in network communication is to establish the client-server connection. This entails two sets of operations: one for the server side (which listens for incoming connections), and one for the client side (which establishes a connection to the server). Both of these processes are described below.
+
+<h2>Preparing the server for connection</h2>
+
+An average Panda program acting as a server will need to create four classes:
+
+* A QueuedConnectionManager, which handles the low-level connection processes, establishes connections, and handles unexpected network termination
+
+* A QueuedConnectionListener, which waits for clients to request connection
+
+* A QueuedConnectionReader, which buffers incoming data from an active connection
+
+* A ConnectionWriter, which allows PyDatagrams to be transmitted out along an active connection
+
+The first step is to instantiate these four classes.
+
+<pre class="codeblock">
+cManager = QueuedConnectionManager()
+cListener = QueuedConnectionListener(self.cManager, 0)
+cReader = QueuedConnectionReader(self.cManager, 0)
+cWriter = ConnectionWriter(self.cManager,0)
+
+activeConnections=[] # We'll want to keep track of these later
+</pre>
+
+This method of instantiation prepares the classes in single-thread mode, which that realtime communication requires them to be polled periodically.
+
+To accept client connections, the server opens a special "rendezvous" socket at a specific port address. This port address must be known by both the client and the server. Additionally, a backlog is speicified; this is the number of incoming connection requests that the connection will track before it starts rejecting connection attempts. The responsibility for managing the rendezvous socket is passed to the QueuedConnectionListener, and a task is spawned to periodically poll the listener.
+
+<pre class="codeblock">
+port_address=9099 #No-other TCP/IP services are using this port
+backlog=1000 #If we ignore 1,000 connection attempts, something is wrong!
+tcpSocket = cManager.openTCPServerRendezvous(port_address,backlog)
+
+cListener.addConnection(tcpSocket)
+</pre>
+
+
+Since the network handlers we instantiated are polled, we'll create some tasks to do the polling.
+<pre class="codeblock">
+taskMgr.add(tskListenerPolling,"Poll the connection listener",-39)
+taskMgr.add(tskReaderPolling,"Poll the connection reader",-40)
+</pre>
+
+When a connection comes in, the tskListenerPolling function below handles the incoming connection and hands it to the QueuedConnectionReader. The connection is now established.
+
+<pre class="codeblock">
+def tskListenerPolling(taskdata):
+  if cListener.newConnectionAvailable():
+
+    rendezvous = PointerToConnection()
+    netAddress = NetAddress()
+    newConnection = PointerToConnection()
+
+    if cListener.getNewConnection(rendezvous,netAddress,newConnection):
+      newConnection = newConnection.p()
+      activeConnections.append(newConnection) # Remember connection
+      cReader.addConnection(newConnection)     # Begin reading connection
+  return Task.cont
+</pre>
+
+Once a connection has been opened, the QueuedConnectionReader may begin processing incoming packets. This is similar to the flow of the listener's task, but it is up to the server code to handle the incoming data.
+
+<pre class="codeblock">
+def tskReaderPolling(taskdata):
+  if cReader.dataAvailable():
+    datagram=NetDatagram()  # catch the incoming data in this instance
+    # Check the return value; if we were threaded, someone else could have
+    # snagged this data before we did
+    if cReader.getData(datagram):
+      myProcessDataFunction(datagram)
+  return Task.cont
+</pre>
+
+Note that the QueuedConnectionReader retrieves data from all clients connected to the server. The NetDatagram can be queried using NetDatagram.getConnection to determine which client sent the message.
+
+If the server wishes to send data to the client, it can use the ConnectionWriter to transmit back along the connection.
+
+<pre class="codeblock">
+ # broadcast a message to all clients
+myPyDatagram=myNewPyDatagram()  # build a datagram to send
+for aClient in activeConnections:
+  cWriter.send(myPyDatagram,aClient)
+</pre>
+
+Finally, the server may terminate a connection by removing it from the QueuedConnectionReader's responsibility. It may also deactivate its listener so that no more connections are received
+
+<pre class="codeblock">
+ # terminate connection to all clients
+
+for aClient in activeConnections:
+  cReader.removeConnection(aClient)
+activeConnections=[]
+
+ # close down our listener
+cManager.closeConnection(tcpSocket)
+</pre>
+
+<h2>Connecting with a client</h2>
+
+The process the client undertakes to connect to a server is extremely similar to the process the server undertakes to receive connections. Like the server, a client instantiates a QueuedConnectionManager, QueuedConnectionReader, and ConnectionWriter. However, there are some differences in the process. 
+In general, a client has no need to open a rendezvous socket or create a QueuedConnectionListener, since it will be doing the connecting itself. Instead, the client connects to a specific server by specifying the server's IP address and the correct socket ID.
+
+<pre class="codeblock">
+port_address=9099  # same for client and server
+
+ # a valid server URL. You can also use a DNS name
+ # if the server has one, such as "localhost" or "panda3d.org"
+ip_address="192.168.0.50"
+
+ # how long until we give up trying to reach the server?
+timeout_in_miliseconds=3000  # 3 seconds
+
+myConnection=cManager.openTCPClientConnection(ip_address,port_address,timeout_in_miliseconds)
+if myConnection:
+  cReader.addConnection(myConnection)  # receive messages from server
+</pre>
+
+When the client has finished communicating with the server, it can close the connection.
+
+<pre class="codeblock">
+cManager.closeConnection(myConnection)
+</pre>

@@ -1,182 +1,86 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Scene Graph Manipulations</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Scene_Graph_Manipulations" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Scene_Graph_Manipulations" title="Scene Graph Manipulations">Scene Graph Manipulations</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Scene_Graph_Manipulations" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D05"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D05-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-spider/spider03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-spider/spider03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Spiderman game from Building Virtual Worlds class
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<h2>The default scene graphs</h2>
+
+By default, there are two different scene graphs created automatically when you start up Panda3D.  These graphs are referred to by their top nodes: <b>render</b> and <b>render2d</b>.
+
+You use render most often; this is the top of the ordinary 3-D scene.  In order to put an object in the world, you will need to parent it to render (or to some node that is in turn parented to render).  
+
+You will use render2d to render 2-D GUI elements, such as text or buttons, that you want to display onscreen; for instance, a heads-up display.  Anything parented to render2d will be rendered on top of the 3-D scene, as if it were painted on the screen glass.
+
+The coordinate system of render2d is set up to match that of the mouse inputs: the lower-left corner of the screen is (-1, 0, -1), and the upper-right corner is (1, 0, 1).  Since this is a square coordinate system, but the screen is usually non-square, objects parented directly to render2d may appear squashed.  For this reason, Panda3D also defines a child of render2d, called <b>aspect2d</b>, which has a scale applied to it to correct the non-square aspect ratio of render2d.  Most often, you will parent GUI elements to aspect2d rather than render2d.
+
+Specifically, the coordinate system of aspect2d is by default scaled such that x ranges over [-ratio,ratio], and y ranges over [-1,1] where ratio is screen_size_x/screen_size_y (in the normal case of a window wider than it is tall).
+
+Finally, you may see references to one other top-level node called <b>hidden</b>.  This is simply an ordinary node that has no rendering properties set up for it, so that things parented to hidden will not be rendered.  Older Panda3D code needed to use hidden to remove a node from the render scene graph.  However, this is no longer necessary, and its use is not recommended for new programs; the best way to remove a node from render is to call nodePath.detach[python]N[/python][cxx]_n[/cxx]ode().
+
+<h2>Loading models</h2>
+
+You can load up a model with a filename path, in the [[Panda Filename Syntax]], to the model's egg or bam file.  In many examples, the filename extension is omitted; in this case, Panda will look for a file with either the .egg or .bam extension.
+
+[python]<code python>
+myNodePath = loader.loadModel("path/to/models/myModel.egg")
+</code>[/python]
+[cxx]<code cxx>
+NodePath myNodePath =
+  window->load_model(framework.get_models(),"path/to/models/myModel.egg");
+</code>[/cxx]
+
+The first time you call load[python]M[/python][cxx]_m[/cxx]odel() for a particular model, that model is read and saved in a table in memory; on each subsequent call, the model is simply copied from the table, instead of reading the file.
+
+The above call is appropriate for loading static models; for animated models, see [[Loading Actors and Animations]].
+
+<h2>Reparenting nodes and models</h2>
+
+One of the most fundamental scene graph manipulations is changing a node's parent.  You need to do this at least once after you load a model, to put it under render for viewing:
+
+[python]<code python>
+myModel.reparentTo(render)
+</code>[/python]
+[cxx]<code cxx>
+myModel.reparent_to(window->get_render());
+</code>[/cxx]
+
+And to remove it again:
+
+[python]<code python>
+myModel.detachNode()
+</code>[/python]
+[cxx]<code cxx>
+myModel.detach_node();
+</code>[/cxx]
+
+To completely remove a nodePath from the scene graph and memory call remove[python]N[/python][cxx]_n[/cxx]ode, this has the effect of emptying the node and releasing the memory taken up by the node. Use it only when you have no further use for the node:
+
+[python]<code python>
+myModel.removeNode()
+</code>[/python]
+[cxx]<code cxx>
+myModel.remove_node();
+</code>[/cxx]
+
+As you become more comfortable with scene graph operations, you may find yourself taking more and more advantage of a deeply nested scene graph, and you may start to parent your models to other nodes than just render.  Sometimes it is convenient to create an empty node for this purpose, for instance, to group several models together:
+
+[python]<code python>
+dummyNode = render.attachNewNode("Dummy Node Name")
+myModel.reparentTo(dummyNode)
+myOtherModel.reparentTo(dummyNode)
+</code>[/python]
+[cxx]<code cxx>
+NodePath dummyNode = window->get_render().attach_new_node("Dummy Node Name");
+myModel.reparent_to(dummyNode);
+myOtherModel.reparent_to(dummyNode);
+</code>[/cxx]
+
+Since a node inherits its position information from its parent node, when you reparent a node in the scene graph you might inadvertently change its position in the world.  If you need to avoid this, you can use a special variant on reparentTo():
+
+[python]<code python>
+myModel.wrtReparentTo(newParent)
+</code>[/python]
+[cxx]<code cxx>
+myModel.wrt_reparent_to(newParent);
+</code>[/cxx]
+
+The "wrt" prefix stands for "with respect to".  This special method works like [func]reparent_to()[/func], except that it automatically recomputes the local transform on myModel to compensate for the change in transform under the new parent, so that the node ends up in the same position relative to the world.
+
+Note that the computation required to perform wrtReparentTo() is a floating-point matrix computation and is therefore inherently imprecise.  This means that if you use wrtReparentTo() repeatedly, thousands of times on the same node, it may eventually accumulate enough numerical inaccuracies to introduce a slight scale on the object (for instance, a scale of 1, 1, 0.99999); if left unchecked, this scale could eventually become noticeable.
+
+Beginners tend to overuse this method; you should not use wrtReparentTo() unless there is a real reason to use it.

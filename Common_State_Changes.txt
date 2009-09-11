@@ -1,181 +1,195 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Common State Changes</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Common_State_Changes" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Common_State_Changes" title="Common State Changes">Common State Changes</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Common_State_Changes" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean3"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean3-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight06"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight06-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-projectimprov/projectimprov02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-projectimprov/projectimprov02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Improvisational acting techniques are used to improve character behavior
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<h2>Summary</h2>
+
+This page lists some of the most common changes you can make to a 3D node.
+This page is really only a quick cheat-sheet summary: the 
+detailed documentation for these operations comes later in the manual.
+
+<h2>State Change Cheat Sheet</h2>
+
+Two of the most common changes are position and orientation.
+
+[python]<code python>
+myNodePath.setPos(X, Y, Z)
+myNodePath.setHpr(Yaw, Pitch, Roll)
+</code>[/python][cxx]<code cxx>
+myNodePath.set_pos(X, Y, Z);
+myNodePath.set_hpr(Yaw, Pitch, Roll);
+</code>[/cxx]
+
+By default in Panda3D, the X axis points to the right, the Y axis is forward, and Z is up.  An object's rotation is usually described using Euler angles called Heading, Pitch, and Roll (sometimes called Yaw, Pitch, and Roll in other packages)--these specify angle rotations in degrees.  (If you are more comfortable using quaternions, the <code>[func]setQuat[/func]()</code> method can be used to specify the rotation as a quaternion.)
+
+You can change an object's size, either uniformly, or with a different value of x, y, and z.
+
+[python]<code python>
+myNodePath.setScale(S)
+</code>[/python][cxx]<code cxx>
+myNodePath.set_scale(S);
+</code>[/cxx]
+
+Sometimes it is convenient to adjust a single component individually:
+
+[python]<code python>
+myNodePath.setX(X)
+myNodePath.setY(Y)
+myNodePath.setZ(Z)
+myNodePath.setH(H)
+myNodePath.setP(P)
+myNodePath.setR(R)
+myNodePath.setSx(SX)
+myNodePath.setSy(SY)
+myNodePath.setSz(SZ)
+</code>[/python][cxx]<code cxx>
+myNodePath.set_x(X);
+myNodePath.set_y(Y);
+myNodePath.set_z(Z);
+myNodePath.set_h(H);
+myNodePath.set_p(P);
+myNodePath.set_r(R);
+myNodePath.set_sx(SX);
+myNodePath.set_sy(SY);
+myNodePath.set_sz(SZ);
+</code>[/cxx]
+
+Or all at the same time:
+
+[python]<code python>
+myNodePath.setPosHprScale(X, Y, Z, H, P, R, SX, SY, SZ)
+</code>[/python][cxx]<code cxx>
+myNodePath.set_pos_hpr_scale(X, Y, Z, H, P, R, SX, SY, SZ);
+</code>[/cxx]
+
+You can also query the current transform information for any of the above:
+
+[python]<code python>
+myNodePath.getPos()
+myNodePath.getX()
+myNodePath.getY()
+myNodePath.getZ()
+</code>[/python][cxx]<code cxx>
+myNodePath.get_pos();
+myNodePath.get_x();
+myNodePath.get_y();
+myNodePath.get_z();
+</code>[/cxx]
+
+Also, by using the functions <code>[func]setTag[/func]()</code> and <code>[func]getTag[/func]()</code> you can store your own information in key value pairs. For example:
+
+[python]<code python>
+myNodePath.setTag("Key", "value")
+</code>[/python][cxx]<code cxx>
+myNodePath.set_tag("Key", "value");
+</code>[/cxx]
+[python]You can also store Python objects as tags by using the <code>setPythonTag</code> function with the same arguments.[/python]
+
+As a more advanced feature, you may also set or query the position (or any of the above transform properties) of a particular NodePath with respect to another one.  To do this, specify the relative NodePath as the first parameter:
+
+[python]<code python>
+myNodePath.setPos(otherNodePath, X, Y, Z)
+myNodePath.getPos(otherNodePath)
+</code>[/python][cxx]<code cxx>
+myNodePath.set_pos(otherNodePath, X, Y, Z);
+myNodePath.get_pos(otherNodePath);
+</code>[/cxx]
+
+Putting a NodePath as the first parameter to any of the transform setters or getters makes it a relative operation.  The above <code>[func]setPos[/func]()</code> means to set myNodePath to the position (X, Y, Z), relative to otherNodePath--that is, the position myNodePath would be in if it were a child of otherNodePath and its position were set to (X, Y, Z).  The <code>[func]getPos[/func]()</code> call returns the position myNodePath would have if it were a child of otherNodePath.
+
+It is also important to note that you can use the NodePath in its own relative sets and gets. This maybe helpful in situations where you are concerned with distances. For example:
+
+[python]<code python>
+# Move myNodePath 3 units forward in the x
+myNodePath.setPos(myNodePath, 3, 0, 0)
+</code>[/python][cxx]<code cxx>
+// Move myNodePath 3 units forward in the x
+myNodePath.set_pos(myNodePath, 3, 0, 0);
+</code>[/cxx]
+
+These relative sets and gets are a very powerful feature of Panda's scene graph, but they can also be confusing; don't worry if it doesn't make sense right now.
+
+The <code>[func]lookAt[/func]()</code> method rotates an model to face another object; that is, it rotates the first object so that its +Y axis points toward the second object.  Note that a particular model might or might not have been generated with the +Y axis forward, so this doesn't necessarily make a model "look at" the given object.
+
+[python]<code python>
+myNodePath.lookAt(otherObject)
+</code>[/python][cxx]<code cxx>
+myNodePath.look_at(otherObject);
+</code>[/cxx]
+
+Color changes are another common alteration. Values for color are floating point numbers from 0 to 1, 0 being black, 1 being white.
+
+[python]<code python>
+myNodePath.setColor(R, G, B, A)
+</code>[/python][cxx]<code cxx>
+myNodePath.set_color(R, G, B, A);
+</code>[/cxx]
+
+If models have textures, they may not be distinguishable or even visible at certain color settings. Setting the color to white may restore the visibility of the texture, but it is better to simply clear the current color settings.
+
+[python]<code python>
+myNodePath.clearColor()
+</code>[/python][cxx]<code cxx>
+myNodePath.clear_color();
+</code>[/cxx]
+
+Note the fourth component of color is alpha.  This is usually used to indicate transparency, and it is usually 1.0 to indicate the object is not transparent.  If you set the alpha to a value between 0 and 1, you can fade the object to invisible.  However, in order for the alpha value to be respected, you must first enable transparency:
+
+[python]<code python>
+myNodePath.setTransparency(TransparencyAttrib.MAlpha)
+</code>[/python][cxx]<code cxx>
+myNodePath.set_transparency(TransparencyAttrib::M_alpha);
+</code>[/cxx]
+
+The parameter to <code>[func]setTransparency[/func]()</code> is usually <code>TransparencyAttrib[::]M[python]A[/python][cxx]_a[/cxx]lpha</code>, which is ordinary transparency.  You can also explicitly turn transparency off with <code>TransparencyAttrib[::]M[python]N[/python][cxx]_n[/cxx]one</code>.  (Other transparency modes are possible, but that is a more advanced topic.  Some older code may pass just 0 or 1 for this parameter, but it is better to name the mode.)  If you don't explicitly enable transparency first, the alpha component of color may be ignored.  Be sure you don't enable transparency unnecessarily, since it does enable a more expensive rendering mode.
+
+Setting an object's color completely replaces any color on the vertices.  However, if you have created a model with per-vertex color, you might prefer to modulate the object's color without losing the per-vertex color.  For this there is the <code>[func]setColorScale[/func]()</code> variant, which multiples the indicated color values by the object's existing color:
+
+[python]<code python>
+myNodePath.setColorScale(R, G, B, A)
+</code>[/python][cxx]<code cxx>
+myNodePath.set_color_scale(R, G, B, A);
+</code>[/cxx]
+
+One use of [func]setColorScale[/code]() is to apply it at the top of the scene graph (e.g. render) to darken the entire scene uniformly, for instance to implement a fade-to-black effect.
+
+Since alpha is so important, there is also a method for scaling it without affecting the other color components:
+
+[python]<code python>
+myNodePath.setAlphaScale(SA)
+</code>[/python][cxx]<code cxx>
+myNodePath.set_alpha_scale(SA);
+</code>[/cxx]
+
+To temporarily prevent an object from being drawn on all cameras, use <code>hide()</code> and <code>show()</code>:
+
+[python]<code python>
+myNodePath.hide()
+myNodePath.show()
+</code>[/python][cxx]<code cxx>
+myNodePath.hide();
+myNodePath.show();
+</code>[/cxx]
+
+If you want to hide an object for one camera but not another, you can use the <code>hide()</code> and <code>show()</code> commands in conjunction with the <code>camera.[func]setCameraMask[/func]()</code> function:
+
+[python]<code python>
+camera1.node().setCameraMask(BitMask32.bit(0))
+camera2.node().setCameraMask(BitMask32.bit(1))
+myNodePath.hide(BitMask32.bit(0))
+myNodePath.show(BitMask32.bit(1))
+# Now myNodePath will only be shown on camera2...
+</code>[/python][cxx]<code cxx>
+camera1.node()->set_camera_mask(BitMask32::bit(0));
+camera2.node()->set_camera_mask(BitMask32::bit(1));
+myNodePath.hide(BitMask32::bit(0));
+myNodePath.show(BitMask32::bit(1));
+// Now myNodePath will only be shown on camera2...
+</code>[/cxx]
+
+Please note that using hide/show without an argument will mess up any hide/shows with the argument (show(bit) will not undo a hide()...)  To hide an object from all cameras instead use <code>nodepath.hide(BitMask32[::][func]allOn[/func]())</code>.  [python]To set the camera mask for the default camera use base.cam, not base.camera, as base.camera is not an actual camera but a dummy node to hold cameras.  [/python]Please see the camera section for information on how to set up multiple cameras.
+
+
+Any object that is parented to the object that is hidden will also be hidden.
+
+[python]If you have trouble to place, scale or rotate your nodes you can use the place() function to bring up a small GUI which will help you. You need to have TkInter installed to use it.
+
+<code python>
+myNodePath.place()
+</code>[/python]

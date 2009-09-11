@@ -1,181 +1,246 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Creating Multifiles</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Creating_Multifiles" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Creating_Multifiles" title="Creating Multifiles">Creating Multifiles</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Creating_Multifiles" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus4"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus4-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-guidinglights/guidinglights01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-guidinglights/guidinglights01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">In Guiding Lights, the audience steers a moth to safety</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-keepsake/keepsake03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-keepsake/keepsake03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Keepsake: a short interactive movie, themes of loss
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Multifiles archives are archive files that store game resources.  Think of it as a gaint zip file that stores optionally zips and encrypts your data files, but does not need to be extracted.
+
+<h2>The multify program</h2>
+The multify console program creates such files. You can get information about the commandline parameters by running multify with the <code>-h</code> option. This is how program describes itself:
+<pre class="codeblock">
+Usage: multify -[c|r|u|t|x] -f <multifile_name> [options] <subfile_name> ...
+</pre>
+
+multify is used to store and extract files from a Panda Multifile.
+This is similar to a tar or zip file in that it is an archive file that
+contains a number of subfiles that may later be extracted.
+
+Panda's VirtualFileSystem is capable of mounting Multifiles for direct
+access to the subfiles contained within without having to extract them
+out to independent files first.
+
+The command-line options for multify are designed to be similar to those
+for tar, the traditional Unix archiver utility.
+
+If you want to prepare to read assets from a Multifile directly, you can "mount" it into the virtual file system:
+
+<pre class="codeblock">
+from pandac.PandaModules import VirtualFileSystem
+from pandac.PandaModules import Multifile
+from pandac.PandaModules import Filename
+
+vfs = VirtualFileSystem.getGlobalPtr()
+vfs.mount(Filename("foo.mf"), ".", VirtualFileSystem.MFReadOnly)
+</pre>
+
+If you want to prepare for reading and writing assets to a Multifile do the following. 
+
+<pre class="codeblock">
+from pandac.PandaModules import VirtualFileSystem
+from pandac.PandaModules import Multifile
+from pandac.PandaModules import Filename
+
+mf = Multifile()
+mf.openReadWrite("models.mf")
+
+vfs = VirtualFileSystem.getGlobalPtr()
+if vfs.mount(mf, ".", VirtualFileSystem.MFReadOnly):
+  print 'mounted'
+</pre>
+
+If you want to prepare for reading and writing assets to a 'subdirectory' Multifile do the following. Note "mysys" must always be literally written in any python code. E.g. "mysys/memfdir/mfbar2.txt"
+
+<pre class="codeblock">
+from pandac.PandaModules import VirtualFileSystem
+from pandac.PandaModules import Multifile
+from pandac.PandaModules import Filename
+
+mf = Multifile()
+mf.openReadWrite("models.mf")
+
+vfs = VirtualFileSystem.getGlobalPtr()
+if vfs.mount(mf, "mysys", VirtualFileSystem.MFReadOnly):
+  print 'mounted'
+</pre>
+
+If you are having problems loading from multifiles you can list the complete contents of your .mf file with a command like:
+
+<pre class="codeblock">
+multify -tvf mymultifile.mf
+</pre>
+
+Doing a sanity inspection like this can be useful to ensure that your assets are in the right place within the multifile.
+
+<h2>Multifile objects</h2>
+The Multifile class is designed for opening, reading and writing multifiles. You can open a new multifile by creating an instance of the class and calling the <code>openRead</code> method:
+<pre class="codeblock">
+from pandac.PandaModules import Multifile
+
+mf = Multifile()
+mf.openRead("foo.mf")
+</pre>
+
+The <code>openRead</code> method opens the multifile as read-only. If you want to make changes to it and write it back to disk, you will need to use the <code>openReadWrite</code> method. Also, there exists <code>openWrite</code> to create a new multifile.
+
+If you have made important structural changes to a Multifile, it is recommended to rewrite the multifile using the <code>repack()</code> method. (This won't work if you've opened it using <code>openRead</code>.) If you are uncertain about whether it has become suboptimal, you can call <code>needsRepack()</code> which returns True if the Multifile is suboptimal and should be repacked.
+
+To write it back to disk, you can use the <code>flush()</code> method which flushes the changes you've made to the multifile back to disk, or the <code>close()</code> method if you're done with the file.
+
+To mount Multifile objects into the VirtualFileSystem without writing them to disk first, here's an example on how to mount them:
+<pre class="codeblock">
+yourMF = Multifile()
+#... now do something with yourMF
+
+vfs = VirtualFileSystem.getGlobalPtr()
+vfs.mount(yourMF, ".", VirtualFileSystem.MFReadOnly)
+</pre>
+
+<h2>Subfiles</h2>
+Files that are added to a multifile are called <i>subfiles</i>. You can add existing files to a multifile object using the <code>addSubfile</code> function. This function takes three arguments: the target filename, the existing source file and the compression level (1-9). There is also <code>updateSubfile</code>, which does the same thing but if the file already exists, only updates it if the content is different.
+
+There are several other methods which operate on subfiles, which you can find in the [http://panda3d.org/apiref.php?page=Multifile API Reference.]
+Here are a few examples of working with subfiles:
+<pre class="codeblock">
+
+
+from pandac.PandaModules import VirtualFileSystem
+from pandac.PandaModules import Multifile
+from pandac.PandaModules import Filename
+
+m = Multifile()
+
+# Add an existing real os file with compression level 6
+m.openReadWrite("foo.mf")
+m.addSubfile("bar.txt", Filename("/tmp/bar.txt"), 6)
+m.flush()
+
+# Destroy the contents of the multifile
+# Add an existing real os file to be the first multifile
+m.openWrite("foo.mf")
+m.addSubfile("bar.txt", Filename("/tmp/bar.txt"), 6)
+m.flush()
+
+# Permanently re-order in ascending order the 
+# directories and files in the multifile
+m.openReadWrite("foo.mf")
+m.repack()
+m.flush()
+
+# Open a multifile and replace the contents of the mulifile file
+# with new contents
+m = Multifile()
+m.openReadWrite("foo.mf")
+m.updateSubfile("bar.txt", Filename("/tmp/bar2.txt"), 9)
+m.flush()
+
+# Open a multifile and extract all files smaller than 3kb
+# New real os files are created with the contents of the multifile data
+m = Multifile()
+m.openRead("foo.mf")
+for i in range(m.getNumSubfiles()):
+  if m.getSubfileLength(i) < 3 * 1024:
+    m.extractSubfile(i, Filename("/tmp/" + m.getSubfileName(i)))
+
+# Find, print and remove a file named bar.txt
+barIdx = m.findSubfile("bar.txt")
+if barIdx != -1:
+  # It returns -1 if it doesn't exist
+  print m.readSubfile(barIdx)
+  m.removeSubfile(barIdx)
+m.flush()
+
+m.close()
+
+</pre>
+
+
+If the foo.mf file were to have a contained bar.egg.pz file, load the egg and use it simiar to other model loading methods.
+<pre class="codeblock">
+nodepath = loader.loadModel("foo/bar")
+</pre>
+
+
+<h2>Stream-Based</h2>
+Multifile algorithms are stream-based and not random-based.
+In a running game, from the output, if a message is received saying something similar to the words <code>seek error for offset</code> then a file in the multifile is trying to be accessed by a random-based method.
+For multifiles and fonts, an example of a random-based file is an .rgb file.
+An alternative different from the use of an .rgb file is the use of a .ttf instead. An example follows.
+
+<pre class="codeblock">
+# models is the original directory
+# models.mf it the new target multifile
+multify -c -f models.mf -v models
+</pre>
+In the game, from the multifile models.mf, load the .ttf file.
+<pre class="codeblock">
+font = loader.loadFont("models/arial.ttf")
+</pre>
+
+
+<h2>Encryption</h2>
+Multifiles can also encrypt your files with a password. To do so, you need to set the encryption flag and password using the <code>setEncryptionFlag</code> and <code>setEncryptionPassword</code> methods, before adding, extracting or reading multifiles. 
+
+At the OS prompt, to create a password protected multifile and print out the contents do the following.
+
+<pre class="codeblock">
+# models is the original directory
+# models.mf it the new target multifile
+multify -c -f models.mf -ep "mypass" -v models
+</pre>
+
+This code creates a multifile and adds an encrypted file to it:
+<pre class="codeblock">
+m = Multifile()
+m.openReadWrite("foo.mf")
+m.setEncryptionFlag(True)
+m.setEncryptionPassword("foobar")
+
+# Add a new file to the multifile
+m.addSubfile("bar.txt", Filename("/tmp/bar.txt"), 1)
+m.flush()
+m.close()
+
+</pre>
+
+You can read encrypted multifiles the same way:
+<pre class="codeblock">
+m = Multifile()
+m.openRead("foo.mf")
+m.setEncryptionFlag(True)
+m.setEncryptionPassword("foobar")
+# Prints the contents of the multifile
+print m.readSubfile("bar.txt")
+
+</pre>
+
+At the OS prompt, to see the contents of a password protected multifile perform
+<pre class="codeblock">
+multify -tvf models.mf -p "mypass"
+</pre>
+
+
+You can test the reading in a of password-protected multifile, followed by the mounting of the file using the following code.
+<pre class="codeblock">
+from pandac.PandaModules import Multifile
+mf = Multifile()
+mf.openRead("models.mf")
+mf.setEncryptionFlag(True)
+mf.setEncryptionPassword("mypass")
+
+from pandac.PandaModules import VirtualFileSystem
+vfs = VirtualFileSystem.getGlobalPtr()
+if vfs.mount(mf, ".", VirtualFileSystem.MFReadOnly):
+   print 'mounted'
+</pre>
+
+When running the game, the following should be seen.
+<pre class="codeblock">
+mounted
+</pre>
+
+
+You can check if a certain subfile is encrypted or not using the <code>isSubfileEncrypted</code> method, which takes the subfile index as parameter.
+
+It is possible to have a multifile where different subfiles have different encryption, but you will not be able to mount it with the VirtualFileSystem or use it with the multify tool. To mount an encrypted file using the VirtualFileSystem, pass the password as parameter to the <code>mount</code> method:
+<pre class="codeblock">
+from pandac.PandaModules import VirtualFileSystem, Filename
+vfs = VirtualFileSystem.getGlobalPtr()
+vfs.mount(Filename("foo.mf"), ".", vfs.MFReadOnly, "foobar")
+</pre>
+
+To use encryption with the multify tool, run it with the <code>-e</code> option, which will prompt for a password on the command line. Alternatively, if you also specify the <code>-p "password"</code> option, you can specify it in the command instead of typing it at the prompt.

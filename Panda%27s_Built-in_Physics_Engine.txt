@@ -58,7 +58,7 @@ le>Panda3D Manual</title>
 </p>
 <p>Return to <a href="/wiki/index.php/Main_Page" title="Main Page">Main Page</a>.</p>
 </td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
+      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Special:Specialpages" title="Special:Specialpages">special</a>   <a href="/wiki/index.php/Special:Preferences" title="Special:Preferences">prefs</a>   <a href="/wiki/index.php?title=Special:Whatlinkshere&target=Special:Badtitle" title="Special:Whatlinkshere">whatlinks</a>   <a href="/wiki/index.php/Special:Upload" title="Special:Upload">upload</a>   <a href="/wiki/index.php?title=Special:Userlogout&returnto=Special:Badtitle" title="Special:Userlogout">logout</a>   <a href="/wiki/index.php/Main_Page" title="Main Page">main</a>      <a href="/wiki/index.php?title=Special:Badtitle&action=history" title="Special:Badtitle">history</a>   <a href="/wiki/index.php?title=Special:Movepage&target=Special:Badtitle" title="Special:Movepage">move</a>   <a href="/wiki/index.php?title=Special:Badtitle&action=edit" title="Special:Badtitle">edit</a>   </td></tr></table></td></tr>
     </table>
   </td>
         <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
@@ -68,7 +68,7 @@ le>Panda3D Manual</title>
         <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
         <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
       </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Special:Badtitle" title="Special:Userlogin">.</a></td>
+    </table></td>
     <td width=18></td>
     <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
     <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
@@ -80,12 +80,38 @@ le>Panda3D Manual</title>
       <tr>
         <td width="1" bgcolor="#333333"></td>
         <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight06"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight06-tn.jpg"></a></td></tr>
+      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean4"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean4-tn.jpg"></a></td></tr>
       <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
       <tr><td bgcolor="e4e4e4">
         <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
           <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
+          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
+          <td width="15" height="39"></td>
+        </tr></table>
+      </td></tr>
+    </table></td>
+        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
+      </tr>
+      <tr>
+        <td width="1" height="8"></td>
+        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
+        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
+      </tr>
+    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
+      <tr>
+        <td width="1" height="1" bgcolor="#333333"></td>
+        <td height="1" bgcolor="#333333"></td>
+        <td width="8" height="1"></td>
+      </tr>
+      <tr>
+        <td width="1" bgcolor="#333333"></td>
+        <td >    <table border="0" cellspacing="0" cellpadding="0">
+      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy02-tn.jpg"></a></td></tr>
+      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
+      <tr><td bgcolor="e4e4e4">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
+          <td width="15" height="39"></td>
+          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
 </div></td>
           <td width="15" height="39"></td>
         </tr></table>
@@ -107,39 +133,12 @@ le>Panda3D Manual</title>
       <tr>
         <td width="1" bgcolor="#333333"></td>
         <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama03-tn.jpg"></a></td></tr>
+      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin02-tn.jpg"></a></td></tr>
       <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
       <tr><td bgcolor="e4e4e4">
         <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
           <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-projectimprov/projectimprov03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-projectimprov/projectimprov03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Improvisational acting techniques are used to improve character behavior
+          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
 </div></td>
           <td width="15" height="39"></td>
         </tr></table>

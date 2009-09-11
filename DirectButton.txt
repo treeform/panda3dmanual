@@ -1,182 +1,81 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: DirectButton</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=DirectButton" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/DirectButton" title="DirectButton">DirectButton</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=DirectButton" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-spherical/spherical01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-spherical/spherical01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Some experiments done by a student with spherical harmonics.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<span class="suppress-screenshots"></span>
+
+DirectButton is a DirectGui object that will respond to the mouse and can execute an arbitrary function when the user clicks on the object.  This is actually implemented by taking advantage of the "state" system supported by every DirectGui object.
+
+Each DirectGui object has a predefined number of available "states", and a current state.  This concept of "state" is completely unrelated to Panda's [[Finite State Machines|FSM]] object.  For a DirectGui object, the current state is simply as an integer number, which is used to select one of a list of different NodePaths that represent the way the DirectGui object appears in each state.  Each DirectGui object can therefore have a completely different appearance in each of its states.
+
+Most types of DirectGui objects do not use this state system, and only have one state, which is state 0.  The DirectButton is presently the only predefined object that has more than one state defined by default.  In fact, DirectButton defines four states, numbered 0 through 3, which are called <i>ready, press, rollover,</i> and <i>disabled,</i> in that order.  Furthermore, the DirectButton automatically manages its current state into one of these states, according to the user's interaction with the mouse.
+
+With a DirectButton, then, you have the flexibility to define four completely different NodePaths, each of which represents the way the button appears in a different state.  Usually, you want to define these such that the <i>ready</i> state is the way the button looks most of the time, the <i>press</i> state looks like the button has been depressed, the <i>rollover</i> state is lit up, and the <i>disabled</i> state is grayed out.  In fact, the DirectButton interfaces will set these NodePaths up for you, if you use the simple forms of the constructor (for instance, if you specify just a single text string to the <code>text</code> parameter). 
+
+Sometimes you want to have explicit control over the various states, for instance to display a different text string in each state.  To do this, you can pass a 4-tuple to the text parameter (or to many of the other parameters, such as relief or geom), where each element of the tuple is the parameter value for the corresponding state, like this:
+
+<code python>
+b = DirectButton(text = ("OK", "click!", "rolling over", "disabled"))
+</code>
+
+The above example would create a DirectButton whose label reads "OK" when it is not being touched, but it will change to a completely different label as the mouse rolls over it and clicks it.
+
+Another common example is a button you have completely customized by painting four different texture maps to represent the button in each state.  Normally, you would convert these texture maps into an egg file using <code>egg-texture-cards</code> like this:
+
+<code bash>
+egg-texture-cards -o button_maps.egg -p 240,240 button_ready.png button_click.png button_rollover.png button_disabled.png
+</code>
+
+And then you would load up the that egg file in Panda and apply it to the four different states like this:
+
+<code python>
+maps = loader.loadModel('button_maps.egg')
+b = DirectButton(geom = (maps.find('**/button_ready'),
+                         maps.find('**/button_click'),
+                         maps.find('**/button_rollover'),
+                         maps.find('**/button_disabled')))
+</code>
+
+You can also access one of the state-specific NodePaths after the button has been created with the interface <code>myButton.stateNodePath[stateNumber]</code>.  Normally, however, you should not need to access these NodePaths directly.
+
+The following are the DirectGui keywords that are specific to a DirectButton.  (These are in addition to the generic DirectGui keywords described on the [[DirectGUI|previous page]].)
+
+<center><table>
+<tr><td><b>Keyword</b></td><td><b>Definition</b></td><td><b>Value</b></td></tr>
+<tr><td>command</td><td>Command the button performs when clicked</td><td>Function</td></tr>
+<tr><td>extraArgs</td><td>Extra arguments to the function specified in command</td><td>[Extra Arguments]</td></tr>
+<tr><td>commandButtons</td><td>Which mouse button must be clicked to do the command</td><td>LMB, MMB, or RMB</td></tr>
+<tr><td>rolloverSound</td><td>The sound made when the cursor rolls over the button</td><td>AudioSound instance</td></tr>
+<tr><td>clickSound</td><td>The sound made when the cursor clicks on the button</td><td>AudioSound instance</td></tr>
+<tr><td>pressEffect</td><td>Whether or not the button sinks in when clicked</td><td><0 or 1></td></tr>
+<tr><td>state</td><td>Whether or not the button is disabled</td><td>DGG.NORMAL or DGG.DISABLED</td></tr>
+</table></center>
+
+Like any other [[DirectGui]] widget, you can change any of the properties by treating the element as a dictionary:
+<code python>
+button["state"] = DGG.DISABLED
+</code>
+
+<h2>Example</h2>
+
+<code python>
+import direct.directbase.DirectStart
+from direct.gui.OnscreenText import OnscreenText
+from direct.gui.DirectGui import *
+
+from pandac.PandaModules import TextNode
+
+# Add some text
+bk_text = "This is my Demo"
+textObject = OnscreenText(text = bk_text, pos = (0.95,-0.95), 
+scale = 0.07,fg=(1,0.5,0.5,1),align=TextNode.ACenter,mayChange=1)
+
+# Callback function to set  text
+def setText():
+        bk_text = "Button Clicked"
+        textObject.setText(bk_text)
+
+# Add button
+b = DirectButton(text = ("OK", "click!", "rolling over", "disabled"), scale=.05, command=setText)
+
+# Run the tutorial
+run()
+</code>
+
+Note that you will not be able to set the text unless the mayChange flag is 1. This is an optimization, which is easily missed by newcomers.

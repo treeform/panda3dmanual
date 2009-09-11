@@ -1,181 +1,85 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Mouse Support</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Mouse_Support" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Mouse_Support" title="Mouse Support">Mouse Support</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Mouse_Support" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean8"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean8-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama05"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama05-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Panda3D has mouse support built in. The default action of the mouse is to control the camera. If you want to disable this functionality you can use the command:
+
+<pre class="codeblock">
+base.disableMouse()
+</pre>
+
+This function's name is slightly misleading.  It only disables the task that drives the camera around, it doesn't disable the mouse itself. You can still get the position of the mouse, as well as the mouse clicks.
+
+To get the position:
+
+<pre class="codeblock">
+if base.mouseWatcherNode.hasMouse():
+  x=base.mouseWatcherNode.getMouseX()
+  y=base.mouseWatcherNode.getMouseY()
+</pre>
+
+The mouse clicks generate "events." To understand what events are, and how to process them, you will need to read the [[Event Handling]] section.  The names of the events generated are:
+
+<table>
+<tr><td width=100>mouse1</td><td>Mouse Button 1 Pressed</td></tr>
+<tr><td>mouse2</td><td>Mouse Button 2 Pressed</td></tr>
+<tr><td>mouse3</td><td>Mouse Button 3 Pressed</td></tr>
+<tr><td>mouse1-up</td><td>Mouse Button 1 Released</td></tr>
+<tr><td>mouse2-up</td><td>Mouse Button 2 Released</td></tr>
+<tr><td>mouse3-up</td><td>Mouse Button 3 Released</td></tr>
+<tr><td>wheel_up</td><td>Mouse Wheel rolled upwards</td></tr>
+<tr><td>wheel_down</td><td>Mouse Wheel rolled downwards</td></tr>
+</table>
+
+If you want to hide the mouse cursor, you want the line: "cursor hidden #t" in your [[Configuring Panda|Config.prc]] or this section of code:
+
+<pre class="codeblock">
+from pandac.PandaModules import WindowProperties
+props = WindowProperties()
+props.setCursorHidden(True) 
+base.win.requestProperties(props)
+</pre>
+
+
+<b>Re-enabling mouse control</b>
+
+If you need to re-enable the mouse control of the camera, you have to adjust mouseInterfaceNode to the current camera transformation :
+<pre class="codeblock">
+mat=Mat4(camera.getMat())
+mat.invertInPlace()
+base.mouseInterfaceNode.setMat(mat)
+base.enableMouse()
+</pre>
+Otherwise the camera would be placed back to the last position when the mouse control was enabled.
+
+
+<b>Multiple Mice</b>
+
+If you have multiple mice connected to a single machine, it is possible to get mouse movements and buttons for each individual mouse.  This is called <i>raw mouse input</i>.  It is really only useful if you are building an arcade machine that has lots of trackballs or spinners.
+
+In order to use raw mouse input, you first need to enable it.  To do so, add the following line to your panda configuration file:
+
+<pre class="codeblock">
+read-raw-mice #t
+</pre>
+
+This causes the panda main window to be created with the "raw_mice" window property.  That window property, in turn, causes the window to track and store the positions and buttons of the raw mice.  Then, that data is extracted from the main window by objects of class MouseWatcher.  The application program can fetch the mouse data from the MouseWatchers.  The global variable <code>base.pointerWatcherNodes</code> contains the <code>MouseWatcher</code>s.
+
+The first MouseWatcher on the list always represents the system mouse pointer - a virtual mouse that moves around whenever any of the physical mice do.  Usually, you do not want to use this virtual mouse.  If you're accessing raw mice, you usually want to access the real, physical mice.  The list <code>base.pointerWatcherNodes</code> always contains the virtual system mouse first, followed by all the physical mice.
+
+So to print out the positions of the mice, use this:
+
+<pre class="codeblock">
+for mouse in base.pointerWatcherNodes:
+  print "NAME=", mouse.getName()
+  print "X=", mouse.getMouseX()
+  print "Y=", mouse.getMouseY()
+</pre>
+
+Each mouse will have a name-string, which might be something along the lines of "Micrologic High-Precision Gaming Mouse 2.0 #20245/405".  The name is the only way to tell the various mice apart.  If you have two different mice of different brands, you can easily tell them apart by the names.  If you have two mice of the same make and manufacture, then their names will be very similar, but still unique.  This is not because the mice contain serial numbers, but rather because they are uniquefied based on the USB port into which they are plugged.  That means that if you move a mouse from one USB port to another, it will have a new name.  For all practical purposes, that means that you will need to store a config file that maps mouse name to intended purpose.
+
+Raw mouse buttons generate events.  The event names are similar to the ones for the system mouse, except that they have a "mousedevX" prefix.  Ie, an example event might be <code>mousedev3-mouse1-up</code>.  In this example, the "mousedev3" specifier means that the mouse sending the event is <code>base.pointerWatcherNode[3]</code>.
+
+<b>Multiple Mice under Linux</b>
+
+To use raw mouse input under Linux, the panda program needs to open the device files <i>/dev/input/event*</i>.  On many Linux distributions, the permission bits are set such that this is not possible.  This is a flaw in these distributions.
+
+It is not a good idea to just change the permission bits.  Doing so introduces a huge security hole in which any logged in user can monitor the mice, the joysticks, and the keyboard --- including any passwords that may be typed.  The correct solution is to change the ownership of the input devices whenever a user sits down at the console. There is a module, pam_console, that does this, but it is now obsoleted, and has been removed from several distros. The [http://fedoraproject.org/wiki/Releases/FeatureRemovePAMConsole Fedora pam_console removal] page states that ACLs set by the HAL should replace pam_console's functionality. Currently, since it does not seem that HAL provides this yet, the best course of action is to make an 'input' group as described on [http://gizmod.wiki.sourceforge.net/HOWTO+-+Setting+Input+Device+Permissions+-+Creating+a+udev+Rule the Gizmod wiki].
+
+If you are building a stand-alone arcade machine that does not allow remote login and probably doesn't even have a net connection, then changing the permission bits isn't going to hurt you.

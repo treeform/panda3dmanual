@@ -1,1 +1,0 @@
-#REDIRECT [[Low-Level Render to Texture]]

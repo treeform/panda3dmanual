@@ -1,181 +1,138 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Simple FSM Usage</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Simple_FSM_Usage" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Simple_FSM_Usage" title="Simple FSM Usage">Simple FSM Usage</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Simple_FSM_Usage" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean5"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean5-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+A Panda3D FSM is implemented by defining a new Python class which inherits from the class direct.fsm.FSM.FSM (normally imported as FSM.FSM or simply FSM), and defining the appropriate enter and exit methods on the class.
+
+FSM states are represented by name strings, which should not
+contain spaces or punctuation marks; by Panda3D convention, state
+names should begin with a capital letter.  An FSM is always in exactly
+one state a time; the name of the current state in stored in
+<code>fsm.state</code>.  When it transitions from one state to
+another, it first calls <code>exitOldState()</code>, and then it calls
+<code>enterNewState()</code>, where OldState is the name of the
+previous state, and NewState is the name of the state it is entering.
+While it is making this transition, the FSM is not technically in
+either state, and <code>fsm.state</code> will be None--but you can
+find both old and new state names in <code>fsm.oldState</code> and
+<code>fsm.newState</code>, respectively.
+
+To define a possible state for an FSM, you only need to define an
+<code>enterStateName()</code> and/or <code>exitStateName()</code>
+method on your class, where StateName is the name of the state you
+would like to define.  The <code>enterStateName()</code> method should
+perform all the necessary action for entering your new state, and the
+corresponding <code>exitStateName()</code> method should generally
+undo everything that was done in <code>enterStateName()</code>, so
+that the world is returned to a neutral state.
+
+An FSM starts and finishes in the state named "Off".  When the FSM
+is created, it is already in "Off"; and when you destroy it (by
+calling <code>fsm.cleanup()</code>), it automatically transitions back
+to "Off".
+
+To request an FSM to transition explicitly to a new state, use the
+call <code>fsm.request('StateName')</code> or shorter alias <code>fsm.request_StateName()</code>, where StateName is the
+state you would like it to transition to.
+
+<b>Arguments to enterStateName methods</b>
+
+Normally, both <code>enterStateName()</code> and
+<code>exitStateName()</code> take no arguments (other than self).
+However, if your FSM requires some information before it can
+transition to a particular state, you can define any arguments you
+like to the enterStateName method for that state; these arguments
+should be passed in to the <code>request()</code> call, following the
+state name.
+
+<pre class="codeblock">
+from direct.fsm import FSM
+
+class AvatarFSM(FSM.FSM):
+    def enterWalk(self, speed, doorMask):
+        avatar.setPlayRate(speed, 'walk')
+        avatar.loop('walk')
+        footstepsSound.play()
+        enableDoorCollisions(doorMask)
+        
+    def exitWalk(self):
+        avatar.stop()
+        footstepsSound.stop()
+        disableDoorCollisions()
+
+myfsm = AvatarFSM()
+myfsm.request('Walk', 1.0, BitMask32.bit(2))
+# or, if you use short syntax
+myfsm.request_Walk(1.0, BitMask32.bit(2))
+</pre>
+
+Note that the exitStateName method must always take no arguments.
+
+<b>Allowed and disallowed state transitions</b>
+
+By default, every state transition request is allowed: the call
+<code>fsm.request('StateName')</code> (or <code>fsm.request_StateName()</code>) will always succeed, and the the
+FSM will be left in the new state.  You may wish to make your FSM more
+robust by disallowing certain transitions that you don't want to
+happen.
+
+For instance, consider the example FSM described previously, which
+had the following state diagram:
+
+<center><table style="border-collapse: separate; border-spacing: 1pt 0pt">
+<tr>
+<td style="text-align: center"><big></big></td>
+<td style="border: 1px solid black; background: #c1beea; padding: 5pt">
+Walk2Swim
+</td>
+<td style="text-align: center"><big></big></td><td></td><td></td>
+</tr>
+<tr>
+<td style="border: 1px solid black; background: #c1beea; padding: 5pt">
+Walk
+</td>
+<td></td>
+<td style="border: 1px solid black; background: #c1beea; padding: 5pt">
+Swim
+<td></td>
+<td><big>&rarr;</big></td>
+<td style="border: 1px solid black; background: #c1beea; padding: 5pt">
+Drowning
+</td>
+</tr>
+<tr>
+<td style="text-align: center"><big></big></td>
+<td style="border: 1px solid black; background: #c1beea; padding: 5pt">
+Swim2Walk
+</td>
+<td style="text-align: center"><big></big></td><td></td><td></td>
+</tr>
+</table></center>
+
+In this diagram, the arrows represent legal transitions.  It is
+legal to transition from 'Walk' to 'Walk2Swim', but not from 'Walk' to
+'Swim2Walk'.  If you were to request the FSM to enter state
+'Swim2Walk' while it is currently in state 'Walk', that's a bug; you
+might prefer to have the FSM throw an exception, so you can find this
+bug.
+
+To enforce this, you can store <code>self.defaultTransitions</code>
+in the FSM's <code>__init__()</code> method.  This should be a map of
+allowed transitions from each state.  That is, each key of the map is
+a state name; for that key, the value is a list of allowed transitions
+from the indicated state.  Any transition not listed in
+defaultTransitions is considered invalid.  For example:
+
+<pre class="codeblock">
+class AvatarFSM(FSM.FSM):
+    def __init__(self):
+        FSM.FSM.__init__(self)
+        self.defaultTransitions = {
+            'Walk' : [ 'Walk2Swim' ],
+            'Walk2Swim' : [ 'Swim' ],
+            'Swim' : [ 'Swim2Walk', 'Drowning' ],
+            'Swim2Walk' : [ 'Walk' ],
+            'Drowning' : [ ],
+            }
+</pre>
+
+If you do not assign anything to self.defaultTransitions, then all
+transitions are legal.  However, if you <em>do</em> assign a map like
+the above, then requesting a transition that is not listed in the map
+will raise the exception <code>FSM.RequestDenied</code>.

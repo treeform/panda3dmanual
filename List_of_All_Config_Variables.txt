@@ -1,181 +1,1934 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: List of All Config Variables</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=List_of_All_Config_Variables" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/List_of_All_Config_Variables" title="List of All Config Variables">List of All Config Variables</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=List_of_All_Config_Variables" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean4"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean4-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-mario/mario06"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-mario/mario06-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Super Duper Mario Bros: a cool variant of an old classic
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+The following is a complete list of config variables as of Jun, 2009.  It was generated using this code:
+
+[python]<code python>
+ConfigVariableManager.getGlobalPtr().listVariables()
+</code>[/python]
+[cxx]<code cxx>
+ConfigVariableManager::get_global_ptr()->list_variables();
+</code>[/cxx]
+
+Bear in mind that this list includes configuration parameters that control functionality that isn't fully implemented yet.  Ie, not all of these config variables are as useful as they sound.
+
+You can use this command yourself in case this list gets out of date.
+
+
+
+<br><b>accept-clock-skew bool</b>
+<br>  default value = 0
+<br>  This controls the default value of SmoothMover::get_accept_clock_skew().
+<br>
+<br><b>adaptive-lru-max-updates-per-frame int</b>
+<br>  default value = 40
+<br>  The number of pages the AdaptiveLru class will update per frame.  Do not set this too high or it will degrade performance.
+<br>
+<br><b>adaptive-lru-weight double</b>
+<br>  default value = 0.2
+<br>  Specifies the weight factor used to compute the AdaptiveLru's exponential moving average.
+<br>
+<br><b>allow-collider-multiple bool</b>
+<br>  default value = 0
+<br>  Set this true to enable the use of a DoubleBitMask or QuadBitMask to manage many colliders added to a single traverser in one pass.  If this is false, a one-word BitMask is always used instead, which is faster per pass, but may require more passes.
+<br>
+<br><b>allow-flatten-color bool</b>
+<br>  default value = 0
+<br>  allows color to always be flattened to vertices
+<br>
+<br><b>allow-incomplete-render bool</b>
+<br>  default value = 1
+<br>  When this is true, the frame may be rendered even if some of the geometry in the scene has been paged out, or if the textures are unavailable.  The nonresident geometry and textures will be rendered as soon as they can be read from disk, which may be several frames in the future.  When this is false, geometry is always paged in immediately when needed, holding up the frame render if necessary.
+<br>
+<br><b>allow-live-flatten bool</b>
+<br>  default value = 1
+<br>  Set this true to allow the use of flatten_strong() or any variant on a node that is attached to a live scene graph node, or false to disallow this.  Flattening a live scene graph node can cause problems when threading is enabled.  This variable only has an effect when Panda is not compiled for a release build.
+<br>
+<br><b>allow-nonpipeline-threads bool</b>
+<br>  default value = 0
+<br>  This variable should only be set true for debugging or development purposes.  When true, the threading-model variable may specify a threaded pipeline mode, even if pipelining is not compiled in.  This will certainly result in erroneous behavior, and quite likely will cause a crash.  Do not set this unless you know what you are doing.
+<br>
+<br><b>allow-portal-cull bool</b>
+<br>  default value = 0
+<br>  Set this true to enable portal clipping.  This will enable the renderer to cull more objects that are clipped if not in the current list of portals.  This is still somewhat experimental.
+<br>
+<br><b>allow-unrelated-wrt bool</b>
+<br>  default value = 1
+<br>  Set this true to allow unrelated NodePaths (that is, nodes which have no common ancestor) to be adjusted relative to each other.  If true, these will be treated as if they had a common node above their top nodes.
+<br>
+<br><b>alpha-bits int</b>
+<br>  current value = 0  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  The minimum number of alpha buffer bits requested.
+<br>
+<br><b>alpha-scale-via-texture bool</b>
+<br>  default value = 1
+<br>  When this is true, Panda will try to implement ColorScaleAttribs that affect alpha by creating an additional Texture layer over the geometry with a uniform alpha scale applied everywhere, if there is at least one available Texture slot available on the multitexture pipeline.  Set this false to avoid this trickery, so that texturing is only enabled when the application specifically enables it.  See also color-scale-via-lighting.
+<br>
+<br><b>anim-blend-type enum</b>
+<br>  default value = normalized_linear
+<br>  The default blend type to use for blending animations between frames, or between multiple animations.  See interpolate-frames, and also PartBundle::set_anim_blend_flag() and PartBundle::set_frame_blend_flag().
+<br>
+<br><b>aspect-ratio double</b>
+<br>  default value = 0
+<br>
+<br><b>assert-abort bool</b>
+<br>  default value = 0
+<br>  Set this true to trigger a core dump and/or stack trace when the first assertion fails
+<br>
+<br><b>async-bind-priority int</b>
+<br>  default value = 100
+<br>  This specifies the priority assign to an asynchronous bind task when it is requested via PartBundle::load_bind_anim().  This controls the relative order in which asynchronous loads happen (in particular, relative to asynchronous texture or model loads).  A higher number here makes the animations load sooner.
+<br>
+<br><b>async-load-delay double</b>
+<br>  default value = 0
+<br>  If this is nonzero, it represents an artificial delay, in seconds, that is imposed on every asynchronous load attempt (within the thread).  Its purpose is to help debug errors that may occur when an asynchronous load is delayed.  The delay is per-model, and all aync loads will be queued up behind the delay--it is as if the time it takes to read a file is increased by this amount per read.
+<br>
+<br><b>asynchronous-clients bool</b>
+<br>  default value = 1
+<br>
+<br><b>audio-active bool</b>
+<br>  default value = 1
+<br>
+<br><b>audio-buffering-seconds double</b>
+<br>  default value = 3
+<br>  Controls the amount of audio buffering when streaming audio. If you are playing a streaming sound, and any single frame takes longer than this, the audio will stutter.  Caution: buffering streaming audio takes a lot of memory.  For example, 5 seconds of stereo audio at 44,100 samples/sec takes one megabyte.  The 3-second default is intentionally high, favoring correctness over efficiency, but for a commercial application you may wish to lower this.
+<br>
+<br><b>audio-cache-limit int</b>
+<br>  default value = 15
+<br>  The number of sounds in the cache.
+<br>
+<br><b>audio-distance-factor double</b>
+<br>  default value = 1
+<br>
+<br><b>audio-dls-file filename</b>
+<br>  default value = 
+<br>  Specifies a DLS file that defines an instrument set to load for MIDI file playback.  If this is not specified, the sound interface will try to use the system default DLS file, if one is available; the likely success of this depends on the operating system.
+<br>
+<br><b>audio-doppler-factor double</b>
+<br>  default value = 1
+<br>
+<br><b>audio-drop-off-factor double</b>
+<br>  default value = 1
+<br>
+<br><b>audio-library-name string</b>
+<br>  current value = p3openal_audio  (from /etc/Config.prc)
+<br>  default value = fmodex_audio
+<br>
+<br><b>audio-min-hw-channels int</b>
+<br>  default value = 15
+<br>  Guarantee this many channels on the local sound card, or just play EVERYTHING in software.
+<br>
+<br><b>audio-music-active bool</b>
+<br>  default value = 1
+<br>  DConfig
+<br>
+<br><b>audio-output-bits int</b>
+<br>  default value = 16
+<br>
+<br><b>audio-output-channels int</b>
+<br>  default value = 2
+<br>
+<br><b>audio-output-rate int</b>
+<br>  default value = 22050
+<br>
+<br><b>audio-play-midi bool</b>
+<br>  default value = 1
+<br>
+<br><b>audio-play-mp3 bool</b>
+<br>  default value = 1
+<br>
+<br><b>audio-play-wave bool</b>
+<br>  default value = 1
+<br>
+<br><b>audio-preload-threshold int</b>
+<br>  default value = 1000000
+<br>  If the decompressed size of a sound file exceeds this amount, then Panda3D will not attempt to store that sound file in RAM. Instead, it will stream the sound file from disk.  It is not practical to stream multiple sound-files from disk at the same time - the hard drive seek time makes it stutter.
+<br>
+<br><b>audio-sfx-active bool</b>
+<br>  default value = 1
+<br>  DConfig
+<br>
+<br><b>audio-software-midi bool</b>
+<br>  default value = 1
+<br>
+<br><b>audio-volume double</b>
+<br>  default value = 1
+<br>
+<br><b>auto-break-cycles bool</b>
+<br>  default value = 1
+<br>  Set this true to automatically detect and break reference-count cycles in the TransformState and RenderState caches.  When this is false, you must explicitly call TransformState.clear_cache() from time to time to prevent gradual memory bloat.
+<br>
+<br><b>auto-flip bool</b>
+<br>  default value = 0
+<br>  This indicates the initial setting of the auto-flip flag.  Set it true to cause render_frame() to flip all the windows before it returns (in single-threaded mode only), or false to wait until an explicit call to flip_frame() or the next render_frame().  Setting it true gets more immediate response time, while setting it false can get a better frame rate as more is achieved in parallel with the graphics card.
+<br>
+<br><b>auto-single-cpu-affinity bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>aux-display list</b>
+<br>  current value:
+<br>  Names each of the graphics display libraries that are available on a particular platform.  This variable may be repeated several times.  These libraries will be tried one at a time if the library specified by load_display cannot be loaded.
+<br>
+<br><b>average-frame-rate-interval double</b>
+<br>  default value = 1
+<br>  See ClockObject::set_average_frame_rate_interval().
+<br>
+<br><b>back-buffers int</b>
+<br>  default value = 1
+<br>  The default number of back buffers requested.
+<br>
+<br><b>background-color double</b>
+<br>  default value = 0.41 0.41 0.41
+<br>  Specifies the rgb(a) value of the default background color for a new window or offscreen buffer.
+<br>
+<br><b>bam-endian enum</b>
+<br>  default value = littleendian
+<br>  The default endianness to use for writing major numeric data tables to bam files.  This does not affect all numbers written to bam files, only those for which the individual object was designed to support this flag.  The default is "native"; you may set it to "littleendian" or "bigendian" to target a particular platform.
+<br>
+<br><b>bam-texture-mode enum</b>
+<br>  default value = relative
+<br>  Set this to specify how textures should be written into Bam files.See the panda source or documentation for available options.
+<br>
+<br><b>basic-shaders-only bool</b>
+<br>  current value = #t  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  Set this to true if you aren't interested in shader model three and beyond.  Setting this flag will cause panda to disable bleeding-edge shader functionality which tends to be unreliable or broken.  At some point, when functionality that is currently flaky becomes reliable, we may expand the definition of what constitutes 'basic' shaders.
+<br>
+<br><b>bmp-bpp int</b>
+<br>  default value = 0
+<br>  This controls how many bits per pixel are written out for BMP files.  If this is zero, the default, the number of bits per pixel is based on the image.
+<br>
+<br><b>bounds-type enum</b>
+<br>  default value = sphere
+<br>  Specify the type of bounding volume that is created automatically by Panda to enclose geometry.  Use 'sphere' or 'box', or use 'best' to let Panda decide which is most appropriate.
+<br>
+<br><b>cache-report bool</b>
+<br>  default value = 0
+<br>
+<br><b>cache-report-interval double</b>
+<br>  default value = 5
+<br>
+<br><b>check-debug-notify-protect bool</b>
+<br>  default value = 0
+<br>  Set true to issue a warning message if a debug or spam notify output is not protected within an if statement.
+<br>
+<br><b>client-cpu-affinity int</b>
+<br>  default value = -1
+<br>  DConfig
+<br>
+<br><b>client-cpu-affinity-mask int</b>
+<br>  default value = -1
+<br>  DConfig
+<br>
+<br><b>client-sleep double</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>clip-plane-cull bool</b>
+<br>  default value = 1
+<br>  This is normally true; set it false to disable culling of objects that are completely behind one or more clip planes (primarily useful for debugging).
+<br>
+<br><b>clock-degrade-factor double</b>
+<br>  default value = 1
+<br>  In degrade clock mode, returns the ratio by which the performance is degraded.  A value of 2.0 causes the clock to be slowed down by a factor of two (reducing performance to 1/2 what would be otherwise).  See ClockObject::set_degrade_factor().
+<br>
+<br><b>clock-frame-rate double</b>
+<br>  default value = 1
+<br>  In non-real-time clock mode, sets the number of frames per second that we should appear to be running.  In forced mode or limited mode, sets our target frame rate.  In normal mode, this has no effect.  See ClockObject::set_frame_rate().
+<br>
+<br><b>clock-mode enum</b>
+<br>  default value = normal
+<br>  Specifies the mode of the global clock.  The default mode, normal, is a real-time clock; other modes allow non-real-time special effects like simulated reduced frame rate.  See ClockObject::set_mode().
+<br>
+<br><b>cluster-mode string</b>
+<br>  default value = 
+<br>  DConfig
+<br>
+<br><b>cluster-sync bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>collect-tcp bool</b>
+<br>  default value = 0
+<br>  Set this true to enable accumulation of several small consecutive TCP datagrams into one large datagram before sending it, to reduce overhead from the TCP/IP protocol.  See Connection::set_collect_tcp() or SocketStream::set_collect_tcp().
+<br>
+<br><b>collect-tcp-interval double</b>
+<br>  default value = 0.2
+<br>
+<br><b>collision-parabola-bounds-sample int</b>
+<br>  default value = 10
+<br>  This is the number of points along a CollisionParabola to sample in order to determine an accurate bounding box.
+<br>
+<br><b>collision-parabola-bounds-threshold double</b>
+<br>  default value = 10
+<br>  This is the threshold size for a CollisionParabola to make a bounding box (BoundingHexahedron).  If the parabola is smaller than this, it will make a BoundingSphere instead, which is much easier to make and will be good enough for small parabolas.
+<br>
+<br><b>color-bits int</b>
+<br>  current value = 1  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  The minimum number of color buffer bits requested.
+<br>
+<br><b>color-scale-via-lighting bool</b>
+<br>  default value = 1
+<br>  When this is true, Panda will try to implement ColorAttribs and ColorScaleAttribs using the lighting interface, by creating a default material and/or an ambient light if necessary, even if lighting is ostensibly disabled.  This avoids the need to munge the vertex data to change each vertex's color.  Set this false to avoid this trickery, so that lighting is only enabled when the application specifically enables it.  See also alpha-scale-via-texture.
+<br>
+<br><b>compose-componentwise bool</b>
+<br>  default value = 1
+<br>  Set this true to perform componentwise compose and invert operations when possible.  If this is false, the compositions are always computed by matrix.
+<br>
+<br><b>compress-chan-quality int</b>
+<br>  default value = 95
+<br>  The quality level is an integer number that generally ranges between 0 and 100, where smaller numbers indicate greater compression at the cost of quality, and larger numbers indicate higher quality but less compression.  Generally, 95 is the highest useful value; values between 95 and 100 produce substantially larger, but not substantially better, output files.  This is akin to the JPEG compression level.
+<br>
+<br><b>compress-channels bool</b>
+<br>  default value = 0
+<br>  Set this true to enable lossy compression of animation channels when writing to the bam file.  This serves to reduce the size of the bam file only; it does not reduce the memory footprint of the channels when the bam file is loaded.
+<br>
+<br><b>compressed-textures bool</b>
+<br>  default value = 0
+<br>  Set this to true to compress textures as they are loaded into texture memory, if the driver supports this.  Specifically, this changes the meaning of set_compression(Texture::CM_default) to Texture::CM_on.
+<br>
+<br><b>connect-triangle-strips bool</b>
+<br>  default value = 1
+<br>  Set this true to send a batch of triangle strips to the graphics card as one long triangle strip, connected by degenerate triangles, or false to send them as separate triangle strips with no degenerate triangles.  On PC hardware, using one long triangle strip may help performance by reducing the number of separate graphics calls that have to be made.
+<br>
+<br><b>coordinate-system enum</b>
+<br>  default value = zup_right
+<br>  The default coordinate system to use throughout Panda for rendering, user input, and matrix operations, unless specified otherwise.
+<br>
+<br><b>copy-texture-inverted bool</b>
+<br>  default value = 0
+<br>  Set this true to indicate that the GSG in use will invert textures when it performs a framebuffer-to-texture copy operation, or false to indicate that it does the right thing.  If this is not set, the default behavior is determined by the GSG's internal logic.
+<br>
+<br><b>cull-bin list</b>
+<br>  current value:
+<br>    gui-popup 60 unsorted  (from /etc/Confauto.prc)
+<br>  Creates a new cull bin by name, with the specified properties.  This is a string in three tokens, separated by whitespace: 'bin_name sort type'.
+<br>
+<br><b>cursor-filename filename</b>
+<br>  default value = 
+<br>
+<br><b>cursor-hidden bool</b>
+<br>  default value = 0
+<br>
+<br><b>dc-multiple-inheritance bool</b>
+<br>  default value = 1
+<br>  Set this true to support multiple inheritance in the dc file.  If this is false, the old way, multiple inheritance is not supported, but field numbers will be numbered sequentially, which may be required to support old code that assumed this.
+<br>
+<br><b>dc-sort-inheritance-by-file bool</b>
+<br>  default value = 1
+<br>  This is a temporary hack.  This should be true if you are using version 1.42 of the otp_server.exe binary, which sorted inherited fields based on the order of the classes within the DC file, rather than based on the order in which the references are made within the class.
+<br>
+<br><b>dc-virtual-inheritance bool</b>
+<br>  default value = 1
+<br>  Set this true to support proper virtual inheritance in the dc file, so that diamond-of-death type constructs can be used.  This also enables shadowing (overloading) of inherited method names from a base class.
+<br>
+<br><b>decompressor-step-time double</b>
+<br>  default value = 0.1
+<br>  Specifies the maximum amount of time that should be consumed by a single call to Decompressor::run().
+<br>
+<br><b>default-converge double</b>
+<br>  default value = 25
+<br>  The default convergence distance for stereo cameras.
+<br>
+<br><b>default-directnotify-level string</b>
+<br>  current value = warning  (from /etc/Config.prc)
+<br>  default value = info
+<br>  DConfig
+<br>
+<br><b>default-far double</b>
+<br>  default value = 100000
+<br>  The default far clipping distance for all cameras.
+<br>
+<br><b>default-fov double</b>
+<br>  default value = 30
+<br>  The default field of view in degrees for all cameras.  This is defined as a min_fov; that is, it is the field-of-view for the smallest of the X and Y sizes of the window, which is usually the vertical field of view (windows are usually wider than they are tall).  For a 4x3 window, 30 degrees vertical is roughly 40 degrees horizontal.
+<br>
+<br><b>default-iod double</b>
+<br>  default value = 0.2
+<br>  The default interocular distance for stereo cameras.
+<br>
+<br><b>default-keystone double</b>
+<br>  default value = 0
+<br>  The default keystone correction, as an x y pair, for all cameras.
+<br>
+<br><b>default-lod-type enum</b>
+<br>  default value = pop
+<br>  Set this to either 'pop' or 'fade' to determine the type of LODNode that is created by LODNode::make_default_lod().
+<br>
+<br><b>default-model-extension string</b>
+<br>  current value = .egg  (from /etc/Confauto.prc)
+<br>  default value = 
+<br>  This specifies the filename extension (with leading dot) that should be assumed if an attempt is made to load a filename that has no extension.  This is primarily designed to support legacy code that used the now-deprecated implicit-extension feature of Panda's loader; new code should probably give the correct name for each model file they intend to load.
+<br>
+<br><b>default-near double</b>
+<br>  default value = 1
+<br>  The default near clipping distance for all cameras.
+<br>
+<br><b>default-stereo-camera bool</b>
+<br>  default value = 1
+<br>  When this is true, the default DisplayRegion created for a window or buffer with the stereo property will be a StereoDisplayRegion, which activates the stereo properties of the camera lens, and enables stereo.  Set this false to require StereoDisplayRegions to be created explicitly.
+<br>
+<br>default_max_angular_dt double
+<br>  default value = 0.0333333
+<br>
+<br>default_max_linear_dt double
+<br>  default value = 0.0333333
+<br>
+<br>default_noise_force_seed int
+<br>  default value = 665
+<br>
+<br>default_terminal_velocity double
+<br>  default value = 400
+<br>
+<br><b>depth-bits int</b>
+<br>  current value = 1  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  The minimum number of depth buffer bits requested.
+<br>
+<br><b>depth-offset-decals bool</b>
+<br>  default value = 0
+<br>  Set this true to allow decals to be implemented via the advanced depth offset feature, if supported, instead of via the traditional (and slower) two-pass approach.  This is false by default because it appears that many graphics drivers have issues with their depth offset implementation.
+<br>
+<br><b>detect-graph-cycles bool</b>
+<br>  default value = 1
+<br>  Set this true to attempt to detect cycles in the scene graph (e.g. a node which is its own parent) as soon as they are made.  This has no effect in NDEBUG mode.
+<br>
+<br><b>direct-gui-edit bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>direct-wtext bool</b>
+<br>  default value = 1
+<br>
+<br><b>disable-sticky-keys bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>display string</b>
+<br>  default value = 
+<br>  Specify the X display string for the default display.  If this is not specified, $DISPLAY is used.
+<br>
+<br><b>display-list-animation bool</b>
+<br>  default value = 0
+<br>  Set this true to allow the use of OpenGL display lists for rendering animated geometry (when the geometry is animated by the hardware).  This is not on by default because there appear to be some driver issues with this on my FireGL T2, but it should be perfectly doable in principle, and might get you a small performance boost.
+<br>
+<br><b>display-lists bool</b>
+<br>  default value = 0
+<br>  Set this true to allow the use of OpenGL display lists for rendering static geometry.  On some systems, this can result in a performance improvement over vertex buffers alone; on other systems (particularly low-end systems) it makes little to no difference.  On some systems, using display lists can actually reduce performance.  This has no effect on DirectX rendering or on dynamic geometry (e.g. soft-skinned animation).
+<br>
+<br><b>downloader-byte-rate int</b>
+<br>  default value = 3600
+<br>  We'd like this to be about 1 second worth of download assuming a 28.8Kb connection (28.8Kb / 8 = 3600 bytes per second).
+<br>
+<br><b>downloader-disk-write-frequency int</b>
+<br>  default value = 4
+<br>  How often we write to disk is determined by this ratio which is relative to the downloader-byte-rate (e.g. if disk-write-ratio is 4, we will write every 4 seconds if the frequency is 0.2)
+<br>
+<br><b>downloader-frequency double</b>
+<br>  default value = 0.2
+<br>  Frequency of download chunk requests in seconds (or fractions of) (Estimated 200 msec round-trip to server).
+<br>
+<br><b>downloader-timeout int</b>
+<br>  default value = 15
+<br>
+<br><b>downloader-timeout-retries int</b>
+<br>  default value = 5
+<br>
+<br><b>drive-forward-speed double</b>
+<br>  default value = 20
+<br>
+<br><b>drive-horizontal-center double</b>
+<br>  default value = 0
+<br>
+<br><b>drive-horizontal-dead-zone double</b>
+<br>  default value = 0.1
+<br>
+<br><b>drive-horizontal-ramp-down-time double</b>
+<br>  default value = 0
+<br>
+<br><b>drive-horizontal-ramp-up-time double</b>
+<br>  default value = 0
+<br>
+<br><b>drive-reverse-speed double</b>
+<br>  default value = 10
+<br>
+<br><b>drive-rotate-speed double</b>
+<br>  default value = 80
+<br>
+<br><b>drive-vertical-center double</b>
+<br>  default value = 0
+<br>
+<br><b>drive-vertical-dead-zone double</b>
+<br>  default value = 0.1
+<br>
+<br><b>drive-vertical-ramp-down-time double</b>
+<br>  default value = 0
+<br>
+<br><b>drive-vertical-ramp-up-time double</b>
+<br>  default value = 0
+<br>
+<br><b>driver-compress-textures bool</b>
+<br>  default value = 0
+<br>  Set this true to ask the graphics driver to compress textures, rather than compressing them in-memory first.  Depending on your graphics driver, you may or may not get better performance or results by setting this true.  Setting it true may also allow you to take advantage of some exotic compression algorithm other than DXT1/3/5 that your graphics driver supports, but which is unknown to Panda.  If the libsquish library is not compiled into Panda, textures cannot be compressed in-memory, and will always be handed to the graphics driver, regardless of this setting.
+<br>
+<br><b>driver-generate-mipmaps bool</b>
+<br>  default value = 0
+<br>  Set this true to use the hardware to generate mipmaps automatically in all cases, if supported.  Set it false to generate mipmaps in software when possible.  This is false by default because some drivers (Intel) seem to do a poor job of generating mipmaps when needed; also, generating mipmaps in software may allow smoother texture loads.
+<br>
+<br><b>dump-generated-shaders bool</b>
+<br>  default value = 0
+<br>  Set this true to cause all generated shaders to be written to disk.  This is useful for debugging broken shader generators.
+<br>
+<br><b>early-random-seed bool</b>
+<br>  default value = 0
+<br>  Configure this true to compute the SSL random seed early on in the application (specifically, when the libpandaexpress library is loaded), or false to defer this until it is actually needed (which will be the first time you open an https connection or otherwise use encryption services).  You can also call HTTPClient::initialize_ssl() to do this when you are ready.  The issue is that on Windows, OpenSSL will attempt to randomize its seed by crawling through the entire heap of allocated memory, which can be extremely large in a Panda application, especially if you have already opened a window and started rendering; and so this can take as much as 30 seconds or more.  For this reason it is best to initialize the random seed at startup, when the application is still very small.
+<br>
+<br><b>egg-accept-errors bool</b>
+<br>  default value = 1
+<br>  When this is true, certain kinds of recoverable errors (not syntax errors) in an egg file will be allowed and ignored when an egg file is loaded.  When it is false, only perfectly pristine egg files may be loaded.
+<br>
+<br><b>egg-alpha-mode enum</b>
+<br>  default value = blend
+<br>  Specifies the alpha mode to apply when the alpha specification "on" appears in the egg file (or when a primitive is implicitly transparent, because of a <RGBA> that involves a non-unity alpha, or because of a four-channel texture.
+<br>
+<br><b>egg-combine-geoms bool</b>
+<br>  default value = 0
+<br>  Set this true to combine sibling GeomNodes into a single GeomNode, when possible.  This usually shouldn't be necessary, since the egg loader does a pretty good job of combining these by itself.
+<br>
+<br><b>egg-consider-fans bool</b>
+<br>  default value = 0
+<br>  Set this true to enable the egg mesher to consider making triangle fans out of triangles that are connected at a common vertex.  This may help if your scene involves lots of such connected triangles, but it can also make the overall stripping less effective (by interfering with triangle strips).
+<br>
+<br><b>egg-coordinate-system enum</b>
+<br>  default value = default
+<br>
+<br><b>egg-coplanar-threshold double</b>
+<br>  default value = 0.01
+<br>  The numerical threshold below which polygons are considered to be coplanar.  Determined empirically.
+<br>
+<br><b>egg-emulate-bface bool</b>
+<br>  default value = 0
+<br>  When this is true, the bface flag applied to a polygon will cause two different polygons to be created, back-to-back.  When it is false, a single polygon will be created with the two_sided flag set on it.
+<br>
+<br><b>egg-flat-shading bool</b>
+<br>  default value = 0
+<br>  Set this true to allow the egg loader to create geometry with the ShadeModelAttrib::M_flat attribute set.  It will do this only for geometry that has per-polygon normals and/or colors.  This allows the egg loader to avoid duplicating vertices when they are shared between connected polygons with different normals or colors, but it prevents the flat-shaded geometry from being combined with any adjacent smooth-shaded geometry (for instance, as the result of a flatten_strong operation).  It is false by default, since flat-shaded geometry is rare; but you may wish to set it true if your scene largely or entirely consists of flat-shaded polygons.
+<br>
+<br><b>egg-flatten bool</b>
+<br>  default value = 1
+<br>  This is normally true to flatten out useless nodes after loading an egg file.  Set it false if you want to see the complete and true hierarchy as the egg loader created it (although the extra nodes may have a small impact on render performance).
+<br>
+<br><b>egg-flatten-radius double</b>
+<br>  default value = 0
+<br>  This specifies the minimum cull radius in the egg file.  Nodes whose bounding volume is smaller than this radius will be flattened tighter than nodes larger than this radius, to reduce the node count even further.  The idea is that small objects will not need to have their individual components culled separately, but large environments should.  This allows the user to specify what should be considered "small".  Set it to 0.0 to disable this feature.
+<br>
+<br><b>egg-ignore-decals bool</b>
+<br>  default value = 0
+<br>
+<br><b>egg-ignore-filters bool</b>
+<br>  default value = 0
+<br>
+<br><b>egg-ignore-mipmaps bool</b>
+<br>  default value = 0
+<br>
+<br><b>egg-load-classic-nurbs-curves bool</b>
+<br>  default value = 0
+<br>  When this is true (and the above is also true), a <NurbsCurve> entry appearing in an egg file will load a ClassicNurbsCurve object instead of the default, a NurbsCurve object.  This only makes a difference when the NURBS++ library is available, in which case the default, NurbsCurve, is actually a NurbsPPCurve object.
+<br>
+<br><b>egg-load-old-curves bool</b>
+<br>  default value = 1
+<br>  When this is true, a <NurbsCurve> entry appearing in an egg file will load as a NurbsCurve or ClassicNurbsCurve object (see below). When this is false, it will load a RopeNode instead, which uses the new NurbsCurveEvaluator interface.
+<br>
+<br><b>egg-max-indices int</b>
+<br>  default value = 65535
+<br>  Specifies the maximum number of vertex indices that will be added to any one GeomPrimitive by the egg loader.
+<br>
+<br><b>egg-max-tfan-angle double</b>
+<br>  default value = 40
+<br>  The maximum average angle per triangle to allow in a triangle fan.  If triangles are larger than this--that is, more loosely packed--then we figure a triangle strip is likely to do a more effective job than a triangle fan, and the fan maker leaves it alone.
+<br>
+<br><b>egg-max-vertices int</b>
+<br>  default value = 65535
+<br>  Specifies the maximum number of vertices that will be added to any one GeomVertexData by the egg loader.
+<br>
+<br><b>egg-mesh bool</b>
+<br>  default value = 1
+<br>  Set this true to convert triangles and higher-order polygons into triangle strips and triangle fans when an egg file is loaded or converted to bam.  Set this false just to triangulate everything into independent triangles.
+<br>
+<br><b>egg-min-tfan-tris int</b>
+<br>  default value = 4
+<br>  The minimum number of triangles that must be involved in order to generate a triangle fan.  Fewer than this is just interrupting a triangle strip.
+<br>
+<br><b>egg-normal-scale double</b>
+<br>  default value = 1
+<br>
+<br><b>egg-preload-simple-textures bool</b>
+<br>  default value = 1
+<br>  This specifies whether the egg loader will generate simple texture images for each texture loaded.  This supercedes the preload-simple-textures global default, for egg files.  In fact, the egg loader will generate simple texture images if either this or preload-simple-textures is true.
+<br>
+<br><b>egg-retesselate-coplanar bool</b>
+<br>  default value = 0
+<br>  If this is true, the egg loader may reverse the tesselation direction of a single pair of planar triangles that share the same properties, if that will help get a better triangle strip.  In some rare cases, doing so can distort the UV's on a face; turning this off should eliminate that artifact (at the cost of less-effective triangle stripping).
+<br>
+<br><b>egg-rigid-geometry bool</b>
+<br>  default value = 0
+<br>  Set this true to create rigid pieces of an animated character as separate static nodes, or false to leave these in with the parent node as vertex-animated geometry.  Setting this true means less geometry has to be vertex-animated, but there will tend to be more separate pieces.
+<br>
+<br><b>egg-show-normals bool</b>
+<br>  default value = 0
+<br>
+<br><b>egg-show-qsheets bool</b>
+<br>  default value = 0
+<br>  Set this true to color each quadsheet a random color, so you can visually observe the quadsheet algorithm.
+<br>
+<br><b>egg-show-quads bool</b>
+<br>  default value = 0
+<br>  Set this true to color each detected quad a random color, so you can visually observe the algorithm that unifies pairs of triangles into quads (prior to generating triangle strips).
+<br>
+<br><b>egg-show-tstrips bool</b>
+<br>  default value = 0
+<br>  Set this true to color each triangle strip a random color, with the leading triangle a little bit darker, so you can visually observe the quality of the triangle stripping algorithm.
+<br>
+<br><b>egg-subdivide-polys bool</b>
+<br>  default value = 1
+<br>  This is obsolete.  In the old Geom implementation, it used to be true to force higher-order polygons that were not otherwise meshed to be subdivided into triangles.  In the new Geom implementation, this happens anyway.
+<br>
+<br><b>egg-support-old-anims bool</b>
+<br>  default value = 1
+<br>  Set this true to support loading of old character animation files, which had the convention that the order "phr" implied a reversed roll.
+<br>
+<br><b>egg-suppress-hidden bool</b>
+<br>  default value = 0
+<br>  When this is true, objects flagged as "hidden" with the visibility scalar are not created at all.  When false, these objects are created, but initially stashed.
+<br>
+<br><b>egg-unify bool</b>
+<br>  default value = 1
+<br>  When this is true, then in addition to flattening the scene graph nodes, the egg loader will also combine as many Geoms as possible within a given node into a single Geom.  This has theoretical performance benefits, especially on higher-end graphics cards, but it also slightly slows down egg loading.
+<br>
+<br><b>egg-unroll-fans bool</b>
+<br>  default value = 1
+<br>  Set this true to allow the egg loader to convert weak triangle fans--triangles that share the same vertex but aren't connected enough to justify making a triangle fan primitive from them--into a series of zig-zag triangles that can make a triangle strip that might connect better with its neighbors.
+<br>
+<br><b>empty-node-path enum</b>
+<br>  default value = transition
+<br>  This is a temporary transition variable to control the behavior of a NodePath when it is used as a boolean false.  Set this to 'deprecated' to preserve the original behavior: every NodePath evaluates true, even an empty NodePath.  Set it to 'future' to support the new behavior: non-empty NodePaths evaluate true, and empty NodePaths evaluate false.  Set it to 'transition' to raise an exception if an empty NodePath is used as a boolean.
+<br>
+<br><b>enforce-attrib-lock bool</b>
+<br>  default value = 1
+<br>  When a MaterialAttrib, TextureAttrib, or LightAttrib is constructed, the corresponding Material, Texture, or Light is 'attrib locked.'  The attrib lock prevents qualitative changes to the object.  This makes it possible to hardwire information about material, light, and texture properties into generated shaders.  This config variable can disable the attrib lock.  Disabling the lock will break the shader generator, but doing so may be necessary for backward compatibility with old code.
+<br>
+<br><b>even-animation bool</b>
+<br>  default value = 0
+<br>  When this is true, characters' vertices will be recomputed every frame, whether they need it or not.  This will tend to balance out the frame rate so that it is more uniformly slow.  The default is to compute vertices only when they need to be computed, which can lead to an uneven frame rate.
+<br>
+<br><b>exclude-texture-scale list</b>
+<br>  current value:
+<br>  This is a list of glob patterns for texture filenames (excluding the directory part of the filename, but including the extension); for instance, 'digits_*.png'.  Any texture filenames that match one of these patterns will not be affected by max-texture-dimension or texture-scale.
+<br>
+<br><b>expected-ssl-server list</b>
+<br>  current value:
+<br>
+<br><b>extended-exceptions bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>extractor-step-time double</b>
+<br>  default value = 0.1
+<br>  Specifies the maximum amount of time that should be consumed by a single call to Extractor::step().
+<br>
+<br><b>fake-texture-image filename</b>
+<br>  default value = 
+<br>  Set this to enable a speedy-load mode in which you don't care what the world looks like, you just want it to load in minimal time.  This causes all texture loads via the TexturePool to use the same texture file, which will presumably only be loaded once.
+<br>
+<br><b>fake-view-frustum-cull bool</b>
+<br>  default value = 0
+<br>  Set this true to cause culling to be performed by rendering the object in red wireframe, rather than actually culling it.  This helps make culling errors obvious.
+<br>
+<br><b>fft-error-threshold double</b>
+<br>  default value = 0.2
+<br>
+<br><b>fft-exponent double</b>
+<br>  default value = 4
+<br>
+<br><b>fft-factor double</b>
+<br>  default value = 0.1
+<br>
+<br><b>fft-offset double</b>
+<br>  default value = 0.001
+<br>
+<br><b>flatten-collision-nodes bool</b>
+<br>  default value = 0
+<br>  Set this true to allow NodePath::flatten_medium() and flatten_strong() to combine multiple CollisionNodes into a single CollisionNode--but only if they share the same name and collide masks.  When false, CollisionNodes are never combined.  This is false by default, since collision tests rely heavily on bounding volume tests to be efficient, and combining CollisionNodes is likely to merge bounding volumes inappropriately.
+<br>
+<br><b>flatten-geoms bool</b>
+<br>  default value = 1
+<br>  When this is true (the default), NodePath::flatten_strong() and flatten_medium() will attempt to combine multiple Geoms into as few Geoms as possible, by combing GeomVertexDatas and then unifying.  Setting this false disables this behavior, so that NodePath flatten operations will only reduce nodes.  This affects only the NodePath interfaces; you may still make the lower-level SceneGraphReducer calls directly.
+<br>
+<br><b>fluid-cap-amount int</b>
+<br>  default value = 100
+<br>  ensures that fluid pos doesn't check beyond X feet
+<br>
+<br><b>fmod-number-of-sound-channels int</b>
+<br>  default value = 128
+<br>  Guarantee this many channels you will have with FMOD.  AKA the max number of sounds you can play at one time.
+<br>
+<br><b>fmod-use-surround-sound bool</b>
+<br>  default value = 0
+<br>  Determines if an FMOD Flavor of PANDA use 5.1 Surround Sound or Not.
+<br>
+<br><b>force-parasite-buffer bool</b>
+<br>  default value = 0
+<br>  Set this true to make GraphicsOutput::make_texture_buffer() really strongly prefer ParasiteBuffers over conventional offscreen buffers.  With this set, it will create a ParasiteBuffer every time an offscreen buffer is requested, even if this means reducing the buffer size to fit within the window.  The only exceptions are for buffers that, by their nature, really cannot use ParasiteBuffers (like depth textures).  You might set this true if you don't trust your graphics driver's support for offscreen buffers.
+<br>
+<br><b>frame-rate-meter-layer-sort int</b>
+<br>  default value = 1000
+<br>
+<br><b>frame-rate-meter-scale double</b>
+<br>  default value = 0.05
+<br>
+<br><b>frame-rate-meter-side-margins double</b>
+<br>  default value = 0.5
+<br>
+<br><b>frame-rate-meter-text-pattern string</b>
+<br>  default value = %0.1f fps
+<br>
+<br><b>frame-rate-meter-update-interval double</b>
+<br>  default value = 1.5
+<br>
+<br><b>framebuffer-alpha bool</b>
+<br>  default value = 1
+<br>  True if FM_alpha should be added to the default framebuffer properties, which requests an alpha channel if possible.
+<br>
+<br><b>framebuffer-depth bool</b>
+<br>  default value = 1
+<br>  True if FM_depth should be added to the default framebuffer properties, which requests a depth buffer.
+<br>
+<br><b>framebuffer-hardware bool</b>
+<br>  current value = #t  (from /etc/Config.prc)
+<br>  default value = 1
+<br>  True if FM_hardware should be added to the default framebuffer properties, which requests a hardware-accelerated display.
+<br>
+<br><b>framebuffer-mode string</b>
+<br>  default value = 
+<br>  No longer has any effect.  Do not use.
+<br>
+<br><b>framebuffer-multisample bool</b>
+<br>  default value = 0
+<br>  True if FM_multisample should be added to the default framebuffer properties, which requests a multisample-capable display, if possible.  This can be used to implement full-screen antialiasing.
+<br>
+<br><b>framebuffer-software bool</b>
+<br>  current value = #f  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  True if FM_software should be added to the default framebuffer properties, which requests a software-only display.
+<br>
+<br><b>framebuffer-stencil bool</b>
+<br>  default value = 0
+<br>  True if FM_stencil should be added to the default framebuffer properties, which requests an stencil buffer if possible.
+<br>
+<br><b>framebuffer-stereo bool</b>
+<br>  default value = 0
+<br>  True if FM_stereo should be added to the default framebuffer properties, which requests a stereo-capable display, if supported by the graphics driver.
+<br>
+<br><b>fullscreen bool</b>
+<br>  current value = #f  (from /etc/Config.prc)
+<br>  default value = 0
+<br>
+<br><b>game-server-timeout-ms int</b>
+<br>  default value = 20000
+<br>  This represents the amount of time to block waiting for the TCP connection to the game server.  It is only used when the connection method is NSPR.
+<br>
+<br><b>geom-cache-min-frames int</b>
+<br>  default value = 1
+<br>  Specifies the minimum number of frames any one particular object will remain in the geom cache, even if geom-cache-size is exceeded.
+<br>
+<br><b>geom-cache-size int</b>
+<br>  default value = 5000
+<br>  Specifies the maximum number of entries in the cache for storing pre-processed data for rendering vertices.  This limit is flexible, and may be temporarily exceeded if many different Geoms are pre-processed during the space of a single frame.
+<br>
+<br><b>gl-cheap-textures bool</b>
+<br>  default value = 0
+<br>  Configure this true to GLP(Hint) the textures into the cheapest possible mode.
+<br>
+<br><b>gl-color-mask bool</b>
+<br>  default value = 1
+<br>  Configure this false if your GL's implementation of glColorMask() is broken (some are).  This will force the use of a (presumably) more expensive blending operation instead.
+<br>
+<br><b>gl-compile-and-execute bool</b>
+<br>  default value = 0
+<br>  Configure this true if you know your GL's implementation of glNewList(n, GL_COMPILE_AND_EXECUTE) works.  It is false by default, since it is known to cause a crash with Intel 855GM driver 4.14.10.3889 at least.  Turning this on *may* reduce the chug you get for preparing display lists for the first time, by allowing the display list to be rendered at the same time it is being compiled.
+<br>
+<br><b>gl-debug-buffers bool</b>
+<br>  default value = 0
+<br>  Set this true, in addition to enabling debug notify for glgsg, to enable debug messages about the creation and destruction of OpenGL vertex buffers.
+<br>
+<br><b>gl-finish bool</b>
+<br>  default value = 0
+<br>  Set this true to force a call to glFinish() after every major graphics operation.  This is likely to slow down rendering performance substantially, but it will make PStats graphs more accurately reflect where the graphics bottlenecks are.  This variable is enabled only if PStats is compiled in.
+<br>
+<br><b>gl-force-depth-stencil bool</b>
+<br>  default value = 0
+<br>  Temporary hack variable 7x00 vs 8x00 nVidia bug.  See glGraphicsStateGuardian_src.cxx.
+<br>
+<br><b>gl-force-mipmaps bool</b>
+<br>  default value = 0
+<br>  Configure this true to enable full trilinear mipmapping on every texture, whether it asks for it or not.
+<br>
+<br><b>gl-force-no-error bool</b>
+<br>  default value = 0
+<br>  Avoid reporting OpenGL errors, for a small performance benefit.
+<br>
+<br><b>gl-force-no-flush bool</b>
+<br>  default value = 0
+<br>  Avoid calling glFlush(), for a potential performance benefit.  This may be a little dangerous.
+<br>
+<br><b>gl-ignore-clamp bool</b>
+<br>  default value = 0
+<br>  Configure this true to disable texture clamp mode (all textures repeat, a little cheaper for software renderers).
+<br>
+<br><b>gl-ignore-filters bool</b>
+<br>  default value = 0
+<br>  Configure this true to disable any texture filters at all (forcing point sampling).
+<br>
+<br><b>gl-ignore-mipmaps bool</b>
+<br>  default value = 0
+<br>  Configure this true to disable mipmapping only.
+<br>
+<br><b>gl-interleaved-arrays bool</b>
+<br>  default value = 0
+<br>  Set this true to convert OpenGL geometry such that the primary data columns vertex, normal, color, and texcoord are interleaved into one array when possible, or false to render geometry as it appears in the GeomVertexData.  See also gl-parallel-arrays.
+<br>
+<br><b>gl-matrix-palette bool</b>
+<br>  default value = 0
+<br>  Temporary hack variable protecting untested code.  See glGraphicsStateGuardian_src.cxx.
+<br>
+<br><b>gl-max-errors int</b>
+<br>  default value = 20
+<br>  This is the limit on the number of OpenGL errors Panda will detect and report before it shuts down rendering.  Set it to -1 for no limit.
+<br>
+<br><b>gl-min-buffer-usage-hint enum</b>
+<br>  default value = stream
+<br>  This specifies the first usage hint value that will be loaded as a vertex buffer, instead of directly from the client.  Normally, this should be "stream", which means to load the vertex buffer using GL_STREAM_DRAW.  If this is set to "dynamic", or "static", then only usage hints at that level or higher will be loaded as a vertex buffer, and stream or lower will be rendered directly from the client array.  If changing this results in a remarkable performance improvement, you may have code that is creating and destroying vertex buffers every frame, instead of reusing the same buffers.  Consider increasing released-vbuffer-cache-size instead.
+<br>
+<br><b>gl-parallel-arrays bool</b>
+<br>  default value = 0
+<br>  Set this true to convert OpenGL geometry such that each data column is a separate array, or false to render geometry as it appears in the GeomVertexData.  See also gl-interleaved-arrays.
+<br>
+<br><b>gl-show-texture-usage bool</b>
+<br>  default value = 0
+<br>  If you set this true, the screen will flash with textures drawn in a special mode that shows the mipmap detail level and texture size for each texture.  Textures will be drawn in blue for mipmap level 0, gray for mipmap level 1, and red for all higher mipmap levels.  Brighter colors represent larger textures.
+<br>
+<br><b>gl-show-texture-usage-max-size int</b>
+<br>  default value = 1024
+<br>  Specifies the texture size (along one side) of the largest texture expected to be loaded.  This controls the assignment of the texture color in gl-show-texture-usage mode; colors will be fully bright for textures of this size or larger.
+<br>
+<br><b>gl-support-clamp-to-border bool</b>
+<br>  default value = 1
+<br>  Configure this true to enable the use of the clamp_to_border extension if the GL claims to support it, or false not to use it even if it appears to be available.  (On some OpenGL drivers, enabling this mode can force software rendering.)
+<br>
+<br><b>gl-support-occlusion-query bool</b>
+<br>  default value = 1
+<br>  Configure this true to enable the use of the occlusion_query extension if the GL claims to support it, or false not to use it even if it appears to be available.  (On some OpenGL drivers, enabling this mode can force software rendering.)
+<br>
+<br><b>gl-support-rescale-normal bool</b>
+<br>  default value = 1
+<br>  Configure this true to enable the use of the rescale_normal extension if the GL claims to support it, or false not to use it even if it appears to be available.  (This appears to be buggy on some drivers.)
+<br>
+<br><b>glx-get-os-address bool</b>
+<br>  default value = 1
+<br>  Set this to true to allow Panda to query the OpenGL library directly using standard operating system calls to locate addresses of extension functions.  This will be done only if glxGetProcAddress() cannot be used for some reason.
+<br>
+<br><b>glx-get-proc-address bool</b>
+<br>  default value = 1
+<br>  Set this to true to allow the use of glxGetProcAddress(), if it is available, to query the OpenGL extension functions.  This is the standard way to query extension functions.
+<br>
+<br><b>glx-support-pbuffer bool</b>
+<br>  default value = 0
+<br>  Set this true to enable the use of X pbuffer-based offscreen buffers, if available.  This is usually preferred over pixmap-based buffers, but not all drivers support them.
+<br>
+<br><b>glx-support-pixmap bool</b>
+<br>  default value = 0
+<br>  Set this true to enable the use of X pixmap-based offscreen buffers.  This is false by default because pixmap-based buffers are usually slower than pbuffer-based buffers, and because at least one driver is known to crash (crash!) when it attempts to create a pixmap-based buffer.
+<br>
+<br><b>graphics-memory-limit int</b>
+<br>  default value = -1
+<br>  This is a default limit that is imposed on each GSG at GSG creation time.  It limits the total amount of graphics memory, including texture memory and vertex buffer memory, that will be consumed by the GSG, regardless of whether the hardware claims to provide more graphics memory than this.  It is useful to put a ceiling on graphics memory consumed, since some drivers seem to allow the application to consume more memory than the hardware can realistically support.  Set this to -1 to have no limit other than the normal hardware-imposed limit.
+<br>
+<br><b>handle-datagrams-internally bool</b>
+<br>  default value = 1
+<br>  When this is true, certain datagram types can be handled directly by the C++ cConnectionRepository implementation, for performance reasons.  When it is false, all datagrams are handled by the Python implementation.
+<br>
+<br><b>hardware-animated-vertices bool</b>
+<br>  current value = #f  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  Set this true to allow the transforming of soft-skinned animated vertices via hardware, if supported, or false always to perform the vertex animation via software within Panda.  If you have a card that supports this, and your scene does not contain too many vertices already, this can provide a performance boost by offloading some work from your CPU onto your graphics card.  It may also help by reducing the bandwidth necessary on your computer's bus.  However, in some cases it may actually reduce performance.
+<br>
+<br><b>hardware-point-sprites bool</b>
+<br>  default value = 1
+<br>  Set this true to allow the use of hardware extensions when rendering perspective-scaled points and point sprites.  When false, these large points are always simulated via quads computed in software, even if the hardware claims it can support them directly.
+<br>
+<br><b>hardware-points bool</b>
+<br>  default value = 1
+<br>  Set this true to allow the use of hardware extensions when rendering large points.  When false, large points (even if untextured) will be simulated via quads computed in software.
+<br>
+<br><b>http-connect-timeout double</b>
+<br>  default value = 10
+<br>  This is the default amount of time to wait for a TCP/IP connection to be established, in seconds.
+<br>
+<br><b>http-idle-timeout double</b>
+<br>  default value = 5
+<br>  This the amount of time, in seconds, in which a previously-established connection is allowed to remain open and unused.  If a previous connection has remained unused for at least this number of seconds, it will be closed and a new connection will be opened; otherwise, the same connection will be reused for the next request (for a particular HTTPChannel).
+<br>
+<br><b>http-max-connect-count int</b>
+<br>  default value = 10
+<br>  This is the maximum number of times to try reconnecting to the server on any one document attempt.  This is just a failsafe to prevent the code from attempting runaway connections; this limit should never be reached in practice.
+<br>
+<br><b>http-proxy-tunnel bool</b>
+<br>  default value = 0
+<br>  This specifies the default value for HTTPChannel::set_proxy_tunnel().  If this is true, we will tunnel through a proxy for all connections, instead of asking the proxy to serve documents normally.
+<br>
+<br><b>http-skip-body-size int</b>
+<br>  default value = 8192
+<br>  This is the maximum number of bytes in a received (but unwanted) body that will be skipped past, in order to reset to a new request.  See HTTPChannel::set_skip_body_size().
+<br>
+<br><b>http-timeout double</b>
+<br>  default value = 20
+<br>  This is the default amount of time to wait for the HTTP server (or proxy) to finish sending its response to our request, in seconds. It starts counting after the TCP connection has been established (http_connect_timeout, above) and the request has been sent.
+<br>
+<br><b>icon-filename filename</b>
+<br>  default value = 
+<br>
+<br><b>img-header-type enum</b>
+<br>  default value = short
+<br>  IMG format is just a sequential string of r, g, b bytes.  However, it may or may not include a "header" which consists of the xsize and the ysize of the image, either as shorts or as longs.  Specify that with this variable, either 'short', 'long', or 'none' for no header at all (in which case you should also set img-size).
+<br>
+<br><b>img-size int</b>
+<br>  default value = 0
+<br>  If an IMG file without a header is loaded (e.g. img-header-type is set to 'none', this specifies the fixed x y size of the image.
+<br>
+<br><b>inactivity-timeout double</b>
+<br>  default value = 0
+<br>
+<br><b>interpolate-frames bool</b>
+<br>  default value = 0
+<br>  Set this true to interpolate character animations between frames, or false to hold each frame until the next one is ready.  This can also be changed on a per-character basis with PartBundle::set_frame_blend_flag().
+<br>
+<br><b>interrogatedb-path search</b>-path
+<br>  current value:
+<br>  The search path for interrogate's *.in files.
+<br>
+<br><b>interval-precision double</b>
+<br>  default value = 1000
+<br>  Set this to the default value for set_precision() for each CMetaInterval created.
+<br>
+<br><b>jpeg-quality int</b>
+<br>  default value = 95
+<br>  Set this to the quality percentage for writing JPEG files.  95 is the highest useful value (values greater than 95 do not lead to significantly better quality, but do lead to significantly greater size).
+<br>
+<br><b>keep-temporary-files bool</b>
+<br>  default value = 0
+<br>  Set this true to keep around the temporary files from downloading, decompressing, and patching, or false (the default) to delete these.  Mainly useful for debugging when the process goes wrong.
+<br>
+<br><b>keep-texture-ram bool</b>
+<br>  default value = 0
+<br>  Set this to true to retain the ram image for each texture after it has been prepared with the GSG.  This will allow the texture to be prepared with multiple GSG's, or to be re-prepared later after it is explicitly released from the GSG, without having to reread the texture image from disk; but it will consume memory somewhat wastefully.
+<br>
+<br><b>load-display string</b>
+<br>  current value = pandagl  (from /etc/Config.prc)
+<br>  default value = *
+<br>  Specify the name of the default graphics display library or GraphicsPipe to load.  It is the name of a shared library (or * for all libraries named in aux-display), optionally followed by the name of the particular GraphicsPipe class to create.
+<br>
+<br><b>load-file-type list</b>
+<br>  current value:
+<br>    egg pandaegg  (from /etc/Confauto.prc)
+<br>    p3ptloader  (from /etc/Confauto.prc)
+<br>  List the model loader modules that Panda will automatically import when a new, unknown model type is loaded.  This may be either the name of a module, or a space-separate list of filename extensions, followed by the name of the module.
+<br>
+<br><b>loader-num-threads int</b>
+<br>  default value = 1
+<br>  The number of threads that will be started by the Loader class to load models asynchronously.  These threads will only be started if the asynchronous interface is used, and if threading support is compiled into Panda.  The default is one thread, which allows models to be loaded one at a time in a single asychronous thread.  You can set this higher, particularly if you have many CPU's available, to allow loading multiple models simultaneously.
+<br>
+<br><b>loader-thread-priority enum</b>
+<br>  default value = low
+<br>  The default thread priority to assign to the threads created for asynchronous loading.  The default is 'low'; you may also specify 'normal', 'high', or 'urgent'.
+<br>
+<br><b>lod-fade-bin-draw-order int</b>
+<br>  default value = 0
+<br>  The default bin draw order to assign the fading part of a FadeLODNode transition.
+<br>
+<br><b>lod-fade-bin-name string</b>
+<br>  default value = fixed
+<br>  The default bin name in which to place the fading part of a FadeLODNode transition.
+<br>
+<br><b>lod-fade-state-override int</b>
+<br>  default value = 1000
+<br>  The default override value to assign to the fade attribs in order to effect a FadeLODNode transition.
+<br>
+<br><b>lod-fade-time double</b>
+<br>  default value = 0.5
+<br>  The default amount of time (in seconds) over which a FadeLODNode transitions between its different levels.
+<br>
+<br><b>m-dual bool</b>
+<br>  default value = 1
+<br>  Set this false to disable TransparencyAttrib::M_dual altogether (and use M_alpha in its place).
+<br>
+<br><b>m-dual-flash bool</b>
+<br>  default value = 0
+<br>  Set this true to flash any objects that use M_dual, for debugging.
+<br>
+<br><b>m-dual-opaque bool</b>
+<br>  default value = 1
+<br>  Set this false to disable just the opaque part of M_dual.
+<br>
+<br><b>m-dual-transparent bool</b>
+<br>  default value = 1
+<br>  Set this false to disable just the transparent part of M_dual.
+<br>
+<br><b>matrix-palette bool</b>
+<br>  default value = 0
+<br>  Set this true to allow the use of the matrix palette when animating vertices in hardware.  The matrix palette is not supported by all devices, but if it is, using it can allow animation of more sophisticated meshes in hardware, and it can also improve the performance of animating some simpler meshes.  Without this option, certain meshes will have to be animated in software.  However, this option is not enabled by default, because its support seems to be buggy in certain drivers (ATI FireGL T2 8.103 in particular.)
+<br>
+<br><b>max-attribs int</b>
+<br>  default value = 32
+<br>  This specifies the maximum number of different RenderAttrib types that may be defined at runtime.  Normally you should never need to change this, but if the default value is too low for the number of attribs that Panda actually defines, you may need to raise this number.
+<br>
+<br><b>max-collect-indices int</b>
+<br>  default value = 65535
+<br>  Specifies the maximum number of vertex indices that are allowed to be accumulated into any one GeomPrimitive as a result of collecting objects together during a flatten operation.  This prevents the accidental generation of large index buffers from lots of smaller index buffers, while not imposing a limit on the original size of any one GeomPrimitive.
+<br>
+<br><b>max-collect-vertices int</b>
+<br>  default value = 65535
+<br>  Specifies the maximum number of vertices that are allowed to be accumulated into any one GeomVertexData structure as a result of collecting objects together during a flatten operation.  This prevents the accidental generation of large vertex buffers from lots of smaller vertex buffers, while not imposing a limit on the original size of any one GeomVertexData structure.
+<br>
+<br><b>max-compressed-vertex-data int</b>
+<br>  default value = 0
+<br>  Specifies the maximum number of bytes of all vertex data that is allowed to remain compressed in system RAM at one time. If more than this number of bytes of vertices are created, the least-recently-used ones will be temporarily flushed to disk until they are needed.  Set it to -1 for no limit.
+<br>
+<br><b>max-disk-vertex-data int</b>
+<br>  default value = -1
+<br>  Specifies the maximum number of bytes of vertex data that is allowed to be written to disk.  Set it to -1 for no limit.
+<br>
+<br><b>max-dt double</b>
+<br>  default value = -1
+<br>  Sets a limit on the value returned by ClockObject::get_dt().  If this value is less than zero, no limit is imposed; otherwise, this is the maximum value that will ever be returned by get_dt(), regardless of how much time has actually elapsed between frames.  See ClockObject::set_dt().
+<br>
+<br><b>max-heap-size int</b>64
+<br>  default value = 0
+<br>  If this is nonzero, it is the maximum number of bytes expected to be allocated on the heap before we enter report-memory-usage mode automatically.  The assumption is that once this limit has been crossed, we must be leaking.
+<br>
+<br><b>max-independent-vertex-data int</b>
+<br>  default value = -1
+<br>  Specifies the maximum number of bytes of all vertex data that is independent of the paging system.  This is an initial buffer before max-ram-vertex-data, specifically designed for vertex datas that are dynamic in nature and may change size or be created and destroyed frequently.
+<br>
+<br><b>max-lag double</b>
+<br>  default value = 0
+<br>  This represents the time in seconds by which to artificially lag inbound messages.  It is useful to test a game's tolerance of network latency.
+<br>
+<br><b>max-lenses int</b>
+<br>  default value = 100
+<br>  Specifies an upper limit on the maximum number of lenses and the maximum lens index number) that may be associated with a single LensNode.  There is no technical reason for this limitation, but very large numbers are probably a mistake, so this can be used as a simple sanity check.  Set it larger or smaller to suit your needs.
+<br>
+<br><b>max-occlusion-vertices int</b>
+<br>  default value = 3000
+<br>  The maximum number of vertices that may be included in a PandaNode and its descendents in order to perform an occlusion query for it.  Subgraphs whose total vertex count exceeds this number will be subdivided further before performing an occlusion test--the hope is that we can eventually get to a finer-grained answer.  GeomNodes and Geoms will not be subdivided, regardless of this limit.
+<br>
+<br><b>max-resident-vertex-data int</b>
+<br>  default value = -1
+<br>  Specifies the maximum number of bytes of all vertex data that is allowed to remain resident in system RAM at one time. If more than this number of bytes of vertices are created, the least-recently-used ones will be temporarily compressed in system RAM until they are needed.  Set it to -1 for no limit.
+<br>
+<br><b>max-texture-dimension int</b>
+<br>  default value = -1
+<br>  Set this to the maximum size a texture is allowed to be in either dimension.  This is generally intended as a simple way to restrict texture sizes for limited graphics cards.  When this is greater than zero, each texture image loaded from a file (but only those loaded from a file) will be automatically scaled down, if necessary, so that neither dimension is larger than this value.  If this is less than zero, the size limit is taken from the primary GSG.  If this is exactly zero, there is no limit.
+<br>
+<br><b>max-texture-stages int</b>
+<br>  default value = -1
+<br>  Set this to a positive integer to limit the number of texture stages reported by the GSG.  This can be used to limit the amount of multitexturing Panda will attempt to use.  If this is zero or less, the GSG will report its honest number of texture stages, allowing Panda the full use of the graphics card; if it is 1 or more, then Panda will never allow more than this number of texture stages simultaneously, regardless of what the GSG says it can do.
+<br>
+<br><b>min-lag double</b>
+<br>  default value = 0
+<br>  This represents the time in seconds by which to artificially lag inbound messages.  It is useful to test a game's tolerance of network latency.
+<br>
+<br><b>min-occlusion-vertices int</b>
+<br>  default value = 300
+<br>  The minimum number of vertices a PandaNode or Geom must contain in order to perform an occlusion query for it.  Nodes and Geoms smaller than this will be rendered directly, without bothering with an occlusion query.
+<br>
+<br><b>multi-sleep bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>multifile-encryption-iteration-count int</b>
+<br>  default value = 0
+<br>  This is a special value of encryption-iteration-count used to encrypt subfiles within a multifile.  It has a default value of 0 (just one application), on the assumption that the files from a multifile must be loaded quickly, without paying the cost of an expensive hash on each subfile in order to decrypt it.
+<br>
+<br><b>multisamples int</b>
+<br>  current value = 0  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  The minimum number of samples requested.
+<br>
+<br><b>name-deleted-mutexes bool</b>
+<br>  default value = 0
+<br>  Set this true to allocate a name to each Mutex object that destructs, so if the Mutex is locked after destruction, we can print out its name to aid debugging.  This is only available when compiled with DEBUG_THREADS.  Enabling this variable will cause a memory leak, so you should only enable it when you are specifically tracking down an operation on a deleted Mutex.  It is not guaranteed to work, of course, because the memory for a deleted Mutex may become reused for some other purpose.
+<br>
+<br><b>newline-mode enum</b>
+<br>  default value = native
+<br>  Controls how newlines are written by Panda applications writing to a text file.  The default, "native", means to write newlines appropriate to the current platform.  You may also specify "binary", to avoid molesting the file data, or one of "msdos", "unix", or "mac".
+<br>
+<br><b>no-unsupported-copy bool</b>
+<br>  default value = 0
+<br>  Set this true to make an attempt to copy an unsupported type generate an assertion failure instead of just a warning (which can then be trapped with assert-abort).
+<br>
+<br>notify-level-BufferViewer string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-BulletinBoard string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-ClassicFSM string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-DirectScrolledList string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-DirectScrolledListItem string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-EventManager string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-ExceptionVarDump string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-FunctionInterval string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-GarbageReport string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-InputState string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-JobManager string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-LerpFunctionInterval string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-LerpFunctionNoStateInterval string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-Loader string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-Messenger string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-MetaInterval string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-ShowBase string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-State string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br>notify-level-TaskManager string
+<br>  default value = 
+<br>  DConfig
+<br>
+<br><b>notify-output filename</b>
+<br>  default value = 
+<br>  The filename to which to write all the output of notify
+<br>
+<br><b>occlusion-depth-bits int</b>
+<br>  default value = 1
+<br>  The minimum number of depth bits requested for the occlusion buffer.
+<br>
+<br><b>occlusion-size int</b>
+<br>  default value = 256 256
+<br>  Specify the x y size of the buffer used for occlusion testing.
+<br>
+<br><b>on-screen-debug-enabled bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>paranoid-compose bool</b>
+<br>  default value = 0
+<br>  Set this true to double-check the componentwise transform compose (or invert) operation against the equivalent matrix-based operation.  This has no effect if NDEBUG is defined.
+<br>
+<br><b>paranoid-const bool</b>
+<br>  default value = 0
+<br>  Set this true to double-check that nothing is inappropriately modifying the supposedly const structures like RenderState, RenderAttrib, TransformState, and RenderEffect.  This has no effect if NDEBUG is defined.
+<br>
+<br><b>paranoid-hpr-quat bool</b>
+<br>  default value = 0
+<br>  Set this true to doublecheck the quaternion-hpr compose and decompose operations against the quaternion-matrix and matrix-hpr operations.  This only has effect if NDEBUG is not defined.
+<br>
+<br><b>parent-window-handle int</b>
+<br>  default value = 0
+<br>  The window handle of the parent window to attach the Panda window to, for the purposes of creating an embedded window.  This is an HWND on Windows, or the NSWindow pointer or XWindow pointer converted to an integer, on OSX and X11.
+<br>
+<br><b>particle-path search</b>-path
+<br>  current value:
+<br>  The directories to search for particle files to be loaded.
+<br>
+<br><b>patcher-buffer-size int</b>
+<br>  default value = 16384
+<br>  Limits the size of the buffer used in a single call to Patcher::run().  Increasing this may help the Patcher perform more work before returning.
+<br>
+<br><b>patchfile-buffer-size int</b>
+<br>  default value = 4096
+<br>
+<br><b>patchfile-increment-size int</b>
+<br>  default value = 8
+<br>
+<br><b>patchfile-window-size int</b>
+<br>  default value = 16
+<br>
+<br><b>patchfile-zone-size int</b>
+<br>  default value = 10000
+<br>
+<br>physics_manager_random_seed int
+<br>  default value = 139
+<br>
+<br><b>pipeline-stages int</b>
+<br>  default value = 1
+<br>  The initial number of stages in the render pipeline.  This is only meaningful if threaded pipelining is compiled into Panda.  In most cases, you should not set this at all anyway, since the pipeline can automatically grow stages as needed, but it will not remove stages automatically, and having more pipeline stages than your application requires will incur additional runtime overhead.
+<br>
+<br><b>pixel-zoom double</b>
+<br>  default value = 1
+<br>  The default pixel_zoom factor for new windows.
+<br>
+<br><b>playback-session string</b>
+<br>  default value = 
+<br>  DConfig
+<br>
+<br><b>plugin-path search</b>-path
+<br>  current value:
+<br>  The directories to search for plugin shared libraries.
+<br>
+<br><b>polylight-info bool</b>
+<br>  default value = 0
+<br>  Set this true to view some info statements regarding the polylight. It is helpful for debugging.
+<br>
+<br><b>prefer-parasite-buffer bool</b>
+<br>  default value = 0
+<br>  Set this true to make GraphicsOutput::make_texture_buffer() try to create a ParasiteBuffer before it tries to create an offscreen buffer (assuming it could not create a direct render buffer for some reason).  This may reduce your graphics card memory requirements by sharing memory with the framebuffer, but it can cause problems if the user subsequently resizes the window smaller than the buffer.
+<br>
+<br><b>prefer-single-buffer bool</b>
+<br>  default value = 1
+<br>  Set this true to make GraphicsOutput::make_render_texture() first try to create a single-buffered offscreen buffer, before falling back to a double-buffered one (or whatever kind the source window has).  This is true by default to reduce waste of framebuffer memory, but you might get a performance benefit by setting it to false (since in that case the buffer can share a graphics context with the window).
+<br>
+<br><b>prefer-texture-buffer bool</b>
+<br>  default value = 1
+<br>  Set this true to make GraphicsOutput::make_texture_buffer() always try to create an offscreen buffer supporting render-to-texture, if the graphics card claims to be able to support this feature.  If the graphics card cannot support this feature, this option is ignored.  This is usually the fastest way to render to a texture, and it presumably does not consume any additional framebuffer memory over a copy-to-texture operation (since the texture and the buffer share the same memory).
+<br>
+<br><b>preload-simple-textures bool</b>
+<br>  default value = 0
+<br>  When this is true, every texture image will have a simple image generated for it at load time.  (Normally, textures get a simple image at egg2bam time.)  This slows the initial loading time of textures, but allows you to take advantage of gsg::set_incomplete_render() to load textures on-the-fly in a sub-thread.  It's not generally necessary if you are loading bam files that were generated via egg2bam.
+<br>
+<br><b>preload-textures bool</b>
+<br>  default value = 1
+<br>  When this is true, texture images are loaded from disk as soon as the Texture is created from the TexturePool.  When this is false, the Texture is created immediately, but the image data is not loaded from disk until the Texture is actually rendered (or otherwise prepared) on the GSG.  This can help reduce wasted memory from Textures that are created but never used to render.
+<br>
+<br><b>premunge-data bool</b>
+<br>  default value = 1
+<br>  Set this true to preconvert vertex data at model load time to match the data requirements of the current GSG.  For instance, color columns are pre-converted to match OpenGL or DirectX encoding requirements, as appropriate.  When this is false, the data will be munged at render time instead.
+<br>
+<br><b>preserve-geom-nodes bool</b>
+<br>  default value = 0
+<br>  This specifies the default value for the "preserved" flag on every GeomNode created.  When this is true, GeomNodes will not be flattened, so setting this true effectively disables the use of flatten to combine GeomNodes.
+<br>
+<br><b>preserve-triangle-strips bool</b>
+<br>  default value = 0
+<br>  Set this true to indicate a preference for keeping triangle strips when possible, instead of decomposing them into triangles.  When this is true, flatten_strong and unify operations may be less effective at combining multiple Geoms together, but they will not implicitly decompose triangle strips.
+<br>
+<br><b>profile-frames bool</b>
+<br>  default value = 0
+<br>
+<br><b>profile-task-spikes bool</b>
+<br>  default value = 0
+<br>
+<br><b>project-invert-uvs bool</b>
+<br>  default value = 0
+<br>  If this is true, the UV's generated by all ProjectionScreens are inverted top-to-bottom.  This used to be required to compensate for buggy graphics drivers that rendered to a texture upside-down in this manner, but nowadays Panda should be able to autodetect these graphics drivers.  If it fails to do this, you should probably set copy-texture-inverted instead, which is more general.
+<br>
+<br><b>pstats-average-time double</b>
+<br>  default value = 3
+<br>
+<br><b>pstats-history double</b>
+<br>  default value = 60
+<br>
+<br><b>pstats-host string</b>
+<br>  default value = localhost
+<br>
+<br><b>pstats-max-queue-size int</b>
+<br>  default value = 1
+<br>  If pstats-threaded-write is true, this specifies the maximum number of packets (generally, frames of data) that may be queued up for the thread to process.  If this is large, the writer thread may fall behind and the output of PStats will lag.  Keep this small to drop missed packets on the floor instead, and ensure that the frame data does not grow stale.
+<br>
+<br><b>pstats-max-rate double</b>
+<br>  default value = 1000
+<br>  The maximum number of packets per second, per thread, to send to the remote PStats server.  A packet is defined as a single UDP packet, or each 1024 bytes of a TCP message.
+<br>
+<br><b>pstats-mem-other bool</b>
+<br>  default value = 1
+<br>  Set this true to collect memory categories smaller than 0.1% of the total into a single "Other" category, or false to show each nonzero memory category.
+<br>
+<br><b>pstats-name string</b>
+<br>  default value = Panda Stats
+<br>
+<br><b>pstats-port int</b>
+<br>  default value = 5185
+<br>
+<br><b>pstats-scroll-mode bool</b>
+<br>  default value = 1
+<br>
+<br><b>pstats-target-frame-rate double</b>
+<br>  default value = 30
+<br>  Specify the target frame rate to highlight on the PStats graph.  This frame rate is marked with a different-colored line; otherwise, this setting has no effect.
+<br>
+<br><b>pstats-tasks bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>pstats-tcp-ratio double</b>
+<br>  default value = 0.01
+<br>  This specifies the ratio of frame update messages that are eligible for UDP that are sent via TCP instead.  It does not count messages that are too large for UDP and must be sent via TCP anyway.  1.0 means all messages are sent TCP; 0.0 means all are sent UDP.
+<br>
+<br><b>pstats-threaded-write bool</b>
+<br>  default value = 1
+<br>  Set this true to write to the PStats channel in a sub-thread, if threading is available.  Can't think of any reason why you wouldn't want this set true, unless you suspect something is broken with the threaded network interfaces.
+<br>
+<br><b>pstats-unused-states bool</b>
+<br>  default value = 0
+<br>  Set this true to show the number of unused states in the pstats graph for TransformState and RenderState counts.  This adds a bit of per-frame overhead to count these things up.
+<br>
+<br><b>read-compressed-channels bool</b>
+<br>  default value = 1
+<br>  Set this false to disable reading of compressed animation channels, even if the decompression code is available.  The only reason you might want to do this would be to speed load time when you don't care about what the animation looks like.
+<br>
+<br><b>read-raw-mice bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>record-gui-creation-stack bool</b>
+<br>  default value = 1
+<br>  DConfig
+<br>
+<br><b>record-session string</b>
+<br>  default value = 
+<br>  DConfig
+<br>
+<br><b>red-blue-stereo bool</b>
+<br>  default value = 0
+<br>  Set this true to create windows with red-blue stereo mode enabled by default, if the framebuffer does not support true stereo rendering.
+<br>
+<br><b>red-blue-stereo-colors string</b>
+<br>  default value = red cyan
+<br>  This defines the color channels that are used for the left and right eye, respectively, for red-blue-stereo mode.  This should be a two-word string, where each word is one of 'red', 'blue', 'green', 'cyan', 'magenta', 'yellow', or 'alpha', or a union of two or more words separated by a vertical pipe (|).
+<br>
+<br><b>released-ibuffer-cache-size int</b>
+<br>  default value = 102400
+<br>  Specifies the size in bytes of the cache of index buffers that have recently been released.  If a new index buffer is prepared while a recently-released one of the same size is still in the cache, that same buffer is recycled.  This cuts down on the overhead of creating and destroying index buffers on the graphics card.
+<br>
+<br><b>released-vbuffer-cache-size int</b>
+<br>  default value = 1048576
+<br>  Specifies the size in bytes of the cache of vertex buffers that have recently been released.  If a new vertex buffer is prepared while a recently-released one of the same size is still in the cache, that same buffer is recycled.  This cuts down on the overhead of creating and destroying vertex buffers on the graphics card.
+<br>
+<br><b>report-memory-interval double</b>
+<br>  default value = 5
+<br>  This is the interval, in seconds, for reports of currently allocated memory, when report-memory-usage is true.
+<br>
+<br><b>report-memory-usage bool</b>
+<br>  default value = 0
+<br>  Set this true to enable automatic reporting of allocated objects at the interval specified by report-memory-interval.  This also requires track-memory-usage.
+<br>
+<br><b>require-window bool</b>
+<br>  default value = 1
+<br>  DConfig
+<br>
+<br><b>rescale-normals enum</b>
+<br>  default value = auto
+<br>  Specifies the kind of RescaleNormalAttrib that should be created for the top of the scene graph.  This can automatically ensure that your lighting normals are unit-length, which may be particularly necessary in the presence of scales in the scene graph.  Turning it off ('none') may produce a small performance benefit.
+<br>
+<br><b>respect-effective-normal bool</b>
+<br>  default value = 1
+<br>  This should be true to support the effective_normal interface of polygons.  Set it false to disable this feature, so that all collision solids (including polygons and planes) use their actual normal for intersection and physics tests.
+<br>
+<br><b>respect-prev-transform bool</b>
+<br>  default value = 0
+<br>  Set this true to have all CollisionTraversers in the world respect the previous frame's transform (position) for a given object when determining motion for collision tests.  If this is false, you must explicitly enable motion detection for a particular traverser.  It is false by default to force programmers to decide on a case-by-case basis whether they really need this feature.
+<br>
+<br><b>restore-initial-pose bool</b>
+<br>  default value = 1
+<br>  When this is true, setting all control effects on an Actor to 0 causes it to return to its default, unanimated pose.  When false, it retains whatever its last-computed pose was (which may or may not be the default pose).
+<br>
+<br><b>retransform-sprites bool</b>
+<br>  default value = 1
+<br>  To render sprite-based particle effects, Panda must convert the sprite points from object space into clip space, and compute the corners of the quads in clip space.  When this variable is false, the resulting quads are then sent to the graphics hardware in clip space.  When this is true, the quads are re-transformed back into the original object space, which is necessary in order for fog to work correctly on the sprites.
+<br>
+<br><b>scene-graph-analyzer-meter-layer-sort int</b>
+<br>  default value = 1000
+<br>
+<br><b>scene-graph-analyzer-meter-scale double</b>
+<br>  default value = 0.05
+<br>
+<br><b>scene-graph-analyzer-meter-side-margins double</b>
+<br>  default value = 0.5
+<br>
+<br><b>scene-graph-analyzer-meter-update-interval double</b>
+<br>  default value = 2
+<br>
+<br><b>screenshot-extension string</b>
+<br>  default value = jpg
+<br>  DConfig
+<br>
+<br><b>screenshot-filename string</b>
+<br>  default value = %~p-%a-%b-%d-%H-%M-%S-%Y-%~f.%~e
+<br>  This specifies the filename pattern to be used to generate screenshots captured via save_screenshot_default().  See DisplayRegion::save_screenshot().
+<br>
+<br><b>scroll-continued-delay double</b>
+<br>  default value = 0.1
+<br>  This is the amount of time, in seconds, to delay between lines scrolled while the user is continuing to hold down the scrollbar button.
+<br>
+<br><b>scroll-initial-delay double</b>
+<br>  default value = 0.3
+<br>  This is the amount of time, in seconds, to delay after the user first clicks and holds on a scrollbar button before the scrolling continues automatically.
+<br>
+<br><b>sgi-imagename string</b>
+<br>  default value = 
+<br>  This string is written to the header of an SGI (*.rgb) file.  It seems to have documentation purposes only.
+<br>
+<br><b>sgi-storage-type enum</b>
+<br>  default value = rle
+<br>  Use either 'rle' or 'verbatim' to indicate how SGI (*.rgb) files are written.
+<br>
+<br><b>shader-auto-utilization bool</b>
+<br>  default value = 0
+<br>  If this is true, then panda will wait until you open a window, and then ask the window if it supports basic or advanced shaders. If so, then the config variable shader-utilization will automatically be adusted.  The pitfall of doing this is that if you then open a second window that doesn't support the same capabilities, it will have no choice but to print an error message.
+<br>
+<br><b>shader-utilization enum</b>
+<br>  default value = none
+<br>  At times, panda may generate shaders.  This variable controls what kinds of shaders can be generated.  If you set it to SUT_none, shader generation will be be disabled.  If you set it to SUT_basic, then DX9 shaders may be generated, if you set it to SUT_advanced, then DX10 shaders may be generated.
+<br>
+<br><b>show-buffers bool</b>
+<br>  default value = 0
+<br>
+<br><b>show-frame-rate-meter bool</b>
+<br>  current value = #f  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>show-occlusion bool</b>
+<br>  default value = 0
+<br>  Set this true to visualize the efforts of the occlusion test.
+<br>
+<br><b>show-portal-debug bool</b>
+<br>  default value = 1
+<br>  Set this true to show debug lines for portals.  This will draw lines from the screen corners to the portal corners, this can be useful when debugging.
+<br>
+<br><b>show-tex-mem bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>show-transparency bool</b>
+<br>  default value = 0
+<br>  Set this true to flash any objects that are rendered in some transparency mode.  The color chosen is based on the  particular transparency mode in effect.  This only has effect when NDEBUG is not defined.
+<br>
+<br><b>show-vertex-animation bool</b>
+<br>  default value = 0
+<br>  Set this true to flash any objects whose vertices are animated by Panda on the CPU (flash red) or by hardware (flash blue).  This only has effect when NDEBUG is not defined.
+<br>
+<br><b>simple-image-size int</b>
+<br>  default value = 16 16
+<br>  This is an x y pair that specifies the maximum size of an automatically-generated texture simple image.  The simple image can displayed before the texture has been loaded from disk.
+<br>
+<br><b>simple-image-threshold double</b>
+<br>  default value = 0.1
+<br>  This is a value that indicates how closely a texture's generated simple image should approximate the original image.  The smaller the number, the closer the match; small numbers will result in simple images close to the maximum size specified by simple-image-size.  Larger numbers will result in smaller simple images.  Generally the value should be considerably less than 1.
+<br>
+<br><b>simple-thread-epoch-timeslice double</b>
+<br>  default value = 0.05
+<br>  When SIMPLE_THREADS is defined, this defines the amount of time, in seconds, that should be considered the typical timeslice for one epoch (to run all threads once).
+<br>
+<br><b>simple-thread-high-weight double</b>
+<br>  default value = 5
+<br>  When SIMPLE_THREADS is defined, this determines the relative amount of time that is given to threads with priority TP_high.
+<br>
+<br><b>simple-thread-low-weight double</b>
+<br>  default value = 0.2
+<br>  When SIMPLE_THREADS is defined, this determines the relative amount of time that is given to threads with priority TP_low.
+<br>
+<br><b>simple-thread-normal-weight double</b>
+<br>  default value = 1
+<br>  When SIMPLE_THREADS is defined, this determines the relative amount of time that is given to threads with priority TP_normal.
+<br>
+<br><b>simple-thread-urgent-weight double</b>
+<br>  default value = 10
+<br>  When SIMPLE_THREADS is defined, this determines the relative amount of time that is given to threads with priority TP_urgent.
+<br>
+<br><b>simple-thread-volunteer-delay double</b>
+<br>  default value = 0
+<br>  When SIMPLE_THREADS is defined, this defines the amount of time, in seconds, for which a task that voluntarily yields should be delayed.
+<br>
+<br><b>simple-thread-window double</b>
+<br>  default value = 1
+<br>  When SIMPLE_THREADS is defined, this defines the amount of time, in seconds, over which to average all the threads' runtimes, for the purpose of scheduling threads.
+<br>
+<br><b>singular-points bool</b>
+<br>  default value = 1
+<br>  Set this true to insist that when RenderModeAttrib::M_points is used, each point appears only once in the result, even if the vertex is referenced multiple times.  This is particularly important when rendering points from a triangle mesh and you don't want the points to appear repeatedly.
+<br>
+<br><b>skel-sample-config-variable int</b>
+<br>  default value = 3
+<br>
+<br><b>sleep-precision double</b>
+<br>  default value = 0.01
+<br>  This is the accuracy within which we can expect select() to return precisely.  That is, if we use select() to request a timeout of 1.0 seconds, we can expect to actually sleep for somewhere between 1.0 and 1.0 + sleep-precision seconds.
+<br>
+<br><b>ssl-certificates list</b>
+<br>  current value:
+<br>
+<br><b>state-cache bool</b>
+<br>  default value = 1
+<br>  Set this true to enable the cache of RenderState objects, similar to the TransformState cache controlled via transform-cache.
+<br>
+<br><b>stencil-bits int</b>
+<br>  current value = 0  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  The minimum number of stencil buffer bits requested.
+<br>
+<br><b>subprocess-window filename</b>
+<br>  default value = 
+<br>  The filename of a SubprocessWindowBuffer's temporary mmap file, used for opening a window in a child process and rendering to a different window in the parent process.  This is specifically used for OSX when the plugin is compiled, and is not used or needed in other environments.  See WindowProperties::set_subprocess_window().
+<br>
+<br><b>subprocess-window-max-wait double</b>
+<br>  default value = 0.2
+<br>  This is the amount of time, in seconds, that the SubprocessWindow will wait in begin_flip for the parent process to remove the previously-rendered frame.  When this time is exceeded, the next frame will be rendered without having flipped the previous one.  This is designed to allow the Python process some time to run even when the parent window is offscreen or minimized.
+<br>
+<br><b>support-fade-lod bool</b>
+<br>  default value = 1
+<br>  Set this false to make FadeLOD nodes behave like regular LOD nodes (ignoring the fade time).  This may be useful, for instance, to test the performance impact of using FadeLOD nodes.
+<br>
+<br><b>support-render-texture bool</b>
+<br>  default value = 1
+<br>  Set this true allow use of the render-to-a-texture feature, if it is supported by your graphics card.  Without this enabled, offscreen renders will be copied to a texture instead of directly rendered there.
+<br>
+<br><b>support-rescale-normal bool</b>
+<br>  default value = 1
+<br>  Set this true to allow use of the rescale-normal feature, if it is supported by your graphics card.  This allows lighting normals to be uniformly counter-scaled, instead of re-normalized, in the presence of a uniform scale, which should in principle be a bit faster.  This feature is only supported by the OpenGL API.
+<br>
+<br><b>support-stencil bool</b>
+<br>  default value = 1
+<br>  Set this true to allow use of the stencil buffer, if it is supported by your graphics card.  If this is false, stencil buffer support will not be enabled, even if it is supported.  Generally, only very old cards do not support some kind of stencil buffer operations; but it is also not supported by our tinydisplay renderer.  The main reason to set this false is to test your code in the absence of stencil buffer support.
+<br>
+<br><b>support-threads bool</b>
+<br>  default value = 1
+<br>  Set this false to disallow the creation of threads using Panda's Thread interface, even if threading support is compiled in.  This does not affect the operation of mutexes and other synchronization primitives, just the creation of threads.
+<br>
+<br><b>sync-flip bool</b>
+<br>  default value = 1
+<br>  Set this true to attempt to flip all windows at the same time, or false to flip each window as late as possible.  Setting this false can improve parallelization.  This is a temporary variable; it will later be replaced with a more explicit control over synchronizing window flip.
+<br>
+<br><b>sync-video bool</b>
+<br>  default value = 1
+<br>  Configure this true to request the rendering to sync to the video refresh, or false to let your frame rate go as high as it can, irrespective of the video refresh.  Usually you want this true, but it may be useful to set it false during development for a cheesy estimate of scene complexity.  Some drivers may ignore this request.
+<br>
+<br><b>task-timer-verbose bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>temp-hpr-fix bool</b>
+<br>  default value = 1
+<br>  Set this true to compute hpr's correctly.  Historically, Panda has applied these in the wrong order, and roll was backwards relative to the other two.  Set this false if you need compatibility with Panda's old hpr calculations.
+<br>
+<br><b>text-anisotropic-degree int</b>
+<br>  default value = 1
+<br>  This is the default anisotropic-degree that is set on dynamic font textures.  Setting this to a value greater than 1 can help smooth out the antialiasing for small letters.
+<br>
+<br><b>text-default-font filename</b>
+<br>  default value = 
+<br>  This names a filename that will be loaded at startup time as the default font for any TextNode that does not specify a font otherwise.  The default is to use a special font that is compiled into Panda, if available.
+<br>
+<br><b>text-default-underscore-height double</b>
+<br>  default value = -0.2
+<br>  Specifies the default height of the underscore line, relative to the text baseline, when underscoring is enabled.
+<br>
+<br><b>text-dynamic-merge bool</b>
+<br>  default value = 1
+<br>  Set this true to merge generated glyphs into the GeomVertexData as the text is assembled, or false to wait for the flatten operation.  Usually it's a performance advantage to keep this true.  See TextNode::set_flatten_flags().
+<br>
+<br><b>text-embed-graphic-key int</b>
+<br>  default value = 5
+<br>  This is the decimal character number that, embedded in a string, is used to bracket the name of a model added to the TextPropertiesManager object, to embed an arbitrary graphic image within a paragraph.
+<br>
+<br><b>text-encoding enum</b>
+<br>  default value = iso8859
+<br>  Specifies how international characters are represented in strings of 8-byte characters presented to Panda.  See TextEncoder::set_encoding().
+<br>
+<br><b>text-flatten bool</b>
+<br>  default value = 1
+<br>  Set this true to flatten text when it is generated, or false to keep it as a deep hierarchy.  Usually it's a performance advantage to keep this true, but this also depends on the setting of text-dynamic-merge.  See TextNode::set_flatten_flags().
+<br>
+<br><b>text-hyphen-ratio double</b>
+<br>  default value = 0.7
+<br>  If the rightmost whitespace character falls before this fraction of the line, hyphenate a word to the right of that if possible.
+<br>
+<br><b>text-magfilter enum</b>
+<br>  default value = linear
+<br>  The default texture magfilter type for dynamic text fonts
+<br>
+<br><b>text-max-never-break int</b>
+<br>  default value = 3
+<br>  If we have more than this number of text-never-break-before characters in a row, do not treat any of them as special and instead break the line wherever we can.
+<br>
+<br><b>text-minfilter enum</b>
+<br>  default value = linear_mipmap_linear
+<br>  The default texture minfilter type for dynamic text fonts
+<br>
+<br><b>text-native-antialias bool</b>
+<br>  default value = 1
+<br>
+<br><b>text-page-size int</b>
+<br>  default value = 256 256
+<br>  This is the default size for new textures created for dynamic fonts.
+<br>
+<br><b>text-pixels-per-unit double</b>
+<br>  default value = 30
+<br>
+<br><b>text-point-size double</b>
+<br>  default value = 10
+<br>
+<br><b>text-poly-margin double</b>
+<br>  default value = 0
+<br>  This is the amount by which to make each glyph polygon larger than strictly necessary, in screen units that are added to each margin.  Increasing this value will decrease the tendency for letters to get chopped off at the edges, but it will also increase the tendency for adjacent glyphs to bleed into each other (unless you also increase text-texture-margin).
+<br>
+<br><b>text-pop-properties-key int</b>
+<br>  default value = 2
+<br>  This is the decimal character number that undoes the effect of a previous appearance of text_push_properties_key.
+<br>
+<br><b>text-push-properties-key int</b>
+<br>  default value = 1
+<br>  This is the decimal character number that, embedded in a string, is used to bracket the name of a TextProperties structure added to the TextPropertiesManager object, to control the appearance of subsequent text.
+<br>
+<br><b>text-quality-level enum</b>
+<br>  default value = best
+<br>  The default quality level for dynamic text fonts; see Texture::set_quality_level().
+<br>
+<br><b>text-render-mode enum</b>
+<br>  default value = texture
+<br>  The default render mode for dynamic text fonts
+<br>
+<br><b>text-scale-factor double</b>
+<br>  default value = 2
+<br>
+<br><b>text-small-caps bool</b>
+<br>  default value = 0
+<br>  This controls the default setting for TextNode::set_small_caps().
+<br>
+<br><b>text-small-caps-scale double</b>
+<br>  default value = 0.8
+<br>  This controls the default setting for TextNode::set_small_caps_scale().
+<br>
+<br><b>text-soft-break-key int</b>
+<br>  default value = 4
+<br>  This is similar to text-soft-hyphen-key, except that when it is used as a break point, no character is introduced in its place.
+<br>
+<br><b>text-soft-hyphen-key int</b>
+<br>  default value = 3
+<br>  This is the decimal character number that, embedded in a string, is identified as the soft-hyphen character.
+<br>
+<br><b>text-tab-width double</b>
+<br>  default value = 5
+<br>  This controls the default setting for TextNode::set_tab_width().
+<br>
+<br><b>text-texture-margin int</b>
+<br>  default value = 2
+<br>  This is the number of texels of empty space reserved around each glyph in the texture.  Setting this value larger will decrease the tendency for adjacent glyphs to bleed into each other at small sizes, but it will increase amount of wasted texture memory.
+<br>
+<br><b>text-wrap-mode enum</b>
+<br>  default value = border_color
+<br>  The default wrap mode for dynamic text fonts
+<br>
+<br><b>texture-anisotropic-degree int</b>
+<br>  default value = 1
+<br>  This specifies the default anisotropic degree that is applied to a texture in the absence of a particular anisotropic degree setting (that is, a texture for which the anisotropic degree is 0, meaning the default setting).  It should be 1 to disable anisotropic filtering, or a higher number to enable it.  Note if this variable is changed at runtime, you may need to reload textures explicitly in order to change their visible properties.
+<br>
+<br><b>texture-filter list</b>
+<br>  current value:
+<br>  Names one or more external libraries that should be loaded for the purposes of performing texture filtering.  This variable may be repeated several times.  As in load-display, the actual library filename is derived by prefixing 'lib' to the specified name.
+<br>
+<br><b>texture-magfilter enum</b>
+<br>  default value = linear
+<br>  This specifies the default magfilter that is applied to a texture in the absence of a specific magfilter setting.  Normally this is 'linear' (since mipmapping does not apply to magfilters).  This does not apply to depth textures.  Note if this variable is changed at runtime, you may need to reload textures explicitly in order to change their visible properties.
+<br>
+<br><b>texture-minfilter enum</b>
+<br>  default value = linear
+<br>  This specifies the default minfilter that is applied to a texture in the absence of a specific minfilter setting.  Normally this is either 'linear' to disable mipmapping by default, or 'mipmap', to enable trilinear mipmapping by default.  This does not apply to depth textures.  Note if this variable is changed at runtime, you may need to reload textures explicitly in order to change their visible properties.
+<br>
+<br><b>texture-quality-level enum</b>
+<br>  default value = normal
+<br>  This specifies a global quality level for all textures.  You may specify either fastest, normal, or best.  This actually affects the meaning of Texture::set_quality_level(QL_default), so it may be overridden on a per-texture basis.  This generally only has an effect when using the tinydisplay software renderer; it has little or no effect on normal, hardware-accelerated renderers.  See Texture::set_quality_level().
+<br>
+<br><b>texture-scale double</b>
+<br>  default value = 1
+<br>  This is a global scale factor that is applied to each texture as it is loaded from disk.  For instance, a value of 0.5 will reduce each texture to one-half its size in each dimension.  This scale factor is applied before textures-power-2 or max-texture-dimension.
+<br>
+<br><b>texture-scale-limit int</b>
+<br>  default value = 4
+<br>  This specifies the limit below which texture-scale will not reduce a texture image.  This is a single dimension which applies to both X and Y.
+<br>
+<br><b>textures-auto-power-2 bool</b>
+<br>  default value = 0
+<br>  If this is true, then panda will wait until you open a window, and then ask the window if it supports non-power-of-two textures. If so, then the config variable textures_power_2 will automatically be adjusted.  The pitfall of doing this is that if you then open a second window that doesn't support the same capabilities, it will have no choice but to print an error message.
+<br>
+<br><b>textures-header-only bool</b>
+<br>  default value = 0
+<br>  If this is true, texture images will not actually be loaded from disk, but the image header information will be consulted to verify number of channels and so forth.  The texture images themselves will be generated in a default blue color.
+<br>
+<br><b>textures-power-2 enum</b>
+<br>  default value = down
+<br>  Specify whether textures should automatically be constrained to dimensions which are a power of 2 when they are loaded from disk.  Set this to 'none' to disable this feature, or to 'down' or 'up' to scale down or up to the nearest power of 2, respectively.  This only has effect on textures which are not already a power of 2.
+<br>
+<br><b>textures-square enum</b>
+<br>  default value = none
+<br>  Specify whether textures should automatically be constrained to a square aspect ratio when they are loaded from disk.  Set this to 'none', 'down', or 'up'.  See textures-power-2.
+<br>
+<br><b>tga-colormap bool</b>
+<br>  default value = 0
+<br>  Set this true to write colormapped TGA files.
+<br>
+<br><b>tga-grayscale bool</b>
+<br>  default value = 0
+<br>  Set this true to enable writing grayscale TGA files.
+<br>
+<br><b>tga-rle bool</b>
+<br>  default value = 0
+<br>  Set this true to enable RLE compression when writing TGA files.
+<br>
+<br><b>thread-stack-size int</b>
+<br>  default value = 4194304
+<br>  Specifies the minimum size, in bytes, of the stack that will be created for each newly-created thread.  Not all thread implementations respect this value.
+<br>
+<br><b>threading-model string</b>
+<br>  default value = 
+<br>  This is the default threading model to use for new windows.  Use empty string for single-threaded, or something like "cull/draw" for a 3-stage pipeline.  See GraphicsEngine::set_threading_model(). EXPERIMENTAL and incomplete, do not use this!
+<br>
+<br><b>track-memory-usage bool</b>
+<br>  default value = 0
+<br>  Set this to true to enable full-force tracking of C++ allocations and recordkeeping by type.  It's quite expensive.
+<br>
+<br><b>transform-cache bool</b>
+<br>  default value = 1
+<br>  Set this true to enable the cache of TransformState objects.  Using the cache saves time computing transforms and inverse transforms, but imposes some overhead for maintaining the cache itself.
+<br>
+<br><b>unambiguous-graph bool</b>
+<br>  default value = 0
+<br>  Set this true to make ambiguous path warning messages generate an assertion failure instead of just a warning (which can then be trapped with assert-abort).
+<br>
+<br><b>undecorated bool</b>
+<br>  default value = 0
+<br>
+<br><b>uniquify-attribs bool</b>
+<br>  default value = 1
+<br>  Set this true to ensure that equivalent RenderAttribs are pointerwise equal.  This may improve caching performance, but also adds additional overhead to maintain the cache, including the need to check for a composition cycle in the cache.
+<br>
+<br><b>uniquify-matrix bool</b>
+<br>  default value = 0
+<br>  Set this true to look up arbitarary 4x4 transform matrices in the cache, to ensure that two differently-computed transforms that happen to encode the same matrix (an unlikely occurrence) will be collapsed into a single pointer (a tiny benefit).  We're usually better off not paying the cost of this comparison, and just assuming that any two differently-computed transforms are essentially different.
+<br>
+<br><b>uniquify-states bool</b>
+<br>  default value = 1
+<br>  Set this true to ensure that equivalent RenderStates are pointerwise equal.  This may improve caching performance, but also adds additional overhead to maintain the cache, including the need to check for a composition cycle in the cache.
+<br>
+<br><b>uniquify-transforms bool</b>
+<br>  default value = 1
+<br>  Set this true to ensure that equivalent TransformStates are pointerwise equal.  This may improve caching performance, but also adds additional overhead to maintain the cache, including the need to check for a composition cycle in the cache.
+<br>
+<br><b>use-movietexture bool</b>
+<br>  current value = #t  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  Panda contains a new animated texture class, MovieTexture. Because it is not yet fully tested, the texture loader will not use it unless this variable is set.  Eventually, this config variable will go away and the new code will be enabled all the time.
+<br>
+<br><b>verify-intervals bool</b>
+<br>  default value = 0
+<br>  Set this true to generate an assertion failure if interval functions are called out-of-order.
+<br>
+<br><b>verify-lods bool</b>
+<br>  default value = 0
+<br>  When this is true, LODNodes will test when they are rendered to ensure that each child's geometry fits entirely within the radius defined by its switch-out distance.  When it is false, LODNodes may have any switch in and out distances, regardless of the actual size of their geometry.  This test is only made in NDEBUG mode (the variable is ignored in a production build).
+<br>
+<br><b>vertex-arrays bool</b>
+<br>  default value = 1
+<br>  Set this true to allow the use of vertex arrays for rendering OpenGL vertex data.  This, or vertex buffers, is the normal way of issuing vertices ever since OpenGL 1.1, and you almost always want to have this set to true.  However, some very buggy graphics drivers may have problems handling vertex arrays correctly, so if you are experiencing problems you might try setting this to false.  If this is false, Panda will fall back to using immediate-mode commands like glVertex3f(), etc., to issue the vertices, which is potentially much slower than vertex arrays.  Setting this false also disables vertex buffers, effectively ignoring the setting of the vertex-buffers variable (since vertex buffers are a special case of vertex arrays in OpenGL).  This variable is normally not enabled in a production build.  This has no effect on DirectX rendering.
+<br>
+<br><b>vertex-buffers bool</b>
+<br>  default value = 1
+<br>  Set this true to allow the use of vertex buffers (or buffer objects, as OpenGL dubs them) for rendering vertex data.  This can greatly improve rendering performance on higher-end graphics cards, at the cost of some additional graphics memory (which might otherwise be used for textures or offscreen buffers).  On lower-end graphics cards this will make little or no difference.
+<br>
+<br><b>vertex-data-compression-level int</b>
+<br>  default value = 1
+<br>  Specifies the zlib compression level to use when compressing vertex data.  The number should be in the range 1 to 9, where larger values are slower but give better compression.
+<br>
+<br><b>vertex-data-page-size int</b>
+<br>  default value = 262144
+<br>  The number of bytes to allocate at a time for vertex data.  This also controls the page size that is compressed or written to disk when vertex data pages are evicted from memory.
+<br>
+<br><b>vertex-data-page-threads int</b>
+<br>  default value = 1
+<br>  When this is nonzero (and Panda has been compiled with thread support) then this number of sub-threads will be spawned to evict vertex pages to disk and read them back again.  When this is 0, this work will be done in the main thread, which may introduce occasional random chugs in rendering.
+<br>
+<br><b>vertex-data-small-size int</b>
+<br>  default value = 64
+<br>  When a GeomVertexArrayData is this number of bytes or smaller, it is deemed too small to pay the overhead of paging it in and out, and it is permanently retained resident.
+<br>
+<br><b>vertex-save-file-directory filename</b>
+<br>  default value = 
+<br>  The directory in which the saved vertex data file is created for saving vertex buffers that have been evicted from RAM.  If this is the empty string, or an invalid directory, a system default directory will be chosen.
+<br>
+<br><b>vertex-save-file-prefix string</b>
+<br>  default value = p3d_vdata_
+<br>  A prefix used to generate the filename for the saved vertex data file which is created for saving vertex buffers that have been evicted from RAM.  A uniquifying sequence number and filename extension will be appended to this string.
+<br>
+<br><b>vfs-case-sensitive bool</b>
+<br>  default value = 1
+<br>  Set this true to make the VirtualFileSystem present the native OS-provided filesystem as if it were a case-sensitive file system, even if it is not (e.g. on Windows).  This variable has no effect if the native filesystem is already case-sensitive, and it has no effect on mounted multifile systems, which are always case-sensitive.
+<br>
+<br><b>vfs-implicit-mf bool</b>
+<br>  default value = 0
+<br>  When this is true, the VirtualFileSystem will automatically mount multifiles on-the-fly when they are used as directories.  For instance, opening the file /c/files/foo.mf/dirname/mytex.jpg will implicitly retrieve a file named 'dirname/mytex.jpg' within the multifile /c/files/foo.mf, even if the multifile has not already been mounted.  This makes all of your multifiles act like directories.
+<br>
+<br><b>vfs-implicit-pz bool</b>
+<br>  default value = 1
+<br>  When this is true, the VirtualFileSystem will pretend a named file exists even if it doesn't, as long as a filename with the same name and the additional extension .pz does exist.  In this case, the VirtualFileSystem will implicitly open the .pz file and decompress it on-the-fly.
+<br>
+<br><b>vfs-mount list</b>
+<br>  current value:
+<br>  vfs-mount system-filename mount-point [options]
+<br>
+<br><b>vfs-mount-url list</b>
+<br>  current value:
+<br>  vfs-mount-url http://site/path[:port] mount-point [options]
+<br>
+<br><b>view-frustum-cull bool</b>
+<br>  default value = 1
+<br>  This is normally true; set it false to disable view-frustum culling (primarily useful for debugging).
+<br>
+<br><b>want-dev bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>want-directtools bool</b>
+<br>  current value = #f  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>want-e3-hacks bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>want-env-debug-info bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>want-fog bool</b>
+<br>  default value = 1
+<br>  DConfig
+<br>
+<br><b>want-new-tasks bool</b>
+<br>  default value = 1
+<br>
+<br><b>want-pstats bool</b>
+<br>  current value = #f  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>want-render2dp bool</b>
+<br>  default value = 1
+<br>  DConfig
+<br>
+<br><b>want-tk bool</b>
+<br>  current value = #f  (from /etc/Config.prc)
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>want-uberdog bool</b>
+<br>  default value = 1
+<br>  DConfig
+<br>
+<br><b>want-variable-dump bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>want-verify-pdb bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>want-wx bool</b>
+<br>  default value = 0
+<br>  DConfig
+<br>
+<br><b>win-origin int</b>
+<br>  current value = 50 50  (from /etc/Config.prc)
+<br>  default value = 
+<br>  This is the default position at which to open a new window.  This replaces the deprecated win-origin-x and win-origin-y variables.
+<br>
+<br><b>win-size int</b>
+<br>  current value = 800 600  (from /etc/Config.prc)
+<br>  default value = 640 480
+<br>  This is the default size at which to open a new window.  This replaces the deprecated win-width and win-height variables.
+<br>
+<br><b>window-inverted bool</b>
+<br>  default value = 0
+<br>  Set this true to create all windows with the inverted flag set, so that they will render upside-down and backwards.  Normally this is useful only for debugging.
+<br>
+<br><b>window-title string</b>
+<br>  default value = Panda
+<br>
+<br><b>window-type string</b>
+<br>  default value = onscreen
+<br>  DConfig
+<br>
+<br><b>x-error-abort bool</b>
+<br>  default value = 0
+<br>  Set this true to trigger and abort (and a stack trace) on receipt of an error from the X window system.  This can make it easier to discover where these errors are generated.
+<br>
+<br><b>x-wheel-down-button int</b>
+<br>  default value = 5
+<br>  This is the mouse button index of the wheel_down event: which mouse button number does the system report when the mouse wheel is rolled one notch down?
+<br>
+<br><b>x-wheel-left-button int</b>
+<br>  default value = 6
+<br>  This is the mouse button index of the wheel_left event: which mouse button number does the system report when one scrolls to the left?
+<br>
+<br><b>x-wheel-right-button int</b>
+<br>  default value = 7
+<br>  This is the mouse button index of the wheel_right event: which mouse button number does the system report when one scrolls to the right?
+<br>
+<br><b>x-wheel-up-button int</b>
+<br>  default value = 4
+<br>  This is the mouse button index of the wheel_up event: which mouse button number does the system report when the mouse wheel is rolled one notch up?
+<br>
+<br><b>yield-timeslice bool</b>
+<br>  default value = 0
+<br>  Set this true to yield the timeslice at the end of the frame to be more polite to other applications that are trying to run.
+<br>
+<br><b>z-order enum</b>
+<br>  default value = normal
+<br>

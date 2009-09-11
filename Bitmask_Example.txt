@@ -1,182 +1,132 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Bitmask Example</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Bitmask_Example" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Bitmask_Example" title="Bitmask Example">Bitmask Example</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Bitmask_Example" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Here is a short example of using bitmasks to selectively test collisions against different object in the scene.
+
+[[Image:CollisionBitmasks.png]]
+
+<code python>
+import direct.directbase.DirectStart
+from direct.showbase import DirectObject
+from direct.gui.OnscreenText import OnscreenText
+from pandac.PandaModules import *
+
+class World( DirectObject.DirectObject ):
+
+    def __init__(self):
+        # Create a traverser that will automatically be called by panda every update
+        base.cTrav = CollisionTraverser()
+        # Create a handler for the events
+        self.collHandler = CollisionHandlerQueue()
+        
+        # We define a few bitmasks for use.
+        # Teaching the concepts of bitmasks is out of the scope
+        # of this sample, this just shows a practical application of bitmasks
+        goodMask = BitMask32(0x1)
+        badMask = BitMask32(0x2)
+        floorMask = BitMask32(0x4)
+        
+        # We make a list that has different combinations of the masks
+        # for later use. We will switch between these masks later on
+        self.maskList = [
+        ["floor", floorMask],
+        ["smiley", goodMask],
+        ["frowney", badMask],
+        ["characters", goodMask | badMask],
+        ["smiley and floor", goodMask | floorMask],
+        ["frowney and floor", badMask | floorMask],
+        ["all", floorMask | goodMask | badMask ]
+        ]
+        # This keeps track of where we are in the dictionary
+        self.maskPosition = 0
+        
+        # First we create a floor collision plane
+        floorNode = render.attachNewNode("Floor NodePath")
+        # Create a collision plane solid
+        collPlane = CollisionPlane(Plane(Vec3(0, 0, 1), Point3(0, 0, 0)))
+        # Call our convenience function that creates a nodepath with a collision node
+        floorCollisionNP = self.makeCollisionNodePath(floorNode, collPlane)
+        # To set the collision mask, we need the actual collision node the Nodepath is referring to
+        floorCollisionNode = floorCollisionNP.node()
+        # The floor is only an into object so we just need to set its into mask
+        floorCollisionNode.setIntoCollideMask( floorMask )
+        
+        # We create a collision sphere. Since the models we'll be colliding
+        # are basically the same we can get away with just creating one
+        # collision solid and adding the same solid to both collision nodes
+        collSphere = CollisionSphere(0,0,0, 1.5)
+        
+        # We make a smiley
+        smiley = loader.loadModel('smiley')
+        smiley.reparentTo(render)
+        smiley.setPos(-3, 3, 3)
+        smiley.setName("Smiley")
+        smileyCollisionNP = self.makeCollisionNodePath(smiley, collSphere)
+        # Like with the floor plane we need to set the into mask
+        # Here we shortcut getting the actual collision node
+        smileyCollisionNP.node().setIntoCollideMask( goodMask )
+        
+        # We make a frowney
+        frowney = loader.loadModel('frowney')
+        frowney.reparentTo(render)
+        frowney.setPos(-3, 3, 7)
+        frowney.setName("Frowney")
+        frowneyCollisionNP = self.makeCollisionNodePath(frowney, collSphere)
+        # Here we use the the Nodepath.setCollideMask() function to set the into mask
+        # setCollideMask() sets the into collide mask of all the child nodes to the given mask
+        frowneyCollisionNP.setCollideMask(badMask)
+        # Note that we don't do setCollideMask() from frowney because this will turn
+        # the frowney mesh into a collision mesh which is not what we want.
+        
+        # Note that we didn't set a from collide mask for previous objects
+        # since we're not adding them to the traverser as from objects
+        
+        # We make a collision ray that passes through all of the objects
+        self.pointerNode = render.attachNewNode("Main Collider")
+        self.pointerNode.setPos(-3, 3, 10)
+        # Create a ray collision solid that points downwards
+        raySolid = CollisionRay(0, 0, 0, 0, 0, -1)
+        mainCollisionNP = self.makeCollisionNodePath(self.pointerNode, raySolid)
+        self.mainCollisionNode = mainCollisionNP.node()
+        # We set a from collide mask for this ray so that we can selectively
+        # collide against the other objects
+        self.mainCollisionNode.setFromCollideMask( self.maskList[self.maskPosition][1] )
+        base.cTrav.addCollider(mainCollisionNP, self.collHandler)
+        
+        # Set up the camera
+        base.disableMouse()
+        base.camera.setPos(20, -20, 5)
+        base.camera.lookAt(0,0,5)
+        # Debug mode for collision traversers, shows collisions visually
+        base.cTrav.showCollisions(render)
+        
+        # Setup the title text
+        collideText = self.maskList[self.maskPosition][0]
+        self.title = OnscreenText(text="Colliding with %s" % (collideText), mayChange=True,
+                                  pos=(0.3, 0), align=TextNode.ALeft, fg=(1,1,1,1))
+        OnscreenText("Press space to change collision mask", pos=(0, 0.8), fg=(1,1,1,1))
+        
+        # Set space to change the from collision mask of the collision ray
+        base.accept("space", self.switchCollisionMask)
+    
+    # Creates a collision node and attaches the collision solid to the supplied nodepath
+    # Returns the nodepath of the collision node.
+    def makeCollisionNodePath(self, nodepath, solid):
+        # Creates a collision node named after the name of the nodepath
+        collNode = CollisionNode("%s c_node" % nodepath.getName() ) 
+        collNode.addSolid(solid)
+        collisionNodepath = nodepath.attachNewNode(collNode)
+        # Show the collision node, which makes the solids show up
+        collisionNodepath.show()
+        
+        return collisionNodepath
+    
+    def switchCollisionMask(self):
+        if self.maskPosition == len(self.maskList) - 1:
+            self.maskPosition = 0
+        else:
+            self.maskPosition += 1
+        # Changing the from collide mask of objects allows you to selectively test collisions against different objects
+        self.mainCollisionNode.setFromCollideMask(self.maskList[self.maskPosition][1])
+        self.title.setText("Colliding with %s" % (self.maskList[self.maskPosition][0]) )
+
+world = World()
+run()
+</code>

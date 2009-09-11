@@ -1,182 +1,149 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Texture Wrap Modes</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Texture_Wrap_Modes" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Texture_Wrap_Modes" title="Texture Wrap Modes">Texture Wrap Modes</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Texture_Wrap_Modes" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D06"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D06-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin06"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin06-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+As described earlier, the <i>(u, v)</i> texture coordinates that you assign to your vertices
+are what determines how the texture fits on your geometry.  Often, you will use
+texture coordinates that always fall within the range [0, 1], which is
+the complete range of the pixels of your texture image.  However, it is
+also legal to use texture coordinates that go outside this range; you can
+have negative values, for instance, or numbers higher than 1.
+
+So if the texture image is only defined over the range [0, 1], what does
+the texture look like outside this range?  You can specify this with
+the <b>texture wrap mode</b>.
+
+<pre class="codeblock">
+texture.setWrapU(wrapMode)
+texture.setWrapV(wrapMode)
+</pre>
+
+The wrapMode parameter is specified separately for the <i>u</i> and
+<i>v</i> directions (there is also a <code>setWrapW()</code> for
+[[3-D Textures|3-D textures]], but that's an advanced topic).  The
+wrapMode may be any of the following values:
+
+<table>
+<tr><td><code>Texture.WMRepeat</code></td><td>The texture image
+repeats to infinity.</td></tr>
+<tr><td><code>Texture.WMClamp</code></td><td>The last pixel of the
+texture image stretches out to infinity.</td></tr>
+<tr><td><code>Texture.WMBorderColor</code></td><td>The color specified
+by <code>texture.setBorderColor()</code> is used to fill the space.</td></tr>
+<tr><td><code>Texture.WMMirror</code></td><td>The texture image flips
+back-and-forth to infinity.</td></tr>
+<tr><td><code>Texture.WMMirrorOnce</code></td><td>The texture image flips
+backwards, once, and then the "border color" is used.</td></tr>
+</table>
+
+The default wrap mode is <code>WMRepeat</code>.
+
+Consider the following simple texture image:
+
+[[Image:Small r.png|black_r.png]]
+
+We will apply this texture in the center of a large polygon whose
+texture coordinates range considerably farther than [0, 1] in both
+directions.
+
+<h2>WMRepeat</h2>
+
+<pre class="codeblock">
+texture.setWrapU(Texture.WMRepeat)
+texture.setWrapV(Texture.WMRepeat)
+</pre>
+
+[[Image:Texture repeat.png|WMRepeat]]
+
+<code>WMRepeat</code> mode is often used to tile a relatively small
+texture over a large surface.
+
+<h2>WMClamp</h2>
+
+<pre class="codeblock">
+texture.setWrapU(Texture.WMClamp)
+texture.setWrapV(Texture.WMClamp)
+</pre>
+
+[[Image:Texture clamp.png|WMClamp]]
+
+<code>WMClamp</code> mode is rarely used on large polygons because, frankly, it looks terrible when the pixels stretch out to infinity like this; but this mode is usually the right choice when the texture exactly fills its polygon (see <i>One caution about a common wrap error,</i> below).
+
+<h2>WMBorderColor</h2>
+
+<pre class="codeblock">
+texture.setWrapU(Texture.WMBorderColor)
+texture.setWrapV(Texture.WMBorderColor)
+texture.setBorderColor(VBase4(0.4, 0.5, 1, 1))
+</pre>
+
+[[Image:Texture border color blue.png|WMBorderColor]]
+
+The above blue color was chosen for illustration purposes; you can use
+any color you like for the border color.  Normally, you would use the background
+color of the texture as the border color, like this:
+
+<pre class="codeblock">
+texture.setWrapU(Texture.WMBorderColor)
+texture.setWrapV(Texture.WMBorderColor)
+texture.setBorderColor(VBase4(1, 1, 1, 1))
+</pre>
+
+[[Image:Texture border color white.png|WMBorderColor]]
+
+Some very old graphics drivers don't support
+<code>WMBorderColor</code>.  In this case, Panda3D will fall back to
+<code>WMClamp</code>, which will look similar as long as there is a
+sufficient margin of background color around the edge of your texture (unlike our sample texture, which goes all the way out the edge).
+
+<h2>WMMirror</h2>
+
+<pre class="codeblock">
+texture.setWrapU(Texture.WMMirror)
+texture.setWrapV(Texture.WMMirror)
+</pre>
+
+[[Image:Texture mirror.png|WMMirror]]
+
+Many older graphics drivers do not support <code>WMMirror</code>.  In
+this case, Panda3D will fall back to <code>WMRepeat</code>.
+
+<h2>WMMirrorOnce</h2>
+
+<pre class="codeblock">
+texture.setWrapU(Texture.WMMirrorOnce)
+texture.setWrapV(Texture.WMMirrorOnce)
+texture.setBorderColor(VBase4(0.4, 0.5, 1, 1))
+</pre>
+
+[[Image:Texture mirror once.png|WMMirrorOnce]]
+
+Few graphics drivers support <code>WMMirrorOnce</code>.  In this case,
+Panda3D will fall back to <code>WMBorderColor</code>.
+
+<h2>Setting different wrap modes</h2>
+
+It is possible to set different wrap modes in the <i>u</i> and
+<i>v</i> directions:
+
+<pre class="codeblock">
+texture.setWrapU(Texture.WMRepeat)
+texture.setWrapV(Texture.WMClamp)
+</pre>
+
+[[Image:Texture clamp repeat.png|WMClamp and WMRepeat]]
+
+<h2>One caution about a common wrap mode error</h2>
+
+When you apply a texture that is intended to exactly fill a
+polygon--that is, the texture coordinates range from 0 to 1, but no
+further--you should usually set its wrap mode to <i>clamp</i>.  This
+is because if you let it keep the default value of <i>repeat</i>, the
+color may bleed in from the opposite edge, producing a thin line along
+the edge of your polygon, like this:
+
+[[Image:Texture wrap error.png|A common wrap mode error]]
+
+This is a particularly common error with a texture that is painted as
+an alpha cutout, where there is an image with a fully transparent
+background: you will often see an thin, barely-visible edge floating
+along the top (for instance) of the polygon.  This edge is actually
+the bottom edge of the texture bleeding onto the top, because the
+designer specified <code>WMRepeat</code> instead of
+the correct mode, <code>WMClamp</code>.

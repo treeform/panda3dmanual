@@ -1,2 +1,0 @@
-#REDIRECT [[Building a Self-Extracting EXE using packpanda]]
-

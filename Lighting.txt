@@ -1,181 +1,209 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Lighting</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Lighting" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Lighting" title="Lighting">Lighting</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Lighting" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean1"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean1-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<h2>Lighting Basics</h2>
+
+In the real world, if you put a light in a room, objects in that room are 
+illuminated.  For example, if you put a table lamp in your living room, that
+lamp automatically illuminates your sofa and your chair.  In a 3D engine like Panda3D, lights don't illuminate things automatically.  Instead, you must tell the chair and the sofa to <i>be illuminated</i> by the lamp.  
+
+So to reiterate, lighting a scene in Panda3D consists of two steps:
+<br>1. Creating lights, and positioning them within the scene.
+<br>2. Telling the other objects to <i>be illuminated</i> by the lights.
+
+Panda3D defines four different kinds of light objects: point,
+directional, ambient, and spotlight.  Each of these is a node that
+should be attached somewhere within the scene graph.  Like anything
+you put into the scene, lights have a position and orientation, which is determined by the basic scene graph operations like <code>setPos()</code>, <code>setHpr()</code>, etc.  The <code>lookAt()</code> method is particularly useful for pointing spotlights and directional lights at a particular object.
+The following code inserts a directional light into the scene:
+
+<pre class="codeblock">
+dlight = DirectionalLight('my dlight')
+dlnp = render.attachNewNode(dlight)
+</pre>
+
+Note that, unlike a real, physical light bulb, the light objects are not themselves directly visible.  Although you can't see a Panda light itself, you <i>can</i> see the effect it has on the geometry around it.  If you want to make a light visible, one simple trick is to load a simple model (like a sphere) and parent it directly to the light itself.
+
+Creating the light and putting it in the scene graph doesn't, by itself, have any visible effect.  Your next step is to tell some object to be illuminated
+by the light.  To do this, use the <code>nodePath.setLight()</code> method, which turns on the light for the indicated NodePath and everything below it in the scene graph.
+
+In the simplest case, you want all of your lights to illuminate everything they can, so you turn them on at render, the top of the scene graph:
+
+<pre class="codeblock">
+render.setLight(plnp)
+</pre>
+
+You can remove the light setting from render:
+
+<pre class="codeblock">
+render.clearLight(plnp)
+</pre>
+
+You could also apply the <code>setLight()</code> call to a sub-node in the scene graph, so that a given light only affects a particular object or group of objects:
+
+<pre class="codeblock">
+sofa.setLight(plnp)
+</pre>
+
+Note that there are two (or more) different NodePaths involved here: the NodePath of the light itself, which defines the position and/or orientation of the light, and the NodePath(s) on which you call <code>setLight()</code>, which determines what subset of the scene graph the light illuminates.  There's no requirement for these two NodePaths to be related in any way.
+
+<h2>Lots of Lights: Performance Implications</h2>
+
+Each light slows down rendering a little.  Using a half-dozen lights to illuminate an object is no problem at all.  However, if you were to use a hundred lights to illuminate an object, that object would render slowly.
+
+Because of this, when you create a big virtual world, you need to pick and choose which lights affect which objects.  For example, if you had a dungeon
+containing a hundred torches, it would not be practical to tell every object
+to be illuminated by every torch.  Instead, for each object in the dungeon,
+you would want to search for the three or four nearest torches, and tell
+the object to be illuminated only by those three or four torches.
+
+When per-pixel lighting is enabled, lights are considerably more costly.
+
+<h2>Colored Lights</h2>
+
+All lights have a color, which is specified by <code>light.setColor(VBase4(r, g, b, a))</code>.  The default color is full white: <code>setColor(VBase4(1, 1, 1, 1))</code>.  The alpha component is largely irrelevant.
+
+<b>Note:</b> The R, G, B values can be larger than 1, if you want brighter lights!  However, you can't use lighting to make a model brighter than its texture color.
+
+<h2>Point Lights</h2>
+
+Point lights are the easiest kind of light to understand: a point
+light simulates a light originating from a single point in space and
+shining in all directions, like a very tiny light bulb.  A point
+light's position is important, but its orientation doesn't matter.
+
+<pre class="codeblock">
+plight = PointLight('plight')
+plight.setColor(VBase4(0.2, 0.2, 0.2, 1))
+plnp = render.attachNewNode(plight)
+plnp.setPos(10, 20, 0)
+render.setLight(plnp)
+</pre>
+
+<h2>Attenuation</h2>
+You can set the attenuation coefficients, which causes the light to drop off gradually with distance. There are three attenuation coefficients: A, B, C.  
+<pre class="codeblock">
+plight.setAttenuation(Point3(A, B, C))
+</pre>
+Setting coefficients A and B to 0 and C between 0 and 1 works well.
+<pre class="codeblock">
+plight.setAttenuation(Point3(0, 0, 0.5))
+</pre>
+
+<h2>Directional Lights</h2>
+
+A directional light is an infinite wave of light, always in the same
+direction, like sunlight.  A directional light's position doesn't
+matter, but its orientation is important.  The default directional
+light is shining down the forward (+Y) axis; you can use
+<code>nodePath.setHpr()</code> or <code>nodePath.lookAt()</code> to
+rotate it to face in a different direction.
+
+<pre class="codeblock">
+dlight = DirectionalLight('dlight')
+dlight.setColor(VBase4(0.8, 0.8, 0.5, 1))
+dlnp = render.attachNewNode(dlight)
+dlnp.setHpr(0, -60, 0)
+render.setLight(dlnp)
+</pre>
+
+<h2>Ambient Lights</h2>
+
+An ambient light is used to fill in the shadows on the dark side of an
+object, so it doesn't look completely black.  The light from an
+ambient light is uniformly distributed everywhere in the world, so the
+ambient light's position and orientation are irrelevant.
+
+Usually you don't want to create an ambient light without also
+creating one of the other kinds of lights, since an object illuminated
+solely by ambient light will be completely flat shaded and you won't
+be able to see any of its details.  Typically, ambient lights are
+given a fairly dark gray color, so they don't overpower the other
+lights in the scene.
+
+<pre class="codeblock">
+alight = AmbientLight('alight')
+alight.setColor(VBase4(0.2, 0.2, 0.2, 1))
+alnp = render.attachNewNode(alight)
+render.setLight(alnp)
+</pre>
+
+<h2>Spotlights</h2>
+
+Spotlights represent the most sophisticated kind of light.  A spotlight has
+both a point and a direction, and a field-of-view.  In fact, a
+spotlight contains a lens, just like a camera does; the lens should be
+a PerspectiveLens and is used to define the area of effect of the
+light (the light illuminates everything within the field of view of the lens).
+
+Note that the English word "spotlight" is one word, as opposed to the
+other kinds of lights, which are two words.  Thus, the class name is
+correctly spelled "Spotlight", not "SpotLight".
+
+<pre class="codeblock">
+slight = Spotlight('slight')
+slight.setColor(VBase4(1, 1, 1, 1))
+lens = PerspectiveLens()
+slight.setLens(lens)
+slnp = render.attachNewNode(slight)
+slnp.setPos(10, 20, 0)
+slnp.lookAt(myObject)
+render.setLight(slnp)
+</pre>
+
+<h2>Putting it all Together</h2>
+
+Here is an example of lighting.  There are an ambient light and two directional lights lighting the scene, and a green ambient light that only affects one of the pandas.
+
+<pre class="codeblock">
+import direct.directbase.DirectStart
+from pandac.PandaModules import *
+
+# Put two pandas in the scene, panda x and panda y.
+x= loader.loadModel("panda")
+x.reparentTo(render)
+x.setPos(10,0,-6)
+
+y= loader.loadModel("panda")
+y.reparentTo(render)
+y.setPos(-10,0,-6)
+
+# Position the camera to view the two pandas.
+base.trackball.node().setPos(0, 60, 0)
+
+# Now create some lights to apply to everything in the scene.
+
+# Create Ambient Light
+ambientLight = AmbientLight( 'ambientLight' )
+ambientLight.setColor( Vec4( 0.1, 0.1, 0.1, 1 ) )
+ambientLightNP = render.attachNewNode( ambientLight.upcastToPandaNode() )
+render.setLight(ambientLightNP)
+
+# Directional light 01
+directionalLight = DirectionalLight( "directionalLight" )
+directionalLight.setColor( Vec4( 0.8, 0.2, 0.2, 1 ) )
+directionalLightNP = render.attachNewNode( directionalLight.upcastToPandaNode() )
+# This light is facing backwards, towards the camera.
+directionalLightNP.setHpr(180, -20, 0)
+render.setLight(directionalLightNP)
+
+# Directional light 02
+directionalLight = DirectionalLight( "directionalLight" )
+directionalLight.setColor( Vec4( 0.2, 0.2, 0.8, 1 ) )
+directionalLightNP = render.attachNewNode( directionalLight.upcastToPandaNode() )
+# This light is facing forwards, away from the camera.
+directionalLightNP.setHpr(0, -20, 0)
+render.setLight(directionalLightNP)
+
+# Now attach a green light only to object x.
+ambient = AmbientLight('ambient')
+ambient.setColor(Vec4(.5,1,.5,1))
+ambientNP = x.attachNewNode(ambient.upcastToPandaNode())
+
+# If we did not call setLightOff() first, the green light would add to
+# the total set of lights on this object.  Since we do call
+# setLightOff(), we are turning off all the other lights on this
+# object first, and then turning on only the green light.
+x.setLightOff()
+x.setLight(ambientNP)
+
+#run the example
+run()
+</pre>

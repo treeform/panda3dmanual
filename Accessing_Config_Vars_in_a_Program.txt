@@ -1,182 +1,118 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Accessing Config Vars in a Program</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Accessing_Config_Vars_in_a_Program" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Accessing_Config_Vars_in_a_Program" title="Accessing Config Vars in a Program">Accessing Config Vars in a Program</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Accessing_Config_Vars_in_a_Program" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates06"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates06-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus5"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus5-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-keepsake/keepsake03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-keepsake/keepsake03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Keepsake: a short interactive movie, themes of loss
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+Panda3D uses a [[Configuring Panda|configuration file]] named Config.prc.
+Panda supplies functions to easily read values out of Config.prc, and to
+alter their values in memory (the modified values are not written back out
+to disk). The ability to read an alter configuration settings programmatically has two major uses:
+
+<ol>
+<li>Storing your own configuration data.
+<li>Tweaking Panda's behavior.
+</ol>
+
+By "storing your own configuration data," I mean that your game might
+have its own settings that need to be stored.  Rather than writing your
+own configuration file parser, you might consider adding your
+configuration data to the panda configuration file instead.
+
+Suppose hypothetically that you are writing an online game, and your
+online game connects to a server.  You need a configuration file to tell
+you the name of the server. Open up the "Config.prc" file and add the following line at the end of the file.
+
+<code prc>
+my-game-server pandagame.com
+</code>
+
+Note that I invented the variable name "my-game-server" out of thin air,
+this variable is not recognized by panda in any way.  Therefore, this
+line has no effect on panda whatsoever.
+
+To manipulate this variable programmatically,
+use code not unlike the following, which creates an object of
+class <code>ConfigVariableString</code> and then manipulates it using the
+methods <code>[func]setValue[/func]</code> and <code>[func]getValue[/func]</code>:
+
+<code python>
+from pandac.PandaModules import ConfigVariableString
+
+mygameserver = ConfigVariableString("my-game-server", "127.0.0.1")
+print "Server specified in config file: ", mygameserver.getValue()
+
+# allow the user to change servers on the command-line:
+if (sys.argv[1]=="--server"): mygameserver.setValue(sys.argv[2])
+
+print "Server that we will use: ", mygameserver.getValue()
+</code>
+
+The second parameter to the ConfigVariableString constructor is the default value that should be returned, in case the line "my-game-server" does not appear in any Config.prc file.  There is also an optional third parameter, which is a description of the purpose of the variable; this string will be displayed when the user executes the command <code>print cvMgr</code>.
+
+The types of configuration variable are:
+
+<code text>
+ConfigVariableString
+ConfigVariableInt
+ConfigVariableBool
+ConfigVariableDouble
+ConfigVariableFilename
+ConfigVariableList
+ConfigVariableSearchPath
+</code>
+
+Most of these follow the same form as ConfigVariableString, above, except that the default value (and the parameter from setValue() and getValue()) is of the indicated type, rather than a string.  The two exceptions are ConfigVariableList and ConfigVariableSearchPath; these types of variables do not accept a default value to the constructor, since the default value in both cases is always the empty list or search path.
+
+To display the current value of a particular variable interactively (in this example, for a string-type variable), type the following:
+
+<code python>
+print ConfigVariableString("my-game-server") 
+</code>
+
+Panda3D will automatically load any *.prc files it finds in its standard config directory at startup.  You can view a list of the files it has actually loaded with the following command:
+
+<code python>
+print cpMgr 
+</code>
+
+It is helpful to do this to ensure that you are editing the correct Config.prc file.
+
+Sometimes, it is desirable to load an additional
+configuration file from disk, by giving an explicit filename.  To do so, use <code>[func]loadPrcFile[/func]</code>.  Note that
+[[Panda Filename Syntax]] uses a forward slash, even under Windows:
+
+<code python>
+from pandac.PandaModules import loadPrcFile
+loadPrcFile("config/Config.prc")
+import direct.directbase.DirectStart
+</code>
+
+The filename you specify is searched for along the model-path, in the same way that an egg or bam file is searched for when you use <code>loader.loadModel()</code>.
+
+You should load your own .prc file before [python]importing <code>DirectStart</code>. This looks strange if you're used to C++, but is necessary because DirectStart initializes itself as soon as the module is imported.[/python][cxx]opening the window.[/cxx] Changing configuration data later on won't affect the window/environment that has already been created.
+
+You can also use <code>[func]loadPrcFileData[/func]</code> to load a string that you define in your Python code, as if it were the contents read from a disk file.  The <code>[func]loadPrcFileData[/func]()</code> call requires two parameters; the first parameter is an arbitrary string name to assign to this "file" (and it can be the empty string if you don't care), while the second parameter is the contents of the file itself.  This second parameter should contain newlines between variable definitions if you want to set the value of more than one variable.
+
+For example, let's say that panda's configuration file contains this line:
+
+<code prc>
+fullscreen #f
+</code>
+
+By default, panda programs will run in a window, not fullscreen.  However, if you do this:
+
+<code python>
+from pandac.PandaModules import loadPrcFileData
+loadPrcFileData("", "fullscreen 1")
+import direct.directbase.DirectStart
+</code>
+
+Then by the time you load <code>direct.directbase.DirectStart</code>, you will
+have changed the fullscreen-flag to true, and your program will run
+full-screen.  There are other ways to go to fullscreen, this is not
+necessarily the most straightforward, but it illustrates the point.
+
+You can get a more complete list of available config variables at runtime[python] (once you have imported DirectStart)[/python], with the [python]Python [/python]command:
+
+[python]<code python>
+cvMgr.listVariables()
+</code>[/python][cxx]<code cxx>
+ConfigVariableManager::get_global_ptr()->list_variables();
+</code>[/cxx]
+
+For a more complete documentation about Panda3D's configuration system, click [http://panda3d.cvs.sourceforge.net/*checkout*/panda3d/panda/src/doc/howto.use_config.txt here] to view the original documentation file.

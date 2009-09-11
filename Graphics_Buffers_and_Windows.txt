@@ -1,182 +1,59 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Graphics Buffers and Windows</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Graphics_Buffers_and_Windows" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Graphics_Buffers_and_Windows" title="Graphics Buffers and Windows">Graphics Buffers and Windows</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Graphics_Buffers_and_Windows" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates05"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates05-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-disneypin/disneypin04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-disneypin/disneypin04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney Pinball: real physics and cool settings
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+We'll now describe in detail what functions are specific to buffers and windows in Panda.
+
+<h2>GraphicsBuffer and ParasiteBuffer</h2>
+
+Use these if you want to do off-screen rendering. You must pass <code>True</code> when you [[The Graphics Engine|create]] it if you want to get a texture from it. Otherwise, there is no difference in functionality than a [[The GraphicsOutput class|GraphicsOutput]].
+
+The only difference between a <code>GraphicsBuffer</code> and a <code>ParasiteBuffer</code> is that a <code>ParasiteBuffer</code> does not create it own framebuffer space. To create a <code>ParasiteBuffer</code> you call <code>makeParasite()</code> from the graphics engine.
+<pre class="codeblock">
+makeParasite(host, name,sort, xSize, ySize)
+</pre>
+
+The arguments <code>name</code>, <code>sort</code>, <code>xSize</code>, and <code>ySize</code> mean the same things they mean for [[The Graphics Engine|makeWindow and makeBuffer]]. The new argument <code>host</code> is the [[The GraphicsOutput class|GraphicsOutput object]] whose space in memory it will use. Any rendering done to the parasite is done to the same space in memory as its host. The function [[The GraphicsOutput class|makeTextureBuffer]] sometimes returns a <code>ParasiteBuffer</code> for space saving reasons. It is also useful for APIs that don't support offscreen rendering.
+
+<code>ParasiteBuffer</code> objects are automatically setup for calls to <code>getTexture()</code> since their contents get cleared when <code>host</code> draws itself.
+
+<h2>GraphicsWindows</h2>
+Unlike <code>GraphicsBuffer</code> objects <code>GraphicsWindow</code> objects have a lot more functionality than <code>GraphicsOutput</code> objects.
+
+The most basic of these functions is <code>hasKeyboard()</code> and <code>hasPointer()</code> which returns whether or not this window has the focus of keyboard and pointer respectively. Any calls to keyboard or pointer functions when you do not have control of them generates an error. 
+
+You can get the number of input devices for this window by using <code>getNumInputDevices()</code>. In the absence of a joystick, etc. there is usually only one input device, the 'keyboard/mouse' device. If the API you are using supports it, you can move a mouse to a certain place in the window by using <code>movePointer(device, x,y)</code> where <code>device</code> is the name of the device that holds the mouse (most probabaly 'keyboard/mouse') and <code>x</code> and <code>y</code> represent the [[Scene Graph Manipulations|screen position]] where you want to move the pointer. It returns <code>True</code> if it was succesful, and <code>False</code> otherwise.
+
+You can also ask a window if it <code>isFullscreen()</code> and if it <code> isClosed()</code>. It is important to note that a window is not automatically opened after a call to [[The Graphics Engine|makeWindow]] and is not automatically closed after a call to [[The Graphics Engine|closeWindow]].
+
+In order to get the full set of properties for a given window you use the function <code>getProperties()</code>. This returns a <code>WindowProperties</code> object that holds all the information for the given screen. See the API documentation for the full functionality of the <code>WindowProperties</code> class. 
+
+If you want to change these properties, use <code>getRequestedProperties()</code> and apply the proper <code>WindowProperties</code> functions. 
+
+To run panda3d in full screen, rather than a window, do the following:
+<pre class="codeblock">
+wp = WindowProperties() 
+wp.setFullscreen(True) 
+base.win.requestProperties(wp)
+</pre>
+
+Alternatively, you can modify the fullscreen configuration variable before importing <code>direct.directbase.DirectStart</code>:
+<pre class="codeblock">
+from pandac.PandaModules import loadPrcFileData
+loadPrcFileData("", """fullscreen 1
+win-size 1024 768""")
+
+from direct.showbase.DirectObject import DirectObject   # for event handling 
+import direct.directbase.DirectStart 
+import sys 
+
+class World(DirectObject): 
+   def __init__(self): 
+      self.accept("escape",sys.exit) 
+
+w= World() 
+run()
+</pre>
+
+
+If a requested change is not possible or invalid, you can call <code>getRejectedProperties()</code>. It returns a <code>WindowProperties</code> object that holds all of the properties that could not be changed.
+
+Windows can also send [[Event Handling|Events]] when the user changes a property of the window. You can get the name of this event by calling <code>getWindowEvent()</code>. Initially, all windows send the same event when changed. If you want to setup events for a certain window, use <code>setWindowEvent(name)</code> where <code>name</code> is the name of the event you want sent when this window gets changed externally.
+
+For more advanced functionality see [http://www.panda3d.org/apiref.php?page=GraphicsWindow <code>GraphicsWindow</code> in the API documentation.]

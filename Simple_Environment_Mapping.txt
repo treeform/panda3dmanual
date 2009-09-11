@@ -1,182 +1,145 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Simple Environment Mapping</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Simple_Environment_Mapping" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Simple_Environment_Mapping" title="Simple Environment Mapping">Simple Environment Mapping</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Simple_Environment_Mapping" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-pirates/pirates04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-pirates/pirates04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Disney's Pirates of the Caribbean Online
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-flight/flight08"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-flight/flight08-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Flight Simulator, created by Carnegie Mellon students
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-colossus/colossus4"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-colossus/colossus4-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Student Recreation of "Colossus"
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+There is a classic technique in real-time computer graphics for making
+objects appear shiny or reflective.  It's called <b>environment
+mapping</b> or sometimes <b>reflection mapping</b> or, in this case,
+<b>sphere mapping</b>.
+
+Environment mapping is not ray tracing.  But it's a cheesy way to get
+a similar effect.  The idea for both of them is that, mathematically,
+it's easy to calculate the direction from which a ray of light must
+have been coming before it bounced off a particular point of a shiny
+object and entered your eye.  If the renderer were using ray tracing,
+it would follow this ray, for each point on your shiny object,
+backwards from your eye, and determine what object in the environment
+the ray came from; and that's what you'd see in the reflection.
+
+Ray tracing is still too computation-intensive to be done in real
+time.  But a reflection vector is easy to calculate per-vertex, and if
+we could turn a reflection vector into a (u, v) texture coordinate
+pair, the graphics hardware is particularly good at looking up the
+color in a texture image that corresponds to that (u, v) pair.  So all
+we need is an image that shows the objects in our environment.
+
+In <b>sphere mapping</b>, the 3-D reflection vector is turned into a
+2-D texture coordinate pair by mathematically applying a spherical
+distortion.  This means the environment map should be a view of the
+world as seen through a 360-degree fisheye lens, or as reflected in a
+shiny ball like a holiday ornament.  You can see why it is called
+sphere mapping.
+
+[[Image:Streetscene env.jpg|bvw-f2004--streetscene as a sphere map]]
+
+Panda3D can generate sphere maps for you.  The above sphere map was
+generated with the following code:
+
+<pre class="codeblock">
+scene = loader.loadModel('bvw-f2004--streetscene/street-scene.egg')
+scene.reparentTo(render)
+scene.setZ(-2)
+base.saveSphereMap('streetscene_env.jpg', size = 256)
+</pre> 
+
+The idea is simply to put the camera in the middle of your
+environment, approximately where your shiny object would be.  Then
+just call <code>base.saveSphereMap()</code>, and a suitable sphere map image
+will be generated and written to disk for you.  Note that this feature is new as of Panda3D 1.1.
+
+Now you can apply the environment map to just about any object you
+like.  For instance, the teapot:
+
+<pre class="codeblock">
+tex = loader.loadTexture('streetscene_env.jpg')
+teapot.setTexGen(TextureStage.getDefault(), TexGenAttrib.MEyeSphereMap)
+teapot.setTexture(tex)
+</pre> 
+
+[[Image:Chrome teapot.jpg|The teapot with sphere map]]
+
+In this example, you can see that the key to sphere mapping in Panda
+is to set the [[Automatic Texture Coordinates|TexGen mode]] to
+MEyeSphereMap.  This mode computes a spherical (u, v) texture
+coordinate pair based on the reflection vector for each vertex of the
+teapot.  In order for this to work, your model must have normals
+defined for all its vertices (the teapot has good normals).
+
+Shiny teapots are one thing, but it would be nice to make something
+like, say, a car look shiny.  We could just do exactly the same thing
+as above, but our car has a texture map already.  If we just replace
+the texture map with the environment map we'll end up with a chrome
+car:
+
+<pre class="codeblock">
+car = loader.loadModel('bvw-f2004--carnsx/carnsx.egg')
+tex = loader.loadTexture('streetscene_env.jpg')
+car.setTexGen(TextureStage.getDefault(), TexGenAttrib.MEyeSphereMap)
+car.setTexture(tex, 1)
+</pre> 
+
+[[Image:Chrome car.jpg|The car with sphere map]]
+
+That looks pretty silly.  So we'd really prefer to use [[Multitexture Introduction|multitexture]]
+to apply both the car's regular texture, and layer a little bit of
+shine on top of that.  We'll use [[Texture Blend Modes|Add mode]] to
+add the environment map to the existing color, which is appropriate
+for a shiny highlight on an object.
+
+In order to use Add mode without oversaturating the colors, we need to
+darken the environment map substantially.  We could use any image
+processing program to do this; for this example, we'll use Panda3D's
+<code>image-trans</code> utility:
+
+<pre class="codeblock">
+image-trans -cscale 0.2 -o streetscene_env_dark.jpg streetscene_env.jpg
+</pre> 
+
+So the new map looks like this:
+
+[[Image:Streetscene env dark.jpg|The darkened environment map]]
+
+While we're fixing things up, let's move the wheels to a different
+node, so we can assign the shine just to the metal and glass body of
+the car:
+
+<pre class="codeblock">
+car = loader.loadModel('bvw-f2004--carnsx/carnsx.egg')
+body = car.find('**/body')
+body.findAllMatches('**/FL_wheel*').reparentTo(car)
+</pre> 
+
+And now the shine is applied like this:
+
+<pre class="codeblock">
+tex = loader.loadTexture('streetscene_env_dark.jpg')
+ts = TextureStage('env')
+ts.setMode(TextureStage.MAdd)
+body.setTexGen(ts, TexGenAttrib.MEyeSphereMap)
+body.setTexture(ts, tex)
+</pre> 
+
+[[Image:Shiny car.jpg|The car with color and shine together]]
+
+Note that the shiny highlights are now quite subtle, but still
+compelling, especially when you see the car move.
+
+The sphere map technique isn't perfect.  The biggest problem with it
+is that you have to prepare it ahead of time, which means you have to
+know exactly what will be reflected in your shiny objects--it's
+impossible for an object to reflect a dynamic object (for instance, an
+adjacent car).
+
+Another problem is that the point-of-view is baked into the sphere
+map, so that if the camera were to swing around to view the car from
+the other side, the things you could see in the reflection would still
+be the objects behind the camera on this side.
+
+Both of these problems can be solved by [[Cube Maps|cube mapping]],
+which is a more advanced technique for, among other things,
+applying environment maps.  However, cube maps aren't always ideal;
+very often, the venerable sphere map really is the best choice.
+
+It is rare that an application presents a closeup view of a smooth,
+round mirrored object in which you can see reflections clearly, like
+the teapot example above; usually, reflections are just a subtle
+glinting on the surface, like the car.  In these cases the sphere map
+is ideal, since it is not so important exactly <i>what</i> the
+reflections are, but simply that there <i>are</i> reflections.  And
+the sphere map is the easiest and fastest way to render reflections.

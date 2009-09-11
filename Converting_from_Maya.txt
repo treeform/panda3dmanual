@@ -1,182 +1,248 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Converting from Maya</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Converting_from_Maya" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Converting_from_Maya" title="Converting from Maya">Converting from Maya</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Converting_from_Maya" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy07"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy07-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-keepsake/keepsake01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-keepsake/keepsake01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Keepsake: a short interactive movie, themes of loss
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+This section talks about how to prepare a Maya model for export, and then
+export it.  Since exporting is the very last step, the actual instructions
+for the export process are last.
+
+__TOC__
+
+==Material Preparation==
+
+Note: the information in this section is for Panda3D 1.5.0 and beyond.  It does not apply to older versions of Panda3D.
+
+===Basic Texturing===
+
+In order for the Panda3D to correctly export your textures, you must texture
+your model in a manner that Panda3D understands.  In fact, you have to follow
+a fairly strict formula in order for Panda3D to be able to make sense of your
+scene.
+
+Teaching how to use Maya is beyond the scope of this manual.  We assume that
+you already know how to use maya, and especially the hypershade.  The only
+purpose of this section is to show you what configurations are understood by
+Panda3D.
+
+The first step in texturing your model is to apply a <code>Phong</code> shader.
+This is the only kind of shader that Panda3D understands. You can apply a
+phong shader using the Maya menus:
+
+<br><br><center>[[Image:maya-tex-1.jpg]]</center><br><br>
+
+Next, tell maya that you want to control the color of the surface by clicking the color button:
+
+<br><br><center>[[Image:maya-tex-2.jpg]]</center><br><br>
+
+Now create a file texture - this will control the color of the surface:
+
+<br><br><center>[[Image:maya-tex-3.jpg]]</center><br><br>
+
+Set the filename.  Once you do this, you will be able to see your texture in Maya:
+
+<br><br><center>[[Image:maya-tex-4.jpg]]</center><br><br>
+
+You now have a straightforward textured model that Panda3D can export.
+
+===Advanced Texturing===
+
+You may wish to use Panda's advanced texturing abilities: multitexturing,
+normal maps, gloss maps, transparency, or glow maps.  To use these features,
+you will need to access Maya's hypershade editor:
+
+<br><br><center>[[Image:maya-hypershade.jpg]]</center><br><br>
+
+A straightforwardly textured model will look like this in the hypershade:
+
+<br><br><center>[[Image:maya-hyper-1.jpg]]</center><br><br>
+
+To apply a normal map, create another file texture and connect the "out color"
+of the normal map to the "normal camera" input of the phong shader.
+The normal map must be a true normal map (you can recognize them by their
+light blue color), not a bump map (which are black-and-white.)
+
+<br><br><center>[[Image:maya-hyper-2.jpg]]</center><br><br>
+
+Unfortunately, there is a maya button to help you set up a bump map, but
+what it creates is not correct for Panda3D.  If you use the button, you
+end up with the following incorrect configuration.  So far as I know, the
+only way to get the correct configuration (shown above) is to set it up
+manually in the hypershade.  The incorrect configuration is:
+
+<br><br><center>[[Image:maya-hyper-3.jpg]]</center><br><br>
+
+You may wish for parts of your model to be transparent.  This is a little
+tricky, because Panda3D understands "opacity maps," and maya understands
+"transparency maps," which are opposites of each other.  (In an opacity map,
+white is opaque, in a transparency map, black is opaque.)  To set it up,
+you will need to create a reverser-object:
+
+<br><br><center>[[Image:maya-hyper-4.jpg]]</center><br><br>
+
+You may also wish to control which areas of the model are glossy, and
+which are not.  Panda3D calls this a "gloss map."  To do this, create a black-and-white image and connect it to the "specularColor" input of the
+phong shader.  Note that it must be black-and-white, or Panda3D won't
+understand it.
+
+<br><br><center>[[Image:maya-hyper-5.jpg]]</center><br><br>
+
+You may also want to create glowing areas on your model.  Panda3D calls
+this a "glow map."  I have also heard it called a "self-illumination map"
+or an "incandescence map."  Create a black-and-white image and connect
+it to the "incandescence" input of the phong shader:
+
+<br><br><center>[[Image:maya-hyper-6.jpg]]</center><br><br>
+
+Creating a glow map will cause those parts of the model
+which are glowing to be bright even when the light is dark.  However,
+it will not by itself create a full-featured bloom effect.  To get that,
+you need to use a bloom filter in your Panda3D program in conjunction
+with the glow map.  There is a [[sample program|Sample Programs: Glow Filter]]
+that demonstrates this process.
+
+Finally, there is plain old multitexturing.  Create this structure in the hypershade, using a "Layered Texture" (NOT a "Layered Shader!"):
+
+<br><br><center>[[Image:maya-hyper-8.jpg]]</center><br><br>
+
+This will cause the two textures to be multiplied, which is the simplest
+form of multitexturing.  You can also obtain certain other effects by 
+changing the settings of the Layered Texture, however, this functionality
+is very incomplete at this time.  For the most part, you can only multiply.
+
+===Merging Textures===
+
+The Maya exporter may will try to merge textures.  For example,
+if your model has an RGB color map, and a black-and-white opacity map,
+then the exporter will consider loading them together as a single RGBA
+texture.
+
+In order to merge two textures, the following rules must be satisfied:
+
+1. Their UV mappings must be identical.
+2. Their filenames must have a common prefix.
+
+By "common prefix," I mean that the files "house-color.jpg" and "house-opacity.jpg" can be merged, because they both start with the common prefix "house-".  A common prefix consists of a series of alphanumeric
+characters followed by a dash.  If you do not want two files merged, 
+use a different file naming convention.
+
+==Flagging Objects From Maya==
+
+The Maya exporter is able to automatically flag objects for collisions if the objects are flagged properly in Maya. There is a [http://panda3d.cvs.sourceforge.net/*checkout*/panda3d/pandatool/src/maya/eggObjectFlags.mel MELscript] in the available in the CVS that helps flag objects in Maya.
+
+Installation
+#Open up maya's script editor (Window>General Editors>Script Editor)
+#Open the script in the editor and execute it (Ctrl+Enter or Script>Execute)
+#Type "eggObjectFlags()" at the script editor and select the text.
+#Middle mouse drag the selection into your custom shelf.
+#Optional: go to the shelf editor and give it a custom icon/name
+
+Usage
+#Select the objects that you want to tag and press the shelf script.
+#Set the object type by going to the channel box of the object, there should be a new attribute called Egg Object TypesN.
+#Set the object type to the desired value.
+
+{|border=1 cellpadding=5
+||Object Type||Meaning
+|-
+||barrier || The geometry defined at this root and below defines an invisible
+collision solid.
+|-
+||trigger || The geometry defined at this root and below defines an invisible trigger surface.
+|-
+||sphere || The geometry is replaced with the smallest collision sphere that will enclose it. Typically you model a sphere in polygons and put this flag on it to create a collision sphere of the same size.
+|-
+||tube || As in sphere, above, but the geometry is replaced with a collision tube (a capsule). Typically you will model a capsule or a cylinder in polygons.
+|-
+||bubble || A collision bubble is placed around the geometry, which is otherwise unchanged.
+|-
+||ghost || It means that the geometry beginning at this node and below should never be collided with--characters will pass through it.
+|-
+||backstage || It means that the geometry at this node and below should not be translated. This will normally be used on scale references and other modeling tools. 
+|}
+
+==Running the Exporter==
+
+Maya's exporter can be run from the command prompt or via a graphical panel.  The command line utility is called <i>maya2egg</i>.  There are multiple versions of it corresponding to different versions of maya.  For instance, the version to use for Maya 5.0 is <i>maya2egg5</i>, for 6.0 its <i>maya2egg6</i> and for 6.5 its <i>maya2egg65</i>.
+
+The following is an example of how to convert a file(maya binary .mb) if using Maya 6.0 through the command line.
+
+<p align=center>[[Image:MayaCommandLineExport.png]]</p>
+
+The egg file will contain the filenames of the textures.  These texture pathnames will be stored as <i>relative</i> paths, relative to the location of the egg file.  For example, let's say that the files are laid out like this:
+
+<pre class="codeblock">
+c:\My Models\Maya Files\Character.mb
+c:\My Models\Egg Files\Character.egg
+c:\My Models\Textures\Character.png
+</pre>
+
+In that case, the command to export the model is:
+
+<pre class="codeblock">
+c:\
+cd c:\My Models\
+maya2egg -o "Egg Files/Character.egg" "Maya Files/Character.mb" 
+</pre>
+
+Note that [[Panda Filename Syntax]] uses forward slashes, even under Windows, and this applies to the exporter as well. After doing this export, the character egg will contain the following texture reference:
+
+<pre class="codeblock">
+"../Textures/Character.png"
+</pre>
+
+Again, notice that this pathname is relative to the egg file itself.  Many artists find it convenient to keep everything in the same directory, to avoid having to think about this.  This approach works fine.
+
+The above conversion process will turn the character into a <i>static</i> model. Models which are rigged (they have bones to help them animate), skinned (polygons attached to the bones/skeleton), and are animated need to use one of the following options:
+
+<pre class="codeblock">
+maya2egg -a model -o eggFileName.egg mayaFileName.mb 
+maya2egg -a chan -o eggFileName.egg mayaFileName.mb 
+maya2egg -a pose -o eggFileName.egg mayaFileName.mb 
+maya2egg -a both -o eggFileName.egg mayaFileName.mb 
+</pre>
+
+<p>The meanings of these options are:</p>
+
+<table>
+<tr><td width=80>-a model</td><td>Save only the skinned and boned model, ready for animation but with no animation attached. This is ideal for models with several event- or interaction-based animations.</td></tr>
+
+<tr><td>-a chan</td><td>Save only the animation data on the current model, but not the model itself. This is ideal applying animations to an already-existing model egg file that is ready to receive animation. A model may have several animation channels applied to it.</td></tr>
+
+<tr><td>-a pose</td><td>Save the model in the current key position of the animation applied to it. This position must be selected before choosing to export the file. This format does not save the animation.</td></tr>
+
+<tr><td>-a both</td><td>This will export the model and animation out as one file.</td></tr>
+</table>
+
+
+There are many options to maya2egg.  For a complete list, run maya2egg with the <i>-h</i> argument.
+
+<table class="code"><tr><td>
+maya2egg -h
+</td></tr></table>
+
+==Using the Graphical Front-End==
+
+As of Panda3D 1.0.4, there is a graphical front-end to <i>maya2egg</i>. To run the graphical Maya exporter, drag MayaPandaTool.mel from the panda plugins directory into the Maya workspace.
+
+<p align=center>[[Image:MayaPandaToolLoad.png]]</p>
+
+The UI window(below) will appear.
+
+<p align=center>[[Image:Maya-exporter.png]]</p>
+
+You can alternatively load the .mel file from the script editor.  To save space, the graphical tool does not have access to all of the features of the exporter.  It is designed for rapid verification of assests.  The features you can execute with the graphical tool are identical to the respective ones of the command line exporter listed below.
+
+Or, you can integrate the UI interface to Maya.
+There is a very convenient way to launch the MayaPandaTool, using Maya shelf to store the MEL script :
+<br>[1] open the Script Editor :
+<br>Window > General Editors > Script Editor
+<br>[2] In Script Editor, load the MayaPandaTool MEL script :
+<br>File > Open Script
+<br>[3] select the MEL text (press Ctrl+A)
+<br>[4] using middle mouse button, drag the selected text onto the shelf
+<br>[5] (optional) using Shelf Editor, you can change the image of Panda exporter icon to distinguish it from the others. 
+<p align=center>[[Image:LaunchMPT.jpg]]</p>
+
+Anytime you need to open the Panda Exporter, just click the icon on the shelf.
+
+
+<u>For Windows users :</u>
+<br>If you want a faster launch, you can put the MEL file on the QuickLaunch.
+Press Ctrl while dragging the MEL file onto QuickLaunch bar. If you don't press Ctrl, the actual file dropped to QuickLaunch is only the shortcut to the MEL file.
+<br>Anytime you need to open the Panda exporter, just drag it from QuickLaunch bar to the 3D window of Maya.

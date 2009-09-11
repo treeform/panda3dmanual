@@ -1,181 +1,194 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Sample Programs in the Distribution</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Sample_Programs_in_the_Distribution" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Sample_Programs_in_the_Distribution" title="Sample Programs in the Distribution">Sample Programs in the Distribution</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Sample_Programs_in_the_Distribution" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean6"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean6-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-projectimprov/projectimprov03"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-projectimprov/projectimprov03-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Improvisational acting techniques are used to improve character behavior
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-spherical/spherical01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-spherical/spherical01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Some experiments done by a student with spherical harmonics.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+The Panda3D Distribution includes quite a few sample programs.  The following is a list of what's included, and what features of panda each sample demonstrates. If you are just learning Panda3D, take a look at the ones marked "Beginner."
+
+To run a sample program, you need to install Panda3D. If you're a Windows user, you'll find the sample programs in your start menu. If you're a linux user, you'll find the sample programs in /usr/share/panda3d. 
+On OSX, you'll find them in /Applications/Panda3D/X.X.X/samples.
+
+<table>
+<tr><td>
+[[Sample Programs: Asteroids]]
+
+* Difficulty: Advanced
+* Creating tasks (routines that get called every frame)
+* Using 2D graphics
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Ball in Maze]]
+
+* Difficulty: Intermediate
+* Using the collision detector
+* Reading the mouse
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Boxing Robots]]
+
+* Difficulty: Intermediate
+* Loading animated actors and playing animations
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Carousel]]
+
+* Difficulty: Beginner
+* Relative positioning
+* Intervals (automatic movement)
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Cartoon Shader]]
+
+* Difficulty: Intermediate (or Advanced)
+* Enables per-pixel lighting
+* Explicit Shaders
+* Image Postprocessing
+* Render-to-Texture
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Chessboard]]
+
+* Difficulty: Intermediate
+* Selecting an object with the mouse
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Disco Lights]]
+
+* Difficulty: Intermediate
+* Using vertex lighting
+* Enables per-pixel lighting
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Distortion]]
+
+* Difficulty: Advanced
+* Creates a interesting shader effect where the entire screen is rendered into a texture
+</td></tr> 
+
+<tr><td>
+[[Sample Programs: Fireflies]]
+
+* Difficulty: Very Advanced
+* Deferred shading - a complex shader-based algorithm
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Fractal Plants]]
+
+* Difficulty: Very Advanced
+* Creates a 3D model without loading it from disk
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Glow Filter]]
+
+* Difficulty: Intermediate (or Advanced)
+* Enabling per-pixel lighting
+* Explicit Shaders
+* Image Postprocessing
+* Render-to-Texture
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Infinite Tunnel]]
+
+* Difficulty: Intermediate
+* Using fog to hide artifacts in the distance
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Looking and Gripping]]
+
+* Difficulty: Intermediate
+* Controlling a character's head procedurally
+* Causing a character to grip an object
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Media Player]]
+
+* Difficulty: Beginner
+* Loading a texture from an AVI file
+* Loading a sound from an AVI file
+* Synchronizing audio and video
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Motion Trails]]
+
+* Difficulty: Advanced
+* Captures contents of screen and reuses it later.
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Music Box]]
+
+* Difficulty: Intermediate
+* Playing sounds
+* GUI buttons and sliders
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Normal Mapping]]
+
+* Difficulty: Intermediate (or Advanced)
+* Enables per-pixel lighting
+* Explicit Shaders
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Particles]]
+
+* Difficulty: Advanced
+* Demonstrates the particle system
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Procedural Cube]]
+
+* Difficulty: Advanced
+* Creates a 3D model without loading it
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Roaming Ralph]]
+
+* Difficulty: Advanced
+* A character walks around a terrain
+* Uses collision system to detect height of terrain
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Shadows]]
+
+* Difficulty: Advanced
+* Explicit Shaders
+* Dynamic Shadows: shadow mapping
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Solar System]]
+
+* Difficulty: Beginner Tutorial
+* Tutorial structure shows development steps
+* Shows how objects can move relative to other objects
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Teapot on TV]]
+
+* Difficulty: Intermediate
+* Render-to-texture
+* Places rendered texture on model in scene
+</td></tr>
+
+<tr><td>
+[[Sample Programs: Texture Swapping]]
+
+* Difficulty: Intermediate
+* Swaps textures on models to create interesting effects
+</td></tr> 
+
+</table>

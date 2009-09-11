@@ -1,182 +1,121 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Sample Programs: Fireflies</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Sample_Programs:_Fireflies" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Sample_Programs:_Fireflies" title="Sample Programs: Fireflies">Sample Programs: Fireflies</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Sample_Programs:_Fireflies" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-code3d/code3D02"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-code3d/code3D02-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Code3D is a tool for creating virtual training scenarios.
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trippy/trippy04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trippy/trippy04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Psychedelic Flythrough of the Mind of a Computer
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-kotodama/kotodama04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-kotodama/kotodama04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Kotodama: an RPG in which Japanese words have power
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+<b>The Fireflies Sample Program</b>
+
+To run a sample program, you need to install Panda3D. If you're a Windows user, you'll find the sample programs in your start menu. If you're a linux user, you'll find the sample programs in /usr/share/panda3d.
+
+<b>Screenshots</b>
+
+[[Image:Screenshot-Sample-Programs-Fireflies.jpg]]
+
+<b>Explanation</b>
+
+A nature scene with 500 fireflies: how do you do a high-polygon scene with 500 lights, without a total performance collapse?
+
+This sample program shows how to do Deferred Shading in Panda. You can have hundreds of lights, and all the lights affect all the models automatically. This is not expensive: the cost is only proportional to the number of actual lit pixels times the number of times each pixel is lit. That's why fireflies make a perfect demonstration --- you could never have 500 lights in a high-polygon scene without deferred shading. But perhaps even more importants is the elegance of a rendering algorithm that automatically connects lights to the appropriate objects without the need for LightAttribs.
+
+To understand how deferred shading works, first consider how ordinary shading works in plain OpenGL. In most fairly simple cases, the lighting equation boils down to:
+
+final = diffuse color * dot(light vector, surface normal) * attentuation(surface position, light position and orientation)
+
+Where the attenuation function depends on the type of light. So anyhow, this equation has four inputs:
+
+1. The diffuse color.
+2. The surface normal.
+3. The surface position.
+4. The light parameters.
+
+The idea behind deferred shading is that during the rendering process, you don't compute the final color. Instead, you store the values listed above in the framebuffer itself. Of course, you need a "fat framebuffer" to store all that data. In an image postprocessing step you scan the framebuffer and compute the final color.
+
+Of course, that's a lot of data to store in the framebuffer. The first optimization is not to store the light parameters. It is not necessary to store light parameters because the light parameters don't vary from pixel to pixel --- they're constants.
+
+Our second optimization involves surface position. Surface position can be inferred by calculating backward from the depth buffer. Each pixel on the screen represents a ray from the camera into the scene, and the depth value in the pixel indicates a distance along the ray. Because of this, it is not actually necessary to store surface position explicitly - it is only necessary to store depth values. Of course, OpenGL does that for free.
+
+So the framebuffer now needs to store surface normal, diffuse color, and depth value (to infer surface position). In practice, most ordinary framebuffers can only store color and depth - they don't have any place to store a third value. So we need to use a special offscreen buffer with an "auxiliary" bitplane. The auxiliary bitplane stores the surface normal.
+
+So then, there's the final postprocessing pass. This involves combining the diffuse color texture, the surface normal texture, the depth texture, and the light parameters into a final rendered output. The light parameters are passed into the postprocessing shader as constants, not as textures.
+
+If there are a lot of lights, things get interesting. You use one postprocessing pass per light. Each pass only needs to scan those framebuffer pixels that are actually in range of the light in question. To traverse only the pixels that are affected by the light, just render the illuminated area's convex bounding volume.
+
+The shader to store the diffuse color and surface normal is trivial. But the final postprocessing shader is a little complicated. What makes it tricky is that it needs to regenerate the original surface position from the screen position and depth value. The math for that deserves some explanation.
+
+We need to take a clip-space coordinate and depth-buffer value (ClipX,ClipY,ClipZ,ClipW) and unproject it back to a view-space (ViewX,ViewY,ViewZ) coordinate. Lighting is then done in view-space.
+
+Okay, so here's the math. Panda uses the projection matrix to transform view-space into clip-space. But in practice, the projection matrix for a perspective camera always contains four nonzero constants, and they're always in the same place:
+
+<pre class="codeblock">
+A	0	0	0
+0	0	B	1
+0	C	0	0
+0	0	D	0
+</pre>
+
+The result is that the panda projection matrix boils down to these simple equations:
+
+<pre class="codeblock">
+clipx = viewx * A
+clipy = viewz * C
+clipz = viewy * B + D
+clipw = viewy
+</pre>
+
+Look out, there has been a coordinate system change! In the scene graph, Z corresponds to "up", but in clip-space, Z is the depth value (and X,Y address a pixel).
+
+After panda calculates clip-space coordinates, it divides by W. Finally, it rescales the depth-value:
+
+<pre class="codeblock">
+screenx = clipx / clipw
+screeny = clipy / clipw
+screenz = clipz / clipw
+depth = screenz * 0.5 + 0.5
+</pre>
+
+
+So now we have some equations defining (clipx,clipy,clipz,clipw) in terms of (viewx,viewy,viewz), and (screenx,screeny,screenz) in terms of (clipx,clipy,clipz,clipw). It's basic algebra to solve these equations for (viewx, viewy, viewz) in terms of (screenx, screeny, screenz). Here, I have shown all my algebraic steps:
+
+<pre class="codeblock">
+depth = screenz * 0.5 + 0.5
+depth = (clipz / clipw) * 0.5 + 0.5
+depth = ((viewy * B + D) / viewy) * 0.5 + 0.5
+depth - 0.5 = ((viewy * B + D) / viewy) * 0.5
+(2*depth - 1.0) = ((viewy * B + D) / viewy)
+(2*depth - 1.0) * viewy = viewy * B + D
+(2*depth - 1.0) * viewy + viewy * -B = D
+(2*depth - 1.0 - B) * viewy = D
+viewy = 0.5D / (depth - 0.5 - 0.5B)
+
+screenx = clipx / clipw
+screenx = (viewx * A) / viewy
+screenx * viewy = viewx * A
+screenx * (0.5D / (depth - 0.5 - 0.5B)) = viewx * A
+(screenx * 0.5D) / (depth - 0.5 - 0.5B) = viewx * A
+(screenx * 0.5D/A) / (depth - 0.5 - 0.5B) = viewx
+viewx = (screenx * 0.5D/A) / (depth - 0.5 - 0.5B)
+
+screeny = clipy / clipw
+screeny = (viewz * C) / viewy
+screeny * viewy = viewz * C
+screeny * (0.5D / (depth - 0.5 - 0.5B)) = viewz * C
+(screeny * 0.5D) / (depth - 0.5 - 0.5B) = viewz * C
+(screeny * 0.5D/C) / (depth - 0.5 - 0.5B) = viewz
+viewz = (screeny * 0.5D/C) / (depth - 0.5 - 0.5B)
+</pre>
+
+To save our vertex and pixel shaders a little work, we can precompute these constants:
+
+<pre class="codeblock">
+projx = 0.5D/A
+projy = 0.5D
+projz = 0.5D/C
+projw = -0.5-0.5B
+</pre>
+
+So, here are the equations in their final form:
+
+<pre class="codeblock">
+viewx = (screenx * projx) / (depth + projw)
+viewy = (1 * projy) / (depth + projw)
+viewz = (screeny * projz) / (depth + projw) 
+</pre>
+
+<b>Back to the List of Sample Programs:</b>
+
+[[Sample Programs in the Distribution]]

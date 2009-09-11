@@ -1,181 +1,161 @@
-le>Panda3D Manual</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="/stylesheets/npanda.css" type="text/css">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center">
-  <meta name="Description" content="Free open source game and simulation engine developed by Disney and maintained by Carnegie Mellon University's Entertainment Technology Center">
-  </head>
-  <body ONLOAD="preloadImages();">
-  <table width="981" border="0" align="left" cellpadding="0" cellspacing="0">
-    <tr bgcolor="#4a6144">
-      <td><img alt="" src="/nimages/topbar10.jpg" width="973" height="98" usemap="#Map" border="0"></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td background="/nimages/navbargrad.gif">
-                <table width="973" border="0" cellspacing="0" cellpadding="0" class="topnav">
-                <tr>
-                        <td width=25></td>
-                        <td height=25 ID=myMenuID class="topnav"><a href="http://www.panda3d.org/index.php">Home</a>   
-<a href="http://www.panda3d.org/features.php">Features</a>   
-<a href="http://www.panda3d.org/download.php">Download</a>   
-<a href="http://www.panda3d.org/screens.php?page=1">Screenshots</a>   
-<a href="http://www.panda3d.org/wiki/index.php">Manual</a>   
-<a href="http://www.panda3d.org/apiref.php?page=classes">Reference</a>   
-<a href="http://www.panda3d.org/phpbb2/index.php">Forums</a>   
-<a href="http://www.panda3d.org/license.php">License</a>   
-<a href="http://www.panda3d.org/contact.php">Contact</a>   
-<a href="http://blog.panda3d.org/">Blog</a>   </td>
-                        <td width=25></td></tr>
-                </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif"> </td>
-    </tr>
-    <tr>
-      <td bgcolor="#F8E6BC"><table width="973" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="25" height="25"></td>
-            <td height="25"></td>
-            <td width="18" height="25"></td>
-          </tr>
-          <tr>
-            <td width="25"></td>
-            <td height="600" valign="top">
-  <table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
-    <td valign="top">    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td valign="middle" height="23" bgcolor="316722"><span class="header">  Panda3D Manual: Using Intervals to move the Panda</span></td></tr>
-      <tr><td height="1" bgcolor="#333333"></td></tr>
-      
-      <tr><td bgcolor="FFFDF7">    <table width="100%" border=0 cellspacing=0 cellpadding=25><tr><td><p>You have to <a href="/wiki/index.php?title=Special:Userlogin&returnto=Using_Intervals_to_move_the_Panda" title="Special:Userlogin">log in</a> to edit pages.
-</p>
-<p>Return to <a href="/wiki/index.php/Using_Intervals_to_move_the_Panda" title="Using Intervals to move the Panda">Using Intervals to move the Panda</a>.</p>
-</td></tr></table></td></tr>
-      <tr><td valign="middle" height="23" bgcolor="75996B"><table width="100%" cellpadding="0" cellspacing="0" border="0" class="manualnav"><tr><td align="right"><a href="/wiki/index.php/Main_Page" title="Main Page">Back to the Manual</a>   </td></tr></table></td></tr>
-    </table>
-  </td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table><a href="/wiki/index.php?title=Special:Userlogin&returnto=Using_Intervals_to_move_the_Panda" title="Special:Userlogin">.</a></td>
-    <td width=18></td>
-    <td width=209 valign="top"><table cellpadding=0 cellspacing=0 border=0>
-    <tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-antarean/antarean8"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-antarean/antarean8-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Angels Fall First: the Second Antarean War</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-tetris/tetris01"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-tetris/tetris01-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">VR Tetris: grasp the pieces with two VR-gloves
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr><tr><td>    <table border="0" cellspacing="0" cellpadding="0" >
-      <tr>
-        <td width="1" height="1" bgcolor="#333333"></td>
-        <td height="1" bgcolor="#333333"></td>
-        <td width="8" height="1"></td>
-      </tr>
-      <tr>
-        <td width="1" bgcolor="#333333"></td>
-        <td >    <table border="0" cellspacing="0" cellpadding="0">
-      <tr><td width="200" height="150"><a href="/showss.php?page=0&shot=ssg-trenchrun/trenchrun04"><img alt="screenshot" border=0 width="200" height="150" src="/randomscreens/ssg-trenchrun/trenchrun04-tn.jpg"></a></td></tr>
-      <tr><td width="200" height="1" bgcolor="#333333"></td></tr>
-      <tr><td bgcolor="e4e4e4">
-        <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-          <td width="15" height="39"></td>
-          <td width="170" height="39" align="center"><div class="thumbtitle">Trench Run: audience leans to turn, yells to shoot
-</div></td>
-          <td width="15" height="39"></td>
-        </tr></table>
-      </td></tr>
-    </table></td>
-        <td width="8" align="left" valign="top" background="/nimages/tanshadow-e.gif"><img alt="" src="/nimages/tanshadow-ne.gif" width="8" height="8"></td>
-      </tr>
-      <tr>
-        <td width="1" height="8"></td>
-        <td height="8" align="left" valign="top" background="/nimages/tanshadow-s.gif"><img alt="" src="/nimages/tanshadow-sw.gif" width="8" height="8"></td>
-        <td width="8" height="8" background="/nimages/tanshadow-se.gif"></td>
-      </tr>
-    </table></td></tr><tr><td height=18></td></tr>
-    </table></td>
-  </tr></table>
-  </td>
-            <td width="18"></td>
-          </tr>
-          <tr>
-            <td width="25" height="18"></td>
-            <td height="18"></td>
-            <td width="18" height="18"></td>
-          </tr>
-        </table></td>
-      <td width="8" background="/nimages/dropshadow-e.gif" bgcolor="#F8E6BC"> </td>
-    </tr>
-    <tr><td height="8" align="left" valign="top" background="/nimages/dropshadow-s.gif"></td>
-        <td width="8" height="8" background="/nimages/dropshadow-se.gif"></td>
-    </tr>
-	<tr><td height="12"></td>
-        <td width="8" height="12"></td>
-    </tr>
-  </table>
-<map name="Map">
-  <area shape="poly" coords="279,98,260,0,34,0,34,37,15,37,0,63,0,98" href="http://www.panda3d.org">
-  <area shape="rect" coords="745,22,892,83" href="http://www.etc.cmu.edu" target="_blank">
-  <area shape="circle" coords="908,48,40" href="http://www.etc.cmu.edu" target="_blank">
-</map>
-  </body></html>
- 
+The next step is to cause the panda to actually
+move back and forth.  Add the following lines of code:
+
+[python]<code python>
+import direct.directbase.DirectStart
+from pandac.PandaModules import *
+
+from direct.task import Task
+from direct.actor import Actor
+from direct.interval.IntervalGlobal import *
+import math
+
+#Load the first environment model
+environ = loader.loadModel("models/environment")
+environ.reparentTo(render)
+environ.setScale(0.25,0.25,0.25)
+environ.setPos(-8,42,0)
+
+#Task to move the camera
+def SpinCameraTask(task):
+  angledegrees = task.time * 6.0
+  angleradians = angledegrees * (math.pi / 180.0)
+  base.camera.setPos(20*math.sin(angleradians),-20.0*math.cos(angleradians),3)
+  base.camera.setHpr(angledegrees, 0, 0)
+  return Task.cont
+
+taskMgr.add(SpinCameraTask, "SpinCameraTask")
+
+#Load the panda actor, and loop its animation
+pandaActor = Actor.Actor("models/panda-model",{"walk":"models/panda-walk4"})
+pandaActor.setScale(0.005,0.005,0.005)
+pandaActor.reparentTo(render)
+pandaActor.loop("walk")
+
+#Create the four lerp intervals needed to walk back and forth
+pandaPosInterval1= pandaActor.posInterval(13,Point3(0,-10,0), startPos=Point3(0,10,0))
+pandaPosInterval2= pandaActor.posInterval(13,Point3(0,10,0), startPos=Point3(0,-10,0))
+pandaHprInterval1= pandaActor.hprInterval(3,Point3(180,0,0), startHpr=Point3(0,0,0))
+pandaHprInterval2= pandaActor.hprInterval(3,Point3(0,0,0), startHpr=Point3(180,0,0))
+
+#Create and play the sequence that coordinates the intervals
+pandaPace = Sequence(pandaPosInterval1, pandaHprInterval1,
+  pandaPosInterval2, pandaHprInterval2, name = "pandaPace")
+pandaPace.loop()
+
+run()
+</code>[/python]
+[cxx]<code cxx>#include "pandaFramework.h"
+#include "pandaSystem.h"
+
+#include "genericAsyncTask.h"
+#include "asyncTaskManager.h"
+
+#include "cIntervalManager.h"
+#include "cLerpNodePathInterval.h"
+#include "cMetaInterval.h"
+
+// Global stuff
+PandaFramework framework;
+PT(AsyncTaskManager) taskMgr = AsyncTaskManager::get_global_ptr(); 
+PT(ClockObject) globalClock = ClockObject::get_global_clock();
+NodePath camera;
+
+// Task to move the camera
+AsyncTask::DoneStatus SpinCameraTask(GenericAsyncTask* task, void* data) {
+  double time = globalClock->get_real_time();
+  double angledegrees = time * 6.0;
+  double angleradians = angledegrees * (3.14 / 180.0);
+  camera.set_pos(20*sin(angleradians),-20.0*cos(angleradians),3);
+  camera.set_hpr(angledegrees, 0, 0);
+
+  return AsyncTask::DS_cont;
+}
+
+int main(int argc, char *argv[]) {
+  // Open a new window framework and set the title
+  framework.open_framework(argc, argv);
+  framework.set_window_title("My Panda3D Window");
+
+  // Open the window
+  WindowFramework *window = framework.open_window();
+  camera = window->get_camera_group(); // Get the camera and store it
+
+  // Load the environment model
+  NodePath environ = window->load_model(framework.get_models(), "models/environment");
+  environ.reparent_to(window->get_render());
+  environ.set_scale(0.25 , 0.25, 0.25);
+  environ.set_pos(-8, 42, 0);
+
+  // Load our panda
+  NodePath pandaActor = window->load_model(framework.get_models(), "panda-model");
+  pandaActor.set_scale(0.005);
+  pandaActor.reparent_to(window->get_render());
+  
+  // Load the walk animation
+  window->load_model(pandaActor, "panda-walk4");
+  window->loop_animations(0);
+
+  // Create the lerp intervals needed to walk back and forth
+  PT(CLerpNodePathInterval) pandaPosInterval1, pandaPosInterval2, pandaHprInterval1, pandaHprInterval2;
+  pandaPosInterval1 = new CLerpNodePathInterval("pandaPosInterval1", 13.0, CLerpInterval::BT_no_blend,
+                                                      true, false, pandaActor, window->get_render());
+  pandaPosInterval1->set_start_pos(LPoint3f(0, 10, 0));
+  pandaPosInterval1->set_end_pos(LPoint3f(0, -10, 0));
+
+  pandaPosInterval2 = new CLerpNodePathInterval("pandaPosInterval2", 13.0, CLerpInterval::BT_no_blend,
+                                                      true, false, pandaActor, window->get_render());
+  pandaPosInterval2->set_start_pos(LPoint3f(0, -10, 0));
+  pandaPosInterval2->set_end_pos(LPoint3f(0, 10, 0));
+
+  pandaHprInterval1 = new CLerpNodePathInterval("pandaHprInterval1", 3.0, CLerpInterval::BT_no_blend,
+                                                      true, false, pandaActor, window->get_render());
+  pandaHprInterval1->set_start_hpr(LPoint3f(0, 0, 0));
+  pandaHprInterval1->set_end_hpr(LPoint3f(180, 0, 0));
+
+  pandaHprInterval2 = new CLerpNodePathInterval("pandaHprInterval2", 3.0, CLerpInterval::BT_no_blend,
+                                                      true, false, pandaActor, window->get_render());
+  pandaHprInterval2->set_start_hpr(LPoint3f(180, 0, 0));
+  pandaHprInterval2->set_end_hpr(LPoint3f(0, 0, 0));
+  
+  // Create and play the sequence that coordinates the intervals
+  PT(CMetaInterval) pandaPace;
+  pandaPace = new CMetaInterval("pandaPace");
+  pandaPace->add_c_interval(pandaPosInterval1, 0, CMetaInterval::RS_previous_end);
+  pandaPace->add_c_interval(pandaHprInterval1, 0, CMetaInterval::RS_previous_end);
+  pandaPace->add_c_interval(pandaPosInterval2, 0, CMetaInterval::RS_previous_end);
+  pandaPace->add_c_interval(pandaHprInterval2, 0, CMetaInterval::RS_previous_end);
+  pandaPace->loop();
+
+  // Add our task.
+  taskMgr->add(new GenericAsyncTask("Spins the camera", &SpinCameraTask, (void*) NULL));
+  
+  // This is a simpler way to do stuff every frame, if you're too lazy to create a task.
+  Thread *current_thread = Thread::get_current_thread();
+  while(framework.do_frame(current_thread)) {
+    // Step the interval manager
+    CIntervalManager::get_global_ptr()->step();
+  }
+
+  framework.close_framework();
+  return (0);
+}</code>[/cxx]
+
+<i>Intervals</i> are tasks that change a property
+from one value to another over a specified period of time.  Starting
+an interval effectively starts a background process that modifies the
+property over the specified period of time. For example, consider the
+<code>pandaPosInterval1</code> above.  When that interval is
+started, it will gradually adjust the position of the panda from
+(0,10,0) to (0,-10,0) over a period of 13 seconds.  Similarly,
+when the <code>pandaHprInterval1</code> is started,
+the orientation of the panda will rotate 180 degrees over a period of 3 seconds.
+
+<i>[python]Sequences[/python][cxx]MetaIntervals[/cxx]</i> are tasks that execute one interval
+after another.  The <code>pandaPace</code> sequence above
+causes the panda to move in a straight line, then turn, then in the
+opposite straight line, then to turn again.  The code <code>pandaPace[python].[/python][cxx]->[/cxx]loop()</code> causes the [python]Sequence[/python][cxx]MetaInterval[/cxx] to be started
+in looping mode.
+
+The result of all this is to cause the panda to pace
+back and forth from one tree to the other.
