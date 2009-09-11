@@ -1,0 +1,1 @@
+In the following pages, we list the available tutorial videos for Panda3D and its components. All videos are DivX encoded. Download Divx from [http://www.divx.com www.divx.com].

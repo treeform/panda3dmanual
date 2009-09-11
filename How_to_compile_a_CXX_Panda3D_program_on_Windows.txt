@@ -1,0 +1,25 @@
+<b>DEPRECATED:</b> This guide does not work, so it has to be removed from the manual. Panda3D does <b>not</b> compile under g++ on windows.
+
+This short guide explains how to build a Panda3D game written in C++ game under Windows. If you use Python for programming, you can skip this page.
+For the Linux version of this guide, click [[How to build a CXX Panda3D game on Linux|here]].
+
+First of all, download the following files:
+# [http://www.python.org Python]
+# The thirdparty package, downloadable from the Downloads section
+# The GNU G++ compiler. A recommended compiler is [http://prdownloads.sf.net/mingw/MinGW-3.1.0-1.exe?download MinGW].
+
+Now, first of all, we need to create a .o file from our cxx file. We need to link to the NSPR include files, to the Panda3D include files and to the Python include files. Please change the paths in these commands to the appropiate locations.
+<table class="code"><tr><td>
+g++ -c filename.cxx -o filename.o -fPIC -O2 -I"c:\path\to\python.h\" -I"c:\Panda3D-1.3.2\thirdparty\linux-libs-a\nspr\include\" -I"C:\Panda3D-1.3.2\include\"
+</td></tr></table>
+Now, we need to make a .exe file out of this. To do that, use this command:
+<table class="code"><tr><td>
+g++ filename.o -o filename.exe -fPIC -L"C:\Panda3D-1.3.2\lib\" -lp3framework -lpanda -lpandafx -lpandaexpress -lp3dtoolconfig -lp3dtool -lp3pystub -L"C:\Panda3D-1.3.2\thirdparty\linux-libs-a\nspr\lib" -lpandanspr4
+</td></tr></table>
+
+To run your newly created executable, type:
+<table class="code"><tr><td>
+filename.exe
+</td></tr></table>
+
+And behold, your C++ Panda3D file!

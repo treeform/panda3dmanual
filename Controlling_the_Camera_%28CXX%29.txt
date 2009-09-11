@@ -1,0 +1,76 @@
+Panda3D comes with a function that enables you to move
+the camera using the mouse. To use this, insert:
+
+<pre class="codeblock">
+window->setup_trackball();
+</pre>
+
+just before your call to the main loop.
+The keys to navigate using this function are:
+
+<ul>
+<li>Left Button: pan left and right
+<li>Right Button: move forwards and backwards
+<li>Middle Button: rotate around the origin of the application
+<li>Right and Middle Buttons: roll the point of view around the view axis
+</ul>
+
+Go ahead and try this camera control system.  The
+problem with this camera control system is that it is sometimes
+awkward, it is not always easy to get the camera pointed in the
+direction we want.
+
+Instead, we want to have our camera position changed every frame. Because there is no basic implementation for [[tasks]] in C++ (yet), we have to write the main loop by ourselves. We can do this by making an infinite loop, in which the camera position gets updated and the function <code>framework.do_frame</code> gets called. All this function does is rendering the current frame. It returns false if the window is terminated, and the main loop should stop.
+Update your code as follows:
+
+<pre class="codeblock">
+#include "pandaFramework.h"
+#include "pandaSystem.h"
+
+PandaFramework framework;
+
+int main(int argc, char *argv[]) {
+    //open a new window framework
+  framework.open_framework(argc, argv);
+    //set the window title to My Panda3D Window
+  framework.set_window_title("My Panda3D Window");
+    //open the window
+  WindowFramework *window = framework.open_window();
+  NodePath cam = window->get_camera_group(); //get the camera and store it
+    //load the environment model
+  NodePath environ = window->load_model(framework.get_models(),"models/environment");
+  environ.reparent_to(window->get_render());
+  environ.set_scale(0.25,0.25,0.25);
+  environ.set_pos(-8,42,0);
+    //do the main loop:
+  ClockObject* clock; //create a clock object for time measurement
+  clock=ClockObject::get_global_clock();
+  Thread *current_thread = Thread::get_current_thread();
+  while(framework.do_frame(current_thread)) {
+    double time = clock->get_real_time(); //get the time in seconds
+    double angledegrees = time * 6.0; //the angle of the camera in degrees
+    double angleradians = angledegrees * (3.14 / 180.0); //in radians
+    cam.set_pos(20*sin(angleradians),-20.0*cos(angleradians),3); //set the position
+    cam.set_hpr(angledegrees, 0, 0); //set the hpr
+  }
+  //close the window framework
+  framework.close_framework();
+  return (0);
+}
+
+</pre>
+
+<b>Note:</b> It is not possible to update the camera's position while the trackball is enabled. To have this code work, you must <b>not</b> call the <code>setup_trackball()</code> function.
+
+The code in our home-made main loop calculates the desired position of
+the camera based on how much time has elapsed. To get this time, we use Panda3D's global ClockObject. (It is sometimes convenient
+to put these calculations in a separate function, but since we only have one
+task now, it's not much of a problem.) The camera rotates 6
+degrees every second.  The first two lines compute the desired
+orientation of the camera, first in degrees, then in radians.  The <code>set_pos</code> call actually sets the position of the camera.
+The <code>set_hpr</code> call actually sets the orientation.
+
+The camera should no longer be underground, and
+furthermore, the camera should now be rotating about the clearing:
+
+[[Image:Tutorial2.jpg]]

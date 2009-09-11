@@ -1,0 +1,193 @@
+On a wiki, it is customary to allow readers to edit content and structure. This is a brief overview of the editing and contributing process. The editing table of contents to the right contains more information on editing functions.
+
+== Creating a new page ==
+You can create a new page just by browsing to the non-existing page, automatically an edit form will appear (if you are logged in).
+== Editing basics ==
+===Review policy and conventions===
+
+:Make sure that you submit information which is relevant to the specific purpose of the wiki, or your content might be deleted. You can always use the talk pages to ask questions or check to see if your idea will be accepted. Please make note of the license your contributions will be covered with.
+
+=== Start editing ===
+:To start editing a wiki page, click the '''Edit this page''' (or just '''edit''') link at one of its edges. This brings you to the edit page: a page with a text box containing the ''wikitext'' - the editable code from which the server produces the finished page.
+
+===Type your changes===
+:You can just type your text. However, also using basic wiki markup (described in the next section) to make links and do simple formatting adds to the value of your contribution. Wikis have style guidelines available. If you follow these, your contributions will be more valuable as they won't need to be cleaned up later.
+
+===Summarize your changes===
+:Write a short edit summary in the small field below the edit-box. You may use shorthand to describe your changes, as described in the edit summary legend.
+
+===Preview before saving===
+:When you have finished, click '''Show preview''' to see how your changes will look '''before''' you make them permanent.  Repeat the edit/preview process until you are satisfied, then click '''Save page''' and your changes will be immediately applied to the article.
+
+==Most frequent wiki markup explained==
+Here are the 6 most frequently used types of wiki markup. If you need more help see Wikitext examples.
+<br clear="right" />
+{| border="1" cellpadding="2" style="background:#FFFF99"
+!width="1000" style="background:#FFFF99"|What it looks like
+!width="500" style="background:#FFFF99"|What you type
+|-
+|
+You can ''italicize text'' by putting 2 
+apostrophes on each side. 
+
+3 apostrophes will embolden '''the text'''. 
+
+5 apostrophes will embolden and italicize 
+'''''the text'''''.
+
+(4 apostrophes doesn't do anything special -- there's just ''''one left over''''.)
+|<pre>
+You can ''italicize text'' by putting 2 
+apostrophes on each side. 
+
+3 apostrophes will embolden '''the text'''. 
+
+5 apostrophes will embolden and italicize 
+'''''the text'''''.
+
+(4 apostrophes doesn't do anything
+special -- there's just ''''one left
+over''''.)
+</pre>
+|-
+|
+You should "sign" your comments on talk pages: <br />
+- Three tildes give your user name: [[User:Karl Wick|Karl Wick]] <br />
+- Four tildes give your user name plus date/time: [[User:Karl Wick|Karl Wick]] 07:46, 27 November 2005 (UTC) <br />
+- Five tildes give the date/time alone: 07:46, 27 November 2005 (UTC) <br />
+|<pre>
+You should "sign" your comments 
+on talk pages: <br />
+- Three tildes give your user
+name: ~~~ <br />
+- Four tildes give your user 
+name plus date/time: ~~~~ <br />
+- Five tildes give the 
+date/time alone: ~~~~~ <br />
+</pre>
+|-
+|
+<div style="font-size:150%;border-bottom:1px solid rgb(170,170,170);">Section headings</div>
+
+''Headings'' organize your writing into sections.
+The Wiki software can automatically generate
+a table of contents from them.
+
+<div style="font-size:132%;font-weight:bold;">Subsection</div>
+Using more equals signs creates a subsection.
+
+<div style="font-size:116%;font-weight:bold;">A smaller subsection</div>
+
+Don't skip levels, like from two to four equals signs.
+
+Start with 2 equals signs not 1 because 1 creates H1 tags which should be reserved for page title.
+|<pre>
+== Section headings ==
+
+''Headings'' organize your writing into sections.
+The Wiki software can automatically generate
+a table of contents from them.
+
+=== Subsection ===
+
+Using more equals signs creates a subsection.
+
+==== A smaller subsection ====
+
+Don't skip levels, 
+like from two to four equals signs.
+
+Start with 2 equals signs not 1 
+because 1 creates H1 tags
+which should be reserved for page title.
+</pre>
+|- id="lists"
+|
+* ''Unordered lists'' are easy to do:
+** Start every line with a star.
+*** More stars indicate a deeper level.
+*: Previous item continues.
+** A newline
+* in a list  
+marks the end of the list.
+*Of course you can start again.
+|<pre>
+* ''Unordered lists'' are easy to do:
+** Start every line with a star.
+*** More stars indicate a deeper level.
+*: Previous item continues.
+** A new line
+* in a list  
+marks the end of the list.
+* Of course you can start again.
+</pre>
+|-
+|
+# ''Numbered lists'' are:
+## Very organized
+## Easy to follow
+A new line marks the end of the list.
+# New numbering starts with 1.
+
+|<pre>
+# ''Numbered lists'' are:
+## Very organized
+## Easy to follow
+A new line marks the end of the list.
+# New numbering starts with 1.
+</pre>
+|-
+|
+===Links===
+Here's a link to the [[Main page]].
+|<pre>
+Here's a link to the [[Main page]].
+</pre>
+|-
+|
+You can link to a page section by its title:
+
+* [[Lighting#Point Lights]].
+
+If multiple sections have the same title, add
+a number. [[#Example section 3]] goes to the
+third section named "Example section".
+|<pre>
+
+You can link to a page section by its title:
+
+* [[Lighting#Point Lights]].
+
+If multiple sections have the same title, add
+a number. [[#Example section 3]] goes to the
+third section named "Example section".
+</pre>
+|-
+|
+You can link to non-existing pages, too.
+Anyone can create that page by just clicking on the link.
+|<pre>
+You can link to non-existing pages, too.
+Anyone can create that page by just clicking on the link.
+</pre>
+|-
+|
+You can also link to an external page:
+
+* [http://www.etc.cmu.edu Carnagie Mellon ETC].
+
+If you do not supply a link name,
+the link will show up like this:
+* [http://www.etc.cmu.edu]
+|<pre>
+
+You can also link to an external page:
+
+* [http://www.etc.cmu.edu Carnagie Mellon ETC].
+
+If you do not supply a link name,
+the link will show up like this:
+* [http://www.etc.cmu.edu]
+</pre>
+
+|}

@@ -1,0 +1,107 @@
+<span class="suppress-screenshots"></span>
+
+The next step is to cause the panda to actually
+move back and forth.  Add the following lines of code:
+
+<pre class="codeblock">
+#include "pandaFramework.h"
+#include "pandaSystem.h"
+
+#include "cIntervalManager.h"
+#include "cLerpNodePathInterval.h"
+#include "cMetaInterval.h"
+
+PandaFramework framework;
+
+int main(int argc, char *argv[]) {
+    //open a new window framework and set title
+  framework.open_framework(argc, argv);
+  framework.set_window_title("My Panda3D Window");
+  
+    //open the window
+  WindowFramework *window = framework.open_window();
+  NodePath cam = window->get_camera_group(); //get the camera and store it
+ 
+    //load the environment model
+  NodePath environ = window->load_model(framework.get_models(),"models/environment");
+  environ.reparent_to(window->get_render());
+  environ.set_scale(0.25,0.25,0.25);
+  environ.set_pos(-8,42,0);
+
+    //load our panda
+  NodePath pandaActor = window->load_model(framework.get_models(),"panda-model");
+  pandaActor.set_scale(0.005,0.005,0.005);
+  pandaActor.reparent_to(window->get_render());
+  
+    //load the walk animation
+  window->load_model(pandaActor,"panda-walk4");
+  window->loop_animations(0);
+
+    //create the lerp intervals needed to walk back and forth
+  PT(CLerpNodePathInterval) pandaPosInterval1;
+  pandaPosInterval1 = new CLerpNodePathInterval("pandaPosInterval1",13.0,CLerpInterval::BT_no_blend,
+                              true,false,pandaActor,window->get_render());
+  pandaPosInterval1->set_start_pos(LPoint3f(0,10,0));
+  pandaPosInterval1->set_end_pos(LPoint3f(0,-10,0));
+  PT(CLerpNodePathInterval) pandaPosInterval2;
+  pandaPosInterval2 = new CLerpNodePathInterval("pandaPosInterval2",13.0,CLerpInterval::BT_no_blend,
+                              true,false,pandaActor,window->get_render());
+  pandaPosInterval2->set_start_pos(LPoint3f(0,-10,0));
+  pandaPosInterval2->set_end_pos(LPoint3f(0,10,0));
+  PT(CLerpNodePathInterval) pandaHprInterval1;
+  pandaHprInterval1 = new CLerpNodePathInterval("pandaHprInterval1",3.0,CLerpInterval::BT_no_blend,
+                              true,false,pandaActor,window->get_render());
+  pandaHprInterval1->set_start_hpr(LPoint3f(0,0,0));
+  pandaHprInterval1->set_end_hpr(LPoint3f(180,0,0));
+  PT(CLerpNodePathInterval) pandaHprInterval2;
+  pandaHprInterval2 = new CLerpNodePathInterval("pandaHprInterval2",3.0,CLerpInterval::BT_no_blend,
+                              true,false,pandaActor,window->get_render());
+  pandaHprInterval2->set_start_hpr(LPoint3f(180,0,0));
+  pandaHprInterval2->set_end_hpr(LPoint3f(0,0,0));
+  
+    //create and play the sequence that coordinates the intervals
+  PT(CMetaInterval) pandaPace;
+  pandaPace = new CMetaInterval("pandaPace");
+  pandaPace->add_c_interval(pandaPosInterval1,0,CMetaInterval::RS_previous_end);
+  pandaPace->add_c_interval(pandaHprInterval1,0,CMetaInterval::RS_previous_end);
+  pandaPace->add_c_interval(pandaPosInterval2,0,CMetaInterval::RS_previous_end);
+  pandaPace->add_c_interval(pandaHprInterval2,0,CMetaInterval::RS_previous_end);
+  pandaPace->loop();
+
+    //do the main loop:
+  ClockObject* clock (ClockObject::get_global_clock()); //get the global clock object
+  Thread *current_thread = Thread::get_current_thread();
+  while(framework.do_frame(current_thread)) {
+    CIntervalManager::get_global_ptr()->step(); //step the interval manager
+    double time = clock->get_real_time(); //get the time in seconds
+    double angledegrees = time * 6.0; //the angle of the camera in degrees
+    double angleradians = angledegrees * (3.14 / 180.0); //in radians
+    cam.set_pos(20*sin(angleradians),-20.0*cos(angleradians),3); //set the position
+    cam.set_hpr(angledegrees, 0, 0); //set the hpr
+  }
+
+    //close the window framework
+  framework.close_framework();
+  return (0);
+}
+
+</pre>
+
+<i>Intervals</i> are tasks that change a property
+from one value to another over a specified period of time.  Starting
+an interval effectively starts a background process that modifies the
+property over the specified period of time. For example, consider the
+<code>pandaPosInterval1</code> above.  When that interval is
+started, it will gradually adjust the position of the panda from
+(0,10,0) to (0,-10,0) over a period of 13 seconds.  Similarly,
+when the <code>pandaHprInterval1</code> is started,
+the orientation of the panda will rotate 180 degrees over a period of 3 seconds.
+
+<i>MetaIntervals</i> are tasks that execute one interval
+after another.  The <code>pandaPace</code> sequence above
+causes the panda to move in a straight line, then turn, then in the
+opposite straight line, then to turn again.  The code <code>pandaPace->loop()</code> causes the MetaInterval to be started
+in looping mode.
+
+The result of all this is to cause the panda to pace
+back and forth from one tree to the other.

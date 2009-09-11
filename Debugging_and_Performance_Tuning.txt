@@ -1,0 +1,1 @@
+In this section you will learn how to debug your python game and how to tune up your performance, if it's slow.

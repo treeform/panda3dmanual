@@ -1,0 +1,45 @@
+The following sample code loads up an environment, puts the camera in
+the center of it, and generates the six faces of a cube map from the
+point of view of the camera:
+
+<table class="code"><tr><td><pre>
+scene = loader.loadModel('bvw-f2004--streetscene/street-scene.egg')
+scene.reparentTo(render)
+scene.setZ(-2)
+base.saveCubeMap('streetscene_cube_#.jpg', size = 256)
+</pre></td></tr></table>
+
+These are the six faces generated:
+
+Right:
+
+[[Image:Streetscene cube 0.jpg]]
+
+Left:
+
+[[Image:Streetscene cube 1.jpg]]
+
+Front:
+
+[[Image:Streetscene cube 2.jpg]]
+
+Back:
+
+[[Image:Streetscene cube 3.jpg]]
+
+Top:
+
+[[Image:Streetscene cube 4.jpg]]
+
+Bottom:
+
+[[Image:Streetscene cube 5.jpg]]
+
+And when they are assembled into a cube map, it looks like this:
+
+[[Image:Streetscene cube.jpg|The six faces as a cube]]
+
+Or, when we apply that cube map to a sphere, you can see there are
+absolutely no seams between the edges:
+
+[[Image:Streetscene sphere.jpg|The cube map applied to a sphere]]

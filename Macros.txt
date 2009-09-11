@@ -1,0 +1,21 @@
+== Summary ==
+
+This page describes the macros that are used throughout the Panda3D C++ project
+
+== Macros ==
+
+=== PUBLISHED ===
+
+The keyword PUBLISHED is used to mark methods that are to be made available to Python.
+
+It is akin to C++'s public, private, and protected; think of it as an uber-public. With the Sources.pp tree in place properly, the PUBLISHED keyword is all you need to use to expose your methods, although you will also need to add your new dll to the genPyCode command line after you have run make install: 
+
+<pre>
+genPyCode mynewlib.dll
+</pre>
+
+=== EXPCL_xxx ===
+
+The EXPCL_xxx prefix on a class definition tells the compiler which DLL the class is compiled into, for example EXPCL_PANDA means to compile into libpanda.dll.
+
+If you want to link a class into pview, or some other executable (not a dll), then you can just omit the EXPCL_ prefix altogether.

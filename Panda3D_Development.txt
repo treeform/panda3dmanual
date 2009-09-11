@@ -1,0 +1,25 @@
+== Summary ==
+
+This page is the head of an orphaned wiki hierarchy for Panda3D developers, that is for people who wish to directly modify the C++ code that comprises Panda3D.
+
+If you want to learn how to use Panda3D within your own project, you probably want the main Panda3D manual at: [[Main Page]].
+
+== Panda Development ==
+
+=== Macros ===
+
+*[[Macros]]
+
+=== Pointers ===
+
+*[[Pointers]]
+
+=== Classes ===
+
+*[[Geom]] (this also describes the GeomPrimitive, and its derivatives)
+*[[GeomVertexWriter]]
+*[[GeomVertexData]]
+
+=== Instructions for specific tasks ===
+
+*[[Creating a New Node Class]]

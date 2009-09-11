@@ -1,0 +1,58 @@
+With Panda3D running properly, it is now possible to
+load some grassy scenery.  Update your code as follows:
+
+<pre class="codeblock">
+#include "pandaFramework.h"
+#include "pandaSystem.h"
+
+PandaFramework framework;
+
+int main(int argc, char *argv[]) {
+    //load the window and stuff
+  framework.open_framework(argc, argv);
+  framework.set_window_title("My Panda3D Window");
+  WindowFramework *window = framework.open_window();
+
+    //load the environment model
+  NodePath environ = window->load_model(framework.get_models(),"models/environment");
+  environ.reparent_to(window->get_render());
+  environ.set_scale(0.25,0.25,0.25);
+  environ.set_pos(-8,42,0);
+
+    //do the rest
+  framework.main_loop();
+  framework.close_framework();
+  return (0);
+}
+</pre>
+
+The command <code>window->load_model(framework.get_models(),<i>path</i>)</code>
+loads the specified file, in this case the environment.egg file in the
+models folder.  The return value is a 'NodePath', effectively a
+pointer to the model.  Note that [[Panda Filename Syntax]] uses the
+forward-slash, even under Windows.
+
+Panda3D contains a data structure called the <i>scene
+graph</i>.  The scene graph is a tree containing all objects
+that need to be rendered.  At the root of the tree is an object named
+<code>render</code>. You can get the NodePath of render by calling <code>window->get_render()</code>. Nothing is rendered until it is first
+installed into the scene graph.
+
+To install the grassy scenery model into the scene
+graph, we use the method <code>reparent_to</code>.  This sets the
+parent of the model, thereby giving it a place in the scene graph.  Doing
+so makes the model visible.
+
+Finally, we adjust the position and scale of the model.
+In this particular case, the environment model is a little too large
+and somewhat offset for our purposes.  The <code>set_scale</code>
+and <code>set_pos</code> rescale and recenter the model.
+
+Go ahead and run the program.  You should see this:
+
+[[Image:Tutorial1.jpg]]
+
+The rock and tree appear to be hovering.  The camera
+is slightly below ground, and backface culling is making the ground
+invisible to us.  If we reposition the camera, the terrain will look
+better.

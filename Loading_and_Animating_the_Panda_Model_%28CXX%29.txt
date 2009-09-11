@@ -1,0 +1,58 @@
+Now that the scenery is in place, we will now load an animated panda.  Update your code to look like this:
+
+<pre class="codeblock">
+#include "pandaFramework.h"
+#include "pandaSystem.h"
+
+PandaFramework framework;
+
+int main(int argc, char *argv[]) {
+    //open a new window framework and set title
+  framework.open_framework(argc, argv);
+  framework.set_window_title("My Panda3D Window");
+  
+    //open the window
+  WindowFramework *window = framework.open_window();
+  NodePath cam = window->get_camera_group(); //get the camera and store it
+ 
+    //load the environment model
+  NodePath environ = window->load_model(framework.get_models(),"models/environment");
+  environ.reparent_to(window->get_render());
+  environ.set_scale(0.25,0.25,0.25);
+  environ.set_pos(-8,42,0);
+
+    //load our panda
+  NodePath pandaActor = window->load_model(framework.get_models(),"panda-model");
+  pandaActor.set_scale(0.005,0.005,0.005);
+  pandaActor.reparent_to(window->get_render());
+  
+    //load the walk animation
+  window->load_model(pandaActor,"panda-walk4");
+  window->loop_animations(0);
+
+    //do the main loop:
+  ClockObject* clock; //create a clock object for time measurement
+  clock=ClockObject::get_global_clock();
+  Thread *current_thread = Thread::get_current_thread();
+  while(framework.do_frame(current_thread)) {
+    double time = clock->get_real_time(); //get the time in seconds
+    double angledegrees = time * 6.0; //the angle of the camera in degrees
+    double angleradians = angledegrees * (3.14 / 180.0); //in radians
+    cam.set_pos(20*sin(angleradians),-20.0*cos(angleradians),3); //set the position
+    cam.set_hpr(angledegrees, 0, 0); //set the hpr
+  }
+
+    //close the window framework
+  framework.close_framework();
+  return (0);
+}
+
+</pre>
+
+
+Different from Python, you have to load the animation file as a normal model and reparent it to <code>render</code> just as you would do with a normal model.
+
+The command <code>loop_animations(0)</code> causes all animations to begin looping, since the walk animation is the only one at the moment. What that 0 is doing there is not necessary to know right now.
+The result is a panda walking in place, as if on a treadmill:
+
+[[Image:Tutorial3.jpg]]

@@ -1,0 +1,4 @@
+Now to swap textures in Panda3D you just need to find that geomnode, in our case suppose it's "face":
+<table class="code"><tr><td>
+actorName.actor.find("**/face").setTexture(newTexture,1)
+</td></tr></table>

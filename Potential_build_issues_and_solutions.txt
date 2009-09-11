@@ -1,0 +1,7 @@
+== Summary ==
+
+This page describes potential build issues that may arise, and possible solutions
+
+== Potential build issues and solutions ==
+
+[[Potential build issues and solutions, Windows platform]]

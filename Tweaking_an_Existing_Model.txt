@@ -1,0 +1,51 @@
+NOTE: This API is changing in Panda 1.1 I'll hold off explaining till it comes out.
+
+If you want to change part of an existing model you have to get the [[Manipulating a Piece of a Model||NodePath of the part]] you want to change. This <code>NodePath</code> will be holding a <code>GeomNode</code>, which are used to represent onscreen geometry. Every object that gets render in the scene graph eventually has <code>GeomNode</code> objects at its leaf.
+
+Note: For examples, the teapot included in the <code>.../models</code> directory will be used.
+
+<code>GeomNode</code> objects are actually wrappers around object from the <code>Geom</code> class. These object hold the primitives that actually get drawn to the screen. However, <code>Geom</code> objects can only be created when loading a model. See [[Creating Geometry from Scratch]] if you want to generate primitives.
+
+<h2>Geom Class</h2>
+Since the <code>Geom</code> is what actually defines drawable geometry, we will discuss it first. There are a number of subclasses that represent specific primitive (<code>GeomQuad</code>, <code>GeomTri</code>,...) but none of them have add meaningful functionality on top of the <code>Geom</code>. Therefore, just looking at the <code>Geom</code> will be enough.
+
+As stated above this class and its subclasses do not have public constructors defined. They are only made when loading model. To actually get a <code>Geom</code> object look below at the <code>GeomNode</code> class. However, for the purpose of exapmle code assume we already have <code>myGeom</code> setup.
+
+FINISHME
+
+
+<h2>GeomNode Class</h2>
+To get a specific <code>Geom</code> from a <code>GeomNode</code> you use the <code>getGeom(index)</code> where <code>index</code> is the number of the <code>Geom</code> you want. You must be careful though, since (just like [[Instancing]]) <code>Geom</code> objects can be shared between many <code>GeomNode</code> objects. If you want to alter a <code>Geom</code>, you should use <code>getUniqueGeom(index)</code> which returns a copy of the <code>Geom</code> object if it is used in more than one place.
+
+<table class="code"><tr><td>
+teapot=loader.loadModel('teapot')
+<br>body=teapot.find('**/body')
+<br>
+<br>#remeber the difference between a Node and a NodePath
+<br>bodyGeomNode=body.node()
+<br>
+<br>#just use 0 to get the "first" Geom
+<br>fstGeom=bodyGeomNode.getGeom(0)
+<br>sndGeom=bodyGeomNode.getUniqueGeom(1)
+</td></tr></table>
+
+
+If you want to add <code>Geom</code> to a <code>GeomNode</code> you can use the function <code>addGeom(newGeom, renderState)</code>. EXPLAINME: renderState. If renderState is not given, the <code>newGeom</code> completely inherits the <code>renderState</code> of it's parent. There is also <code>addGeomsFrom(otherGeomNode)</code> which effectively calls <code>addGeom</code> to all the <code>Geom</code> objects from <code>otherGeomNode</code>. There are also <code>removeGeom(index)</code> and <code>removeAllGeoms()</code> which repectively remove a certain piece of geometry and remove all pieces of geometry.
+
+<table class="code"><tr><td>
+handle=teapot.find('**/handle')
+<br>handleGeomNode=handle.node()
+<br>spout=teapot.find('**/spout')
+<br>spoutGeomNode=spout.node()
+<br>
+<br>bodyGeomNode.addGeom(spoutGeomNode.getGeom(0))
+<br>bodyGeomNode.addGeomsFrom(handleGeomNode)
+<br>
+<br>#after this, a call to bodyGeomNode.reomve(0) will remove the node that used <br>#&nbsp;&nbsp;&nbsp;to be indexed at 1
+<br>bodyGeomNode.remove(0)
+<br>bodyGeomNode.removeAllGeoms()
+</td></tr></table>
+
+You can also get the <code>RenderState</code> of a certain <code>Geome</code> using <code>getGeomState(index)</code>. You can also get the number of <code>Geom</code> objects in a <code>GeomNode</code> by using <code>getNumGeoms()</code>.
+
+See API Reference for advanced functionality.

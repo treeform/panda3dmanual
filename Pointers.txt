@@ -1,0 +1,114 @@
+== Summary ==
+
+This page describes the use of pointers in Panda3D sourcecode.
+
+== Introduction ==
+
+Pointers are dangerous, because they tend to be associated with new and delete operations, which can cause memory leaks if an object is forgotten by the program but not actually deleted from memory.
+
+To mitigate this issue, Panda3D uses two macros which incorporate automatic reference counting:
+
+<pre>
+PT( ClassName ) pMyObjectPointer;  // pointer to ClassName, with reference counting
+CPT( ClassName ) pMyConstObjectPointer;  // const pointer to ClassName with reference counting
+</pre>
+
+== Pointers in Panda3D ==
+
+Two macros are used for pointers in Panda:
+<pre>
+#define PT(type) PointerTo< type >
+#define CPT(type) ConstPointerTo< type >
+</pre>
+
+You can use these for example like this:
+<pre>
+PT( SomeClassName ) *pMyPointerToClassNameObject; // pMyPointerToClassNameObject is a pointer to SomeClassName, with reference counting
+</pre>
+
+== Headerfile ==
+
+Headerfile is at: panda/src/express/pointerTo.h:
+
+== Key points for usage with existing classes ==
+
+Basically, you can use the PT and CPT macros for objects which you create with new; and these objects will automatically be deleted when the variables go out of scope etc.
+
+You dont need to call delete on these objects.  In fact, you probably shouldnt (?).
+
+Dont use them for automatic variables or bad things will happen!
+
+The classes used with these macros must inherit from ReferenceCount or equivalent (see Full description, below).
+
+== Full description, notes on creating new classes ==
+
+pointerTo.h defines the classes PointerTo and ConstPointerTo (and
+their abbreviations, PT and CPT).  These should be used in place of
+traditional C-style pointers wherever implicit reference counting
+is desired.
+
+<pre>
+The syntax is:                   instead of:
+
+PointerTo<MyClass> p;            MyClass *p;
+PT(MyClass) p;
+
+ConstPointerTo<MyClass> p;       const MyClass *p;
+CPT(MyClass) p;
+</pre>
+
+PointerTo and ConstPointerTo will automatically increment the
+object's reference count while the pointer is kept.  When the
+PointerTo object is reassigned or goes out of scope, the reference
+count is automatically decremented.  If the reference count reaches
+zero, the object is freed.
+
+Note that const PointerTo<MyClass> is different from
+ConstPointerTo<MyClass>.  A const PointerTo may not reassign its
+pointer, but it may still modify the contents at that address.  On
+the other hand, a ConstPointerTo may reassign its pointer at will,
+but may not modify the contents.  It is like the difference between
+(MyClass * const) and (const MyClass *).
+
+In order to use PointerTo, it is necessary that the thing pointed
+to--MyClass in the above example--either inherits from
+ReferenceCount, or is a proxy built with RefCountProxy or
+RefCountObj (see referenceCount.h).  However, also see
+PointerToArray, which does not have this restriction.
+
+It is crucial that the PointerTo object is only used to refer to
+objects allocated from the free store, for which delete is a
+sensible thing to do.  If you assign a PointerTo to an automatic
+variable (allocated from the stack, for instance), bad things will
+certainly happen when the reference count reaches zero and it tries
+to delete it.
+
+It's also important to remember that, as always, a virtual
+destructor is required if you plan to support polymorphism.  That
+is, if you define a PointerTo to some base type, and assign to it
+instances of a class derived from that base class, the base class
+must have a virtual destructor in order to properly destruct the
+derived object when it is deleted.
+
+== Observations on how this works ==
+
+The PointerTo class overrides * and ->, so that the pointer object behaves just like an actual pointer to your object would:
+
+<pre>
+INLINE To &operator *() const;
+INLINE To *operator -> () const;
+</pre>
+
+== Errors that can arise ==
+
+*If you get wierd messages about iRef when you compile, the class to which you want to point probably doesnt inherit from ReferenceCount, or equivalent.
+**You could patch the class to inherit from ReferenceCount, or
+**You could just use a normal pointer (but be sure to call delete when you've finished using the object!)
+*If you get messages about PointerTo<T> doesnt contain method xxx, check that you are correctly using the operator * or -> on your pointer variable.  ie maybe you wrote:
+<pre>
+SomePointerObject.SomeMethod()
+</pre>
+instead of:
+<pre>
+SomePointerObject->SomeMethod()
+</pre>

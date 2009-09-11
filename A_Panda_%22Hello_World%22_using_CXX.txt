@@ -1,0 +1,37 @@
+<h2>Recommendation: Use Python</h2>
+
+Caution: we do not recommend writing Panda3D programs in 100% C++.
+Instead, we suggest writing your programs in mostly-python, with a 
+little C++ here and there.  The reasons we suggest this are:
+
+First, because we've tried it very successfully.  Both Disney and
+Carnegie-Mellon have been creating applications in python with excellent
+results.  All the commercial Disney games that use Panda3D are written
+in mostly-python.  It is very easy to attain
+excellent performance using mostly-python, and the development
+is a lot quicker and easier than using C++.
+
+Second, there are parts of Panda3D that are written in python.  These are
+not the speed-critical parts.  For instance, the scene graph browser is
+written in python.  The heads-up-display code is in python.  If you reject
+python entirely, you lose access to a lot of important functionality.
+
+Third, the entire Panda3D manual is in python.  Also, all the sample programs
+are in python.  It is much harder to learn Panda3D if you try to 
+translate the manual from python to C++ at the same time as you're
+trying to learn Panda3D.  
+
+<h2>So, You're Determined to Use C++</h2>
+
+Ah well, we tried to talk you out of it, but you're determined...
+
+This tutorial is called "A Panda Hello World."  It is a typical example
+of a simple Panda3D program.  Walking through this tutorial will enable you to
+obtain some limited familiarity with the Panda3D API, without having to learn
+the entire thing.
+
+The program that we are going to create will load up
+a small scene containing some grass and a panda. The panda will be
+animated to walk back and forth over the grass.
+
+<b>Note:</b> This tutorial is intended for C++ usage only. For the Python equivalent of this tutorial, click [[A Panda "Hello World" using Python|here]].

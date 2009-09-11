@@ -1,0 +1,37 @@
+To start Panda3D, create a text file and save it with a .cxx extension. [http://www.pspad.com PSPad] is a good text-editor with C++ highlighting, but any text editor will work. Enter the following text into your C++ file:
+
+<pre class="codeblock">
+#include "pandaFramework.h"
+#include "pandaSystem.h"
+
+PandaFramework framework;
+
+int main(int argc, char *argv[]) {
+    //open a new window framework
+  framework.open_framework(argc, argv);
+    //set the window title to My Panda3D Window
+  framework.set_window_title("My Panda3D Window");
+    //open the window
+  WindowFramework *window = framework.open_window();
+
+  //here is room for your own code
+
+    //do the main loop, equal to run() in python
+  framework.main_loop();
+    //close the window framework
+  framework.close_framework();
+  return (0);
+}
+</pre>
+For information about the Window Framework to open a window, click [[The Window Framework|here]].
+
+<i>pandaFramework.h</i> and <i>pandaSystem.h</i> load most of the Panda3D modules. The <i>main_loop()</i> subroutine contains the Panda3D
+main loop. It renders a frame, handles the background tasks, and
+then repeats.  It does not normally return, so it only needs to be called once and must be the last line in your script. In this particular example,
+there will be nothing to render, so you should expect a window
+containing an empty grey area.
+
+To run your program, follow the compile steps explained on [[How to build a CXX Panda3D game|this page]].
+
+If Panda3D has been installed properly, a gray window titled <i>My Panda3D Window</i> will appear.
+There is nothing we can do with this window, but that will change shortly.

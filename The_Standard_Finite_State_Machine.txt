@@ -1,0 +1,63 @@
+Where the classic finite state machine required one large function to define all states of a FSM, the current finite state machine system creates these states implicitly. To prevent confusion, it may be best to create this finite state machine as its own class.
+
+<table class="code"><tr><td>
+from direct.fsm import FSM
+<br>from direct.fsm import State
+<br>
+<br>class NewFSM (FSM.FSM):
+</td></tr></table>
+
+Like the classic finite state machine, this machine requires enter and exit functions. The name of the state is derived from the names of the entrance and exit functions, and is usually capitalized. There is also a third function, a filter function that may be called for each state. This filter function is called when a request for transition is made, and it checks the current state’s filter to see if it is indeed a legal transition. If there is no filter function for a state, then a default filter command is called, which will change the state. However, if there is a filter function provided for the state, then the default filter command will simply reject any transition.
+
+The traffic light finite state machine is provided as an example of how to write for the new finite state machine system.
+
+<table class="code"><tr><td>
+from direct.fsm import FSM
+<br>from direct.fsm import State
+<br>class NewStyle(FSM.FSM):
+<br>
+<br>&nbsp;&nbsp;def enterRed(self, oldState, newState):
+<br>&nbsp;&nbsp;&nbsp;&nbsp;print "enterRed(self, '%s', '%s')" % (oldState, newState)
+<br>
+<br>&nbsp;&nbsp;def filterRed(self, request, args):
+<br>&nbsp;&nbsp;&nbsp;&nbsp;print "filterRed(self, '%s', %s)" % (request, args)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;if request == 'advance':
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Green'
+<br>&nbsp;&nbsp;return self.defaultFilter(request, args)
+<br>
+<br>&nbsp;&nbsp;def exitRed(self, oldState, newState):
+<br>&nbsp;&nbsp;&nbsp;&nbsp;print "exitRed(self, '%s', '%s')" % (oldState, newState)
+<br>
+<br>&nbsp;&nbsp;def enterYellow(self, oldState, newState):
+<br>&nbsp;&nbsp;&nbsp;&nbsp;print "enterYellow(self, '%s', '%s')" % (oldState, newState)
+<br>
+<br>&nbsp;&nbsp;def filterYellow(self, request, args):
+<br>&nbsp;&nbsp;&nbsp;&nbsp;print "filterYellow(self, '%s', %s)" % (request, args)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;if request == 'advance':
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Red'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;return self.defaultFilter(request, args)
+<br>
+<br>&nbsp;&nbsp;def exitYellow(self, oldState, newState):
+<br>&nbsp;&nbsp;&nbsp;&nbsp;print "exitYellow(self, '%s', '%s')" % (oldState, newState)
+<br>
+<br>&nbsp;&nbsp;def enterGreen(self, oldState, newState):
+<br>&nbsp;&nbsp;&nbsp;&nbsp;print "enterGreen(self, '%s', '%s')" % (oldState, newState)
+<br>
+<br>&nbsp;&nbsp;def filterGreen(self, request, args):
+<br>&nbsp;&nbsp;&nbsp;&nbsp;print "filterGreen(self, '%s', %s)" % (request, args)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;if request == 'advance':
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'Yellow'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;return self.defaultFilter(request, args)
+<br>
+<br>&nbsp;&nbsp;def exitGreen(self, oldState, newState):
+<br>&nbsp;&nbsp;&nbsp;&nbsp;print "exitGreen(self, '%s', '%s')" % (oldState, newState)
+</td></tr></table>
+
+The new finite state machine uses the filter functions to determine the new state. Instead of having to provide the actual name of the state, this example used the string “advance.” With this, the filter function called knew which state to move to. Otherwise, it returned the default filter. Since there is an existing filter for the state, the default filter simply sends a message saying that the request has been denied.
+
+Just like the classic finite state machine, the standard one has a request command. It is also able to force a transition.
+
+<table class="code"><tr><td>
+request.(‘<String>’)
+<br>forceTransition(‘<State Name>’)
+</td></tr></table>

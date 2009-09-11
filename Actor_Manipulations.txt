@@ -1,0 +1,50 @@
+If an actor has been rigged, then there will be joints. It is possible to access a specific joint and manipulate it. This makes a child node with its own NodePath, which will then let it be manipulated. Even though pre-generated animations may have been created with the help of IK, Panda3D has no such physics engine for it. This means that even through a joint may be controlled, and the joint does affect its connected parts, no inverse kinematics will be applied.
+
+There are two methods for revealing joints, controlJoint and exposeJoint.
+They each have an argument 'Model Node' which is generally the string, “modelRoot.”. They also both want the name of the joint. You can look at the name of the bone in a modeling package, or look for a string such as <code>&lt;Joint&gt; Femur</code> inside of an egg file.
+
+If you only want to get location/rotation information about the joint but don't need to change anything yourself.
+
+<table class="code"><tr><td>
+NodePath=ModelNodePath.exposeJoint(None,‘Model Node',‘Joint Name')
+</td></tr></table>
+
+This creates a new NodePath from the NodePath of the actor that holds the joint. You can reparent objects to this node, and use functions such as getPos(), getHpr(), etc. The transformation of the object that you pass as the first argument to exposeJoint gets directly controlled by the joint. You will not be able to control it independantly, so this argument is often 'None', which creates a dummy object in hte hiearchy.
+
+<table class="code"><tr><td>
+NodePath=ModelNodePath.controlJoint(None,‘Model Node',‘Joint Name')
+</td></tr></table>
+
+This creates a new NodePath from the NodePath of the actor that holds the joint. You can move this object however you want. If you want to use this joint as part of an animation as well you will need to modify the skeleton with optchar as described below.
+
+<h2>egg-optchar</h2>
+
+<b>Warning:</b> the following technique is only needed if you want to animate and control a single joint at the same time.  In other words, it's relevant if you want your control movements and the animation movements to be added together. This is very uncommon.  Normally, you would want to completely control some of the joints, and let the animation control the other joints.  Think twice before using this method - are you <i>sure</i> this is really what you need?
+
+<b>Warning:</b> We are not sure if this method works.  Or rather, we're fairly sure that it can be made to work, but we're also fairly sure that this description is missing certain critical steps.
+
+When you use controlJoint, it overrides the animation channel that is controlling the joint.  This means that any motion stored in the animation file will be completely ignored.  There is a program named egg-optchar that allows you to add extra bones into the skeleton so that after the model is animated, you can also control the joints in panda.
+
+Example:
+
+You have a model arm.egg,with the hiearchy bArm1,bArm2,bArm3,bArm4.
+
+<p classw="manual">You run this command at the command prompt: </p>
+<p classw="manual"><strong>egg-optchar Arm.egg -o Arm2.egg<br>
+  -new bArm1_2,bArm1 -p bArm1_2, -p bArm1,bArm1_2 -p bArm1_2,<br>
+  -new bArm2_2,bArm2 -p bArm2_2, -p bArm2,bArm2_2 -p bArm2_2,bArm1 <br>
+  -new bArm3_2,bArm3 -p bArm3_2, -p bArm3,bArm3_2 -p bArm3_2,bArm2 <br>
+  -new bArm4_2,bArm4 -p bArm4_2, -p bArm4,bArm4_2 -p bArm4_2,bArm3 <br>
+-keepall</strong></p>
+
+Now the hierarchy lookslike this- bArm1, bArm2_2, bArm2, bArm3_2, bArm3, bArm4_2, bArm4. Each of the new bones is right above the bone it is duplicating, which allows your changes to be inherited through the skeleton while the animations to continue to work.
+
+<strong>-new bArm2_2,bArm2</strong> creates a new joint called bArm2_2 and reparents it to the existing joint bArm2. The local transformation of bArm2_2 is 
+the identity so it's world transformation is the same as bArm1.
+
+<strong>-p bArm2_2,</strong> reparents  bArm2_2 to the root, it's world transformation still preserved, so it is still in the same location and orientation as bArm2
+
+<strong>-p bArm2,bArm2_2</strong> reparents the bArm2 joint (and therefore anything attached to the bArm2) to   bArm2_2. Because of the wrt reparent and the fact that bArm2 and  bArm2_2 have the same location and orientation, bArm2 
+ends up with a local transformation of the identity.
+
+<strong>-p bArm2_2,bArm1</strong>  finally reparents  bArm2_2 to bArm1 (which bArm2 used to be parented to.) Now   bArm2_2 has the same local transformation  that bArm2 did before this whole rearrangement occurred.

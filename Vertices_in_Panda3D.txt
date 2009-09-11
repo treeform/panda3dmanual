@@ -1,0 +1,133 @@
+<h2>How Panda Stores Vertex Information</h2>
+As with any major 3D engine, geometry in Panda3D is primarily defined by vertices.  So before we discuss how to actually make geometry we have to discuss how Panda3D handles them.<b>The following information only applies to Panda3D 1.1.</b> For more information you can visit the [http://manageddreams.com/pandawiki/  Panda Developers Wiki]
+
+<h2>Vertex Format</h2>
+In order to define a vertex Panda3D has to know what format the vertex has. The format decides what information the vertex can store(such as color, texture coordinate, normals, etc..). That information is stored in an object from the <code>GeomVertexFormat</code> class. Panda3D comes with several predefined formats which you can get from the <code>GeomVertexFormat.get*()</code> family of functions. The naming format for these functions are:
+
+<center><table>
+<tr><td><b>V3</b></td><td>This means the position of the vertex is encoded in the format. All formats begin with this.</td></tr>
+
+<tr><td><b>n3</b></td><td>This means the normal (3 components) of each vertex is encoded in the format.</td></tr>
+
+<tr><td><b>cp&nbsp;or&nbsp;c4</b></td><td>This means the color of each vertex is encoded in the format. <b>cp</b> means the color will be packed DirectX style while <b>c4</b> means the color will be stored in four bytes, OpenGL style. Panda will automatically convert the types at runtime if you are not using the native backend (cp for OpenGl or c4 for DirectX).</td></tr>
+
+<tr><td><b>t2</b></td><td>This means the texture coordinates (2 components) of each vertex are encoded in the format.</td></tr>
+</table></center>
+
+You can omit options you dont want but the formats have to be added in the order listed above. For example:
+<table class="code"><tr><td>
+&nbsp;#this is valid 
+<br>GeomVertexFormat.getV3n3()
+<br>#this isnt valid(V3 must always come first)
+<br>GeomVertexFormat.getn3V3()
+<br>#this is valid 
+<br>GeomVertexFormat.getV3cpt2()
+<br>#this isnt valid (color must come before texture)
+<br>GeomVertexFormat.getV3t2cp()
+<br>#this is plain wrong 
+<br>GeomVertexFormat.getcpV3t2n3()
+</td></tr></table>
+
+<h2>Making Your Own Custom Format</h2>
+In addition to the formats that come with Panda you can define your own. However this is advance usage and will only be touched upon here. See the Panda 1.1 documentation (which should be out soon) for more information. <code>GeomVertexFormat</code> is really a container of <code>GeomVertexArrayFormat</code> objects.These objects are made up of <code>GeomVertexColumn</code> objects which describe what attributes the format encodes in the vertices. Having one <code>GeomVertexArrayFormat</code> object with all the <code>GeomVertexColumn</code> objects is practically the same as having a seperate <code>GeomVertexArrayFormat</code> object for each <code>GeomVertexColumn</code>. The following example should make things clearer:
+
+<table class="code"><tr><td>
+format=GeomVertexFormat()
+<br>
+<br>formatArray=GeomVertexArrayFormat()
+<br>
+<br>#we use the addColumn(name, numComponents, NumericType, Contents) function
+<br>#Contents tell Panda how to update the information, if neccessary
+<br>#i.e. if you apply a transformation to this geometry all columns that have <br>#Geom.CPoint for Contents will be updated appropriately
+<br>
+<br>#the hard way to get the V3n3cpt2 format
+<br>formatArray.addColumn(InternalName.make("vertex"), 3,Geom.NTFloat32, Geom.CPoint)
+<br>formatArray.addColumn(InternalName.make("color"), 4,Geom.NTPackedDcba, Geom.CColor)
+<br>formatArray.addColumn(InternalName.make("normal"), 3,Geom.NTFloat32, Geom.CVector)
+<br>formatArray.addColumn(InternalName.make("texcoord"), 2,Geom.NTFloat32, Geom.CTexcoord)
+<br>
+<br>#if we can keep adding more GeomVertexArrayFormat objects as long as none of <br>#the columns have the same name
+<br>format.addArray(formatArray)
+<br>
+<br>#we have to register formats before we use them.
+<br>format=GeomVertexFormat.registerFormat(format)
+<br>
+<br>#now format can be used just as any other GeomVertexFormat
+</td></tr></table>
+
+None of the <code>GeomVertexArrayFormat</code> objects can have <code>GeomVertexColumn</code> objects with the same name. Furthermore, the column names "vertex", "color", "normal", and "texcoord" are the only attributes that directly map to their counterpart ("vertex" will hold the current position of the vertex in Panda, "color" will hold the current color assigned through Panda, etc...). The standard formats above are already setup to use these default names. Any attributes you add other than these have no meaning to Panda (not unlike the <code>setTag</code> interface for NodePaths).
+
+
+
+<h2>Vertex Data</h2>
+<code>GeomVertexData</code> objects are used to hold the information encoded in vertices. They have a row for each vertex and a column for each attribute the vertex should have (i.e. color, etc...). You need to have at least one of these objects before you can make any vertices of your own. You can create them using <code>GeomVertexData(name, format, usageHint)</code>. <code>name</code> is just the arbitrary name you want to give it. <code>format</code> is an object from the <code>GeomVertexFormat</code> class. This lets the <code>GeomVertexData</code> object know how many columns it should have. The last parameter <code>usageHint</code> tells Panda what optimizations it can perform on the vertices in this <code>GeomVertexData</code> object. The types of usage hints are:
+
+<center><table>
+<tr><td><b>Geom.UHClient</b></td><td>Don't attempt to upload the data; always keep it on the client.  This is used for very special purposes only; typically you would use Geom.UHStream instead.</td></tr>
+<tr><td><b>Geom.UHStream</b></td><td>For objects that are going to be rendered a few times and then discarded.</td></tr>
+<tr><td><b>Geom.UHDynamic</b></td><td>For objects that will have their data modified by the program.</td></tr>
+<tr><td><b>Geom.UHStatic</b></td><td>For objects that will not have their state change during the program (This does not count animations or scene graph transformations).</td></tr></table></center>
+These hints are ordered from most dynamic to most static.  The most common usage hint, by far, is <code>Geom.UHStatic</code>; if you have any uncertainty, you should probably use this one.
+
+Using the constructor is the only functionality of the <code>GeomVertexData</code> class that you should really use. Use <code>GeomVertexReader</code> to read the information in a <code>GeomVertexData</code> object or <code>GeomVertexWriter</code> to change/add information (both classes are discussed below).
+
+An example:
+<table class="code"><tr><td>
+format=GeomVertexFormat.getV3n3cpt2()
+<br>
+<br>#use this if you want to create vertices whose information wont change often
+<br>myVertexData=GeomVertexData("holds my vertices", format, Geom.UHStatic)
+</td></tr></table>
+
+<h2>Reading and Writing Vertex Information</h2>
+Messing around directly with <code>GeomVertexData</code> objects directly leaves a lot of room for error. The preferred way to read/write information from/to a <code>GeomVertexData</code> object is to use the <code>GeomVertexReader</code> and <code>GeomVertexWriter</code> classes. Both are optimized for reading/writing down the same column (the same attribute). You can change columns if you need to using their <code>setColumn</code> functions, but if you have to change columns often it is more efficient to create multiple <code>GeomVertexReader</code>/<code>GeomVertexWriter</code> objects, one for each column. 
+
+Whenever you perform a read/write function with these classes they automatically move down to the next row (next vertex). You can get the row you are currently on by calling <code>getReadRow()</code> and <code>getWriteRow()</code> respectively. You can also set the row using the <code>setRow(newRow)</code> function for both classes. To find out if you are at the end of column use <code>isAtEnd()</code>.
+
+If you are reading and writing at the same time you must create the <code>GeomVertexWriter</code> objects before <code>GeomVertexReader</code> objects. However using the class <code>GeomVertexRewriter</code>, which has the functionality of both classes, is the preferred way to read/write data at the same time.
+
+<h2>GeomVertexWriter</h2>
+This class has two sets of functions. The <code>setData*(...)</code> functions will crash if you try to write when <code>isAtEnd()</code> is True. Use this set of functions if you wish to modify the vertices in a <code>GeomVertexData</code> object but not add to them. The <code>addData*(...)</code> functions will automatically add a row to the <code>GeomVertexData</code> object if it reaches the end.
+
+The syntax is the same for both sets of functions. You have <code>setData</code> or <code>addData</code> followed by the number of components (1,2,3 or 4) and then followed by the type(i for integer or f for float). For example:
+
+<table class="code"><tr><td>
+&nbsp;#assume a V3n3cpt2 format
+<br>#the constructor takes the GeomVertexData object you want to modify and the column you want 
+<br>#to go down. If you dont specify the column you start out at the zeroth column in vdata.
+myWriter=GeomVertexWriter(vdata, "vertex")
+<br>
+<br>#this will crash if there are no vertices
+<br>myWriter.setData3f(0.0,0.0,0.0)
+<br>
+<br>#this will work no matter what
+<br>myWriter.addData3f(0.0, 0.0, 0.0)
+<br>
+<br>#now we want to edit the texture coordinats
+<br>myWriter=GeomVertexWriter(vdata, "texcoord")
+<br>
+<br>#now we use addData2f instead since this is only two components
+<br>myWriter.addData2f(0.0,0.0)
+</td></tr></table>
+
+All the <code>setData</code> and <code>addData</code> functions have a vector counterpart where appropriate.
+
+<h2>GeomVertexReader</h2>
+This class only has one set of functions, the <code>getData*(....)</code> functions. Their naming syntax follows the same rules as the <code>setData</code> and <code>addData</code> functions but you can only use "f" as the type. The <code>getData*(...)</code> functions all return vecotrs of the appropriate type when neccessary (Vec4 for four components, but just the number for one component attributes).
+
+A brief example:
+<table class="code"><tr><td>
+&nbsp;#assume a V3n3cpt2 format
+<br>#the constructor takes the GeomVertexData object you want to read and the column you want 
+<br>#to go down. If you dont specify the column you start out at the zeroth column in vdata.
+myReader=GeomVertexReader(vdata, "vertex")
+<br>
+<br>#this will crash if there are no vertices
+<br>position=myReader.getData3f()
+<br>
+<br>#now we want to read the texture coordinats
+<br>myReader=GeomVertexReader(vdata, "texcoord")
+<br>
+<br>#now we use getData2f instead since this is only two components
+<br>texcoord=myReader.getData2f()
+</td></tr></table>

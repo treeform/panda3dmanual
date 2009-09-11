@@ -1,0 +1,46 @@
+<h1>Panda Version 1.0.903 (Not available to the public just yet)</h1>
+
+<h2>Issues</h2>
+<ul>
+<li>By default, the new Panda is case sensitive. To disable, add the following line to your config.prc file:
+<p><code> vfs-case-sensitive 0</code></p>
+</ul>
+<h2>Syntax Changes </h2>
+<ul>
+<li>NodePath.setLight now only takes a NodePath containing a light. 
+<li>You can now wrap a light in a NodePath without it crashing (no more upcasting)
+<li>Traverser.addCollider now only takes NodePaths
+<li>Panda Objects have been changed from python classes to python types. As a result, you cannot store variables on them.
+
+   <p>  <code>
+      #This will crash <br>
+      a=NodePath("a")  <br>
+      a.myVariable=5   <br>
+       </code>
+   </p> 
+<li>You cannot import Panda objects from pandac
+<p>
+<code>
+   #wrong <br>
+   from pandac.Geom import * <br>
+   #right <br>
+   from pandac.PandaModules import *
+</code>
+</p>
+</ul>
+
+<h2> New Features </h2>
+<ul>
+<li>AVI movie textures are now supported through loader.loadTexture 
+<li>Shaders now function differently. see Cg shader manual page for details
+
+<li>There is new functionality on NodePaths for storing python objects.
+<p>
+<code>
+   a=NodePath("a")<br>
+   a.setPythonTag("myOBject",myPythonObject)<br>
+   a.getPythonTag("myObject").doSomething()<br>
+</code>
+</p>
+<li>Geometric data manipulation is now done using GeomVertexReader, GeomVertexWriter, and GeomVertexRewriter
+</ul>

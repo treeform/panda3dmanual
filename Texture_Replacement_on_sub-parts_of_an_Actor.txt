@@ -1,0 +1,16 @@
+
+Every model, when loaded, becomes a <i>modelnode</i> in the scene graph.  Beneath the <i>modelnode</i> are one or more <i>geomnodes</i> containing the actual polygons.  To change the texture of a piece of a model, you need a pointer to the relevant geomnode.
+
+In order to obtain such a pointer, you must first ensure that the relevant geometry is in a <i>geomnode</i> of its own (and not merged with all the other geometry).  In other words, you must ensure that panda's optimization mechanisms do not cause the geometry to be merged with the geometry of the rest of the model. While normally this optimization is a good thing, if you want to change textures on a specific part of the model (for example, just a character's face) you will need this geometry to be separate.
+
+This is where the utility program <i>egg-optchar</i> is helpful. Among other things, egg-optchar allows you to label a section of a model for later manipulation.  Once you have labeled a piece of geometry, panda's optimization mechanisms will not fold it in to the rest of the model.
+
+Your first step is to note the name of the object in your modeling program.  For example, suppose you want to control the texture of a model's head, and suppose (hypothetically) the head is labeled "Sphere01" in your modeling program.  Use egg-optchar to tell panda that "Sphere01" deserves to be kept separate and labeled:
+
+egg-optchar -flag Sphere01=theHead myEggFile.egg
+
+The "-flag" switch will ensure that panda does not rearrange the geometry at that node, folding it into the model as a whole.  It also assigns the geometry a meaningful name.
+
+To swap textures on the head, you must search the scene graph for the necessary geomnode.  The relevant function is <i>node.find</i>: 
+
+myActor.actor.find("**/theHead").setTexture(newTexture,1)

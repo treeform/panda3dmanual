@@ -1,0 +1,70 @@
+
+<h2>Where to Find Attrib Documentation</h2>
+
+There are three places to look for RenderAttrib documentation:
+
+1. An attrib may have a section here in the manual under "Render Attributes."
+
+2. An attrib may be too minor to deserve its own section.  In that case, it will be listed here, under "Other Attributes."
+
+3. An attrib may be so complex that it warrants an entire chapter of the manual.  A good example would be the TextureAttrib.
+
+Regardless, <i>all</i> attribs should be listed in [[Render Attributes|the intro to this chapter.]]  From there, you can follow the link to the appropriate manual section.
+
+<h2>List of All Attributes</h2>
+
+<br><br><li><b>[[Alpha Testing|AlphaTestAttrib]]</b>: Hides part of the model, based on the texture's alpha channel.
+
+<br><br><li><b>[[#AntialiasAttrib|AntialiasAttrib]]</b>: Controls full-screen antialiasing and polygon-edge antialiasing.
+
+<br><br><li><b>[[#AudioVolumeAttrib|AudioVolumeAttrib]]</b>: Applies a scale to audio volume for positional sounds.
+
+<br><br><li><b>[[Auxiliary Bitplanes|AuxBitplaneAttrib]]</b>: Causes shader generator to produce extra data.
+
+<br><br><li><b>[[Clip Planes|ClipPlaneAttrib]]</b>: Slices off a piece of the model, using a clipping plane.
+
+<br><br><li><b>[[Tinting and Recoloring|ColorAttrib]]</b>: Tints the model.  Only works if the model is not illuminated.
+
+<br><br><li><b>[[Transparency and Blending|ColorBlendAttrib]]</b>: This specifies how colors are blended into the frame buffer, for special effects.
+
+<br><br><li><b>[[Tinting and Recoloring|ColorScaleAttrib]]</b>: Modulates vertex colors with a flat color.
+
+<br><br><li><b>[[#ColorWriteAttrib|ColorWriteAttrib]]</b>: Causes the model to not affect the R, G, B, or A channel of the framebuffer.
+
+<br><br><li><b>[[#CullBinAttrib|CullBinAttrib]]</b>: Controls the order in which Panda renders geometry.
+
+<br><br><li><b>[[#CullFaceAttrib|CullFaceAttrib]]</b>: Causes backfaces or frontfaces of the model to be visible.
+
+<br><br><li><b>[[#DepthOffsetAttrib|DepthOffsetAttrib]]</b>: Causes the Z-buffer to treat the object as if it were closer or farther.
+
+<br><br><li><b>[[#DepthTestAttrib|DepthTestAttrib]]</b>: Alters the way the Z-buffer affects the model.
+
+<br><br><li><b>[[#DepthWriteAttrib|DepthWriteAttrib]]</b>: Controls whether or not the model affects the Z-buffer.
+
+<br><br><li><b>[[#DrawMaskAttrib|DrawMaskAttrib]]</b>: Controls which cameras can see which objects.
+
+<br><br><li><b>[[Fog|FogAttrib]]</b>: Causes the model to be obscured by fog if it is far from the camera.
+
+<br><br><li><b>[[Lighting|LightAttrib]]</b>: Causes the model to be illuminated by certain lights.
+
+<br><br><li><b>[[Light Ramps|LightRampAttrib]]</b>: Enables HDR tone mapping or cartoon shading.
+
+<br><br><li><b>[[Materials|MaterialAttrib]]</b>: Changes the way the model reflects light.
+
+<br><br><li><b>[[#RenderModeAttrib|RenderModeAttrib]]</b>: Used to enable wireframe rendering.
+
+<br><br><li><b>[[#RescaleNormalAttrib|RescaleNormalAttrib]]</b>: Corrects non-unit length normals.
+
+<br><br><li><b>[[#ShadeModelAttrib|ShadeModelAttrib]]</b>: Can cause the model to appear faceted instead of smooth.
+
+<br><br><li><b>[[Pixel and Vertex Shaders|ShaderAttrib]]</b>: Gives almost unlimited control, but difficult to use.
+
+<br><br><li><b>[[Stencil Test/Write Attribute|StencilAttrib]]</b>: Causes the model to affect the stencil buffer, or be affected by the stencil buffer.
+
+<br><br><li><b>[[Automatic Texture Coordinates|TexGenAttrib]]</b>: Causes the system to synthesize texture coordinates for the model.
+
+<br><br><li><b>[[Texture Transforms|TexMatrixAttrib]]</b>: Alters the existing texture coordinates.
+
+<br><br><li><b>[[Texturing|TextureAttrib]]</b>: Applies a texture map to the model.
+
+<br><br><li><b>[[Transparency and Blending|TransparencyAttrib]]</b>: Causes the model to be partially transparent.

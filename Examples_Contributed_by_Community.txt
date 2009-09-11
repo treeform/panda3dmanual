@@ -1,0 +1,11 @@
+Here are some Panda3D examples contributed by the community.
+
+In future we will have a way to host them on Panda3D.org.
+
+IPKnightly:<br>
+<ul> 
+     <li>http://www.americanhammer.com/097G3/boxfall.zip
+     <li>http://www.americanhammer.com/097G3/room.zip
+     <li>http://www.americanhammer.com/097G3/musicBox.zip
+     <li>http://www.americanhammer.com/097G3/ping.zip
+</ul>

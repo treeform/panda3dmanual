@@ -1,0 +1,1 @@
+#REDIRECT [[Tutorial: Compiling the Panda 3D Source on Windows]]

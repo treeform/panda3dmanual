@@ -1,0 +1,29 @@
+The messenger may accept or ignore events that it receives. If it accepts an event, then a message will be passed to the messenger. If ignored, then no message will be sent. Key and mouse depressions and releases are events that may be sent. Typically, depressions are labeled as whatever key or button was hit. Releases are labeled as the key or button plus “-up.” So when checking to see if the escape key is hit, an object would listen for “escape.” If checking to see if it was released, then the object listens to “escape-up.” Not all events have to be key and mouse hits. One may create their own event and send it to the messenger.
+
+An object may accept an event an infinite number of times or accept it only once. If checking for an accept within the object listening to it, it should be prefixed with self. If the accept command occurs outside the class, then the variable the class is associated with should be used.
+
+<table class="code"><tr><td>
+myDirectObject.accept('Event Name',myDirectObjectMethod)
+<br>myDirectObject.acceptOnce('Event Name',myDirectObjectMethod)
+</td></tr></table>
+
+It is also possible to send an event to the messenger without any sort of outside input.
+
+<table class="code"><tr><td>
+messenger.send('Event Name')
+</td></tr></table>
+
+Specific events may be ignored, so that no message is sent. Also, all events coming from an object may be ignored.
+
+<table class="code"><tr><td>
+myDirectObject.ignore('Event Name')
+<br>myDirectObject.ignoreAll()
+</td></tr></table>
+
+Finally, there are some useful utility functions for debugging. The messenger typically does not print out when every event occurs. Toggling verbose mode will make the messenger print every event it receives. Toggling it again will revert it to the default. A number of methods exist for checking to see what object is checking for what event, but the print method will show who is accepting each event. Also, if accepts keep changing to the point where it is too confusing, the clear method will start the messenger over with a clear dictionary.
+
+<table class="code"><tr><td>
+messenger.toggleVerbose()
+<br>print messenger
+<br>messenger.clear()
+</td></tr></table>

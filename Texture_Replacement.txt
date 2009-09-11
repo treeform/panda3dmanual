@@ -1,0 +1,34 @@
+<p>
+When an actor egg file is created, some optimization occurs and the model hierarchy is hidden from view. While normally this optimization is a good thing, if you want to change textures on a specific part of the model (for example, just a character's face) you will need access to this geometry hiearchy. This is where egg-optchar.exe is helpful again. Egg-optchar allows you to rename, duplicate character joints and perform other functions on a model with a skeleton.  See [[Actor Manipulations]] for more information.</p>
+
+<p>
+To be able to make the geometry visible as a node in the resulting model, you can use the following option:
+
+<table class="code">
+  <tr>
+    <td>-flag <name of geometry part in original model>=<desired name of part in Panda3D></td>
+  </tr>
+</table>
+
+A specific example:
+
+<table class="code">
+  <tr>
+    <td>egg-optchar -flag face=face char_model.egg</td>
+  </tr>
+</table>
+
+
+<p>
+<b class = "code"> "-flag *=*"</b> will keep all geometry named as they were in the original model.
+</p>
+
+Now to swap textures in Panda3D you just need to find that geomnode, in our case suppose it's "face":
+<table class="code">
+  <tr>
+    <td>actorName.actor.find("**/face").setTexture(newTexture,1)</td>
+  </tr>
+</table>
+
+
+</p>

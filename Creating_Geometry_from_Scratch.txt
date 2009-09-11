@@ -1,0 +1,65 @@
+<h2>Creating Geometry of Your Own</h2>
+Making your own geometry on the fly can be broken down into 3 steps:
+<br>1)Create a [[Vertices in Panda3D|GeomVertexData]] object to hold the vertices of your geometry. Add the data for all the vertices you will need.
+<br>2)Create <code>GeomPrimitive</code> objects and assign vertices to them
+<br>3)Create a <code>Geom</code> object with the object created in step 1 and add all the primitives you created. You can know put this Geom in a GeomNode and render the geometry.
+
+The following sections explains these processes in detail.
+
+<h2>The Geom and GeomPrimitive Class</h2>
+
+<code>GeomPrimitive</code> is the base class for all the primary shapes that Panda can draw (GeomLines, GeomLinestrips, GeomPoints, GeomTriangles, GeomTrifans, and GeomTristrips). Any geometry that is rendered is broken down into these shapes.  You cannot mix objects of different fundamental types, for instance, GeomLines, GeomTriangles, and GeomPoints, in the same Geom; but you can (and should) put GeomTriangles, GeomTrifans, and GeomTristrips together, or GeomLines and GeomLinestrips together.
+
+Each kind of GeomPrimitive constructor accepts a [[Vertices in Panda3D|UsageHint]] parameter.  The list of possible UsageHints is the same as that given for <code>GeomVertexData</code> objects.
+
+<code>GeomPrimitive</code> objects keep track of what vertices to use by storing a list of integers. These integers tell the object which row in the <code>GeomVertexData</code> object it will be associated with has the vertex it needs. This is why when you add a vertex to a <code>GeomPrimitive</code> object, using  <code>addVertex(rowNum)</code>, you have to supply the row of the vertex.
+
+There are also some convenience functions built on top of <code>addVertex</code>. <code>addConsecutiveVertices(int start, int vertNum)</code> adds <code>vertNum</code> vertices from the <code>GeomVertexData</code> object starting from the row <code>start</code>. There is also <code>addNextVertices(numAdd)</code> which acts like <code>addConsecutiveVertices</code> but uses the last vertex you have added as <code>start</code>.
+
+When you are done adding the vertices to a <code>GeomPrimitive</code> object  for each primitive you must call the <code>closePrimitive()</code> function. This makes sure that the number of vertices you have added to the primitive define it properly.  Note that each GeomPrimitive object can store more than one of its particular kind of primitive; for instance, you can store many triangles in a single GeomTriangles object, and many triangle strips in a single GeomTristrips.  You do this by adding all the vertex numbers in order, calling closePrimitive() after you have added the vertices for each primitive.
+
+When this process is done you have to place these <code>GeomPrimitive</code> objects in a <code>Geom</code> object. You must pass the <code>GeomVertexData</code> object to the <code>Geom</code> constructor.  You can add many GeomPrimitives to a single Geom, but primitives in the same Geom object must take their vertices from the same GeomVertexData.  Furthermore, several Geom objects can share the same GeomVertexData object. You can add primitives to Geom objects by using <code>addPrimitive(myPrimitive)</code> where myPrimitive is the <code>GeomPrimitive</code> you want to add.
+
+When the <code>Geom</code> object is setup, you can now place it in a <code>GeomNode</code> object and place it in the scene graph using <code>addGeom(myGeom)</code> where <code>myGeom</code> is the <code>Geom</code> object you want to add.
+
+Usage tip: modern PC graphics cards can render many thousands of triangles in a frame, but the PC bus can only handle a few hundred triangle <i>batches</i> in a 60Hz frame.  In Panda, each GeomPrimitive is sent to the graphics card as a single batch, therefore, it is important to minimize the number of GeomPrimitive objects in your scene graph, and to put as many triangles as possible within a single GeomPrimitive--assuming they are all going to be onscreen at the same time anyway.  On the other hand, if you put too many unrelated triangles in the same GeomPrimitive, with both offscreen and onscreen triangles in the same primitive, then you will be wasting time drawing all of the offscreen triangles.  Finding the best balance point is difficult and depends on the quality of graphics hardware your application is targeting.  As a general rule of thumb, it is best to use as few GeomPrimitives as possible for small, atomic objects, but also to break up your scene into many individual objects (i.e. GeomNodes) that can easily be culled when they go offscreen.
+
+An example to clarify things:
+<table class="code"><tr><td>
+&nbsp;#in this example, we'll show how to make a square from scratch
+<br>#There is no "GeomQuad" class so we have to use two triangles.
+<br>
+<br>#step 1) create GeomVertexData and add vertex information
+<br>format=GeomVertexFormat.getV3()
+<br>vdata=GeomVertexData("vertices", format, Geom.UHStatic)
+<br>
+<br>vertexWriter=GeomVertexWriter(vdata, "vertex")
+<br>vertexWriter.addData3f(0,0,0)
+<br>vertexWriter.addData3f(1,0,0)
+<br>vertexWriter.addData3f(1,0,1)
+<br>vertexWriter.addData3f(0,0,1)
+<br>
+<br>#step 2) make primitives and assign vertices to them
+<br>tris=GeomTriangles(Geom.UHStatic)
+<br>
+<br>#have to add vertices one by one since they are not in order
+<br>tris.addVertex(0)
+<br>tris.addVertex(1)
+<br>tris.addVertex(3)
+<br>
+<br>#indicates that we have finished adding vertices for the first triangle.
+<br>tris.closePrimitive()
+<br>
+<br>#since the coordinates are in order we can use this convenience function.
+<br>tris.addConsecutiveVertices(1,3) #add vertex 1, 2 and 3
+<br>tris.closePrimitive()
+<br>
+<br>#step 3) make a Geom object to hold the primitives
+<br>squareGeom=Geom(vdata)
+<br>squareGeom.addPrimitive(tris)
+<br>
+<br>#now put squareGeom in a GeomNode. You can now position your geometry in the scene graph.
+<br>squareGN=GeomNode("square")
+<br>squareGN.addGeom(squareGeom)
+<br>render.attachNewNode(squareGN)
+</td></tr></table>

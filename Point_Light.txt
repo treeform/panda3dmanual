@@ -1,0 +1,6 @@
+<p>Point lights originate from one point in space, yet they shed light in all directions. As such, their direction may not be set, but point and color may.</p>
+<table class="code"><tr><td>
+NodePath = PointLight('Light Name')<br>
+NodePath.setColor(Vec4(R,G,B,A))<br>
+NodePath.setPoint(Point3(X,Y,Z))
+</td></tr></table>

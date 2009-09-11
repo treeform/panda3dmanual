@@ -1,0 +1,17 @@
+Caution: it is well-known that the panda/Cg interface is flaky.  We plan on spending the fall semester, 2005 making a much better shader interface.
+
+<h2>Bugs Encountered When Using Cg</h2>
+
+* CgShader.setParam uses overloading to determine what type of parameter you want to set.  But since python doesn't have a "float" data type, it only has "double", there is no way to pass a "uniform float" parameter.
+
+* Panda does not calculate normals on models unless you [[Lighting|enable lighting]] for them. Therefore, if you want to do anything that needs normals (like lighting) through Cg you must first set up Panda's lights.
+
+* You need at least one model in your scene that is not affected by a CgShaderAttrib. Otherwise the default camera controls will not work. A know fix around the problem is to add a transparent teapot (or any other model you want) to your scene, but <b>not</b> by parenting it to the Cg affected node.
+
+* There are subtle issues with using textures with Cg. You must still call <code>setTexture()</code> with the <code>TextureStage</code> object thats setup for the coordinates you want to use. The order in which you call <code>setTexture()</code> decides the TEXCOORD number in Cg. If you use the default <code>TextureStage</code> in <code>setTexture()</code> you must pass the same texture that you pass into Cg. Otherwise, <code>setTexture()</code> seems to override the CgShader. See [[Multitexture Introduction]] for more information on using textures.
+
+* The PSIZE semantic is currently not enabled.
+
+* You cannot currently pass a Cg matrix you make yourself. You can pass them in row by row and reconstruct your matrix in the Cg program. Hopefully this will be fixed soon.
+
+* There seems to be issues with passing the correct model matrix to Cg. Hopefully this will be fixed soon.

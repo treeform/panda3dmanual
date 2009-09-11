@@ -1,0 +1,421 @@
+<!-- Note: this table of contents is scanned and processed by
+     a number of scripts.  It must be kept in a rigid format. -->
+<h2>Table of Contents</h2>
+
+<ol class="toc" type="I">
+<li>[[Introduction to Panda]]
+<ol class="toc" type="A">
+<li>[[Installing Panda in Windows]]
+<li>[[Installing Panda in Linux]]
+<li>[[General Preparation]]
+<li>[[How to use a Python Editor]]
+<li>[[Using Command Prompt to Run your Program]]
+<li>[[A Panda "Hello World" using Python]]
+<ol class="toc" type="1">
+<li>[[Starting Panda3D]]
+<li>[[Loading the Grassy Scenery]]
+<li>[[Controlling the Camera]]
+<li>[[Loading and Animating the Panda Model]]
+<li>[[Using Intervals to move the Panda]]
+</ol>
+<li>[[A Panda "Hello World" using CXX]]
+<ol class="toc" type="1">
+<li>[[Starting Panda3D (CXX)]]
+<li>[[Loading the Grassy Scenery (CXX)]]
+<li>[[Controlling the Camera (CXX)]]
+<li>[[Loading and Animating the Panda Model (CXX)]]
+<li>[[Using Intervals to move the Panda (CXX)]]
+</ol>
+<li>[[User Contributed Tutorials and Examples]]
+<li>[[Video Tutorials]]
+<ol class="toc" type="A">
+<li>[[User Contributed Video Tutorials]]
+<li>[[Disney Video Lectures]]
+</ol>
+</ol>
+<li>[[Programming with Panda]]
+<ol class="toc" type="A">
+<li>[[The Scene Graph]]
+<ol class="toc" type="1">
+<li>[[Scene Graph Manipulations]]
+<li>[[Common State Changes]]
+<li>[[Manipulating a Piece of a Model]]
+<li>[[Searching the Scene Graph]]
+<li>[[Instancing]]
+</ol>
+<li>[[The Configuration File]]
+<ol>
+<li>[[Configuring Panda]]
+<li>[[List of All Config Variables]]
+<li>[[Accessing Config Vars in a Program]]
+</ol>
+<li>[[Models and Actors]]
+<ol class="toc" type="1">
+<li>[[Loading Models]]
+<li>[[Loading Actors and Animations]]
+<li>[[Actor Animations]]
+<li>[[Multi-Part Actors]]
+<li>[[Attaching an Object to a Joint]]
+<li>[[Controlling a Joint Procedurally]]
+</ol>
+<li>[[Render Attributes]]
+<ol class="toc" type="1">
+<li>[[List of All Attributes]]
+<li>[[Lighting]]
+<li>[[Materials]]
+<li>[[Depth Test and Depth Write]]
+<li>[[Fog]]
+<li>[[Alpha Testing]]
+<li>[[Color Write Masks]]
+<li>[[Antialiasing]]
+<li>[[Clip Planes]]
+<li>[[Tinting and Recoloring]]
+<li>[[Backface Culling and Frontface Culling]]
+<li>[[Light Ramps]]
+<li>[[Auxiliary Bitplane Control]]
+<li>[[Stencil Test/Write Attribute]]
+</ol>
+<li>[[Texturing]]
+<ol class="toc" type="1">
+<li>[[Simple Texturing]]
+<li>[[Choosing a Texture Size]]
+<li>[[Texture Wrap Modes]]
+<li>[[Texture Filter Types]]
+<li>[[Simple Texture Replacement]]
+<li>[[Multitexture Introduction]]
+<li>[[Texture Modes]]
+<li>[[Texture Order]]
+<li>[[Texture Combine Modes]]
+<li>[[Texture Transforms]]
+<li>[[Multiple Texture Coordinate Sets]]
+<li>[[Automatic Texture Coordinates]]
+<li>[[Projected Textures]]
+<li>[[Simple Environment Mapping]]
+<li>[[3-D Textures]]
+<li>[[Cube Maps]]
+<li>[[Environment Mapping with Cube Maps]]
+<li>[[Automatic Texture Animation]]
+<li>[[Playing MPG and AVI files]]
+<li>[[Transparency and Blending]]
+<li>[[Texture Management]]
+<li>[[Texture Compression]]
+</ol>
+<li>[[Pixel and Vertex Shaders]]
+<ol>
+<li>[[Shader Basics]]
+<li>[[List of Possible Shader Inputs]]
+<li>[[Shaders and Coordinate Spaces]]
+<li>[[Known Shader Bugs and Limitations]]
+<li>[[The Shader Generator]]
+<li>[[Cg Shader Tutorial]]
+<ol type="I">
+<li>[[Cg Tutorial Part 1]]
+<li>[[Cg Tutorial Part 2]]
+</ol>
+</ol>
+<li>[[Camera Control]]
+<ol class="toc" type="1">
+<li>[[The Default Camera Driver]]
+<li>[[Lenses and Field of View]]
+<li>[[Orthographic Lenses]]
+</ol>
+<li>[[Sound]]
+<ol class="toc" type="1">
+<li>[[Loading and Playing Sounds and Music]]
+<li>[[Manipulating Sounds]]
+<li>[[DSP Effects]]
+<li>[[3DAudio]]
+<li>[[Multi-Channel]]
+</ol>
+<li>[[Intervals]]
+<ol class="toc" type="1">
+<li>[[Lerp Intervals]]
+<li>[[Function Intervals]]
+<li>[[Actor Intervals]]
+<li>[[Sound Intervals]]
+<li>[[Motion Path and Particle Intervals]]
+<li>[[Sequences and Parallels]]
+<li>[[Position, Rotation and Scale Intervals]]
+<li>[[Projectile Intervals]]
+</ol>
+<li>[[Tasks and Event Handling]]
+<ol class="toc" type="1">
+<li>[[Tasks]]
+<li>[[Event Handlers]]
+<li>[[Main Loop]]
+</ol>
+<li>[[Text and Image Rendering]]
+<ol class="toc" type="1">
+<li>[[Text Fonts]]
+<li>[[Text Node]]
+<li>[[OnscreenText]]
+<li>[[OnscreenImage]]
+<li>[[Embedded Text Properties]]
+</ol>
+<li>[[DirectGUI]]
+<ol class="toc" type="1">
+<li>[[DirectButton]]
+<li>[[DirectCheckButton]]
+<li>[[DirectRadioButton]]
+<li>[[DirectDialog]]
+<li>[[DirectEntry]]
+<li>[[DirectFrame]]
+<li>[[DirectLabel]]
+<li>[[DirectOptionMenu]]
+<li>[[DirectScrolledList]]
+<li>[[DirectWaitBar]]
+<li>[[DirectSlider]]
+<li>[[DirectScrollBar]]
+<li>[[DirectScrolledFrame]]
+</ol>
+<li>[[Render Effects]]
+<ol class="toc" type="1">
+<li>[[Compass Effects]]
+<li>[[Billboard Effects]]
+</ol>
+<li>[[Finite State Machines]]
+<ol class="toc" type="1">
+<li>[[FSM Introduction]]
+<li>[[Simple FSM Usage]]
+<li>[[FSM with input]]
+<li>[[Advanced FSM Tidbits]]
+</ol>
+<li>[[Terrain]]
+<ol class="toc" type="1">
+<li>[[The Heightfield Tesselator]]
+<li>[[Geometrical MipMapping]]
+</ol>
+<li>[[Advanced operations with Panda's internal structures]]
+<ol>
+<li>[[How Panda3D Stores Vertices and Geometry]]
+<ol class="toc" type="a">
+<li>[[GeomVertexData]]
+<li>[[GeomVertexFormat]]
+<li>[[GeomPrimitive]]
+<li>[[Geom]]
+<li>[[GeomNode]]
+<li>[[BoundingVolume]]
+</ol>
+<li>[[Procedurally Generating 3D Models]]
+<ol class="toc" type="a">
+<li>[[Defining your own GeomVertexFormat]]
+<li>[[Pre-defined vertex formats]]
+<li>[[Creating and filling a GeomVertexData]]
+<li>[[Creating the GeomPrimitive objects]]
+<li>[[Putting your new geometry in the scene graph]]
+</ol>
+<li>[[Other Vertex and Model Manipulation]]
+<ol class="toc" type="a">
+<li>[[Reading existing geometry data]]
+<li>[[Modifying existing geometry data]]
+<li>[[More about GeomVertexReader, GeomVertexWriter, and GeomVertexRewriter]]
+<li>[[Creating New Textures from Scratch]]
+<li>[[Writing 3D Models out to Disk]]
+</ol>
+</ol>
+<li>[[Render-to-Texture and Image Postprocessing]]
+<ol>
+<li>[[Common Image Filters]]
+<li>[[Generalized Image Filters]]
+<li>[[Dynamic Cube Maps]]
+<li>[[Low-Level Render to Texture]]
+</ol>
+<li>[[Panda Rendering Process]]
+<ol>
+<li>[[Introducing Graphics Classes]]
+<li>[[The Graphics Pipe]]
+<li>[[Creating Windows and Buffers]]
+<li>[[Display Regions]]
+<li>[[Clearing Display Regions]]
+<li>[[The 2D Display Region]]
+<ol>[[Deprecated pages]]
+<li>[[The Graphics Engine]]
+<li>[[The GraphicsOutput class]]
+<li>[[Graphics Buffers and Windows]]
+<li>[[Multi-Pass Rendering]]
+<li>[[How to Control Render Order]]
+</ol>
+</ol>
+<li>[[Panda Utility Functions]]
+<li>[[Particle Effects]]
+<ol class="toc" type="1">
+<li>[[Using the Particle Panel]]
+<li>[[Loading Particle Systems]]
+<li>[[Particle Effect Basic Parameters]]
+<li>[[Particle Factories]]
+<li>[[Particle Emitters]]
+<li>[[Particle Renderers]]
+</ol>
+<li>[[Collision Detection]]
+<ol class="toc" type="1">
+<li>[[Collision Solids]]
+<li>[[Collision Handlers]]
+<li>[[Collision Entries]]
+<li>[[Collision Traversers]]
+<li>[[Collision Bitmasks]]
+<li>[[Rapidly-Moving Objects]]
+<li>[[Pusher Example]]
+<li>[[Event Example]]
+<li>[[Bitmask Example]]
+<li>[[Clicking on 3D Objects]]
+</ol>
+<li>[[Hardware support]]
+<ol class="toc" type="1">
+<li>[[Keyboard Support]]
+<li>[[Mouse Support]]
+<li>[[Joystick Support]]
+<li>[[VR Helmets and Trackers]]
+</ol>
+<li>[[Math Engine]]
+<ol>
+<li>[[Matrix Representation]]
+</ol>
+<li>[[Physics]]
+<ol class="toc" type="1">
+<li>[[Panda's Built-in Physics Engine]]
+<ol class="toc" type="a">
+<li>[[Enabling physics on a node]]
+<li>[[Applying physics to a node]]
+<li>[[Types of forces]]
+<li>[[Notes and caveats]]
+</ol>
+<li>[[Using ODE with Panda3D]]
+<ol class="toc" type="a">
+<li>[[Worlds, Bodies and Masses]]
+<li>[[Simulating the Physics World]]
+<li>[[Attaching Bodies using Joints]]
+<li>[[Collision Detection with ODE]]
+</ol>
+</ol>
+<li>[[Motion Paths]]
+<li>[[Timing]]
+<ol class="toc" type="1">
+<li>[[The Global Clock]]
+</ol>
+<li>[[Networking]]
+<ol class="toc" type="1">
+<li>[[Datagram Protocol]]
+<ol class="toc" type="a">
+<li>[[Client-Server Connection]]
+<li>[[Transmitting Data]]
+</ol>
+</ol>
+<ol class="toc" type="1">
+<li>[[Downloading a File]]
+</ol>
+<li>[[Multifiles]]
+<ol class="toc" type="1">
+<li>[[Creating Multifiles]]
+<li>[[Patching]]
+<li>[[Loading resources from nonstandard sources]]
+</ol>
+<li>[[File Reading]]
+<li>[[Threading]]
+</ol>
+<li>[[Sample Programs in the Distribution]]
+<ol class="toc" type="A">
+<li>[[Sample Programs: Asteroids]]
+<li>[[Sample Programs: Ball in Maze]]
+<li>[[Sample Programs: Boxing Robots]]
+<li>[[Sample Programs: Carousel]]
+<li>[[Sample Programs: Cartoon Shader]]
+<li>[[Sample Programs: Chessboard]]
+<li>[[Sample Programs: Disco Lights]]
+<li>[[Sample Programs: Fireflies]]
+<li>[[Sample Programs: Fractal Plants]]
+<li>[[Sample Programs: Glow Filter]]
+<li>[[Sample Programs: Infinite Tunnel]]
+<li>[[Sample Programs: Looking and Gripping]]
+<li>[[Sample Programs: Media Player]]
+<li>[[Sample Programs: Motion Trails]]
+<li>[[Sample Programs: Music Box]]
+<li>[[Sample Programs: Normal Mapping]]
+<li>[[Sample Programs: Particles]]
+<li>[[Sample Programs: Procedural Cube]]
+<li>[[Sample Programs: Roaming Ralph]]
+<li>[[Sample Programs: Shadows]]
+<li>[[Sample Programs: Solar System]]
+<li>[[Sample Programs: Teapot on TV]]
+<li>[[Sample Programs: Texture Swapping]]
+</ol>
+<li>[[DirectStart]] (Content of)
+<li>[[Debugging]]
+<ol class="toc" type="A">
+<li>[[Log Messages]]
+<li>[[The Python Debugger]]
+<li>[[Running Panda under the CXX Debugger]]
+</ol>
+<li>[[Performance Tuning]]
+<ol class="toc" type="A">
+<li>[[Basic Performance Diagnostics]]
+<li>[[Measuring Performance with PStats]]
+<li>[[The Rigid Body Combiner]]
+<li>[[Performance Issue: Too Many Meshes]]
+<li>[[Performance Issue: Too Many State Changes]]
+<li>[[Performance Issue: Too Many Text Updates]]
+<li>[[Performance Issue: Too Many Shader Instructions]]
+<li>[[Performance Issue: Excessive Fill]]
+<li>[[Performance Issue: Memory Full]]
+<li>[[Performance Issue: Python Calculation]]
+<li>[[Performance Issue: Failure to Garbage Collect]]
+<li>[[Performance Issue: Collision System Misuse]]
+<li>[[Performance Issue: Motherboard Integrated Video]]
+<li>[[Performance Issue: Too Many Polygons]]
+<li>[[Performance Issue: Miscellaneous]]
+</ol>
+<li>[[Using CXX]]
+<ol class="toc" type="A">
+<li>[[How to compile a CXX Panda3D program]]
+<ol class="toc" type="1">
+<li>[[How to compile a CXX Panda3D program on Linux]]
+</ol>
+<li>[[The Window Framework]]
+<li>[[Texturing in CXX]]
+<li>[[Reference Counting]]
+</ol>
+<li>[[Panda Tools]]
+<ol class="toc" type="A">
+<li>[[The Scene Graph Browser]]
+<ol class="toc" type="1">
+<li>[[Enhanced Mouse Navigation]]
+</ol>
+<li>[[Interrogate]]
+<li>[[Python Editors]]
+<ol class="toc" type="1">
+<li>[[SPE]]
+</ol>
+<li>[[Pipeline Tips]]
+<li>[[Model Export]]
+<ol class="toc" type="1">
+<li>[[Converting from 3D Studio Max]]
+<li>[[Converting from Maya]]
+<li>[[Converting from Blender]]
+<li>[[Converting from SoftImage]]
+<li>[[Converting from Milkshape 3D]]
+<li>[[Converting from GMax]]
+<li>[[Converting from other Formats]]
+<li>[[Converting Egg to Bam]]
+<li>[[Parsing and Generating Egg Files]]
+<li>[[Egg Syntax]]
+</ol>
+<li>[[Previewing 3D Models in Pview]]
+<li>[[Building an installer using packpanda]]
+</ol>
+<li>[[Building Panda from Source]]
+<ol class="toc" type="A">
+<li>[[Troubleshooting ppremake on Windows]]
+<li>[[Troubleshooting ppremake on Linux]]
+<li>[[Troubleshooting makepanda on Windows]]
+<li>[[Troubleshooting makepanda on Linux]]
+<li>[[Tutorial: Compiling the Panda 3D Source on Windows]]
+</ol>
+</ol>
+<ul>
+<li>[[List of Panda Executables]]
+<li>[[Getting Started on OSX]]
+<li>[[More Panda Resources]]
+<li>[[Project Hosting]]
+<li>[[The IRC Channel]]
+<li>[[FAQ]]
+<li>[[Class Reference]]
+</ul>

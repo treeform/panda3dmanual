@@ -1,0 +1,133 @@
+<h2>Cg Tutorial Part 8: Applying two textures to a model</h2>
+
+<pre class="codeblock">
+
+"""
+The Python code in this sample is exactly the same as in the last sample.
+"""
+#Lesson8.py
+
+import sys
+
+import direct.directbase.DirectStart
+from pandac.PandaModules import Texture, TextureStage
+
+base.setBackgroundColor(0.0, 0.0, 0.0)
+base.disableMouse()
+
+base.camLens.setNearFar(1.0, 50.0)
+base.camLens.setFov(45.0)
+
+camera.setPos(0.0, -20.0, 10.0)
+camera.lookAt(0.0, 0.0, 0.0)
+
+root = render.attachNewNode("Root")
+
+textureArrow = loader.loadTexture("arrow.png")
+textureArrow.setWrapU(Texture.WMClamp)
+textureArrow.setWrapV(Texture.WMClamp)
+
+"""
+DIRTY
+Like in the previous example, increase the setSort parameter and see what
+happens, the influence of the order depends on the applied shader. Sometimes you
+can see a difference, sometimes not.
+"""
+stageArrow = TextureStage("Arrow")
+stageArrow.setSort(1)
+
+textureCircle = loader.loadTexture("circle.png")
+textureCircle.setWrapU(Texture.WMClamp)
+textureCircle.setWrapV(Texture.WMClamp)
+
+stageCircle = TextureStage("Circle")
+stageCircle.setSort(2)
+
+modelCube = loader.loadModel("cube.egg")
+
+cubes = []
+for x in [-3.0, 0.0, 3.0]:
+    cube = modelCube.copyTo(root)
+    cube.setPos(x, 0.0, 0.0)
+    cubes += [ cube ]
+
+shader = loader.loadShader("lesson8.sha")
+root.setShader(shader)
+
+root.setTexture(stageArrow, textureArrow)
+root.setTexture(stageCircle, textureCircle)
+
+base.accept("escape", sys.exit)
+base.accept("o", base.oobe)
+
+def move(x, y, z):
+    root.setX(root.getX() + x)
+    root.setY(root.getY() + y)
+    root.setZ(root.getZ() + z)
+
+base.accept("d", move, [1.0, 0.0, 0.0])
+base.accept("a", move, [-1.0, 0.0, 0.0])
+base.accept("w", move, [0.0, 1.0, 0.0])
+base.accept("s", move, [0.0, -1.0, 0.0])
+base.accept("e", move, [0.0, 0.0, 1.0])
+base.accept("q", move, [0.0, 0.0, -1.0])
+
+run()
+
+</pre>
+
+<pre class="codeblock">
+//Cg
+/* lesson8.sha */
+
+/*
+The vertex shader has not changed. If you like to apply another UV set for the
+second texture you have to pass the vtx_texcoord1 variable from the vertex
+shader to the fragment shader.
+*/
+void vshader(
+    uniform float4x4 mat_modelproj,
+    in float4 vtx_position : POSITION,
+    in float2 vtx_texcoord0 : TEXCOORD0,
+    out float2 l_my : TEXCOORD0,
+    out float4 l_position : POSITION)
+{
+    l_position = mul(mat_modelproj, vtx_position);
+    l_my = vtx_texcoord0;
+}
+
+/*
+With TEXUNIT1 we can access the second texture unit. How many texture unit you
+can use depends on your GPU. The bad thing about this is that you need a
+fallback mechanisms if you use more texture units than the GPU of your
+applications users may have.
+*/
+void fshader(
+    uniform sampler2D tex_0 : TEXUNIT0,
+    uniform sampler2D tex_1 : TEXUNIT1,
+    in float2 l_my : TEXCOORD0,
+    out float4 o_color : COLOR)
+{
+    /*
+    Apply both textures. This is same operation as if you modulate two textures
+    with the fixed function pipline without using a shader. For this example,
+    the sort order of the texture stages has no influence to the final result.
+    */
+    o_color = tex2D(tex_0, l_my) * tex2D(tex_1, l_my);
+
+    /*
+    DIRTY
+    Here we play a bit and modify the arrow texture based on the red component
+    of the circle texture (The circle texture only has gray colors, therefore it
+    does not matter if you use R, G or B part).
+    */
+    //float4 arrow = tex2D(tex_0, l_my);
+    //float4 circle = tex2D(tex_1, l_my);
+    //if(circle.r < 0.5) {
+    //    o_color = arrow;
+    //} else {
+    //    o_color = float4(1.0, 1.0, 1.0, 1.0) - arrow;
+    //}
+}
+
+</pre>

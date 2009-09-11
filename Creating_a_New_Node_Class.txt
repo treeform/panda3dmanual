@@ -1,0 +1,31 @@
+== Summary ==
+
+This page describes how to create a new node class, something like src/parametrics/sheetNode .
+
+== Introduction ==
+
+You might want to create a new node class if you wish to contribute a new type of renderable object to Panda.
+
+Generally, you wont need to do this, because it will be easier and better to simply convert your object type into one of the existing Panda node types.
+
+For example, if you wanted to be able to display MD2 animated meshes, it might be better to simply create a conversion utility to convert MD2 meshes into egg files.
+
+== Creating a New Node Class ==
+
+A node class will derive from PandaNode, which is the base class for all nodes.
+
+It will specify its geometry to panda using a qpGeom class ([[Geom]]) class, in src/gobj/qpgeom.
+
+There is some subtle stuff going on in the qpGeom structure. Each qpGeom has its own qpGeomVertexData, which is shared by all of the qpGeomPrimitive objects within the qpGeom. Thus, a qpGeomTristrips object (a kind of qpGeomPrimitive) can decompose itself into qpGeomTriangles (another kind of qpGeomPrimitive) simply by building a new index list, since it will still be within the same qpGeom, and will therefore be keeping the same qpGeomVertexData. 
+
+In your routine, you will probably build up a qpGeomVertexData for all of your vertices, and then one or more qpGeomPrimitives (a single qpGeomTriangles object would be fine) to index into the vertices. Then add them both to a qpGeom, and wrap that up in a CullableObject which gets stored on the CullHandler. In the OpenGL analogy, a qpGeomVertexData corresponds to a glVertexPointer() call, and each qpGeomPrimitive is a glBegin(), glDrawElements(), glEnd(). 
+
+If you can cache this qpGeom object across multiple frames, so much the better, but if you don't, that's ok too. Also note that the qp prefix is temporary and will eventually go away. 
+
+For now, ignore the CData object you see everywhere; that's just a placeholder for when we add multithreaded pipeline support. It's a level of indirection that we will have to live with to support pipelining. In the meantime, just imagine that everything stored within the CData is actually stored on the class itself. 
+
+All you really need to override in your PandaNode-derived class is has_cull_callback() and cull_callback(). 
+
+To fit into Panda's run-time type system, you will also want to override init_type() and get_type(), following the examples of other nodes, and call init_type() sometime at startup. This is optional at this point. 
+
+Once you get down the road a ways, you can start to think about overriding one of xform() or safe_to_flatten() to make nodePath.flattenLight() do the right thing, and write_datagram(), fillin(), and make_from_bam() if you want to be able to save your nodes in a bam file. But I wouldn't worry about either of these right now.

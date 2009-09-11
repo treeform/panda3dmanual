@@ -1,0 +1,286 @@
+<h2>Cg Tutorial Part 6: Passing inputs to the shader and controlling it from Panda</h2>
+
+<pre class="codeblock">
+
+"""
+In this example we define our own uniforms, we like to send to the GPU.
+"""
+#Lesson6.py
+
+import sys
+import math
+
+from direct.interval.LerpInterval import LerpFunc
+import direct.directbase.DirectStart
+
+base.setBackgroundColor(0.0, 0.0, 0.0)
+base.disableMouse()
+
+base.camLens.setNearFar(1.0, 50.0)
+base.camLens.setFov(45.0)
+
+camera.setPos(0.0, -20.0, 10.0)
+camera.lookAt(0.0, 0.0, 0.0)
+
+root = render.attachNewNode("Root")
+
+modelCube = loader.loadModel("cube.egg")
+
+cubes = []
+for x in [-3.0, 0.0, 3.0]:
+    cube = modelCube.copyTo(root)
+    cube.setPos(x, 0.0, 0.0)
+    cubes += [ cube ]
+
+shader = loader.loadShader("lesson6.sha")
+root.setShader(shader)
+
+"""
+This is the only new line here. If you comment/remove this line Panda3D sees
+that there is a problem. Why? The shader in this example still references to an
+uniform, therefore the uniform needs to be set at least once.
+"""
+root.setShaderInput("panda3drocks", 1.0, 0.0, 1.0, 1.0)
+
+"""
+DIRTY
+If you enable to following two lines, without modifying the shader, you have one
+more debug utility that may help in some circumstances. With setTransparency
+Panda3D instruct the GPU to not only overwrite the color buffer. If the fragment
+shader was calculating a color, the GPU reads the old value in the color buffer
+back and merges it with the new color. This process is called alpha blending and
+most often it is used for transparency. But if transparency is enabled, Panda3D
+has to reorder all visible nodes, so they are drawn from back to front (or else
+transparency looks not correct). You have to remember this if you "debug" a
+scene like this.
+
+Some facts: The new panda3drocks uniform, you can see below, has an alpha
+component with a value lesser than 1.0. The background in this scene is black.
+Back facing triangles are not drawn. What we conclude from this. If the GPU has
+to draw the first cube, the only two colors on the screen are black (0.0, 0.0,
+0.0) and a dark purple (0.1, 0.0, 0.1). If the GPU has to draw the second cube,
+and they are not side by side, a new purple (theoretically 0.19, 0.0, 0.19,
+practically ~0.18, 0.0, ~0.18) appears that is brighter than its predecessor.
+The more triangles are on top of one another the brighter the scene. Or in other
+words, the brighter the scene the more the fragment shader needs to be called.
+Something you should try to avoid.
+"""
+#root.setTransparency(True)
+#root.setShaderInput("panda3drocks", 1.0, 0.0, 1.0, 0.1)
+
+base.accept("escape", sys.exit)
+base.accept("o", base.oobe)
+
+def animate(t):
+    c = abs(math.cos(math.radians(t)))
+    root.setShaderInput("panda3drocks", c, c, c, 1.0)
+
+    """
+    DIRTY
+    Uncomment only one line at a time and see how the scene graph propagates
+    shader inputs.
+
+    As an aside: The setHpr method of a NodePath accepts angles in degrees. But
+    Python and Cg internally work with radians (Every FPU known to more than
+    0xff people internally works with radians).
+    """
+    #r = abs(math.cos(math.radians(t + 0.0)))
+    #g = abs(math.cos(math.radians(t + 10.0)))
+    #b = abs(math.cos(math.radians(t + 20.0)))
+    #cubes[0].setShaderInput("panda3drocks", r, 0.0, 0.0, 1.0)
+    #cubes[1].setShaderInput("panda3drocks", 0.0, g, 0.0, 1.0)
+    #cubes[2].setShaderInput("panda3drocks", 0.0, 0.0, b, 1.0)
+
+interval = LerpFunc(animate, 5.0, 0.0, 360.0)
+
+base.accept("i", interval.start)
+
+def move(x, y, z):
+    root.setX(root.getX() + x)
+    root.setY(root.getY() + y)
+    root.setZ(root.getZ() + z)
+
+base.accept("d", move, [1.0, 0.0, 0.0])
+base.accept("a", move, [-1.0, 0.0, 0.0])
+base.accept("w", move, [0.0, 1.0, 0.0])
+base.accept("s", move, [0.0, -1.0, 0.0])
+base.accept("e", move, [0.0, 0.0, 1.0])
+base.accept("q", move, [0.0, 0.0, -1.0])
+
+run()
+
+"""
+On more note abount blending. If you enable transparency on a node, Panda3D has
+to blend the node together with the existing scene. If you read the Panda3D
+manual about this topic, you can see that this is a expensive operation, because
+Panda3D has to reorder the scene. So how does this blending work? There is more
+than one possibility to blend nodes together. As far as I know Panda3D only uses
+the following scheme:
+
+NewDestinationColor = ((1.0 - SourceAlpha) * OldDestinationColor) + (SourceAlpha * SourceColor)
+
+If the there is black screen and we draw the purple triangle with folowing color
+attribute 1.0, 0.0, 1.0, 0.1, the following happens:
+
+OldDestinationColor = 0.0, 0.0, 0.0
+SourceAlpha = 0.1
+SourceColor = 1.0, 0.0, 1.0
+=> NewDestinationColor = 0.1, 0.0, 0.1
+
+Our second triangle on top of the first triangle yields:
+
+OldDestinationColor = 0.1, 0.0, 0.1
+SourceAlpha = 0.1
+SourceColor = 1.0, 0.0, 1.0
+=> NewDestinationColor = 0.19, 0.0, 0.19
+
+We assume that the GPU always is calculating with floating point buffers, but
+this is not always true. In todays application the color buffer is often not a
+floating point buffer, so we see some inaccuracies here. That is the reason why
+in the example above I have once written theoretically and then practically.
+
+Why do I explain all this stuff here? Maybe you recognized that this stuff is
+once more linear interpolation, but there is no possiblity to influence this
+equation with a vertex or fragment shader.
+"""
+</pre>
+
+<pre class="codeblock">
+//Cg
+/* lesson6.sha */
+
+/*
+We were using setShaderInput in the Python code. setShaderInput does nothing
+more than assign a float4 (there is no possibility to assign a float2 e.g.) to a
+shader uniform. Every manually provided input needs a k_ prefix therefore the
+panda3drocks shader input has to be written as k_panda3drocks. If you manually
+define an uniform in shader, you must at least call setShaderInput on an
+appropriate NodePath that uses this shader.
+*/
+void vshader(
+    uniform float4x4 mat_modelproj,
+    uniform float4 k_panda3drocks,
+    in float4 vtx_position : POSITION,
+    out float4 l_my : TEXCOORD0,
+    out float4 l_position : POSITION)
+{
+    l_position = mul(mat_modelproj, vtx_position);
+    l_my = k_panda3drocks;
+}
+
+/*
+This example is a bad idead how to waste a TEXCOORD unit. k_panda3drocks is a
+constant assigned to l_my, when l_my it is passed from the vertex shader to
+fragment shader it is lineraly interpolated. But a linear interpolated constant,
+is a constant. In this sample, it would make more sense if we define our uniform
+in the fragment shader than in the vertex shader.
+*/
+void fshader(
+    in float4 l_my : TEXCOORD0,
+    out float4 o_color : COLOR)
+{
+    o_color = l_my;
+}
+
+/*
+I have to admit here an unknowingness. GLSL does interpolate perspectively
+correct (based on the depth the linear interpolation gets a correction), but I
+do not know in which circumstances this applies to Cg. It may be possible that I
+repeat the word linearly interpolated over and over again although it is not
+always exactly true. Both the GLSL manual and the Cg manual only have the word
+perspectively correction on one line, there is no explanation. If anyone has in
+depth information about this I am happy if you share this knowledge.
+
+Both GLSL and Cg support a keyword noproject to disable this correction. But
+Panda3D currently does not support it.
+
+http://www.opengl.org/registry/doc/GLSLangSpec.Full.1.20.8.pdf
+http://developer.download.nvidia.com/cg/Cg_2.0/2.0.0015/Cg-2.0_May2008_ReferenceManual.pdf
+
+The OpenGL function glHint has a parameter to enable or disable perspective
+correction (GL_PERSPECTIVE_CORRECTION_HINT), but maybe that only applies to the
+fixed function pipeline.
+
+http://www.opengl.org/sdk/docs/man/xhtml/glHint.xml
+
+As of OpenGL 2.1 perspective correction should always be enabled according to
+the manual.
+
+I bet that it depends on the GPU vendors daily mood, the moon phase and the
+Google result to: "number of horns on a unicorn multiplied by the answer to
+life, the universe and everything".
+*/
+
+/*
+First I like to explain why we need perspective correction. A scan line renderer
+like todays GPUs are (in contrast to a ray tracer), transforms all three points
+of a triangle from 3D space to a 2D screen. After the transformation e.g. the
+linear interpolation of colors is calculated. Only if we transform a triangle to
+our screen we know how much pixels the triangle will cover. If we like to
+interpolate in 3D we may interpolate millions of position that are reduced to
+one pixel if the triangle is far away, this is obviously infeasible. Open the
+figures.svg of figures.png file and look at the figure 5.1. If you look at the
+first image you can see a quad that consists of two triangles. You can look at
+this image from two view points. First it is possible that is a perspective
+plane in 3D, second it is a trapezoid in 2D. There are two yellow lines in the
+image. This lines divide the trapezoid exactly in the center. Maybe you already
+see a problem, this is only true in 2D. In 3D the center of the trapezoid is a
+bit above the current center. Further on there are five marked intersections. We
+need this numbers for the later images:
+
+1: Exact 2D center for the top line.
+2: Exact 2D center for the left line.
+3: Exact 2D center for the right line.
+4: Exact 2D center for the bottom line.
+5: Exact 2D center for the line in the middle.
+
+Now we start with the second image and assign some colors to the vertices. We
+now interpolate this values manually at the intersection points:
+
+1: 50% red 50% blue.
+2: 100% red 0% blue.
+3: 50% red 50% blue.
+4: 0% red 100% blue.
+5: 50% red 50% blue.
+
+While 1 2 3 and 4 should be easy to calculate maybe 5 is not so obvious. But
+because we now that the point is exactly at center between the top right vertex
+and the bottom left vertex, the color must be the center between red and blue as
+well.
+
+In the third image you can see how this should look like. It looks nice, but it
+is not correct, because the average of blue and red (50% red and 50% blue) lies
+exactly in the center of the trapezoid and not in the center of the 3D plane we
+have. The gradient looks nice because all colors on one horizontal have one and
+the same color (point 1, 3 and 5 have the same color e.g.).
+
+In the fourth image we rotate our plane. The only thing that changes are the
+vertex colors. The interpolated colors are as follows this time:
+
+1: 0% red 100% blue.
+2: 50% red 50% blue.
+3: 100% red 0% blue.
+4: 50% red 50% blue.
+5: 50% red 50% blue.
+
+Point 5 has the same color as in the previous image. Because we have another
+gradient now, all vertical lines should have the exact same color, but this is
+not true. Point 2, 4 and 5 have the same color, but they are not on the same
+line.
+
+In the fifth image you can see the final result. Maybe it is not that obvious
+but the green line, tries to show how the 50% line looks like.
+
+You can reproduce this problem if you draw a rectangle yourself and apply the
+perspective transformation on the vertices by yourselfe. The rectangle looks
+like a trapezoid then. If you draw a trapezoid in Blender e.g. and assign a
+texture with the following UV coordinates (of a grid like image) to the four
+vertices: (0,0) (1,0) (0,1) (1,1) you can see the distortion more clearly. The
+two files perspective-correction.blend and perspective-correction.jpg show you
+the result more clearly. You can see one more fancy thing with this example. The
+preview in Blender is renderer with OpenGL while the Blender itself has its own
+renderer for production quality images. The internal renderer and OpenGL divide
+a quad in two different ways into triangles. That is the reason why the vertical
+line on the trapezoid does is twisted in two different directions.
+*/
+</pre>
