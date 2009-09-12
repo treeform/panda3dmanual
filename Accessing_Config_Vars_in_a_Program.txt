@@ -3,10 +3,8 @@ Panda supplies functions to easily read values out of Config.prc, and to
 alter their values in memory (the modified values are not written back out
 to disk). The ability to read an alter configuration settings programmatically has two major uses:
 
-<ol>
-<li>Storing your own configuration data.
-<li>Tweaking Panda's behavior.
-</ol>
+* Storing your own configuration data.
+* Tweaking Panda's behavior.
 
 By "storing your own configuration data," I mean that your game might
 have its own settings that need to be stored.  Rather than writing your
@@ -17,9 +15,9 @@ Suppose hypothetically that you are writing an online game, and your
 online game connects to a server.  You need a configuration file to tell
 you the name of the server. Open up the "Config.prc" file and add the following line at the end of the file.
 
-<code prc>
-my-game-server pandagame.com
-</code>
+::
+    my-game-server pandagame.com
+
 
 Note that I invented the variable name "my-game-server" out of thin air,
 this variable is not recognized by panda in any way.  Therefore, this
@@ -30,45 +28,43 @@ use code not unlike the following, which creates an object of
 class <code>ConfigVariableString</code> and then manipulates it using the
 methods <code>[func]setValue[/func]</code> and <code>[func]getValue[/func]</code>:
 
-<code python>
-from pandac.PandaModules import ConfigVariableString
+::
+    from pandac.PandaModules import ConfigVariableString
 
-mygameserver = ConfigVariableString("my-game-server", "127.0.0.1")
-print "Server specified in config file: ", mygameserver.getValue()
+    mygameserver = ConfigVariableString("my-game-server", "127.0.0.1")
+    print "Server specified in config file: ", mygameserver.getValue()
 
-# allow the user to change servers on the command-line:
-if (sys.argv[1]=="--server"): mygameserver.setValue(sys.argv[2])
+    # allow the user to change servers on the command-line:
+    if (sys.argv[1]=="--server"): mygameserver.setValue(sys.argv[2])
 
-print "Server that we will use: ", mygameserver.getValue()
-</code>
+    print "Server that we will use: ", mygameserver.getValue()
 
 The second parameter to the ConfigVariableString constructor is the default value that should be returned, in case the line "my-game-server" does not appear in any Config.prc file.  There is also an optional third parameter, which is a description of the purpose of the variable; this string will be displayed when the user executes the command <code>print cvMgr</code>.
 
 The types of configuration variable are:
 
-<code text>
-ConfigVariableString
-ConfigVariableInt
-ConfigVariableBool
-ConfigVariableDouble
-ConfigVariableFilename
-ConfigVariableList
-ConfigVariableSearchPath
-</code>
+::
+    ConfigVariableString
+    ConfigVariableInt
+    ConfigVariableBool
+    ConfigVariableDouble
+    ConfigVariableFilename
+    ConfigVariableList
+    ConfigVariableSearchPath
 
 Most of these follow the same form as ConfigVariableString, above, except that the default value (and the parameter from setValue() and getValue()) is of the indicated type, rather than a string.  The two exceptions are ConfigVariableList and ConfigVariableSearchPath; these types of variables do not accept a default value to the constructor, since the default value in both cases is always the empty list or search path.
 
 To display the current value of a particular variable interactively (in this example, for a string-type variable), type the following:
 
-<code python>
-print ConfigVariableString("my-game-server") 
-</code>
+::
+    print ConfigVariableString("my-game-server") 
+
 
 Panda3D will automatically load any *.prc files it finds in its standard config directory at startup.  You can view a list of the files it has actually loaded with the following command:
 
-<code python>
-print cpMgr 
-</code>
+::
+    print cpMgr 
+
 
 It is helpful to do this to ensure that you are editing the correct Config.prc file.
 
@@ -76,11 +72,11 @@ Sometimes, it is desirable to load an additional
 configuration file from disk, by giving an explicit filename.  To do so, use <code>[func]loadPrcFile[/func]</code>.  Note that
 [[Panda Filename Syntax]] uses a forward slash, even under Windows:
 
-<code python>
-from pandac.PandaModules import loadPrcFile
-loadPrcFile("config/Config.prc")
-import direct.directbase.DirectStart
-</code>
+::
+    from pandac.PandaModules import loadPrcFile
+    loadPrcFile("config/Config.prc")
+    import direct.directbase.DirectStart
+
 
 The filename you specify is searched for along the model-path, in the same way that an egg or bam file is searched for when you use <code>loader.loadModel()</code>.
 
@@ -90,17 +86,15 @@ You can also use <code>[func]loadPrcFileData[/func]</code> to load a string that
 
 For example, let's say that panda's configuration file contains this line:
 
-<code prc>
-fullscreen #f
-</code>
+::
+    fullscreen #f
 
 By default, panda programs will run in a window, not fullscreen.  However, if you do this:
 
-<code python>
-from pandac.PandaModules import loadPrcFileData
-loadPrcFileData("", "fullscreen 1")
-import direct.directbase.DirectStart
-</code>
+::
+    from pandac.PandaModules import loadPrcFileData
+    loadPrcFileData("", "fullscreen 1")
+    import direct.directbase.DirectStart
 
 Then by the time you load <code>direct.directbase.DirectStart</code>, you will
 have changed the fullscreen-flag to true, and your program will run
@@ -109,10 +103,7 @@ necessarily the most straightforward, but it illustrates the point.
 
 You can get a more complete list of available config variables at runtime[python] (once you have imported DirectStart)[/python], with the [python]Python [/python]command:
 
-[python]<code python>
-cvMgr.listVariables()
-</code>[/python][cxx]<code cxx>
-ConfigVariableManager::get_global_ptr()->list_variables();
-</code>[/cxx]
+::
+    cvMgr.listVariables()
 
 For a more complete documentation about Panda3D's configuration system, click [http://panda3d.cvs.sourceforge.net/*checkout*/panda3d/panda/src/doc/howto.use_config.txt here] to view the original documentation file.

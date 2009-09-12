@@ -114,16 +114,16 @@ The following code applies this woodgrain texture to the teapot, to
 make a teapot that looks like it was carved from a single block of
 wood:
 
-<pre class="codeblock">
-teapot = loader.loadModel('teapot.egg')
-teapot.setTexGen(TextureStage.getDefault(), TexGenAttrib.MWorldPosition)
-teapot.setTexProjector(TextureStage.getDefault(), render, teapot)
-teapot.setTexPos(TextureStage.getDefault(), 0.44, 0.5, 0.2)
-teapot.setTexScale(TextureStage.getDefault(), 0.2)
+::
+    teapot = loader.loadModel('teapot.egg')
+    teapot.setTexGen(TextureStage.getDefault(), TexGenAttrib.MWorldPosition)
+    teapot.setTexProjector(TextureStage.getDefault(), render, teapot)
+    teapot.setTexPos(TextureStage.getDefault(), 0.44, 0.5, 0.2)
+    teapot.setTexScale(TextureStage.getDefault(), 0.2)
 
-tex = loader.load3DTexture('woodgrain_#.png')
-teapot.setTexture(tex)
-</pre>
+    tex = loader.load3DTexture('woodgrain_#.png')
+    teapot.setTexture(tex)
+
 
 [[Image:Wooden teapot.jpg|A wooden teapot.]]
 
